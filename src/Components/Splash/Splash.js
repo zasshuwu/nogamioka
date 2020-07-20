@@ -19,6 +19,8 @@ const BounceInDownSpan = styled.div`animation: 4s ${bounceInDownAnimation};`;
 const Splash = () => (
 	<div className="splash-wrapper">
 		<div>
+			<br />
+
 			<SlideInRightSpan>
 				<span className="splash">Xin chào!</span>
 			</SlideInRightSpan>

@@ -6,9 +6,8 @@ $color-nav-link-active: $color-main;
 
 .splash-wrapper {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
+	align-items: center;
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
@@ -18,7 +17,7 @@ $color-nav-link-active: $color-main;
 	color: $color-main;
 	.splash {
 		display: block;
-		font-size: 24pt;
+		font-size: 20pt;
 		margin: 2rem 0;
 		&:hover {
 			cursor: default;
@@ -26,7 +25,10 @@ $color-nav-link-active: $color-main;
 	}
 	.scroll-down {
 		position: absolute;
-		bottom: 1%;
+		bottom: 5%;
 		color: rgb(0, 228, 152);
+		h1 {
+			font-size: 16pt;
+		}
 	}
 }
