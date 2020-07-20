@@ -1,0 +1,20 @@
+@import '~../node_modules/material-design-icons/iconfont/material-icons.css';
+
+.card {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	padding: 3rem;
+	-webkit-box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
+	-moz-box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
+	box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
+	border-radius: 12px;
+}
+
+.container {
+	width: 90vw;
+	border: solid 1px rgba(230, 230, 230, 0.548);
+}
+
+body {
+	overflow-x: hidden;
+}

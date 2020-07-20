@@ -1,0 +1,14 @@
+.author-pic-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.author-pic {
+		height: 150px;
+		width: 150px;
+		background-size: cover;
+		border-radius: 50%;
+		-webkit-box-shadow: -10px 10px 14px -9px rgba(117, 117, 117, 1);
+		-moz-box-shadow: -10px 10px 14px -9px rgba(117, 117, 117, 1);
+		box-shadow: -10px 10px 14px -9px rgba(117, 117, 117, 1);
+	}
+}
