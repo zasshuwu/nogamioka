@@ -72,15 +72,11 @@ const Projects = () => (
                 <Col xs={7}>Bilingual blog about aspects of my life. Built with Jekyll blog framework. Hosted on Github Pages.</Col>
             </Row>
         </div>
-        <div>
-            <Row>
-                <Col xs={1}>7</Col>
-                <Col>
-                    <a href="https://github.com/zasshuwu/researchpapers">Research papers</a>
-                </Col>
-                <Col>n/A</Col>
-                <Col xs={7}>My (co-)authored research papers.</Col>
-            </Row>
+        <br /> <br />
+        <div className="research-papers-wrapper">
+            <h2>Research papers</h2>
+            <p>All the papers I (co-)authored.</p>
+            <a href="https://github.com/zasshuwu/researchpapers">Github Repository</a>
         </div>
     </Container>
 );
