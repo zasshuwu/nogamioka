@@ -1,5 +1,5 @@
-@import '~../node_modules/material-design-icons/iconfont/material-icons.css';
-
+@import "~../node_modules/material-design-icons/iconfont/material-icons.css";
+@import "./__global_theme.scss";
 .card {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
@@ -17,4 +17,38 @@
 
 body {
 	overflow-x: hidden;
+}
+
+html[data-theme="dark"] {
+	body {
+		background: $background-dark;
+		p {
+			color: $secondary-txt-dark;
+		}
+		h1 {
+			color: $accent-blue-dark;
+		}
+		h2 {
+			color: $accent-pink;
+		}
+		h3 {
+			color: $accent-green;
+		}
+		img {
+			border: none;
+			box-shadow: none !important;
+			filter: invert(90%);
+		}
+		li {
+			color: $tertiary-txt-dark;
+		}
+		> * {
+			color: $secondary-txt-dark;
+		}
+	}
+	.card {
+		background: $background-dark;
+		box-shadow: $box-shadow-dark;
+		border: none;
+	}
 }

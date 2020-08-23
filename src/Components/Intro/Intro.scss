@@ -1,3 +1,5 @@
+@import "../../_global_theme";
+
 .author-pic-wrapper {
 	display: flex;
 	justify-content: center;
@@ -18,5 +20,13 @@
 	img {
 		width: 100%;
 		height: auto;
+	}
+}
+
+html[data-theme="dark"] {
+	.author-pic-wrapper {
+		.author-pic {
+			box-shadow: $box-shadow-dark;
+		}
 	}
 }

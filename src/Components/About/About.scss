@@ -8,3 +8,12 @@
 		color: #162447;
 	}
 }
+
+html[data-theme="dark"] {
+	.quickies {
+		color: #fcfcfc;
+		.material-icons {
+			color: rgb(255, 58, 91);
+		}
+	}
+}

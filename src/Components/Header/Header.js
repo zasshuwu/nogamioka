@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Col, Row } from "react-bootstrap";
 import "./Header.scss";
-import LangSwitchContainer from "../../Containers/LangSwitch/LangSwitchContainer";
+import ThemeSwitchContainer from "../../Containers/ThemeSwitch/ThemeSwitchContainer";
 
 const Header = () => (
 	<Navbar id="nav" className="justify-content-center" expand="lg" collapseOnSelect>
@@ -21,9 +21,12 @@ const Header = () => (
 			{/* <Col>
 				<Nav.Link href="#contact">Contact</Nav.Link>
 			</Col> */}
-			<Col className="lang-switch-space">
-				<span style={{ color: "white" }}>EN &harr; VI&nbsp;</span>
-				<LangSwitchContainer></LangSwitchContainer>
+			<Col className="theme-switch-space">
+				<span style={{ color: "white" }}>
+					<span className="material-icons">brightness_7</span>
+					<span className="material-icons">brightness_3</span>&nbsp;
+				</span>
+				<ThemeSwitchContainer></ThemeSwitchContainer>
 			</Col>
 		</Row>
 	</Navbar>
