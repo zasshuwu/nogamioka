@@ -7,6 +7,11 @@ $color-nav-link-active: $color-main;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	background: $nav-bg;
+	.row .col {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.branding {
 		letter-spacing: 1rem;
 		color: $color-main;
@@ -30,7 +35,14 @@ $color-nav-link-active: $color-main;
 		&:hover {
 			color: $color-nav-link-active;
 			border: solid 1px $color-main;
-			transition: border-left .15s, border-top .15s .15s, border-right .15s .3s, border-bottom .15s .45s;
+			transition: border-left 0.15s, border-top 0.15s 0.15s, border-right 0.15s 0.3s,
+				border-bottom 0.15s 0.45s;
 		}
+	}
+	.lang-switch-space {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }

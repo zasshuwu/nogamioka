@@ -1,7 +1,7 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import pic from '../../assets/pic.JPG';
-import './Intro.scss';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import pic from "../../assets/pic.JPG";
+import "./Intro.scss";
 
 const Intro = () => (
 	<Container id="intro" className="intro card">
@@ -15,9 +15,21 @@ const Intro = () => (
 				<p>Specialized in Web Development and Software Architecture.</p>
 				<p>Based in Montreal, Canada.</p>
 				<p>
-					<a className="github-button" href="https://github.com/zasshuwu" data-color-scheme="no-preference: light; light: light; dark: dark;" aria-label="Follow @ntkme on GitHub">
+					<a
+						className="github-button"
+						href="https://github.com/zasshuwu"
+						data-color-scheme="no-preference: light; light: light; dark: dark;"
+						aria-label="Follow @ntkme on GitHub"
+					>
 						Follow @zasshuwu
 					</a>
+					<br />
+					<div className="gh-stats-wrapper">
+						<img
+							style={{ boxShadow: "10px 10px 14px -9px rgba(200, 200, 200, 1)" }}
+							src="https://camo.githubusercontent.com/4e5a548f866498d0775b7db48514c2bc855c5a00/68747470733a2f2f6769746875622d726561646d652d73746174732e7a617373687577752e76657263656c2e6170702f6170693f757365726e616d653d7a617373687577752673686f775f69636f6e733d7472756526686964655f626f726465723d74727565"
+						></img>
+					</div>
 				</p>
 				<p>
 					<code>hoanganh.theodore(at)icloud(dot)com</code>
@@ -26,7 +38,8 @@ const Intro = () => (
 					Twitter: <a href="https://twitter.com/yeetusmagus/">@yeetusmagus</a>
 				</p>
 				<p>
-					Instagram: <a href="https://instagram.com/iamnguyenhoanganh/">iamnguyenhoanganh</a>
+					Instagram:{" "}
+					<a href="https://instagram.com/iamnguyenhoanganh/">iamnguyenhoanganh</a>
 				</p>
 			</Col>
 		</Row>
