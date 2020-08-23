@@ -1,1 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import "../../_global_theme";
+
+.contact {
+	padding: 0;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "ct-head ct-content";
+	.contact-head {
+		grid-area: ct-head;
+		padding: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: $background-dark;
+		border-right: solid 0.5px #ffffff;
+		h1 {
+			color: $accent-green;
+		}
+	}
+	.contact-content {
+		grid-area: ct-content;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// align-items: center;
+	}
+}

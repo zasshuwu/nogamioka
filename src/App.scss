@@ -6,7 +6,7 @@
 	padding: 3rem;
 	-webkit-box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
 	-moz-box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
-	box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
+	box-shadow: 10px 10px 14px -9px rgba(200, 200, 200, 0.8);
 	border-radius: 12px;
 }
 
@@ -37,7 +37,7 @@ html[data-theme="dark"] {
 		img {
 			border: none;
 			box-shadow: none !important;
-			filter: invert(90%);
+			filter: invert(90%) hue-rotate(120deg);
 		}
 		li {
 			color: $tertiary-txt-dark;

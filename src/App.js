@@ -16,6 +16,7 @@ function App() {
 			<Splash />
 			<Header />
 			<Intro />
+			<Contacts />
 			<About />
 			<Projects />
 			<Footer></Footer>

@@ -31,16 +31,6 @@ const Intro = () => (
 						></img>
 					</div>
 				</p>
-				<p>
-					<code>hoanganh.theodore(at)icloud(dot)com</code>
-				</p>
-				<p>
-					Twitter: <a href="https://twitter.com/yeetusmagus/">@yeetusmagus</a>
-				</p>
-				<p>
-					Instagram:{" "}
-					<a href="https://instagram.com/iamnguyenhoanganh/">iamnguyenhoanganh</a>
-				</p>
 			</Col>
 		</Row>
 	</Container>
