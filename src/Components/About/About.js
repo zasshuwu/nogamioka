@@ -3,7 +3,7 @@ import "./About.scss";
 import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => (
-	<Container className="alma-mater card">
+	<Container id="about" className="alma-mater card">
 		<h2>About</h2>
 		<br />
 		<h3>Quickies</h3>
