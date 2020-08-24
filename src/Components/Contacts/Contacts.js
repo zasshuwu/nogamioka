@@ -6,7 +6,7 @@ const Contact = () => {
 	return (
 		<Container id="contact" className="contact card">
 			<div className="contact-head">
-				<h1>Contacts</h1>
+				<h5>Contacts</h5>
 			</div>
 			<div className="contact-content">
 				<p>
