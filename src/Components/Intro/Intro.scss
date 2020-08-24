@@ -18,7 +18,7 @@
 .gh-stats-wrapper {
 	display: block;
 	img {
-		width: 100%;
+		width: 50%;
 		height: auto;
 	}
 }
@@ -27,6 +27,15 @@ html[data-theme="dark"] {
 	.author-pic-wrapper {
 		.author-pic {
 			box-shadow: $box-shadow-dark;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.gh-stats-wrapper {
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }
