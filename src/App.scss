@@ -3,7 +3,10 @@
 .card {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-	padding: 3rem;
+	padding: 0rem 0rem 3rem 0rem;
+	> *:not(li, ul, .research-papers-wrapper) {
+		padding: 1rem 3rem;
+	}
 	-webkit-box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
 	-moz-box-shadow: 10px 10px 14px -9px rgba(117, 117, 117, 1);
 	box-shadow: 10px 10px 14px -9px rgba(200, 200, 200, 0.8);
@@ -29,7 +32,7 @@ html[data-theme="dark"] {
 			color: $accent-blue-dark;
 		}
 		h2 {
-			color: $accent-pink;
+			color: $background-dark;
 		}
 		h3 {
 			color: $accent-green;
@@ -46,6 +49,16 @@ html[data-theme="dark"] {
 			color: $secondary-txt-dark;
 		}
 	}
+
+	.section-header {
+		.h2 {
+			color: $background-dark;
+		}
+		background: $accent-green;
+		border-radius: 12px 12px 0 0;
+		box-shadow: $box-shadow-dark;
+	}
+
 	.card {
 		background: $background-dark;
 		box-shadow: $box-shadow-dark;

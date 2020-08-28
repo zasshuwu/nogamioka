@@ -4,7 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => (
 	<Container id="about" className="alma-mater card">
-		<h2>About</h2>
+		<div className="section-header">
+			<h2>About</h2>
+		</div>
 		<br />
 		<h3>Quickies</h3>
 		<br />
