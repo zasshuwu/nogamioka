@@ -24,7 +24,7 @@ const Projects = () => (
 						Inertia Sensing Lab
 					</a>
 				</Col>
-				<Col>Research Student, Software Architect</Col>
+				<Col>Research Student, DevOps</Col>
 				<Col xs={7}>
 					Apply machine learning on accelerometric data processing using Python and
 					Tensorflow.
