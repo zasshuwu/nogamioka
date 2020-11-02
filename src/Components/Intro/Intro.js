@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import pic from "../../assets/pic.JPG";
+import pic from "../../assets/pic1.JPG";
 import "./Intro.scss";
 
 const Intro = () => (
 	<Container id="intro" className="intro card">
 		<Row>
 			<Col xs="auto" className="author-pic-wrapper">
-				<div className="author-pic" style={{ backgroundImage: `url(${pic1})` }} />
+				<div className="author-pic" style={{ backgroundImage: `url(${pic})` }} />
 			</Col>
 			<Col>
 				<h1>Hoang Anh's portfolio</h1>
