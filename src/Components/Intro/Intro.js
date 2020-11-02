@@ -7,7 +7,7 @@ const Intro = () => (
 	<Container id="intro" className="intro card">
 		<Row>
 			<Col xs="auto" className="author-pic-wrapper">
-				<div className="author-pic" style={{ backgroundImage: `url(${pic})` }} />
+				<div className="author-pic" style={{ backgroundImage: `url(${pic1})` }} />
 			</Col>
 			<Col>
 				<h1>Hoang Anh's portfolio</h1>
