@@ -20,11 +20,11 @@ const Projects = () => (
 			<Row>
 				<Col xs={1}>1</Col>
 				<Col>
-					<a href="https://github.com/zasshuwu/duplicated_accelcamp.git">
-						Inertia Sensing Lab
+					<a href="https://islab.ca">
+						Inertial Sensing Lab
 					</a>
 				</Col>
-				<Col>Research Student, DevOps</Col>
+				<Col>Web Dev, DevOps</Col>
 				<Col xs={7}>
 					Apply machine learning on accelerometric data processing using Python and
 					Tensorflow.
@@ -82,7 +82,7 @@ const Projects = () => (
 				</Col>
 			</Row>
 		</div>
-		<div>
+		{/* <div>
 			<Row>
 				<Col xs={1}>6</Col>
 				<Col>
@@ -94,7 +94,7 @@ const Projects = () => (
 					Hosted on Github Pages.
 				</Col>
 			</Row>
-		</div>
+		</div> */}
 		<br /> <br />
 		<div className="research-papers-wrapper">
 			<h2>Research papers</h2>
