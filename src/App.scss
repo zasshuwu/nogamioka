@@ -18,6 +18,15 @@
 	border: solid 1px rgba(230, 230, 230, 0.548);
 }
 
+.section-header {
+	.h2 {
+		color: #ffffff;
+	}
+	background: $blue-header;
+	border-radius: 12px 12px 0 0;
+	box-shadow: $box-shadow-dark;
+}
+
 body {
 	overflow-x: hidden;
 }

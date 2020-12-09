@@ -42,7 +42,7 @@ const Splash = () => (
 			</SlideInRightSpan>
 		</div>
 		<BounceInDownSpan className="scroll-down">
-			<h1>view Hoang Anh's portfolio</h1>
+			<h1 style={{color:"#ffffff"}}>view Hoang Anh's portfolio</h1>
 			<div>
 				<span className="material-icons">expand_more</span>
 			</div>
