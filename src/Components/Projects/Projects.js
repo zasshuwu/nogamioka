@@ -20,9 +20,7 @@ const Projects = () => (
 			<Row>
 				<Col xs={1}>1</Col>
 				<Col>
-					<a href="https://islab.ca">
-						Inertial Sensing Lab
-					</a>
+					<a href="https://islab.ca">Inertial Sensing Lab</a>
 				</Col>
 				<Col>Web Dev, DevOps</Col>
 				<Col xs={7}>
@@ -41,7 +39,7 @@ const Projects = () => (
 				</Col>
 			</Row>
 		</div>
-		<div>
+		{/* <div>
 			<Row>
 				<Col xs={1}>3</Col>
 				<Col>
@@ -53,12 +51,12 @@ const Projects = () => (
 					webhosting.
 				</Col>
 			</Row>
-		</div>
+		</div> */}
 		<div>
 			<Row>
-				<Col xs={1}>4</Col>
+				<Col xs={1}>3</Col>
 				<Col>
-					<a href="http://github.com/zasshuwu/arduino-phys4eng-w2020.git">
+					<a href="http://github.com/aaanh/arduino-phys4eng-w2020.git">
 						Maze navigating vehicle
 					</a>
 				</Col>
@@ -71,9 +69,9 @@ const Projects = () => (
 		</div>
 		<div>
 			<Row>
-				<Col xs={1}>5</Col>
+				<Col xs={1}>4</Col>
 				<Col>
-					<a href="http://github.com/zasshuwu/mrca-sim-r.git">R project in Statistics</a>
+					<a href="http://github.com/aaanh/mrca-sim-r.git">R project in Statistics</a>
 				</Col>
 				<Col>n/A</Col>
 				<Col xs={7}>
@@ -99,7 +97,7 @@ const Projects = () => (
 		<div className="research-papers-wrapper">
 			<h2>Research papers</h2>
 			<p>All the papers I (co-)authored.</p>
-			<a href="https://github.com/zasshuwu/researchpapers">Github Repository</a>
+			<a href="https://github.com/aaanh/researchpapers">Github Repository</a>
 		</div>
 	</Container>
 );
