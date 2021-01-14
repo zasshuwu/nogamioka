@@ -6,7 +6,7 @@ import ThemeSwitchContainer from "../../Containers/ThemeSwitch/ThemeSwitchContai
 const Header = () => (
 	<Navbar id="nav" className="justify-content-center" expand="lg" collapseOnSelect>
 		<div className="branding" href="/">
-			ノガ三オカ
+			ANH
 		</div>
 		<Row>
 			<Col>
