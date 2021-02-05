@@ -1,6 +1,6 @@
 import React from "react";
 import "./ThemeSwitch.scss";
-import { Switch, Button } from "@material-ui/core";
+import { Switch } from "@material-ui/core";
 
 const ThemeSwitch = (props) => {
 	return (

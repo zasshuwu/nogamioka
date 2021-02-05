@@ -14,7 +14,8 @@ $color-nav-link-active: $color-main;
 	width: 100vw;
 	height: 100vh;
 	background: #f55875;
-	color: #334365;
+	color: #162447;
+
 	.splash {
 		display: block;
 		font-size: 24pt;
@@ -28,9 +29,16 @@ $color-nav-link-active: $color-main;
 	.scroll-down {
 		position: absolute;
 		bottom: 5%;
-		color: rgb(0, 228, 152);
 		h1 {
 			font-size: 16pt;
 		}
+	}
+}
+
+html[data-theme="dark"] {
+	.splash-wrapper {
+		border-bottom: solid 0.1px #f55875;
+		background: #162447;
+		color: #f55875;
 	}
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
 import Header from "./Components/Header/Header";
 import Intro from "./Components/Intro/Intro";
@@ -19,6 +18,7 @@ function App() {
 			<Contacts />
 			<About />
 			<Projects />
+			<SpecSheet />
 			<Footer></Footer>
 		</div>
 	);

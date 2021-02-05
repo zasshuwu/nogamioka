@@ -1,13 +1,13 @@
 import React from "react";
 import "./Splash.scss";
 // animations
-import { fadeIn, slideInLeft, slideInRight, bounceInDown } from "react-animations";
+import { slideInLeft, slideInRight, bounceInDown } from "react-animations";
 import styled, { keyframes } from "styled-components";
 
-const fadeInAnimation = keyframes`${fadeIn}`;
-const FadeInSpan = styled.div`
-	animation: 2s ${fadeInAnimation};
-`;
+// const fadeInAnimation = keyframes`${fadeIn}`;
+// const FadeInSpan = styled.div`
+// 	animation: 2s ${fadeInAnimation};
+// `;
 
 const slideInLeftAnimation = keyframes`${slideInLeft}`;
 const SlideInLeftSpan = styled.div`
@@ -52,17 +52,17 @@ const Splash = () => (
 		<BounceInDownSpan className="scroll-down">
 			{/* <h1 style={{color:"#ffffff"}}>view Hoang Anh's portfolio</h1> */}
 			<div>
-				<span style={{ color: "#334365", fontSize: "32pt" }} className="material-icons">
+				<span style={{ fontSize: "32pt" }} className="material-icons">
 					expand_more
 				</span>
 			</div>
 			<div>
-				<span style={{ color: "#334365", fontSize: "32pt" }} className="material-icons">
+				<span style={{ fontSize: "32pt" }} className="material-icons">
 					expand_more
 				</span>
 			</div>
 			<div>
-				<span style={{ color: "#334365", fontSize: "32pt" }} className="material-icons">
+				<span style={{ fontSize: "32pt" }} className="material-icons">
 					expand_more
 				</span>
 			</div>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.scss";
-import { Container, Row, Col } from "react-bootstrap";
-import { faAutoprefixer } from "@fortawesome/free-brands-svg-icons";
+import { Container } from "react-bootstrap";
 
 const About = () => (
 	<Container id="about" className="alma-mater card">
