@@ -19,17 +19,27 @@ const Projects = () => (
 		<div>
 			<Row>
 				<Col xs={1}>1</Col>
+				<Col>Applied NLP (Concordia University)</Col>
+				<Col>Research student</Col>
+				<Col xs={7}>
+					Assist research progress by running and reporting XLNet models on datasets.
+				</Col>
+			</Row>
+		</div>
+		<div>
+			<Row>
+				<Col xs={1}>2</Col>
 				<Col>
 					<a href="https://islab.ca">Inertial Sensing Lab</a>
 				</Col>
 				<Col>Web Dev, DevOps</Col>
 				<Col xs={7}>
-					Apply machine learning on accelerometric data processing using Python and
+					Applied machine learning on accelerometric data processing using Python and
 					Tensorflow.
 				</Col>
 			</Row>
 		</div>
-		<div>
+		{/* <div>
 			<Row>
 				<Col xs={1}>2</Col>
 				<Col>FaceCookery (WIP)</Col>
@@ -38,7 +48,7 @@ const Projects = () => (
 					A feature-rich recipe-sharing website using React, Bootstrap, Django.
 				</Col>
 			</Row>
-		</div>
+		</div> */}
 		{/* <div>
 			<Row>
 				<Col xs={1}>3</Col>
