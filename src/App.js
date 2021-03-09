@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import Header from "./Components/Header/Header";
 import Intro from "./Components/Intro/Intro";
-import Projects from "./Components/Projects/Projects";
+import Experience from "./Components/Experience/Experience";
 import About from "./Components/About/About";
 import Contacts from "./Components/Contacts/Contacts";
 import SpecSheet from "./Components/SpecSheet/SpecSheet";
@@ -17,7 +17,7 @@ function App() {
 			<Intro />
 			<Contacts />
 			<About />
-			<Projects />
+			<Experience />
 			<SpecSheet />
 			<Footer></Footer>
 		</div>

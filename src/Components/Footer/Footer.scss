@@ -9,7 +9,8 @@ $color-nav-link-active: $color-main;
 	background: $nav-bg;
 	color: $color-nav-link;
 	align-items: center;
-	border: none;
+	text-align: center;
+
 	div {
 		margin: 1rem 0;
 	}
@@ -20,6 +21,8 @@ $color-nav-link-active: $color-main;
 	background: $color-main;
 	color: $color-nav-link;
 	align-items: center;
+	border: none;
+	text-align: center;
 	div {
 		margin: 1rem 0;
 	}

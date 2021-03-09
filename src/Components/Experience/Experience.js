@@ -1,24 +1,22 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import "./Projects.scss";
+import "./Experience.scss";
 
-const Projects = () => (
-	<Container id="projects" className="projects card">
+const Experience = () => (
+	<Container id="Experience" className="experience card">
 		<div className="section-header">
-			<h2>Projects</h2>
+			<h2>Experience</h2>
 		</div>
 		<br />
 		<div>
 			<Row style={{ fontWeight: "bold" }}>
-				<Col xs={1}>#</Col>
 				<Col>ID</Col>
 				<Col>Position</Col>
-				<Col xs={7}>Description</Col>
+				<Col xs={7}>Quick description</Col>
 			</Row>
 		</div>
 		<div>
 			<Row>
-				<Col xs={1}>1</Col>
 				<Col>Applied NLP (Concordia University)</Col>
 				<Col>Research student</Col>
 				<Col xs={7}>
@@ -28,7 +26,15 @@ const Projects = () => (
 		</div>
 		<div>
 			<Row>
-				<Col xs={1}>2</Col>
+				<Col>AITS (Concordia University)</Col>
+				<Col>Service Desk Operator</Col>
+				<Col xs={7}>
+					Frontline support for utilizing university's IT, network, and account resources.
+				</Col>
+			</Row>
+		</div>
+		<div>
+			<Row>
 				<Col>
 					<a href="https://islab.ca">Inertial Sensing Lab</a>
 				</Col>
@@ -64,7 +70,6 @@ const Projects = () => (
 		</div> */}
 		<div>
 			<Row>
-				<Col xs={1}>3</Col>
 				<Col>
 					<a href="http://github.com/aaanh/arduino-phys4eng-w2020.git">
 						Maze navigating vehicle
@@ -79,7 +84,6 @@ const Projects = () => (
 		</div>
 		<div>
 			<Row>
-				<Col xs={1}>4</Col>
 				<Col>
 					<a href="http://github.com/aaanh/mrca-sim-r.git">R project in Statistics</a>
 				</Col>
@@ -103,13 +107,16 @@ const Projects = () => (
 				</Col>
 			</Row>
 		</div> */}
-		<br /> <br />
+		<br />
 		<div className="research-papers-wrapper">
-			<h2>Research papers</h2>
+			<h3>Research papers</h3>
 			<p>All the papers I (co-)authored.</p>
 			<a href="https://github.com/aaanh/researchpapers">Github Repository</a>
+		</div>
+		<div className="research-papers-wrapper">
+			<p>Note: Please contact me via provided e-mail if full resume is needed.</p>
 		</div>
 	</Container>
 );
 
-export default Projects;
+export default Experience;

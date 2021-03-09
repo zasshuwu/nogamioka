@@ -15,7 +15,7 @@ const Footer = () => (
 				résumé prevails.
 			</div>
 		</div> */}
-		<div className="footer-copyright">&#169; 2020 Copyright: Nguyen Hoang Anh (Ted)</div>
+		<div className="footer-copyright">&#169; 2021 Copyright: Nguyen Hoang Anh (Ted)</div>
 	</>
 );
 
