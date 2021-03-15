@@ -13,7 +13,7 @@ const SpecSheet = () => (
 			<br></br>
 			<code>
 				<ul>
-					<li>CPU: Ryzen 3 3600 @ 3.60GHz</li>
+					<li>CPU: Ryzen 5 3600 @ 3.60GHz</li>
 					<li>GPU: nVidia GTX 1080 8GB @ 1721MHz 2560 CUDAs</li>
 					<li>RAM: 2x8GB @ 3200MHz DDR4</li>
 					<li>OS: Windows 10 Pro 20H2 &amp; Ubuntu 20.04.1</li>
