@@ -3,7 +3,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import "./Experience.scss";
 
 const Experience = () => (
-	<Container id="Experience" className="experience card">
+	<Container id="experience" className="experience card">
 		<div className="section-header">
 			<h2>Experience</h2>
 		</div>
@@ -109,12 +109,22 @@ const Experience = () => (
 		</div> */}
 		<br />
 		<div className="research-papers-wrapper">
-			<h3>Research papers</h3>
-			<p>All the papers I (co-)authored.</p>
+			<h3>Authored academic papers</h3>
 			<a href="https://github.com/aaanh/researchpapers">Github Repository</a>
 		</div>
+
+		<div className="awards-wrapper">
+			<h3>Awards &amp; Honors</h3>
+			<ul>
+				<li>
+					FRQNT 2020 Stipend Recipient: For works done on{" "}
+					<a href="https://islab.ca">Inertial Sensing Labs</a> under Prof. Chris Larnder.
+				</li>
+			</ul>
+		</div>
+
 		<div className="research-papers-wrapper">
-			<p>Note: Please contact me via provided e-mail if full resume is needed.</p>
+			<p>Note: Please contact me via provided e-mail should full resume is needed.</p>
 		</div>
 	</Container>
 );
