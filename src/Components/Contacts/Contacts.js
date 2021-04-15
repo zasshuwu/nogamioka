@@ -10,7 +10,7 @@ const Contact = () => {
 			</div>
 			<div className="contact-content">
 				<p>
-					E-Mail: <code>hoanganh.theodore(at)icloud(dot)com</code>
+					E-Mail: <code>hoanganh(dot)theodore(at)icloud(dot)com</code>
 				</p>
 				<p>
 					Twitter: <a href="https://twitter.com/yeetusmagus/">@yeetusmagus</a>
