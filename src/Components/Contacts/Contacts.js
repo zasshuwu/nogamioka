@@ -10,15 +10,27 @@ const Contact = () => {
 			</div>
 			<div className="contact-content">
 				<p>
-					E-Mail: <code>hoanganh(dot)theodore(at)icloud(dot)com</code>
+					E-Mail 1 (Official): <code>hoanganh(dot)theodore(at)icloud(dot)com</code>
 				</p>
 				<p>
-					Twitter: <a href="https://twitter.com/yeetusmagus/">@yeetusmagus</a>
+					E-Mail 2 (Academic): <code>anhhoang(dot)nguyen(at)concordia(dot)ca</code>
 				</p>
-				<p>
-					Instagram:{" "}
-					<a href="https://instagram.com/iamnguyenhoanganh/">iamnguyenhoanganh</a>
-				</p>
+				<br></br>
+				<script
+					src="https://platform.linkedin.com/badges/js/profile.js"
+					async
+					defer
+					type="text/javascript"
+				></script>
+				<div
+					class="badge-base LI-profile-badge"
+					data-locale="en_US"
+					data-size="large"
+					data-theme="dark"
+					data-type="VERTICAL"
+					data-vanity="aaanh"
+					data-version="v1"
+				></div>
 			</div>
 		</Container>
 	);
