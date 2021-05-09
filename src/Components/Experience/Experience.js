@@ -35,6 +35,16 @@ const Experience = () => (
 		</div>
 		<div>
 			<Row>
+				<Col>Two_Weeks_Time()</Col>
+				<Col>Personal Tech Blog</Col>
+				<Col xs={7}>
+					<a href="https://hoanganhramen.xyz">https://hoanganhramen.xyz</a> | Built and
+					run on a JAMStack
+				</Col>
+			</Row>
+		</div>
+		<div>
+			<Row>
 				<Col>
 					<a href="https://islab.ca">Inertial Sensing Lab</a>
 				</Col>
