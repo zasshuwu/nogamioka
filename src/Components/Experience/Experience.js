@@ -33,7 +33,7 @@ const Experience = () => (
 				</Col>
 			</Row>
 		</div>
-		<div>
+		{/* <div>
 			<Row>
 				<Col>Two_Weeks_Time()</Col>
 				<Col>Personal Tech Blog</Col>
@@ -42,7 +42,7 @@ const Experience = () => (
 					run on a JAMStack
 				</Col>
 			</Row>
-		</div>
+		</div> */}
 		<div>
 			<Row>
 				<Col>
