@@ -26,7 +26,7 @@ import Projects from "./project";
 
 const useStyles = makeStyles((theme) => ({
 	navBarWrapper: {
-		minHeight: "80px",
+		minHeight: "50px",
 		width: "100%",
 		position: "relative",
 		[theme.breakpoints.up("md")]: {
@@ -36,17 +36,16 @@ const useStyles = makeStyles((theme) => ({
 			display: "flex",
 			"& ul": {
 				"& li": {
-					margin: "1rem",
+					margin: "0.5rem",
 				},
 			},
-			height: "80px",
+			height: "50px",
 			width: "100%",
 		}
 	},
 	navBar: {
-
 			display: "flex",
-			padding: "0.5rem",
+			padding: "0",
 			marginLeft: "auto",
 			"& > *": {
 				margin: "0.5rem",
@@ -148,44 +147,54 @@ export default function NavBar({ setCommand }) {
 				showExperience={values.showExperience}
 				handleClose={handleExperience}
 			></Experience>
+
 			<div className={classes.navBar}>
-				<Button onClick={toHome} variant="outlined" className={classes.customButtonHome}>
-					<span style={{ textTransform: "lowercase" }}>$ cd /home/aaanh</span>
+				<Button size="small" onClick={toHome} variant="outlined" className={classes.customButtonHome}>
+					<span style={{ textTransform: "lowercase" }}>cd /home/aaanh</span>
 				</Button>
+
 				<Button
+					size="small"
 					onClick={handleContact}
 					variant="outlined"
 					className={classes.customButtonContact}
 				>
-					<MailIcon></MailIcon>&nbsp; Contact
+					<MailIcon fontSize="small"></MailIcon>&nbsp; Contact
 				</Button>
+
 				<Button
+					size="small"
 					onClick={handleExperience}
 					variant="outlined"
 					className={classes.customButtonExperience}
 				>
-					<WorkIcon></WorkIcon>&nbsp; Experience
+					<WorkIcon fontSize="small"></WorkIcon>&nbsp; Experience
 				</Button>
+
 				<Button
+					size="small"
 					onClick={handleProjects}
 					variant="outlined"
 					className={classes.customButtonProjects}
 				>
-					<AccountTreeIcon></AccountTreeIcon>&nbsp; Projects
+					<AccountTreeIcon fontSize="small"></AccountTreeIcon>&nbsp; Projects
 				</Button>
+
 				<Button
+					size="small"
 					onClick={handleAwards}
 					variant="outlined"
 					className={classes.customButtonAwards}
 				>
-					<BeenhereIcon></BeenhereIcon>&nbsp; Awards
+					<BeenhereIcon fontSize="small"></BeenhereIcon>&nbsp; Awards
 				</Button>
+
 				<Button
 					onClick={handleGitHub}
 					variant="outlined"
 					className={classes.customButtonGitHub}
 				>
-					<GitHubIcon></GitHubIcon>
+					<GitHubIcon fontSize="small"></GitHubIcon>
 					&nbsp; @aaanh
 				</Button>
 			</div>

@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 		"& > *": {
 			fontFamily: "Source Code Pro",
-			lineHeight: ".6rem"
+			lineHeight: ".5rem"
 		},
 		fontSize: "1.5vh",
 	},
