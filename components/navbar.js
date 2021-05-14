@@ -1,8 +1,8 @@
 import { React, useState } from "react";
-import clsx from "clsx";
 
 // ui
 import { Typography } from "@material-ui/core";
+import clsx from "clsx";
 import { useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
@@ -26,24 +26,32 @@ import Projects from "./project";
 
 const useStyles = makeStyles((theme) => ({
 	navBarWrapper: {
-		position: "absolute",
-		bottom: "0",
-		borderTop: "solid 1px grey",
-		display: "flex",
-		"& ul": {
-			"& li": {
-				margin: "1rem",
-			},
-		},
-		height: "80px",
+		minHeight: "80px",
 		width: "100%",
+		position: "relative",
+		[theme.breakpoints.up("md")]: {
+			position: "absolute",
+			bottom: "0",
+			borderTop: "solid 1px grey",
+			display: "flex",
+			"& ul": {
+				"& li": {
+					margin: "1rem",
+				},
+			},
+			height: "80px",
+			width: "100%",
+		}
 	},
 	navBar: {
-		padding: "0.5rem",
-		margin: "auto",
-		"& > *": {
-			margin: "1rem",
-		},
+
+			display: "flex",
+			padding: "0.5rem",
+			marginLeft: "auto",
+			"& > *": {
+				margin: "0.5rem",
+			},
+
 	},
 	customButtonHome: {
 		color: "#1691f0",
@@ -170,7 +178,7 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonAwards}
 				>
-					<BeenhereIcon></BeenhereIcon>&nbsp; Awards and Honors
+					<BeenhereIcon></BeenhereIcon>&nbsp; Awards
 				</Button>
 				<Button
 					onClick={handleGitHub}

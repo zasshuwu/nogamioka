@@ -26,13 +26,14 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: "center",
 		alignItems: "center",
 		"& > *": {
-			fontFamily: "Monospace",
+			fontFamily: "Source Code Pro",
+			lineHeight: ".6rem"
 		},
-		fontSize: "11pt",
+		fontSize: "1.5vh",
 	},
 	content: {
 		minWidth: "95%",
-		minHeight: "95%",
+		minHeight: "80%",
 		border: "solid 1px grey",
 		borderRadius: "8px",
 		position: "relative",
@@ -80,12 +81,11 @@ export default function Main(props) {
 			<div className={classes.content}>
 				<div className={classes.tab}> {">"} HATerm&nbsp;&nbsp;&nbsp;&nbsp;X</div>
 				<div className={classes.message}>
-					<h2 style={{ color: customTheme.palette.primary.main }}>
-						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus) |{" "}
-						<span style={{ color: "#facc00" }}>
-							Site's development is still in progress
-						</span>
+					<h2 style={{ color: customTheme.palette.primary.main, fontSize: "1.8vw" }}>
+						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
+						
 					</h2>
+
 
 					<p> {">"} B.Eng. Computer Engineering Co-op @ Concordia University (2024)</p>
 					<p> {">"} Location: Montreal, Quebec. Canada</p>
