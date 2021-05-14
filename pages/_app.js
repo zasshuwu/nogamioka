@@ -1,11 +1,20 @@
-import Main from "../components/main"
+import Main from "../components/main";
 
 function MyApp({ Component, pageProps }) {
-  return <>
-    <Main></Main>
-    <Component {...pageProps} />
-  </>
-  
+	return (
+		<>
+			<style global jsx>
+				{`
+					body {
+						margin: 0px;
+						padding: 0px;
+					}
+				`}
+			</style>
+			<Main></Main>
+			<Component {...pageProps} />
+		</>
+	);
 }
 
-export default MyApp
+export default MyApp;
