@@ -27,9 +27,9 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 		"& > *": {
 			fontFamily: "Source Code Pro",
-			lineHeight: "1.2rem",
+			lineHeight: "1rem",
 		},
-		fontSize: "14pt",
+		fontSize: "12pt",
 	},
 	content: {
 		minWidth: "50%",
@@ -70,6 +70,13 @@ const useStyles = makeStyles((theme) => ({
 			borderRight: "solid 5px #fff",
 		},
 	},
+	copyright: {
+		position: "absolute",
+		bottom: "2%",
+		[theme.breakpoints.down("md")]: {
+			display: "none",
+		},
+	},
 }));
 
 export default function Main(props) {
@@ -82,17 +89,17 @@ export default function Main(props) {
 			<div className={classes.content}>
 				<div className={classes.tab}> {">"} HATerm&nbsp;&nbsp;&nbsp;&nbsp;X</div>
 				<div className={classes.message}>
-					<h2 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
+					<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
-					</h2>
+					</h1>
 
 					<p> {">"} B.Eng. Computer Engineering Co-op @ Concordia University (2024)</p>
 					<p> {">"} Location: Montreal, Quebec. Canada</p>
 					<p> {">"} Specialized: software-dev, web-dev, IT, ml-nlp</p>
-					<h3 style={{ color: customTheme.palette.primary.main }}>Alma mater</h3>
+					<p style={{ color: customTheme.palette.primary.main }}>Alma mater</p>
 					<p> {">"} ('17 - '20) Pure &amp; Applied Science @ John Abbott College, QC.</p>
 					<p> {">"} ('14 - '17) Phổ thông Năng khiếu. HCMC, Viet Nam</p>
-					<h3 style={{ color: customTheme.palette.primary.main }}>Tech stacks</h3>
+					<p style={{ color: customTheme.palette.primary.main }}>Tech stacks</p>
 					<p> {">"} Platforms: (x86) Windows, macOS, Linux (Debian-based, Kali, RHEL)</p>
 					<p> {">"} Cloud: AWS S3 + EC2, GCloud AE + CE + Bucket, AzureAD</p>
 					<p> {">"} Languages: C++, C, Python, R, Rust, JavaScript/JSX, HTML/CSS/Sass</p>
@@ -103,13 +110,13 @@ export default function Main(props) {
 						{">"} Tools: git, Visual Studio, VS Code, terminal, bash/zsh/fish, MSFT
 						Office, RDP, Docker, WSL1/2
 					</p>
-					<h3 style={{ color: customTheme.palette.primary.main }}>Human Languages</h3>
+					<p style={{ color: customTheme.palette.primary.main }}>Human Languages</p>
 					<p>
 						{" "}
 						{">"} Vietnamese (native), English (bilingual), French (CEFR B1), Japanese
 						(JLPT N5), German (casual)
 					</p>
-					<h3 style={{ color: customTheme.palette.primary.main }}>Hobbies</h3>
+					<p style={{ color: customTheme.palette.primary.main }}>Hobbies</p>
 					<p>
 						{" "}
 						{">"} Building PCs, J-Pop, read/write light novels, gaming, guitar, dslr
@@ -128,6 +135,7 @@ export default function Main(props) {
 				</div>
 				<NavBar setCommand={setCommand}></NavBar>
 			</div>
+			<div className={classes.copyright}>Anh Hoang Nguyen (c) 2021</div>
 		</div>
 	);
 }
