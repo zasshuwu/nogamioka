@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 		"& > *": {
 			fontFamily: "Source Code Pro",
-			lineHeight: ".5rem"
+			lineHeight: ".4rem"
 		},
 		fontSize: "1.5vh",
 	},
@@ -81,7 +81,7 @@ export default function Main(props) {
 			<div className={classes.content}>
 				<div className={classes.tab}> {">"} HATerm&nbsp;&nbsp;&nbsp;&nbsp;X</div>
 				<div className={classes.message}>
-					<h2 style={{ color: customTheme.palette.primary.main, fontSize: "1.8vw" }}>
+					<h2 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
 						
 					</h2>

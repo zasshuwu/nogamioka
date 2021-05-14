@@ -100,6 +100,12 @@ const useStyles = makeStyles((theme) => ({
 			color: customTheme.palette.background.main,
 		},
 	},
+	BtnText: {
+		display: "none",
+		[theme.breakpoints.up("md")]: {
+			display: "flex"
+		}
+	}
 }));
 
 export default function NavBar({ setCommand }) {
@@ -150,7 +156,7 @@ export default function NavBar({ setCommand }) {
 
 			<div className={classes.navBar}>
 				<Button size="small" onClick={toHome} variant="outlined" className={classes.customButtonHome}>
-					<span style={{ textTransform: "lowercase" }}>cd /home/aaanh</span>
+					<span style={{ textTransform: "lowercase" }}>cd ~</span>
 				</Button>
 
 				<Button
@@ -159,7 +165,7 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonContact}
 				>
-					<MailIcon fontSize="small"></MailIcon>&nbsp; Contact
+					<MailIcon fontSize="small"></MailIcon><span className={classes.BtnText}>&nbsp; Contact</span>
 				</Button>
 
 				<Button
@@ -168,7 +174,7 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonExperience}
 				>
-					<WorkIcon fontSize="small"></WorkIcon>&nbsp; Experience
+					<WorkIcon fontSize="small"></WorkIcon><span className={classes.BtnText}>&nbsp; Experience</span>
 				</Button>
 
 				<Button
@@ -177,7 +183,7 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonProjects}
 				>
-					<AccountTreeIcon fontSize="small"></AccountTreeIcon>&nbsp; Projects
+					<AccountTreeIcon fontSize="small"></AccountTreeIcon><span className={classes.BtnText}>&nbsp; Projects</span>
 				</Button>
 
 				<Button
@@ -186,7 +192,7 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonAwards}
 				>
-					<BeenhereIcon fontSize="small"></BeenhereIcon>&nbsp; Awards
+					<BeenhereIcon fontSize="small"></BeenhereIcon><span className={classes.BtnText}>&nbsp; Awards</span>
 				</Button>
 
 				<Button
@@ -195,7 +201,7 @@ export default function NavBar({ setCommand }) {
 					className={classes.customButtonGitHub}
 				>
 					<GitHubIcon fontSize="small"></GitHubIcon>
-					&nbsp; @aaanh
+					<span className={classes.BtnText}>&nbsp; @aaanh</span>
 				</Button>
 			</div>
 		</div>
