@@ -29,28 +29,30 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: "50px",
 		width: "100%",
 		position: "relative",
-		[theme.breakpoints.up("md")]: {
-			position: "absolute",
-			bottom: "0",
-			borderTop: "solid 1px grey",
-			display: "flex",
-			"& ul": {
-				"& li": {
-					margin: "0.5rem",
-				},
-			},
-			height: "50px",
-			width: "100%",
-		}
+		display: "flex",
+		borderTop: "solid 1px grey",
+		flexGrow: "1",
+		// [theme.breakpoints.up("md")]: {
+		// 	position: "absolute",
+		// 	bottom: "0",
+		// 	borderTop: "solid 1px grey",
+		// 	display: "flex",
+		// 	"& ul": {
+		// 		"& li": {
+		// 			margin: "0.5rem",
+		// 		},
+		// 	},
+		// 	height: "50px",
+		// 	width: "100%",
+		// },
 	},
 	navBar: {
-			display: "flex",
-			padding: "0",
-			marginLeft: "auto",
-			"& > *": {
-				margin: "0.5rem",
-			},
+		padding: "0",
 
+		marginLeft: "auto",
+		"& > *": {
+			margin: "0.5rem",
+		},
 	},
 	customButtonHome: {
 		color: "#1691f0",
@@ -103,9 +105,9 @@ const useStyles = makeStyles((theme) => ({
 	BtnText: {
 		display: "none",
 		[theme.breakpoints.up("md")]: {
-			display: "flex"
-		}
-	}
+			display: "flex",
+		},
+	},
 }));
 
 export default function NavBar({ setCommand }) {
@@ -155,7 +157,12 @@ export default function NavBar({ setCommand }) {
 			></Experience>
 
 			<div className={classes.navBar}>
-				<Button size="small" onClick={toHome} variant="outlined" className={classes.customButtonHome}>
+				<Button
+					size="small"
+					onClick={toHome}
+					variant="outlined"
+					className={classes.customButtonHome}
+				>
 					<span style={{ textTransform: "lowercase" }}>cd ~</span>
 				</Button>
 
@@ -165,7 +172,8 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonContact}
 				>
-					<MailIcon fontSize="small"></MailIcon><span className={classes.BtnText}>&nbsp; Contact</span>
+					<MailIcon fontSize="small"></MailIcon>
+					<span className={classes.BtnText}>&nbsp; Contact</span>
 				</Button>
 
 				<Button
@@ -174,7 +182,8 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonExperience}
 				>
-					<WorkIcon fontSize="small"></WorkIcon><span className={classes.BtnText}>&nbsp; Experience</span>
+					<WorkIcon fontSize="small"></WorkIcon>
+					<span className={classes.BtnText}>&nbsp; Experience</span>
 				</Button>
 
 				<Button
@@ -183,7 +192,8 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonProjects}
 				>
-					<AccountTreeIcon fontSize="small"></AccountTreeIcon><span className={classes.BtnText}>&nbsp; Projects</span>
+					<AccountTreeIcon fontSize="small"></AccountTreeIcon>
+					<span className={classes.BtnText}>&nbsp; Projects</span>
 				</Button>
 
 				<Button
@@ -192,7 +202,8 @@ export default function NavBar({ setCommand }) {
 					variant="outlined"
 					className={classes.customButtonAwards}
 				>
-					<BeenhereIcon fontSize="small"></BeenhereIcon><span className={classes.BtnText}>&nbsp; Awards</span>
+					<BeenhereIcon fontSize="small"></BeenhereIcon>
+					<span className={classes.BtnText}>&nbsp; Awards</span>
 				</Button>
 
 				<Button

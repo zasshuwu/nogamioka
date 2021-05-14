@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 		position: "relative",
 		background: customTheme.palette.background.main,
 		width: "100vw",
-		height: "100vh",
+		minHeight: "100vh",
 		display: "flex",
 		margin: "0",
 		padding: "0",
@@ -27,13 +27,13 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 		"& > *": {
 			fontFamily: "Source Code Pro",
-			lineHeight: ".4rem"
+			lineHeight: "1rem",
 		},
 		fontSize: "1.5vh",
 	},
 	content: {
 		minWidth: "95%",
-		minHeight: "80%",
+		minHeight: "95%",
 		border: "solid 1px grey",
 		borderRadius: "8px",
 		position: "relative",
@@ -83,9 +83,7 @@ export default function Main(props) {
 				<div className={classes.message}>
 					<h2 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
-						
 					</h2>
-
 
 					<p> {">"} B.Eng. Computer Engineering Co-op @ Concordia University (2024)</p>
 					<p> {">"} Location: Montreal, Quebec. Canada</p>
