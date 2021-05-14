@@ -27,12 +27,12 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 		"& > *": {
 			fontFamily: "Source Code Pro",
-			lineHeight: "1rem",
+			lineHeight: "1.2rem",
 		},
-		fontSize: "1.5vh",
+		fontSize: "14pt",
 	},
 	content: {
-		minWidth: "95%",
+		minWidth: "50%",
 		minHeight: "95%",
 		border: "solid 1px grey",
 		borderRadius: "8px",
@@ -46,12 +46,13 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: "8px 0px",
 		padding: "1rem",
 		color: "white",
-		width: "120px",
+		width: "150px",
 	},
 	message: {
 		margin: "1rem",
 		wordBreak: "break-all",
 		color: "#ddd",
+		paddingBottom: "2rem",
 	},
 	animatedCaret: {
 		paddingRight: "5px",
