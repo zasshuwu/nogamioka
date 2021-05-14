@@ -45,7 +45,7 @@ export default function Contact({ showContact, handleClose }) {
 				maxWidth={false}
 			>
 				<div className={classes.dialogContent}>
-					<h1 className={classes.dialogTitle}>PID: 2501</h1>
+					<h1 className={classes.dialogTitle}>contact | PID: 2501</h1>
 					<p>
 						<img
 							style={{ height: "150px", borderRadius: "50%" }}

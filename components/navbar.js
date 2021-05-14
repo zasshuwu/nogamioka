@@ -21,6 +21,8 @@ import BeenhereIcon from "@material-ui/icons/Beenhere";
 // modals
 import Contact from "./contact";
 import Experience from "./experience";
+import Awards from "./awards";
+import Projects from "./project";
 
 const useStyles = makeStyles((theme) => ({
 	navBarWrapper: {
@@ -115,7 +117,7 @@ export default function NavBar({ setCommand }) {
 	};
 	const handleProjects = () => {
 		setCommand("projects");
-		setValues({ ...values, showProjects: true });
+		setValues({ ...values, showProjects: !values.showProjects });
 	};
 	const handleGitHub = (e) => {
 		e.preventDefault();
@@ -124,7 +126,7 @@ export default function NavBar({ setCommand }) {
 	};
 	const handleAwards = () => {
 		setCommand("awards");
-		setValues({ ...values, showAwards: true });
+		setValues({ ...values, showAwards: !values.showAwards });
 	};
 
 	const classes = useStyles();
@@ -132,6 +134,8 @@ export default function NavBar({ setCommand }) {
 	return (
 		<div className={classes.navBarWrapper}>
 			<Contact showContact={values.showContact} handleClose={handleContact}></Contact>
+			<Awards showAwards={values.showAwards} handleClose={handleAwards}></Awards>
+			<Projects showProjects={values.showProjects} handleClose={handleProjects}></Projects>
 			<Experience
 				showExperience={values.showExperience}
 				handleClose={handleExperience}

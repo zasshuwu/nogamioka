@@ -81,8 +81,12 @@ export default function Main(props) {
 				<div className={classes.tab}> {">"} HATerm&nbsp;&nbsp;&nbsp;&nbsp;X</div>
 				<div className={classes.message}>
 					<h2 style={{ color: customTheme.palette.primary.main }}>
-						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
+						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus) |{" "}
+						<span style={{ color: "#facc00" }}>
+							Site's development is still in progress
+						</span>
 					</h2>
+
 					<p> {">"} B.Eng. Computer Engineering Co-op @ Concordia University (2024)</p>
 					<p> {">"} Location: Montreal, Quebec. Canada</p>
 					<p> {">"} Specialized: software-dev, web-dev, IT, ml-nlp</p>

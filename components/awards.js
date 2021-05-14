@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 		minWidth: "300px",
 		padding: "1rem",
 		fontFamily: "Monospace",
-		color: "#facc00",
+		color: "#f53652",
 		"& a": {
 			color: "#1691f0 !important",
 			"& :visited": {
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	dialogTitle: {
 		background: customTheme.palette.background.main,
-		color: "#facc00",
+		color: "#f53652",
 		fontFamily: "Monospace",
 	},
 	table: {
@@ -53,40 +53,30 @@ function createData(id, role, description) {
 
 const rows = [
 	createData(
-		"applied nlp (university)",
-		"undergrad research student",
-		"assist research progress by running and reporting models performance"
-	),
-	createData(
-		"aits (university)",
-		"service desk operator",
-		"tech support for utilizing university's IT, network, and account resources"
-	),
-	createData(
-		"inertial sensing lab (islab.ca)",
-		"webmaster",
-		"machine learning on accelerometric data; build, deploy, maintain wiki "
+		"FRQNT Stipend Recipient",
+		"October, 2020",
+		"for work in Inertial Sensing Lab under Prof. Larnder"
 	),
 ];
 
-export default function Experience({ showExperience, handleClose }) {
+export default function Awards({ showAwards, handleClose }) {
 	const classes = useStyles();
 	return (
 		<div>
 			<Dialog
 				className={classes.root}
-				open={showExperience}
+				open={showAwards}
 				onClose={handleClose}
 				maxWidth={false}
 			>
 				<div className={classes.dialogContent}>
-					<h1 className={classes.dialogTitle}>experience | PID: 1999</h1>
+					<h1 className={classes.dialogTitle}>awards | PID: 63 61 6c 6d 65 74 74 65</h1>
 					<TableContainer>
 						<Table className={classes.table} aria-label="simple table">
 							<TableHead>
 								<TableRow>
 									<TableCell>id</TableCell>
-									<TableCell>role</TableCell>
+									<TableCell>year</TableCell>
 									<TableCell>description</TableCell>
 								</TableRow>
 							</TableHead>
