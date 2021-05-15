@@ -9,6 +9,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useTheme } from "@material-ui/core/styles";
 import customTheme from "../styles/theme";
 import Link from "@material-ui/core/Link";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableContainer from "@material-ui/core/TableContainer";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
 
 // components
 import NavBar from "./navbar";
@@ -30,6 +36,13 @@ const useStyles = makeStyles((theme) => ({
 			lineHeight: "1rem",
 		},
 		fontSize: "12pt",
+		"& .MuiPaper-root": {
+			background: customTheme.palette.background.main,
+		},
+		"& .MuiTableCell-root": {
+			fontFamily: "monospace",
+			color: "#ddd !important",
+		},
 	},
 	content: {
 		minWidth: "50%",
@@ -79,61 +92,290 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
+const MainContent = ({ command }) => {
+	const classes = useStyles();
+	return (
+		<>
+			<div className={classes.message}>
+				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
+					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
+				</h1>
+
+				<p> {">"} B.Eng. Computer Engineering Co-op @ Concordia University (2024)</p>
+				<p> {">"} Location: Montreal, Quebec. Canada</p>
+				<p> {">"} Specialized: software-dev, web-dev, IT, ml-nlp</p>
+				<p style={{ color: customTheme.palette.primary.main }}>Alma mater</p>
+				<p> {">"} ('17 - '20) Pure &amp; Applied Science @ John Abbott College, QC.</p>
+				<p> {">"} ('14 - '17) Phổ thông Năng khiếu. HCMC, Viet Nam</p>
+				<p style={{ color: customTheme.palette.primary.main }}>Tech stacks</p>
+				<p> {">"} Platforms: (x86) Windows, macOS, Linux (Debian-based, Kali, RHEL)</p>
+				<p> {">"} Cloud: AWS S3 + EC2, GCloud AE + CE + Bucket, AzureAD</p>
+				<p> {">"} Languages: C++, C, Python, R, Rust, JavaScript/JSX, HTML/CSS/Sass</p>
+				<p> {">"} ML: PyTorch, TensorFlow, conda+jupyter</p>
+				<p> {">"} Web: Apache2, Nginx, node, Django</p>
+				<p>
+					{" "}
+					{">"} Tools: git, Visual Studio, VS Code, terminal, bash/zsh/fish, MSFT Office,
+					RDP, Docker, WSL1/2
+				</p>
+				<p style={{ color: customTheme.palette.primary.main }}>Human Languages</p>
+				<p>
+					{" "}
+					{">"} Vietnamese (native), English (bilingual), French (CEFR B1), Japanese (JLPT
+					N5), German (casual)
+				</p>
+				<p style={{ color: customTheme.palette.primary.main }}>Hobbies</p>
+				<p>
+					{" "}
+					{">"} Building PCs, J-Pop, read/write light novels, gaming, guitar, dslr
+					photography
+				</p>
+				<p>
+					-----------------------------------------------------------------------------------
+				</p>
+				<p>
+					<span style={{ color: customTheme.palette.primary.main }}>
+						aaanh@hoanganhtech:
+					</span>
+					<span style={{ color: "#9f43fa" }}>~$</span>
+					{" " + command}
+					<span className={classes.animatedCaret}></span>
+				</p>
+			</div>
+		</>
+	);
+};
+
+const ContactContent = ({ command }) => {
+	const classes = useStyles();
+	return (
+		<div style={{ margin: "1rem" }}>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				{" " + command}
+			</p>
+			<p>
+				<img
+					style={{ height: "150px", borderRadius: "50%" }}
+					src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
+				></img>
+			</p>
+			<p>{">"} Official email: hoanganh(dot)theodore(at)icloud(dot)com</p>
+			<p>{">"} Academic email: a(underscore)en201(at)encs(dot)concordia(dot)ca</p>
+			<p>
+				{">"} LinkedIn:{" "}
+				<a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
+			</p>
+			<br></br>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span className={classes.animatedCaret}></span>
+			</p>
+		</div>
+	);
+};
+const ProjectsContent = ({ command }) => {
+	const classes = useStyles();
+	function createData(id, role, description) {
+		return { id, role, description };
+	}
+
+	const rows = [
+		createData("this website", "very proud", "react/nextjs, vercel, material-ui"),
+		createData("do-it (WIP)", "front-end dev", "a job board for vn"),
+		createData(
+			"graph viz of panama papers",
+			"c++",
+			"apply graph theory, graph algo, c++ oop methodologies into the visualization task"
+		),
+		createData(
+			"your-nutritionist (defunct)",
+			"front-end dev",
+			"a recipe-sharing social network"
+		),
+		createData(
+			"maze-navigating vehicle",
+			"c++ (arduino)",
+			"College engineering project. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno."
+		),
+		createData(
+			"R project in Statistics",
+			"R",
+			"College project using R in statistical analysis. Simulate Most Recent Common Ancestor (MRCA)."
+		),
+	];
+	return (
+		<div style={{ margin: "1rem" }}>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				{" " + command}
+			</p>
+			<TableContainer>
+				<Table className={classes.table} aria-label="simple table">
+					<TableHead>
+						<TableRow>
+							<TableCell>id</TableCell>
+							<TableCell>role/tech</TableCell>
+							<TableCell>description</TableCell>
+						</TableRow>
+					</TableHead>
+					<TableBody>
+						{rows.map((row) => (
+							<TableRow key={row.name}>
+								<TableCell component="th" scope="row">
+									{row.id}
+								</TableCell>
+								<TableCell>{row.role}</TableCell>
+								<TableCell>{row.description}</TableCell>
+							</TableRow>
+						))}
+					</TableBody>
+				</Table>
+			</TableContainer>
+			<br></br>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span className={classes.animatedCaret}></span>
+			</p>
+		</div>
+	);
+};
+const ExperienceContent = ({ command }) => {
+	const classes = useStyles();
+	function createData(id, role, description) {
+		return { id, role, description };
+	}
+	const rows = [
+		createData(
+			"applied nlp (university)",
+			"undergrad research student",
+			"assist research progress by running and reporting models performance"
+		),
+		createData(
+			"aits (university)",
+			"service desk operator",
+			"tech support for utilizing university's IT, network, and account resources"
+		),
+		createData(
+			"inertial sensing lab (islab.ca)",
+			"webmaster",
+			"machine learning on accelerometric data; build, deploy, maintain wiki "
+		),
+	];
+	return (
+		<div style={{ margin: "1rem" }}>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				{" " + command}
+			</p>
+			<TableContainer>
+				<Table className={classes.table} aria-label="simple table">
+					<TableHead>
+						<TableRow>
+							<TableCell>id</TableCell>
+							<TableCell>role</TableCell>
+							<TableCell>description</TableCell>
+						</TableRow>
+					</TableHead>
+					<TableBody>
+						{rows.map((row) => (
+							<TableRow key={row.name}>
+								<TableCell component="th" scope="row">
+									{row.id}
+								</TableCell>
+								<TableCell>{row.role}</TableCell>
+								<TableCell>{row.description}</TableCell>
+							</TableRow>
+						))}
+					</TableBody>
+				</Table>
+			</TableContainer>
+			<br></br>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span className={classes.animatedCaret}></span>
+			</p>
+		</div>
+	);
+};
+const AwardsContent = ({ command }) => {
+	const classes = useStyles();
+	function createData(id, role, description) {
+		return { id, role, description };
+	}
+
+	const rows = [
+		createData(
+			"FRQNT Stipend Recipient",
+			"October, 2020",
+			"for work in Inertial Sensing Lab under Prof. Larnder"
+		),
+	];
+	return (
+		<div style={{ margin: "1rem" }}>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				{" " + command}
+			</p>
+			<TableContainer>
+				<Table className={classes.table} aria-label="simple table">
+					<TableHead>
+						<TableRow>
+							<TableCell>id</TableCell>
+							<TableCell>year</TableCell>
+							<TableCell>description</TableCell>
+						</TableRow>
+					</TableHead>
+					<TableBody>
+						{rows.map((row) => (
+							<TableRow key={row.name}>
+								<TableCell component="th" scope="row">
+									{row.id}
+								</TableCell>
+								<TableCell>{row.role}</TableCell>
+								<TableCell>{row.description}</TableCell>
+							</TableRow>
+						))}
+					</TableBody>
+				</Table>
+			</TableContainer>
+			<p>
+				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span className={classes.animatedCaret}></span>
+			</p>
+		</div>
+	);
+};
+
 export default function Main(props) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const [command, setCommand] = useState("cd ~/home/aaanh");
+	const [screenContent, setContent] = useState("experience");
 
 	return (
 		<div className={classes.root}>
 			<div className={classes.content}>
 				<div className={classes.tab}> {">"} HATerm&nbsp;&nbsp;&nbsp;&nbsp;X</div>
-				<div className={classes.message}>
-					<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
-						Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
-					</h1>
+				{screenContent === "main" && <MainContent command={command}></MainContent>}
+				{screenContent === "contact" && <ContactContent command={command}></ContactContent>}
+				{screenContent === "experience" && (
+					<ExperienceContent command={command}></ExperienceContent>
+				)}
+				{screenContent === "projects" && (
+					<ProjectsContent command={command}></ProjectsContent>
+				)}
+				{screenContent === "awards" && <AwardsContent command={command}></AwardsContent>}
 
-					<p> {">"} B.Eng. Computer Engineering Co-op @ Concordia University (2024)</p>
-					<p> {">"} Location: Montreal, Quebec. Canada</p>
-					<p> {">"} Specialized: software-dev, web-dev, IT, ml-nlp</p>
-					<p style={{ color: customTheme.palette.primary.main }}>Alma mater</p>
-					<p> {">"} ('17 - '20) Pure &amp; Applied Science @ John Abbott College, QC.</p>
-					<p> {">"} ('14 - '17) Phổ thông Năng khiếu. HCMC, Viet Nam</p>
-					<p style={{ color: customTheme.palette.primary.main }}>Tech stacks</p>
-					<p> {">"} Platforms: (x86) Windows, macOS, Linux (Debian-based, Kali, RHEL)</p>
-					<p> {">"} Cloud: AWS S3 + EC2, GCloud AE + CE + Bucket, AzureAD</p>
-					<p> {">"} Languages: C++, C, Python, R, Rust, JavaScript/JSX, HTML/CSS/Sass</p>
-					<p> {">"} ML: PyTorch, TensorFlow, conda+jupyter</p>
-					<p> {">"} Web: Apache2, Nginx, node, Django</p>
-					<p>
-						{" "}
-						{">"} Tools: git, Visual Studio, VS Code, terminal, bash/zsh/fish, MSFT
-						Office, RDP, Docker, WSL1/2
-					</p>
-					<p style={{ color: customTheme.palette.primary.main }}>Human Languages</p>
-					<p>
-						{" "}
-						{">"} Vietnamese (native), English (bilingual), French (CEFR B1), Japanese
-						(JLPT N5), German (casual)
-					</p>
-					<p style={{ color: customTheme.palette.primary.main }}>Hobbies</p>
-					<p>
-						{" "}
-						{">"} Building PCs, J-Pop, read/write light novels, gaming, guitar, dslr
-						photography
-					</p>
-					<p>
-						-----------------------------------------------------------------------------------
-					</p>
-					<p>
-						<span style={{ color: customTheme.palette.primary.main }}>
-							aaanh@hoanganhtech:
-						</span>
-						<span style={{ color: "#9f43fa" }}>~$</span>
-						{" " + command} <span className={classes.animatedCaret}></span>
-					</p>
-				</div>
-				<NavBar setCommand={setCommand}></NavBar>
+				<NavBar setCommand={setCommand} setContent={setContent}></NavBar>
 			</div>
 			<div className={classes.copyright}>Anh Hoang Nguyen (c) 2021</div>
 		</div>

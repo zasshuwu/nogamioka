@@ -110,28 +110,34 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function NavBar({ setCommand }) {
+export default function NavBar({ setCommand, setContent }) {
 	const [values, setValues] = useState({
 		showContact: false,
 		showExperience: false,
 		showAwards: false,
 		showProjects: false,
+		showMain: false,
 	});
 
 	// button handlers
 	const toHome = () => {
 		setCommand("cd ~/home/aaanh");
+		setContent("main");
+		setValues({ ...values, showMain: !values.showMain });
 	};
 	const handleContact = () => {
 		setCommand("contact");
+		setContent("contact");
 		setValues({ ...values, showContact: !values.showContact });
 	};
 	const handleExperience = () => {
 		setCommand("experience");
+		setContent("experience");
 		setValues({ ...values, showExperience: !values.showExperience });
 	};
 	const handleProjects = () => {
 		setCommand("projects");
+		setContent("projects");
 		setValues({ ...values, showProjects: !values.showProjects });
 	};
 	const handleGitHub = (e) => {
@@ -141,6 +147,7 @@ export default function NavBar({ setCommand }) {
 	};
 	const handleAwards = () => {
 		setCommand("awards");
+		setContent("awards");
 		setValues({ ...values, showAwards: !values.showAwards });
 	};
 
