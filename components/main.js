@@ -43,6 +43,12 @@ const useStyles = makeStyles((theme) => ({
 			fontFamily: "monospace",
 			color: "#ddd !important",
 		},
+		"& a": {
+			color: "#1691f0 !important",
+			"& :visited": {
+				color: "#1691f0 !important",
+			},
+		},
 	},
 	content: {
 		minWidth: "50%",
@@ -149,7 +155,7 @@ const MainContent = ({ command }) => {
 const ContactContent = ({ command }) => {
 	const classes = useStyles();
 	return (
-		<div style={{ margin: "1rem" }}>
+		<div style={{ margin: "1rem", wordBreak: "break-all" }}>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
 				<span style={{ color: "#9f43fa" }}>~$</span>
@@ -157,12 +163,18 @@ const ContactContent = ({ command }) => {
 			</p>
 			<p>
 				<img
-					style={{ height: "150px", borderRadius: "50%" }}
+					style={{ height: "100px", borderRadius: "50%" }}
 					src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
 				></img>
 			</p>
-			<p>{">"} Official email: hoanganh(dot)theodore(at)icloud(dot)com</p>
-			<p>{">"} Academic email: a(underscore)en201(at)encs(dot)concordia(dot)ca</p>
+			<p>{">"} Official email: </p>
+			<p>
+				{">"} <span style={{ color: "#fff" }}>hoanganh.theodore@icloud.com</span>
+			</p>
+			<p>{">"} Academic email: </p>
+			<p>
+				{">"} <span style={{ color: "#fff" }}>a_en201@encs.concordia.ca</span>
+			</p>
 			<p>
 				{">"} LinkedIn:{" "}
 				<a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>

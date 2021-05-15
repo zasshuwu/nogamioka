@@ -48,7 +48,7 @@ export default function Contact({ showContact, handleClose }) {
 					<h1 className={classes.dialogTitle}>contact | PID: 2501</h1>
 					<p>
 						<img
-							style={{ height: "150px", borderRadius: "50%" }}
+							style={{ height: "100px", borderRadius: "50%" }}
 							src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
 						></img>
 					</p>
