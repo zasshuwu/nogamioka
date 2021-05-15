@@ -359,7 +359,7 @@ export default function Main(props) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const [command, setCommand] = useState("cd ~/home/aaanh");
-	const [screenContent, setContent] = useState("experience");
+	const [screenContent, setContent] = useState("main");
 
 	return (
 		<div className={classes.root}>
