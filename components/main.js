@@ -121,8 +121,8 @@ const MainContent = ({ command }) => {
 				<p> {">"} Web: Apache2, Nginx, node, Django</p>
 				<p>
 					{" "}
-					{">"} Tools: git, Visual Studio, VS Code, terminal, bash/zsh/fish, MSFT Office,
-					RDP, Docker, WSL1/2
+					{">"} Tools: git, VS2019, VS Code, terminal, bash/zsh/fish, MSFT Office,
+					RDP, Docker, WSL1/2, VirtMan/qEMU/HyperV/Proxmox
 				</p>
 				<p style={{ color: customTheme.palette.primary.main }}>Human Languages</p>
 				<p>
