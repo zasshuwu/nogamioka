@@ -52,6 +52,11 @@ function createData(id, role, description) {
 }
 
 const rows = [
+	createData(
+		"dev blog",
+		"gatsby framework",
+		"A blog that helps me stay grounded by reflecting on my responsibilities."
+	),
 	createData("this website", "very proud", "react/nextjs, vercel, material-ui"),
 	createData("do-it (WIP)", "front-end dev", "a job board for vn"),
 	createData(
