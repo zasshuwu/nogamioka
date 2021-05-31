@@ -121,8 +121,8 @@ const MainContent = ({ command }) => {
 				<p> {">"} Web: Apache2, Nginx, node, Django</p>
 				<p>
 					{" "}
-					{">"} Tools: git, VS2019, VS Code, terminal, bash/zsh/fish, MSFT Office,
-					RDP, Docker, WSL1/2, VirtMan/qEMU/HyperV/Proxmox
+					{">"} Tools: git, VS2019, VS Code, terminal, bash/zsh/fish, MSFT Office, RDP,
+					Docker, WSL1/2, VirtMan/qEMU/HyperV/Proxmox
 				</p>
 				<p style={{ color: customTheme.palette.primary.main }}>Human Languages</p>
 				<p>
@@ -195,6 +195,11 @@ const ProjectsContent = ({ command }) => {
 	}
 
 	const rows = [
+		createData(
+			"dev blog",
+			"gatsby framework",
+			"A blog that helps me stay grounded by reflecting on my responsibilities."
+		),
 		createData("this website", "very proud", "react/nextjs, vercel, material-ui"),
 		createData("do-it (WIP)", "front-end dev", "a job board for vn"),
 		createData(

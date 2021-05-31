@@ -17,6 +17,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import WorkIcon from "@material-ui/icons/Work";
 import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import BeenhereIcon from "@material-ui/icons/Beenhere";
+import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
 
 // modals
 import Contact from "./contact";
@@ -102,6 +103,14 @@ const useStyles = makeStyles((theme) => ({
 			color: customTheme.palette.background.main,
 		},
 	},
+	customButtonBlog: {
+		color: "#fff",
+		borderColor: "#fff",
+		"&:hover": {
+			background: "#fff",
+			color: customTheme.palette.background.main,
+		},
+	},
 	BtnText: {
 		display: "none",
 		[theme.breakpoints.up("md")]: {
@@ -144,6 +153,11 @@ export default function NavBar({ setCommand, setContent }) {
 		e.preventDefault();
 		setCommand("github");
 		window.open("https://github.com/aaanh");
+	};
+	const handleBlog = (e) => {
+		e.preventDefault();
+		setCommand("blog");
+		window.open("https://dev.hoanganh.tech");
 	};
 	const handleAwards = () => {
 		setCommand("awards");
@@ -220,6 +234,14 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<GitHubIcon fontSize="small"></GitHubIcon>
 					<span className={classes.BtnText}>&nbsp; @aaanh</span>
+				</Button>
+				<Button
+					onClick={handleBlog}
+					variant="outlined"
+					className={classes.customButtonBlog}
+				>
+					<DeveloperModeIcon fontSize="small"></DeveloperModeIcon>
+					<span className={classes.BtnText}>&nbsp; Blog</span>
 				</Button>
 			</div>
 		</div>
