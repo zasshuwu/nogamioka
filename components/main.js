@@ -21,8 +21,10 @@ import NavBar from "./navbar";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
+		background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+		backgroundSize: "400% 400%",
+		animation: "gradient 15s ease infinite",
 		position: "relative",
-		background: customTheme.palette.background.main,
 		width: "100vw",
 		minHeight: "100vh",
 		display: "flex",
@@ -51,9 +53,10 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	content: {
+		background: customTheme.palette.background.main,
 		minWidth: "50%",
 		minHeight: "95%",
-		border: "solid 1px grey",
+		border: "none",
 		borderRadius: "8px",
 		position: "relative",
 		boxShadow: "3px 7px 15px 0px rgba(0,0,0,0.74)",
@@ -72,6 +75,17 @@ const useStyles = makeStyles((theme) => ({
 		wordBreak: "break-all",
 		color: "#ddd",
 		paddingBottom: "2rem",
+	},
+	"@keyframes gradient": {
+		"0%": {
+			backgroundPosition: "0% 50%",
+		},
+		"50%": {
+			backgroundPosition: "100% 50%",
+		},
+		"100%": {
+			backgroundPosition: "0% 50%",
+		},
 	},
 	animatedCaret: {
 		paddingRight: "5px",
