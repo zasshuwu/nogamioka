@@ -130,7 +130,7 @@ export default function NavBar({ setCommand, setContent }) {
 
 	// button handlers
 	const toHome = () => {
-		setCommand("cd ~/home/aaanh");
+		setCommand("cd /home/aaanh");
 		setContent("main");
 		setValues({ ...values, showMain: !values.showMain });
 	};
