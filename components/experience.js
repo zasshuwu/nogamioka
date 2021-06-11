@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: "200px",
 		minWidth: "300px",
 		padding: "1rem",
-		fontFamily: "Monospace",
+		fontFamily: "Roboto",
 		color: "#facc00",
 		"& a": {
 			color: "#1691f0 !important",
@@ -53,19 +53,24 @@ function createData(id, role, description) {
 
 const rows = [
 	createData(
-		"applied nlp (university)",
-		"undergrad research student",
-		"assist research progress by running and reporting models performance"
+		"Applied NLP (university)",
+		"Undergrad research student",
+		"Assist research progress by running and reporting models performance"
 	),
 	createData(
-		"aits (university)",
-		"service desk operator",
-		"tech support for utilizing university's IT, network, and account resources"
+		"AITS (university)",
+		"Service Desk Operator",
+		"Tech support for utilizing university's IT, network, and account resources"
 	),
 	createData(
-		"inertial sensing lab (islab.ca)",
-		"webmaster",
-		"machine learning on accelerometric data; build, deploy, maintain wiki "
+		"Inertial Sensing Lab (islab.ca)",
+		"Webmaster",
+		"machine learning on accelerometric data; build, deploy, maintain wiki"
+	),
+	createData(
+		"Mai Boat Service (maiboatservice.us)",
+		"Webmaster",
+		"Build and maintain website for a boat repair shop in Orlando, Fl."
 	),
 ];
 

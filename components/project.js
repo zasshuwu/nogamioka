@@ -54,20 +54,20 @@ function createData(id, role, description) {
 const rows = [
 	createData(
 		"dev blog",
-		"gatsby framework",
+		"gatsby + vercel",
 		"A blog that helps me stay grounded by reflecting on my responsibilities."
 	),
 	createData("this website", "very proud", "react/nextjs, vercel, material-ui"),
 	createData("do-it (WIP)", "front-end dev", "a job board for vn"),
 	createData(
-		"graph viz of panama papers",
-		"c++",
-		"apply graph theory, graph algo, c++ oop methodologies into the visualization task"
+		"Graph viz of Panama Papers",
+		"C++",
+		"Apply graph theory, graph algo, c++ oop methodologies into the visualization task"
 	),
 	createData("your-nutritionist (defunct)", "front-end dev", "a recipe-sharing social network"),
 	createData(
-		"maze-navigating vehicle",
-		"c++ (arduino)",
+		"Maze-navigating vehicle",
+		"C++ (arduino)",
 		"College engineering project. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno."
 	),
 	createData(

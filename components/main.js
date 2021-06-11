@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 		animation: "gradient 15s ease infinite",
 		position: "relative",
 		width: "100vw",
-		minHeight: "100vh",
+		minHeight: "120vh",
 		display: "flex",
 		margin: "0",
 		padding: "0",
@@ -109,6 +109,7 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("md")]: {
 			display: "none",
 		},
+		color: "#000"
 	},
 }));
 
