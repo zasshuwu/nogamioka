@@ -212,24 +212,20 @@ const ProjectsContent = ({ command }) => {
 	const rows = [
 		createData(
 			"dev blog",
-			"gatsby framework",
+			"gatsby + vercel",
 			"A blog that helps me stay grounded by reflecting on my responsibilities."
 		),
 		createData("this website", "very proud", "react/nextjs, vercel, material-ui"),
 		createData("do-it (WIP)", "front-end dev", "a job board for vn"),
 		createData(
-			"graph viz of panama papers",
-			"c++",
-			"apply graph theory, graph algo, c++ oop methodologies into the visualization task"
+			"Graph viz of Panama Papers",
+			"C++",
+			"Apply graph theory, graph algo, c++ oop methodologies into the visualization task"
 		),
+		createData("your-nutritionist (defunct)", "front-end dev", "a recipe-sharing social network"),
 		createData(
-			"your-nutritionist (defunct)",
-			"front-end dev",
-			"a recipe-sharing social network"
-		),
-		createData(
-			"maze-navigating vehicle",
-			"c++ (arduino)",
+			"Maze-navigating vehicle",
+			"C++ (arduino)",
 			"College engineering project. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno."
 		),
 		createData(
@@ -283,19 +279,24 @@ const ExperienceContent = ({ command }) => {
 	}
 	const rows = [
 		createData(
-			"applied nlp (university)",
-			"undergrad research student",
-			"assist research progress by running and reporting models performance"
+			"Applied NLP (university)",
+			"Undergrad research student",
+			"Assist research progress by running and reporting models performance"
 		),
 		createData(
-			"aits (university)",
-			"service desk operator",
-			"tech support for utilizing university's IT, network, and account resources"
+			"AITS (university)",
+			"Service Desk Operator",
+			"Tech support for utilizing university's IT, network, and account resources"
 		),
 		createData(
-			"inertial sensing lab (islab.ca)",
-			"webmaster",
-			"machine learning on accelerometric data; build, deploy, maintain wiki "
+			"Inertial Sensing Lab (islab.ca)",
+			"Webmaster",
+			"machine learning on accelerometric data; build, deploy, maintain wiki"
+		),
+		createData(
+			"Mai Boat Service (maiboatservice.us)",
+			"Webmaster",
+			"Build and maintain website for a boat repair shop in Orlando, Fl."
 		),
 	];
 	return (
