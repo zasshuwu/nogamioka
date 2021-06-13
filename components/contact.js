@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: "200px",
 		minWidth: "300px",
 		padding: "1rem",
-		fontFamily: "Roboto",
+		fontFamily: "Roboto Sans, sans-serif",
 		color: customTheme.palette.primary.main,
 		"& a": {
 			color: "#1691f0 !important",
