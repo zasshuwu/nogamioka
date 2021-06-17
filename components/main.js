@@ -25,8 +25,11 @@ const useStyles = makeStyles((theme) => ({
 		backgroundSize: "400% 400%",
 		animation: "gradient 15s ease infinite",
 		position: "relative",
-		width: "100vw",
-		minHeight: "120vh",
+		width: "100%",
+		minHeight: "100vh",
+		[theme.breakpoints.down("sm")]: {
+			minHeight: "120vh",
+		},
 		display: "flex",
 		margin: "0",
 		padding: "0",
@@ -109,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("md")]: {
 			display: "none",
 		},
-		color: "#000"
+		color: "#000",
 	},
 }));
 
@@ -222,7 +225,11 @@ const ProjectsContent = ({ command }) => {
 			"C++",
 			"Apply graph theory, graph algo, c++ oop methodologies into the visualization task"
 		),
-		createData("your-nutritionist (defunct)", "front-end dev", "a recipe-sharing social network"),
+		createData(
+			"your-nutritionist (defunct)",
+			"front-end dev",
+			"a recipe-sharing social network"
+		),
 		createData(
 			"Maze-navigating vehicle",
 			"C++ (arduino)",

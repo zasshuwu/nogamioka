@@ -7,8 +7,11 @@ function MyApp({ Component, pageProps }) {
 			<Head>
 				<title>Hoang Anh Tech</title>
 				<meta property="og:title" content="Hoang Anh Tech" key="title" />
-				<link rel="preconnect" href="https://fonts.gstatic.com"/>
-				<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"/>
+				<link rel="preconnect" href="https://fonts.gstatic.com" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+					rel="stylesheet"
+				/>
 			</Head>
 			<style global jsx>
 				{`
