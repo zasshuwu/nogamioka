@@ -52,7 +52,7 @@ export default function Contact({ showContact, handleClose }) {
 							src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
 						></img>
 					</p>
-					<p>{">"} Official email: hoanganh.theodore@icloud.com</p>
+					<p>{">"} Official email: iam@hoanganh.tech</p>
 					<p>{">"} Academic email: a_en201@encs.concordia.ca</p>
 					<p>
 						{">"} LinkedIn:{" "}

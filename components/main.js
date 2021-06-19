@@ -159,7 +159,7 @@ const MainContent = ({ command }) => {
 				</p>
 				<p>
 					<span style={{ color: customTheme.palette.primary.main }}>
-						aaanh@hoanganhtech:
+						aaanh@hoanganhtech
 					</span>
 					<span style={{ color: "#9f43fa" }}>~$</span>
 					{" " + command}
@@ -187,7 +187,7 @@ const ContactContent = ({ command }) => {
 			</p>
 			<p>{">"} Official email: </p>
 			<p>
-				{">"} <span style={{ color: "#fff" }}>hoanganh.theodore@icloud.com</span>
+				{">"} <span style={{ color: "#fff" }}>iam@hoanganh.tech</span>
 			</p>
 			<p>{">"} Academic email: </p>
 			<p>
