@@ -18,6 +18,8 @@ import WorkIcon from "@material-ui/icons/Work";
 import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import BeenhereIcon from "@material-ui/icons/Beenhere";
 import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
+import VpnLock from "@material-ui/icons/VpnLock";
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 
 // modals
 import Contact from "./contact";
@@ -111,6 +113,22 @@ const useStyles = makeStyles((theme) => ({
 			color: customTheme.palette.background.main,
 		},
 	},
+	customButtonVpn: {
+		color: "#fff",
+		borderColor: "#fff",
+		"&:hover": {
+			background: "#fff",
+			color: customTheme.palette.background.main,
+		},
+	},
+	customButtonRDP: {
+		color: "#fff",
+		borderColor: "#fff",
+		"&:hover": {
+			background: "#fff",
+			color: customTheme.palette.background.main,
+		},
+	},
 	BtnText: {
 		display: "none",
 		[theme.breakpoints.up("md")]: {
@@ -158,6 +176,16 @@ export default function NavBar({ setCommand, setContent }) {
 		e.preventDefault();
 		setCommand("blog");
 		window.open("https://dev.hoanganh.tech");
+	};
+	const handleVpn = (e) => {
+		e.preventDefault();
+		setCommand("vpn");
+		window.open("https://vpn.hoanganh.tech");
+	};
+	const handleRDP = (e) => {
+		e.preventDefault();
+		setCommand("rdp");
+		window.open("/windows.hoanganh.tech.rdp");
 	};
 	const handleAwards = () => {
 		setCommand("awards");
@@ -242,6 +270,22 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<DeveloperModeIcon fontSize="small"></DeveloperModeIcon>
 					<span className={classes.BtnText}>&nbsp; Blog</span>
+				</Button>
+				<Button
+					onClick={handleVpn}
+					variant="outlined"
+					className={classes.customButtonVpn}
+				>
+					<VpnLock fontSize="small"></VpnLock>
+					<span className={classes.BtnText}>&nbsp; VPN</span>
+				</Button>
+				<Button
+					onClick={handleRDP}
+					variant="outlined"
+					className={classes.customButtonRDP}
+				>
+					<DesktopWindowsIcon fontSize="small"></DesktopWindowsIcon>
+					<span className={classes.BtnText}>&nbsp; RDP</span>
 				</Button>
 			</div>
 		</div>
