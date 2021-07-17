@@ -39,6 +39,9 @@ export default function Terminal() {
                         This is a major work in progress
                     </h1>
                 </Typography>
+                <Typography>
+                    <h5><a href="/">return to home</a></h5>
+                </Typography>
             </div>
             <div className={classes.terminalBody}>
                 <DynamicTerminal />

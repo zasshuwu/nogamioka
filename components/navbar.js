@@ -129,6 +129,14 @@ const useStyles = makeStyles((theme) => ({
 			color: customTheme.palette.background.main,
 		},
 	},
+	customButtonXterm: {
+		color: "#fff",
+		borderColor: "#fff",
+		"&:hover": {
+			background: "#fff",
+			color: customTheme.palette.background.main,
+		},
+	},
 	BtnText: {
 		display: "none",
 		[theme.breakpoints.up("md")]: {
@@ -166,6 +174,11 @@ export default function NavBar({ setCommand, setContent }) {
 		setCommand("projects");
 		setContent("projects");
 		setValues({ ...values, showProjects: !values.showProjects });
+	};
+	const handleXterm = (e) => {
+		e.preventDefault();
+		setCommand("xterm");
+		window.open("/terminal");
 	};
 	const handleGitHub = (e) => {
 		e.preventDefault();
@@ -251,8 +264,26 @@ export default function NavBar({ setCommand, setContent }) {
 					variant="outlined"
 					className={classes.customButtonAwards}
 				>
+					<span className={classes.BtnText}>&nbsp; xterm</span>
+				</Button>
+
+				<Button
+					size="small"
+					onClick={handleAwards}
+					variant="outlined"
+					className={classes.customButtonAwards}
+				>
 					<BeenhereIcon fontSize="small"></BeenhereIcon>
 					<span className={classes.BtnText}>&nbsp; Awards</span>
+				</Button>
+
+				<Button
+					size="small"
+					onClick={handleXterm}
+					variant="outlined"
+					className={classes.customButtonXterm}
+				>
+					<span className={classes.BtnText}>&nbsp; xterm</span>
 				</Button>
 
 				<Button
@@ -271,7 +302,7 @@ export default function NavBar({ setCommand, setContent }) {
 					<DeveloperModeIcon fontSize="small"></DeveloperModeIcon>
 					<span className={classes.BtnText}>&nbsp; Blog</span>
 				</Button>
-				<Button
+				{/* <Button
 					onClick={handleVpn}
 					variant="outlined"
 					className={classes.customButtonVpn}
@@ -286,7 +317,7 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<DesktopWindowsIcon fontSize="small"></DesktopWindowsIcon>
 					<span className={classes.BtnText}>&nbsp; RDP</span>
-				</Button>
+				</Button> */}
 			</div>
 		</div>
 	);
