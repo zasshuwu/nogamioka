@@ -264,15 +264,6 @@ export default function NavBar({ setCommand, setContent }) {
 					variant="outlined"
 					className={classes.customButtonAwards}
 				>
-					<span className={classes.BtnText}>&nbsp; xterm</span>
-				</Button>
-
-				<Button
-					size="small"
-					onClick={handleAwards}
-					variant="outlined"
-					className={classes.customButtonAwards}
-				>
 					<BeenhereIcon fontSize="small"></BeenhereIcon>
 					<span className={classes.BtnText}>&nbsp; Awards</span>
 				</Button>
