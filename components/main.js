@@ -270,6 +270,14 @@ const ProjectsContent = ({ command }) => {
 					</TableBody>
 				</Table>
 			</TableContainer>
+			<Typography>
+				<p>Others:</p>
+				<ul>
+					<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
+					<li>Deploy VPN server with NAT routing to access geo-locked content and hardened RDP</li>
+					<li>Setup private e-mail service for this domain name</li>
+				</ul>
+			</Typography>
 			<br></br>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
