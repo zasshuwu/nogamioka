@@ -18,6 +18,7 @@ import TableRow from "@material-ui/core/TableRow";
 
 // components
 import NavBar from "./navbar";
+import Head from "next/head";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -120,6 +121,19 @@ const MainContent = ({ command }) => {
 	const classes = useStyles();
 	return (
 		<>
+			<Head>
+				<meta property="og:title" content="Hoang Anh Tech" key="title" />
+				<meta
+					property="og:description"
+					content="Hoang Anh's portfolio site, also where web frameworks are experimentally incorporated."
+					key="description"
+				></meta>
+				<meta
+					property="og:image"
+					content="https://hoanganh.tech/apple-touch-icon.png"
+					key="image"
+				></meta>
+			</Head>
 			<div className={classes.message}>
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
@@ -274,7 +288,10 @@ const ProjectsContent = ({ command }) => {
 				<p>Others:</p>
 				<ul>
 					<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
-					<li>Deploy VPN server with NAT routing to access geo-locked content and hardened RDP</li>
+					<li>
+						Deploy VPN server with NAT routing to access geo-locked content and hardened
+						RDP
+					</li>
 					<li>Setup private e-mail service for this domain name</li>
 				</ul>
 			</Typography>
