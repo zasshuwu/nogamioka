@@ -20,6 +20,7 @@ import BeenhereIcon from "@material-ui/icons/Beenhere";
 import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
 import VpnLock from "@material-ui/icons/VpnLock";
 import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import LaptopIcon from '@material-ui/icons/Laptop';
 
 // modals
 import Contact from "./contact";
@@ -274,6 +275,7 @@ export default function NavBar({ setCommand, setContent }) {
 					variant="outlined"
 					className={classes.customButtonXterm}
 				>
+					<LaptopIcon fontSize="small"></LaptopIcon>
 					<span className={classes.BtnText}>&nbsp; xterm</span>
 				</Button>
 
