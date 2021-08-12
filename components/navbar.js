@@ -106,11 +106,11 @@ const useStyles = makeStyles((theme) => ({
 			color: customTheme.palette.background.main,
 		},
 	},
-	customButtonBlog: {
-		color: "#fff",
-		borderColor: "#fff",
+	customButtonLinux: {
+		color: "#0077BB",
+		borderColor: "#0077BB",
 		"&:hover": {
-			background: "#fff",
+			background: "#0077BB",
 			color: customTheme.palette.background.main,
 		},
 	},
@@ -131,10 +131,10 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	customButtonXterm: {
-		color: "#fff",
-		borderColor: "#fff",
+		color: "#E95420",
+		borderColor: "#E95420",
 		"&:hover": {
-			background: "#fff",
+			background: "#E95420",
 			color: customTheme.palette.background.main,
 		},
 	},
@@ -186,10 +186,10 @@ export default function NavBar({ setCommand, setContent }) {
 		setCommand("github");
 		window.open("https://github.com/aaanh");
 	};
-	const handleBlog = (e) => {
+	const handleLinux = (e) => {
 		e.preventDefault();
-		setCommand("blog");
-		window.open("https://dev.hoanganh.tech");
+		setCommand("linux");
+		window.open("https://linux.hoanganh.tech");
 	};
 	const handleVpn = (e) => {
 		e.preventDefault();
@@ -288,12 +288,12 @@ export default function NavBar({ setCommand, setContent }) {
 					<span className={classes.BtnText}>&nbsp; @aaanh</span>
 				</Button>
 				<Button
-					onClick={handleBlog}
+					onClick={handleLinux}
 					variant="outlined"
-					className={classes.customButtonBlog}
+					className={classes.customButtonLinux}
 				>
 					<DeveloperModeIcon fontSize="small"></DeveloperModeIcon>
-					<span className={classes.BtnText}>&nbsp; Blog</span>
+					<span className={classes.BtnText}>&nbsp; Linux</span>
 				</Button>
 				{/* <Button
 					onClick={handleVpn}
