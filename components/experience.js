@@ -96,13 +96,13 @@ export default function Experience({ showExperience, handleClose }) {
 								</TableRow>
 							</TableHead>
 							<TableBody>
-								{experienceRows.map((row) => (
-									<TableRow key={row.name}>
+								{experienceRows.map((experienceRow) => (
+									<TableRow key={experienceRow.name}>
 										<TableCell component="th" scope="row">
-											{row.id}
+											{experienceRow.id}
 										</TableCell>
-										<TableCell>{row.role}</TableCell>
-										<TableCell>{row.description}</TableCell>
+										<TableCell>{experienceRow.role}</TableCell>
+										<TableCell>{experienceRow.description}</TableCell>
 									</TableRow>
 								))}
 							</TableBody>
