@@ -19,6 +19,7 @@ import TableRow from "@material-ui/core/TableRow";
 // components
 import NavBar from "./navbar";
 import Head from "next/head";
+import { ArrowDownward, Close, Crop32 } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -38,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: "center",
 		alignItems: "center",
 		"& > *": {
-			fontFamily: "Source Code Pro",
+			fontFamily: "Fira Code",
 			lineHeight: "1rem",
 		},
 		fontSize: "12pt",
@@ -107,14 +108,32 @@ const useStyles = makeStyles((theme) => ({
 			borderRight: "solid 5px #fff",
 		},
 	},
-	copyright: {
-		position: "absolute",
-		bottom: "2%",
-		[theme.breakpoints.down("md")]: {
-			display: "none",
-		},
-		color: "#000",
+	headerNav: {
+		listStyleType: "none",
+		padding: 0,
+		margin: 0,
+		display: 'flex',
+		flexDirection: 'row',
 	},
+	headNavIcons: {
+		padding: "4px",
+		margin: "4px",
+		background: "transparent",
+		borderRadius: "1rem",
+		transition: "500ms ease",
+		"&:hover": {
+			background: "#333333",
+			transition: "500ms ease"
+		}
+	}
+	// copyright: {
+	// 	position: "absolute",
+	// 	bottom: "2%",
+	// 	[theme.breakpoints.down("md")]: {
+	// 		display: "none",
+	// 	},
+	// 	color: "#000",
+	// },
 }));
 
 const MainContent = ({ command }) => {
@@ -226,7 +245,7 @@ const ProjectsContent = ({ command }) => {
 		return { id, role, description };
 	}
 
-	const rows = [
+	const projectRows = [
 		createData(
 			"dev blog",
 			"gatsby + vercel",
@@ -272,19 +291,19 @@ const ProjectsContent = ({ command }) => {
 						</TableRow>
 					</TableHead>
 					<TableBody>
-						{rows.map((row) => (
-							<TableRow key={row.name}>
+						{projectRows.map((projectRow) => (
+							<TableRow key={projectRow.name}>
 								<TableCell component="th" scope="row">
-									{row.id}
+									{projectRow.id}
 								</TableCell>
-								<TableCell>{row.role}</TableCell>
-								<TableCell>{row.description}</TableCell>
+								<TableCell>{projectRow.role}</TableCell>
+								<TableCell>{projectRow.description}</TableCell>
 							</TableRow>
 						))}
 					</TableBody>
 				</Table>
 			</TableContainer>
-			<Typography>
+			<Typography style={{fontFamily: "Fira Code", color: "#00ddff"}}>
 				<p>Others:</p>
 				<ul>
 					<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
@@ -309,7 +328,7 @@ const ExperienceContent = ({ command }) => {
 	function createData(id, role, description) {
 		return { id, role, description };
 	}
-	const rows = [
+	const experienceRows = [
 		createData(
 			"Applied NLP (university)",
 			"Undergrad research student",
@@ -348,13 +367,13 @@ const ExperienceContent = ({ command }) => {
 						</TableRow>
 					</TableHead>
 					<TableBody>
-						{rows.map((row) => (
-							<TableRow key={row.name}>
+						{experienceRows.map((experienceRow) => (
+							<TableRow key={experienceRow.name}>
 								<TableCell component="th" scope="row">
-									{row.id}
+									{experienceRow.id}
 								</TableCell>
-								<TableCell>{row.role}</TableCell>
-								<TableCell>{row.description}</TableCell>
+								<TableCell>{experienceRow.role}</TableCell>
+								<TableCell>{experienceRow.description}</TableCell>
 							</TableRow>
 						))}
 					</TableBody>
@@ -375,7 +394,7 @@ const AwardsContent = ({ command }) => {
 		return { id, role, description };
 	}
 
-	const rows = [
+	const awardRows = [
 		createData(
 			"FRQNT Stipend Recipient",
 			"October, 2020",
@@ -399,13 +418,13 @@ const AwardsContent = ({ command }) => {
 						</TableRow>
 					</TableHead>
 					<TableBody>
-						{rows.map((row) => (
-							<TableRow key={row.name}>
+						{awardRows.map((awardRow) => (
+							<TableRow key={awardRow.name}>
 								<TableCell component="th" scope="row">
-									{row.id}
+									{awardRow.id}
 								</TableCell>
-								<TableCell>{row.role}</TableCell>
-								<TableCell>{row.description}</TableCell>
+								<TableCell>{awardRow.role}</TableCell>
+								<TableCell>{awardRow.description}</TableCell>
 							</TableRow>
 						))}
 					</TableBody>
@@ -429,7 +448,24 @@ export default function Main(props) {
 	return (
 		<div className={classes.root}>
 			<div className={classes.content}>
-				<div className={classes.tab}> {">"} HATerm&nbsp;&nbsp;&nbsp;&nbsp;X</div>
+				<div style={{ width: "100%", height: "3rem" }}>
+					<ul className={classes.headerNav}>
+						<li>
+							<div className={classes.tab}> {">"}
+								&nbsp;HATerm&nbsp;&nbsp;&nbsp;&nbsp;X
+							</div>
+						</li>
+						
+						<li style={{ marginLeft: "auto", padding: "1rem" }}>
+							<ArrowDownward className={classes.headNavIcons}></ArrowDownward>
+							<Crop32 className={classes.headNavIcons}></Crop32>
+							<Close className={classes.headNavIcons} onClick={(e) => {
+								e.preventDefault();
+								window.location.replace("/");
+							}}></Close>
+						</li>
+					</ul>
+				</div>
 				{screenContent === "main" && <MainContent command={command}></MainContent>}
 				{screenContent === "contact" && <ContactContent command={command}></ContactContent>}
 				{screenContent === "experience" && (
@@ -442,7 +478,7 @@ export default function Main(props) {
 
 				<NavBar setCommand={setCommand} setContent={setContent}></NavBar>
 			</div>
-			<div className={classes.copyright}>Anh Hoang Nguyen (c) 2021</div>
+			{/* <div className={classes.copyright}>Anh Hoang Nguyen (c) 2021</div> */}
 		</div>
 	);
 }

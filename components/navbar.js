@@ -159,22 +159,27 @@ export default function NavBar({ setCommand, setContent }) {
 	const toHome = () => {
 		setCommand("cd /home/aaanh");
 		setContent("main");
-		setValues({ ...values, showMain: !values.showMain });
+		// setValues({ ...values, showMain: !values.showMain });
 	};
 	const handleContact = () => {
 		setCommand("contact");
 		setContent("contact");
-		setValues({ ...values, showContact: !values.showContact });
+		// setValues({ ...values, showContact: !values.showContact });
 	};
 	const handleExperience = () => {
 		setCommand("experience");
 		setContent("experience");
-		setValues({ ...values, showExperience: !values.showExperience });
+		// setValues({ ...values, showExperience: !values.showExperience });
+	};
+	const handleAwards = () => {
+		setCommand("awards");
+		setContent("awards");
+		// setValues({ ...values, showAwards: !values.showAwards });
 	};
 	const handleProjects = () => {
 		setCommand("projects");
 		setContent("projects");
-		setValues({ ...values, showProjects: !values.showProjects });
+		// setValues({ ...values, showProjects: !values.showProjects });
 	};
 	const handleXterm = (e) => {
 		e.preventDefault();
@@ -200,11 +205,6 @@ export default function NavBar({ setCommand, setContent }) {
 		e.preventDefault();
 		setCommand("rdp");
 		window.open("/windows.hoanganh.tech.rdp");
-	};
-	const handleAwards = () => {
-		setCommand("awards");
-		setContent("awards");
-		setValues({ ...values, showAwards: !values.showAwards });
 	};
 
 	const classes = useStyles();

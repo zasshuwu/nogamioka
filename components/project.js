@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: "200px",
 		minWidth: "300px",
 		padding: "1rem",
-		fontFamily: "Roboto Sans, sans-serif",
+		fontFamily: "Source Code Pro, monospace",
 		color: "#00ddff",
 		"& a": {
 			color: "#1691f0 !important",

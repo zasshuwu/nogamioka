@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: "200px",
 		minWidth: "300px",
 		padding: "1rem",
-		fontFamily: "Roboto Sans, sans-serif",
+		fontFamily: "Source Code Pro, monospace",
 		color: "#facc00",
 		"& a": {
 			color: "#1691f0 !important",
@@ -51,7 +51,7 @@ function createData(id, role, description) {
 	return { id, role, description };
 }
 
-const rows = [
+const experienceRows = [
 	createData(
 		"Applied NLP (university)",
 		"Undergrad research student",
@@ -96,7 +96,7 @@ export default function Experience({ showExperience, handleClose }) {
 								</TableRow>
 							</TableHead>
 							<TableBody>
-								{rows.map((row) => (
+								{experienceRows.map((row) => (
 									<TableRow key={row.name}>
 										<TableCell component="th" scope="row">
 											{row.id}

@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 			background: customTheme.palette.background.main,
 		},
 		"& .MuiTableCell-root": {
-			fontFamily: "Roboto Sans, sans-serif",
+			fontFamily: "Source Code Pro, monospace",
 			color: "#ddd !important",
 		},
 	},
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: "200px",
 		minWidth: "300px",
 		padding: "1rem",
-		fontFamily: "Roboto",
+		fontFamily: "Source Code Pro",
 		color: "#f53652",
 		"& a": {
 			color: "#1691f0 !important",
