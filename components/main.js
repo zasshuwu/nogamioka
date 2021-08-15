@@ -461,7 +461,7 @@ export default function Main(props) {
 							<Crop32 className={classes.headNavIcons}></Crop32>
 							<Close className={classes.headNavIcons} onClick={(e) => {
 								e.preventDefault();
-								window.location.replace("/");
+								window.location.replace("/empty");
 							}}></Close>
 						</li>
 					</ul>
