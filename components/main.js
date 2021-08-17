@@ -176,7 +176,7 @@ const MainContent = ({ command }) => {
 					<br></br>
 					<br></br>
 
-					<p>Last login: { d.toString() } from { Navigator.platform } </p>
+					<p>Last login: { d.toString() }</p>
 				</code>
 
 				<p>
