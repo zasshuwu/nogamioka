@@ -167,7 +167,7 @@ const MainContent = ({ command }) => {
 					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus) 😉
 				</h1>
 
-				<code style={{ wordBreak: "break-all" }}>
+				<code>
 					<br></br>
 					
 					<p style={{wordBreak: "break-all"}}>* <span style={{color: "#00ddff"}}>Documentation:</span> <a href="https://github.com/aaanh/main-site-src">https://github.com/aaanh/main-site-src</a></p>
