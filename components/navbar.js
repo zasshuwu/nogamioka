@@ -269,7 +269,7 @@ export default function NavBar({ setCommand, setContent }) {
 					<span className={classes.BtnText}>&nbsp; Awards</span>
 				</Button>
 
-				<Button
+				{/* <Button
 					size="small"
 					onClick={handleXterm}
 					variant="outlined"
@@ -277,7 +277,7 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<LaptopIcon fontSize="small"></LaptopIcon>
 					<span className={classes.BtnText}>&nbsp; xterm</span>
-				</Button>
+				</Button> */}
 
 				<Button
 					onClick={handleGitHub}
