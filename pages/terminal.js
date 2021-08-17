@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic'
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from '@material-ui/core'
 import clsx from "clsx";
-import Footer from '../components/footer'
 
 const DynamicTerminal = dynamic(() => import("../components/terminal"), {
     ssr: false
