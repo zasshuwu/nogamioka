@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 			fontFamily: "Fira Code",
 			lineHeight: "1rem",
 		},
-		fontSize: "12pt",
+		fontSize: "11pt",
 		"& .MuiPaper-root": {
 			background: customTheme.palette.background.main,
 		},
@@ -51,7 +51,12 @@ const useStyles = makeStyles((theme) => ({
 			color: "#ddd !important",
 		},
 		"& a": {
-			color: "#1691f0 !important",
+			color: "#4ea8ed !important",
+			textDecoration: "none",
+			"&:hover": {
+				textDecoration: "underline",
+				textDecorationThickness: "0.1rem"
+			},
 			"& :visited": {
 				color: "#1691f0 !important",
 			},
@@ -138,6 +143,7 @@ const useStyles = makeStyles((theme) => ({
 
 const MainContent = ({ command }) => {
 	const classes = useStyles();
+	let d = new Date();
 	return (
 		<>
 			<Head>
@@ -155,41 +161,24 @@ const MainContent = ({ command }) => {
 			</Head>
 			<div className={classes.message}>
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
-					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus)
+					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus) 😉
 				</h1>
 
-				<p> {">"} B.Eng. Computer Engineering Co-op @ Concordia University (2024)</p>
-				<p> {">"} Location: Montreal, Quebec. Canada</p>
-				<p> {">"} Specialized: software-dev, web-dev, IT, ml-nlp</p>
-				<p style={{ color: customTheme.palette.primary.main }}>Alma mater</p>
-				<p> {">"} ('17 - '20) Pure &amp; Applied Science @ John Abbott College, QC.</p>
-				<p> {">"} ('14 - '17) Phổ thông Năng khiếu. HCMC, Viet Nam</p>
-				<p style={{ color: customTheme.palette.primary.main }}>Tech stacks</p>
-				<p> {">"} Platforms: (x86) Windows, macOS, Linux (Debian-based, Kali, RHEL)</p>
-				<p> {">"} Cloud: AWS S3 + EC2, GCloud AE + CE + Bucket, AzureAD</p>
-				<p> {">"} Languages: C++, C, Python, R, Rust, JavaScript/JSX, HTML/CSS/Sass</p>
-				<p> {">"} ML: PyTorch, TensorFlow, conda+jupyter</p>
-				<p> {">"} Web: Apache2, Nginx, node, Django</p>
-				<p>
-					{" "}
-					{">"} Tools: git, VS2019, VS Code, terminal, bash/zsh/fish, MSFT Office, RDP,
-					Docker, WSL1/2, VirtMan/qEMU/HyperV/Proxmox
-				</p>
-				<p style={{ color: customTheme.palette.primary.main }}>Human Languages</p>
-				<p>
-					{" "}
-					{">"} Vietnamese (native), English (bilingual), French (CEFR B1), Japanese (JLPT
-					N5), German (casual)
-				</p>
-				<p style={{ color: customTheme.palette.primary.main }}>Hobbies</p>
-				<p>
-					{" "}
-					{">"} Building PCs, J-Pop, read/write light novels, gaming, guitar, dslr
-					photography
-				</p>
-				<p>
-					-----------------------------------------------------------------------------------
-				</p>
+				<code style={{ wordBreak: "break-all" }}>
+					<br></br>
+					<br></br>
+					<p>* Documentation:	<a href="https://github.com/aaanh/main-site-src">https://github.com/aaanh/main-site-src</a></p>
+					<p>* Status: Studying to become a Computer Engineer</p>
+					<p>* Institution: Concordia University, Montreal, QC. Canada</p>
+					<p style={{maxWidth: "60%", wordBreak:"break-word"}}>* Specialization: Full-stack Webdev, ML in Motion Detection &amp; NLP, Linux/Windows Server Admin, Orchestration, Network Admin, Computer Hardware, </p>
+					<p>69 updates can be applied immediately.</p>
+					<p>To see these additional updates run: apt list --upgrade</p>
+					<br></br>
+					<br></br>
+
+					<p>Last login: { d.toString() } from { navigator.platform } </p>
+				</code>
+
 				<p>
 					<span style={{ color: customTheme.palette.primary.main }}>
 						aaanh@hoanganhtech
