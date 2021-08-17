@@ -23,14 +23,13 @@ import { ArrowDownward, Close, Crop32 } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		backgroundColor: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+		// backgroundColor: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
 		backgroundImage: svgBackground,
 		// backgroundSize: "400% 400%",
 		animation: "gradient 15s ease infinite",
 		position: "relative",
 		width: "100%",
 		minHeight: "100vh",
-		
 		display: "flex",
 		margin: "0",
 		padding: "0",
@@ -72,6 +71,7 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			borderRadius: 0,
 			opacity: '0.8',
+			minHeight: '100vh'
 		},
 	},
 	tab: {
