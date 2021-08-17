@@ -30,9 +30,7 @@ const useStyles = makeStyles((theme) => ({
 		position: "relative",
 		width: "100%",
 		minHeight: "100vh",
-		[theme.breakpoints.down("sm")]: {
-			minHeight: "120vh",
-		},
+		
 		display: "flex",
 		margin: "0",
 		padding: "0",
@@ -71,6 +69,10 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: "8px",
 		position: "relative",
 		boxShadow: "3px 7px 15px 0px rgba(0,0,0,0.74)",
+		[theme.breakpoints.down("sm")]: {
+			borderRadius: 0,
+			opacity: '0.8',
+		},
 	},
 	tab: {
 		margin: "0",
@@ -207,17 +209,20 @@ const ContactContent = ({ command }) => {
 					src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
 				></img>
 			</p>
-			<p>{">"} Official email: </p>
+			<p>* All inquiries: </p>
 			<p>
-				{">"} <span style={{ color: "#fff" }}>iam@hoanganh.tech</span>
+				* <span style={{ color: "#fff" }}>iam@hoanganh.tech</span>
 			</p>
-			<p>{">"} Academic email: </p>
+			<p>* Academic email: </p>
 			<p>
-				{">"} <span style={{ color: "#fff" }}>a_en201@encs.concordia.ca</span>
+				* <span style={{ color: "#fff" }}>a_en201@encs.concordia.ca</span>
 			</p>
 			<p>
-				{">"} LinkedIn:{" "}
-				<a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
+				* LinkedIn:{" "}
+			</p>
+			<p>
+				* <a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
+
 			</p>
 			<br></br>
 			<p>
