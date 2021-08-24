@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 		boxShadow: "3px 7px 15px 0px rgba(0,0,0,0.74)",
 		[theme.breakpoints.down("sm")]: {
 			borderRadius: 0,
-			opacity: '0.8',
+			opacity: '0.9',
 			minHeight: '100vh'
 		},
 	},
@@ -133,15 +133,45 @@ const useStyles = makeStyles((theme) => ({
 			background: "#333333",
 			transition: "500ms ease"
 		}
+	},
+	experience: {
+		display: 'flex',
+		flexDirection: 'column',
+		"& p": {
+			color: "#ddd"
+		},
+		maxWidth: "70vw",
+		[theme.breakpoints.down("sm")]: {
+			maxWidth: "100vw",
+			maxHeight: "100vh"
+		},
+		maxHeight: "70vh",
+		overflowY: "scroll",
+	},
+	experienceEntry: {
+		margin: "1rem",
+		marginLeft: "0",
+		// minHeight: '200px',
+		alignItems: 'center',
+		paddingRight: '1rem'
+	},
+	experienceText: {
+		display: 'flex',
+		flexDirection: 'column',
+		maxWidth: "90%",
+		[theme.breakpoints.down("sm")]: {
+			maxWidth: "100vw"
+		}
+	},
+	experienceDemo: {
+		[theme.breakpoints.down("sm")]: {
+			display: 'none'
+		},
+		"& img": {
+			maxWidth: "100%",
+			maxHeight: "600px",
+		}
 	}
-	// copyright: {
-	// 	position: "absolute",
-	// 	bottom: "2%",
-	// 	[theme.breakpoints.down("md")]: {
-	// 		display: "none",
-	// 	},
-	// 	color: "#000",
-	// },
 }));
 
 const MainContent = ({ command }) => {
@@ -322,28 +352,7 @@ const ExperienceContent = ({ command }) => {
 	function createData(id, role, description) {
 		return { id, role, description };
 	}
-	const experienceRows = [
-		createData(
-			"Applied NLP (university)",
-			"Undergrad research student",
-			"Assist research progress by running and reporting models performance"
-		),
-		createData(
-			"AITS (university)",
-			"Service Desk Operator",
-			"Tech support for utilizing university's IT, network, and account resources"
-		),
-		createData(
-			"Inertial Sensing Lab (islab.ca)",
-			"Webmaster",
-			"machine learning on accelerometric data; build, deploy, maintain wiki"
-		),
-		createData(
-			"Mai Boat Service (maiboatservice.us)",
-			"Webmaster",
-			"Build and maintain website for a boat repair shop in Orlando, Fl."
-		),
-	];
+	
 	return (
 		<div style={{ margin: "1rem" }}>
 			<p>
@@ -351,28 +360,46 @@ const ExperienceContent = ({ command }) => {
 				<span style={{ color: "#9f43fa" }}>~$</span>
 				{" " + command}
 			</p>
-			<TableContainer>
-				<Table className={classes.table} aria-label="simple table">
-					<TableHead>
-						<TableRow>
-							<TableCell>id</TableCell>
-							<TableCell>role</TableCell>
-							<TableCell>description</TableCell>
-						</TableRow>
-					</TableHead>
-					<TableBody>
-						{experienceRows.map((experienceRow) => (
-							<TableRow key={experienceRow.name}>
-								<TableCell component="th" scope="row">
-									{experienceRow.id}
-								</TableCell>
-								<TableCell>{experienceRow.role}</TableCell>
-								<TableCell>{experienceRow.description}</TableCell>
-							</TableRow>
-						))}
-					</TableBody>
-				</Table>
-			</TableContainer>
+			
+			<div className={classes.experience}>
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h3><a href="https://users.encs.concordia.ca/~sac/">SAC Research Group</a> @ Concordia University/Gina-Cody School</h3>
+						<p>as Undergrad Research Assistant</p>
+						<p>I run, test, and report Natural Language Processing models performance.</p>
+						<p>Skills: Python/PyTorch/huggingface-api, Google Colab, statistical analysis, scientific research methodologies.</p>
+					</div>
+					{/* <div className={classes.experienceDemo}></div> */}
+				</div>
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h3><a href="https://www.concordia.ca/ginacody/aits.html">Academic IT Services</a> @ Concordia University/Gina-Cody School</h3>
+						<p>as Service Desk Operator</p>
+						<p>I do Level 2 tech, frontline support, troubleshoot lab equipment (computers, VMs, peripherals), manage user accounts, check software licensing, and inventory.</p>
+						<p>Skills: customer service, software/hardware/network troubleshooting, *nix shell, ssh, vpn, Windows/Linux admin & deployment.</p>
+					</div>
+					{/* <div className={classes.experienceDemo}></div> */}
+				</div>
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h3><a href="https://islab.ca">Inertial Sensing Lab</a> @ Montreal, QC.</h3>
+						<p>as Webmaster, Researh Student</p>
+						<p>I build and maintain research website, contribute to machine learning source code, maintain code repository</p>
+						<p>Skills: web app deployment, web API, postgreSQL, HTML+CSS+JS, Dev[Sec]Ops, SysAdmin, technical doc, machine learning, stats analysis, programming</p>
+					</div>
+					<div className={classes.experienceDemo}><img src="/islabca.jpg"></img></div>
+				</div>
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h3><a href="https://maiboatservice.us">Mai Boat Service</a> @ Orlando, Fl.</h3>
+						<p>as Webmaster</p>
+						<p>I build and maintain customer-facing website, increase customer interaction and intake. The website is within top 5 related search result 100% of all time.</p>
+						<p>Skills: React with Next, web API, [Google] SEO.</p>
+					</div>
+					<div className={classes.experienceDemo}><img src="/mbsus.jpg"></img></div>
+				</div>
+			</div>
+
 			<br></br>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
