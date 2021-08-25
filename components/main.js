@@ -342,6 +342,8 @@ const ProjectsContent = ({ command }) => {
 							<li>Deploy VPN server with NAT routing to access geo-locked content and hardened RDP</li>
 							<li>Setup private e-mail service for this domain name</li>
 						</ul>
+						<h2>Infrastructure Diagram</h2>
+						<img src="/homelab-and-cloud-infra.png" width="100%"></img>
 					</div>
 				</div>
 
