@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
 			color: "#ddd"
 		},
 		maxWidth: "70vw",
-		[theme.breakpoints.down("sm")]: {
+		[theme.breakpoints.down("md")]: {
 			maxWidth: "100vw",
 			maxHeight: "100vh"
 		},
@@ -153,7 +153,15 @@ const useStyles = makeStyles((theme) => ({
 		marginLeft: "0",
 		// minHeight: '200px',
 		alignItems: 'center',
-		paddingRight: '1rem'
+		paddingRight: '1rem',
+		[theme.breakpoints.down("sm")]: {
+			margin: 0
+		},
+		'& iframe': {
+			[theme.breakpoints.down("sm")]: {
+				display: 'none'
+			}
+		}
 	},
 	experienceText: {
 		display: 'flex',
@@ -161,7 +169,13 @@ const useStyles = makeStyles((theme) => ({
 		maxWidth: "90%",
 		[theme.breakpoints.down("sm")]: {
 			maxWidth: "100vw"
-		}
+		},
+		"& img": {
+			[theme.breakpoints.down("sm")]: {
+				maxWidth: "100vw"
+			},
+		},
+		lineHeight: "1.5rem"
 	},
 	experienceDemo: {
 		[theme.breakpoints.down("sm")]: {
@@ -380,7 +394,6 @@ const ExperienceContent = ({ command }) => {
 						<p>Skills: web app deployment, web API, postgreSQL, HTML+CSS+JS, Dev[Sec]Ops, SysAdmin, technical doc, machine learning, stats analysis, programming</p>
 					</div>
 					<div className={classes.experienceDemo}>
-						{/* <img src="/islabca.jpg"></img> */}
 						<iframe src='https://islab.ca/en/home' width="800px" height="600px"></iframe>
 					</div>
 				</div>
@@ -392,7 +405,6 @@ const ExperienceContent = ({ command }) => {
 						<p>Skills: React with Next, web API, [Google] SEO.</p>
 					</div>
 					<div className={classes.experienceDemo}>
-						{/* <img src="/mbsus.jpg"></img> */}
 						<iframe src='https://maiboatservice.us' width="800px" height="600px"></iframe>
 					</div>
 				</div>
