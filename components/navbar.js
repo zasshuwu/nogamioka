@@ -23,10 +23,10 @@ import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 import LaptopIcon from '@material-ui/icons/Laptop';
 
 // modals
-import Contact from "./contact";
-import Experience from "./experience";
-import Awards from "./awards";
-import Projects from "./project";
+// import Contact from "./contact";
+// import Experience from "./experience";
+// import Awards from "./awards";
+// import Projects from "./project";
 
 const useStyles = makeStyles((theme) => ({
 	navBarWrapper: {
@@ -211,13 +211,13 @@ export default function NavBar({ setCommand, setContent }) {
 
 	return (
 		<div className={classes.navBarWrapper}>
-			<Contact showContact={values.showContact} handleClose={handleContact}></Contact>
+			{/* <Contact showContact={values.showContact} handleClose={handleContact}></Contact>
 			<Awards showAwards={values.showAwards} handleClose={handleAwards}></Awards>
 			<Projects showProjects={values.showProjects} handleClose={handleProjects}></Projects>
 			<Experience
 				showExperience={values.showExperience}
 				handleClose={handleExperience}
-			></Experience>
+			></Experience> */}
 
 			<div className={classes.navBar}>
 				<Button

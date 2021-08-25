@@ -265,39 +265,7 @@ const ContactContent = ({ command }) => {
 };
 const ProjectsContent = ({ command }) => {
 	const classes = useStyles();
-	function createData(id, role, description) {
-		return { id, role, description };
-	}
-
-	const projectRows = [
-		createData(
-			"dev blog",
-			"gatsby + vercel",
-			"A blog that helps me stay grounded by reflecting on my responsibilities."
-		),
-		createData("this website", "very proud", "react/nextjs, vercel, material-ui"),
-		createData("do-it (WIP)", "front-end dev", "a job board for vn"),
-		createData(
-			"Graph viz of Panama Papers",
-			"C++",
-			"Apply graph theory, graph algo, c++ oop methodologies into the visualization task"
-		),
-		createData(
-			"your-nutritionist (defunct)",
-			"front-end dev",
-			"a recipe-sharing social network"
-		),
-		createData(
-			"Maze-navigating vehicle",
-			"C++ (arduino)",
-			"College engineering project. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno."
-		),
-		createData(
-			"R project in Statistics",
-			"R",
-			"College project using R in statistical analysis. Simulate Most Recent Common Ancestor (MRCA)."
-		),
-	];
+	
 	return (
 		<div style={{ margin: "1rem" }}>
 			<p>
@@ -305,39 +273,66 @@ const ProjectsContent = ({ command }) => {
 				<span style={{ color: "#9f43fa" }}>~$</span>
 				{" " + command}
 			</p>
-			<TableContainer>
-				<Table className={classes.table} aria-label="simple table">
-					<TableHead>
-						<TableRow>
-							<TableCell>id</TableCell>
-							<TableCell>role/tech</TableCell>
-							<TableCell>description</TableCell>
-						</TableRow>
-					</TableHead>
-					<TableBody>
-						{projectRows.map((projectRow) => (
-							<TableRow key={projectRow.name}>
-								<TableCell component="th" scope="row">
-									{projectRow.id}
-								</TableCell>
-								<TableCell>{projectRow.role}</TableCell>
-								<TableCell>{projectRow.description}</TableCell>
-							</TableRow>
-						))}
-					</TableBody>
-				</Table>
-			</TableContainer>
-			<Typography style={{fontFamily: "Fira Code", color: "#00ddff"}}>
-				<p>Others:</p>
-				<ul>
-					<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
-					<li>
-						Deploy VPN server with NAT routing to access geo-locked content and hardened
-						RDP
-					</li>
-					<li>Setup private e-mail service for this domain name</li>
-				</ul>
-			</Typography>
+			
+			<div className={classes.experience}>
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h2><a href="https://dev.hoanganh.tech">Development Blog</a></h2>
+						<p>This is where I detail my testing adventure with new technologies and encounter with new technical knowledge.</p>
+						<p>Stack: gatsby.js deployed on vercel PaaS.</p>
+						<iframe src="https://dev.hoanganh.tech" width="800px" height="600px"></iframe>
+					</div>
+					<div className={classes.experienceDemo}></div>
+				</div>
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h2><a href="https://do-it-demo.hoanganh.tech">Do It</a> (collab, WIP)</h2>
+						<p>I'm developing front-end for this job board web app tailored for the Vietnamese market.</p>
+						<p>Stack: (FE) react/nextjs, redux, material-ui; (BE) python/django api, postgreSQL</p>
+						<iframe src="https://do-it-demo.hoanganh.tech" width="800px" height="600px"></iframe>
+					</div>
+				</div>
+
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h2><a href="https://github.com/aaanh/coen244-project">Graph Visualization of Panama Papers</a> (final project)</h2>
+						<p>I applied graph theory, traversal algorithm, C++ OOP methodologies into visualizing the Panama Papers dataset</p>
+						<p>Stack: C++, bash, Python/jupyterlab/pandas</p>
+						<img src="/coen244/coen244-demo.png"></img>
+						<img src="/coen244/coen244-demo.gif"></img>
+					</div>
+				</div>
+
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h2><a href="https://github.com/aaanh/arduino-phys4eng-w2020">Autonomous Maze-Navigating Vehicle</a> (final project)</h2>
+						<p>Lead programmer for this college engineering project in applied Physics. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno.</p>
+						<p>Stack: C++, arduino</p>
+					</div>
+				</div>
+
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h2><a href="https://github.com/aaanh/mrca-sim-r">Simulate Most Recent Common Ancestor</a> (final project)</h2>
+						<p>Statistical analysis and probabilistic simulation of Most Recent Common Ancestor (MRCA).</p>
+						<p>Stack: R</p>
+						<img src="/tmrca.png"></img>
+					</div>
+				</div>
+
+				<div className={classes.experienceEntry}>
+					<div className={classes.experienceText}>
+						<h2>Others:</h2>
+						<ul>
+							<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
+							<li>Deploy VPN server with NAT routing to access geo-locked content and hardened RDP</li>
+							<li>Setup private e-mail service for this domain name</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
 			<br></br>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
@@ -349,9 +344,6 @@ const ProjectsContent = ({ command }) => {
 };
 const ExperienceContent = ({ command }) => {
 	const classes = useStyles();
-	function createData(id, role, description) {
-		return { id, role, description };
-	}
 	
 	return (
 		<div style={{ margin: "1rem" }}>
@@ -396,7 +388,7 @@ const ExperienceContent = ({ command }) => {
 					<div className={classes.experienceText}>
 						<h2><a href="https://maiboatservice.us">Mai Boat Service</a> @ Orlando, Fl.</h2>
 						<p>as Webmaster</p>
-						<p>I build and maintain customer-facing website, increase customer interaction and intake. The website is within top 5 related search result 100% of all time.</p>
+						<p>I build and maintain customer-facing website, increase customer interaction and conversion rate. The website is within top 5 related search result 100% of all time.</p>
 						<p>Skills: React with Next, web API, [Google] SEO.</p>
 					</div>
 					<div className={classes.experienceDemo}>
