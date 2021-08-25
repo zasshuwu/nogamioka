@@ -298,8 +298,8 @@ const ProjectsContent = ({ command }) => {
 						<h2><a href="https://github.com/aaanh/coen244-project">Graph Visualization of Panama Papers</a> (final project)</h2>
 						<p>I applied graph theory, traversal algorithm, C++ OOP methodologies into visualizing the Panama Papers dataset</p>
 						<p>Stack: C++, bash, Python/jupyterlab/pandas</p>
-						<img src="/coen244/coen244-demo.png"></img>
-						<img src="/coen244/coen244-demo.gif"></img>
+						<img src="/coen244/coen244-demo.gif" width="800px"></img>
+						<img src="/coen244/coen244-demo.png" width="600px"></img>
 					</div>
 				</div>
 
