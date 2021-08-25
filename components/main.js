@@ -364,7 +364,7 @@ const ExperienceContent = ({ command }) => {
 			<div className={classes.experience}>
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h3><a href="https://users.encs.concordia.ca/~sac/">SAC Research Group</a> @ Concordia University/Gina-Cody School</h3>
+						<h2><a href="https://users.encs.concordia.ca/~sac/">SAC Research Group</a> @ Concordia University/Gina-Cody School</h2>
 						<p>as Undergrad Research Assistant</p>
 						<p>I run, test, and report Natural Language Processing models performance.</p>
 						<p>Skills: Python/PyTorch/huggingface-api, Google Colab, statistical analysis, scientific research methodologies.</p>
@@ -373,7 +373,7 @@ const ExperienceContent = ({ command }) => {
 				</div>
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h3><a href="https://www.concordia.ca/ginacody/aits.html">Academic IT Services</a> @ Concordia University/Gina-Cody School</h3>
+						<h2><a href="https://www.concordia.ca/ginacody/aits.html">Academic IT Services</a> @ Concordia University/Gina-Cody School</h2>
 						<p>as Service Desk Operator</p>
 						<p>I do Level 2 tech, frontline support, troubleshoot lab equipment (computers, VMs, peripherals), manage user accounts, check software licensing, and inventory.</p>
 						<p>Skills: customer service, software/hardware/network troubleshooting, *nix shell, ssh, vpn, Windows/Linux admin & deployment.</p>
@@ -382,21 +382,27 @@ const ExperienceContent = ({ command }) => {
 				</div>
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h3><a href="https://islab.ca">Inertial Sensing Lab</a> @ Montreal, QC.</h3>
+						<h2><a href="https://islab.ca">Inertial Sensing Lab</a> @ Montreal, QC.</h2>
 						<p>as Webmaster, Researh Student</p>
 						<p>I build and maintain research website, contribute to machine learning source code, maintain code repository</p>
 						<p>Skills: web app deployment, web API, postgreSQL, HTML+CSS+JS, Dev[Sec]Ops, SysAdmin, technical doc, machine learning, stats analysis, programming</p>
 					</div>
-					<div className={classes.experienceDemo}><img src="/islabca.jpg"></img></div>
+					<div className={classes.experienceDemo}>
+						{/* <img src="/islabca.jpg"></img> */}
+						<iframe src='https://islab.ca/en/home' width="800px" height="600px"></iframe>
+					</div>
 				</div>
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h3><a href="https://maiboatservice.us">Mai Boat Service</a> @ Orlando, Fl.</h3>
+						<h2><a href="https://maiboatservice.us">Mai Boat Service</a> @ Orlando, Fl.</h2>
 						<p>as Webmaster</p>
 						<p>I build and maintain customer-facing website, increase customer interaction and intake. The website is within top 5 related search result 100% of all time.</p>
 						<p>Skills: React with Next, web API, [Google] SEO.</p>
 					</div>
-					<div className={classes.experienceDemo}><img src="/mbsus.jpg"></img></div>
+					<div className={classes.experienceDemo}>
+						{/* <img src="/mbsus.jpg"></img> */}
+						<iframe src='https://maiboatservice.us' width="800px" height="600px"></iframe>
+					</div>
 				</div>
 			</div>
 
