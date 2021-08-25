@@ -389,7 +389,7 @@ const ExperienceContent = ({ command }) => {
 					</div>
 					<div className={classes.experienceDemo}>
 						{/* <img src="/islabca.jpg"></img> */}
-						<iframe src='https://islab.ca/en/home' width="800px" height="600px"></iframe>
+						<iframe src='https://islab.ca/en/home' width="1280px" height="720px"></iframe>
 					</div>
 				</div>
 				<div className={classes.experienceEntry}>
@@ -401,7 +401,7 @@ const ExperienceContent = ({ command }) => {
 					</div>
 					<div className={classes.experienceDemo}>
 						{/* <img src="/mbsus.jpg"></img> */}
-						<iframe src='https://maiboatservice.us' width="800px" height="600px"></iframe>
+						<iframe src='https://maiboatservice.us' width="1280px" height="720px"></iframe>
 					</div>
 				</div>
 			</div>
