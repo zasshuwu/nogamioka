@@ -391,7 +391,7 @@ const ExperienceContent = ({ command }) => {
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
 						<h2><a href="https://islab.ca">Inertial Sensing Lab</a> @ Montreal, QC.</h2>
-						<p>as Webmaster, Researh Student</p>
+						<p>as Webmaster, Research Student</p>
 						<p>I build and maintain research website, contribute to machine learning source code, maintain code repository</p>
 						<p>Skills: web app deployment, web API, postgreSQL, HTML+CSS+JS, Dev[Sec]Ops, SysAdmin, technical doc, machine learning, stats analysis, programming</p>
 					</div>
