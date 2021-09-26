@@ -289,6 +289,9 @@ const ProjectsContent = ({ command }) => {
 			</p>
 			
 			<div className={classes.experience}>
+				<h2>Infrastructure Diagram</h2>
+				<img src="/homelab-and-cloud-infra.png" width="80%"></img>
+				<br></br>
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
 						<h2><a href="https://dev.hoanganh.tech">Development Blog</a></h2>
@@ -342,14 +345,13 @@ const ProjectsContent = ({ command }) => {
 							<li>Deploy VPN server with NAT routing to access geo-locked content and hardened RDP</li>
 							<li>Setup private e-mail service for this domain name</li>
 						</ul>
-						<h2>Infrastructure Diagram</h2>
-						<img src="/homelab-and-cloud-infra.png" width="100%"></img>
+						
 					</div>
 				</div>
 
 			</div>
 
-			<br></br>
+			
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
 				<span style={{ color: "#9f43fa" }}>~$</span>
