@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	content: {
 		background: customTheme.palette.background.main,
-		minWidth: "50%",
+		minWidth: "70%",
 		minHeight: "95%",
 		border: "none",
 		borderRadius: "8px",
@@ -140,7 +140,7 @@ const useStyles = makeStyles((theme) => ({
 		"& p": {
 			color: "#ddd"
 		},
-		maxWidth: "70vw",
+		minWidth: "50vw",
 		[theme.breakpoints.down("md")]: {
 			maxWidth: "100vw",
 			maxHeight: "100vh"
@@ -184,6 +184,13 @@ const useStyles = makeStyles((theme) => ({
 		"& img": {
 			maxWidth: "100%",
 			maxHeight: "600px",
+		}
+	},
+	projects: {
+		maxWidth: "80vw",
+		[theme.breakpoints.down("sm")]: {
+			maxWidth: "100vw"
+			
 		}
 	}
 }));
@@ -281,7 +288,7 @@ const ProjectsContent = ({ command }) => {
 	const classes = useStyles();
 	
 	return (
-		<div style={{ margin: "1rem" }}>
+		<div style={{ margin: "1rem" }} className={classes.projects}>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
 				<span style={{ color: "#9f43fa" }}>~$</span>
