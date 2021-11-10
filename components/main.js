@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 			textDecoration: "none",
 			"&:hover": {
 				textDecoration: "underline",
-				textDecorationThickness: "0.1rem"
+				textDecorationThickness: "0.1rem",
 			},
 			"& :visited": {
 				color: "#1691f0 !important",
@@ -70,8 +70,8 @@ const useStyles = makeStyles((theme) => ({
 		boxShadow: "3px 7px 15px 0px rgba(0,0,0,0.74)",
 		[theme.breakpoints.down("sm")]: {
 			borderRadius: 0,
-			opacity: '0.9',
-			minHeight: '100vh'
+			opacity: "0.9",
+			minHeight: "100vh",
 		},
 	},
 	tab: {
@@ -120,8 +120,8 @@ const useStyles = makeStyles((theme) => ({
 		listStyleType: "none",
 		padding: 0,
 		margin: 0,
-		display: 'flex',
-		flexDirection: 'row',
+		display: "flex",
+		flexDirection: "row",
 	},
 	headNavIcons: {
 		padding: "4px",
@@ -131,19 +131,19 @@ const useStyles = makeStyles((theme) => ({
 		transition: "500ms ease",
 		"&:hover": {
 			background: "#333333",
-			transition: "500ms ease"
-		}
+			transition: "500ms ease",
+		},
 	},
 	experience: {
-		display: 'flex',
-		flexDirection: 'column',
+		display: "flex",
+		flexDirection: "column",
 		"& p": {
-			color: "#ddd"
+			color: "#ddd",
 		},
 		minWidth: "50vw",
 		[theme.breakpoints.down("md")]: {
 			maxWidth: "100vw",
-			maxHeight: "100vh"
+			maxHeight: "100vh",
 		},
 		maxHeight: "70vh",
 		overflowY: "scroll",
@@ -152,47 +152,53 @@ const useStyles = makeStyles((theme) => ({
 		margin: "1rem",
 		marginLeft: "0",
 		// minHeight: '200px',
-		alignItems: 'center',
-		paddingRight: '1rem',
+		alignItems: "center",
+		paddingRight: "1rem",
 		[theme.breakpoints.down("sm")]: {
-			margin: 0
+			margin: 0,
 		},
-		'& iframe': {
+		"& iframe": {
 			[theme.breakpoints.down("sm")]: {
-				display: 'none'
-			}
-		}
+				display: "none",
+			},
+		},
 	},
 	experienceText: {
-		display: 'flex',
-		flexDirection: 'column',
-		maxWidth: "90%",
+		display: "flex",
+		flexDirection: "column",
+		"& > *": {
+			maxWidth: "50vw",
+		},
+
 		[theme.breakpoints.down("sm")]: {
-			maxWidth: "100vw"
+			maxWidth: "100vw",
+			"& > *": {
+				maxWidth: "100vw",
+			},
 		},
 		"& img": {
 			[theme.breakpoints.down("sm")]: {
-				maxWidth: "100vw"
+				maxWidth: "100vw",
 			},
 		},
-		lineHeight: "1.5rem"
+		color: "white",
+		lineHeight: "1.5rem",
 	},
 	experienceDemo: {
 		[theme.breakpoints.down("sm")]: {
-			display: 'none'
+			display: "none",
 		},
 		"& img": {
 			maxWidth: "100%",
 			maxHeight: "600px",
-		}
+		},
 	},
 	projects: {
 		maxWidth: "80vw",
 		[theme.breakpoints.down("sm")]: {
-			maxWidth: "100vw"
-			
-		}
-	}
+			maxWidth: "100vw",
+		},
+	},
 }));
 
 const MainContent = ({ command }) => {
@@ -220,16 +226,34 @@ const MainContent = ({ command }) => {
 
 				<code>
 					<br></br>
-					
-					<p style={{wordBreak: "break-all"}}>* <span style={{color: "#00ddff"}}>Documentation:</span> <a href="https://github.com/aaanh/main-site-src">https://github.com/aaanh/main-site-src</a></p>
-					<p>* <span style={{color: "#00ddff"}}>Status:</span> Studying to become a Computer Engineer</p>
-					<p>* <span style={{color: "#00ddff"}}>Institution:</span> Concordia University, Montreal, QC. Canada</p>
-					<p>* <span style={{color: "#00ddff"}}>Specialization:</span> Full-stack Webdev, ML in Motion Detection &amp; NLP, Linux/Windows Server Admin, Orchestration, Network Admin, Computer Hardware.</p>
-					<p><span style={{color: "#facc00"}}>69 updates</span> can be applied immediately.</p>
+
+					<p style={{ wordBreak: "break-all" }}>
+						* <span style={{ color: "#00ddff" }}>Documentation:</span>{" "}
+						<a href="https://github.com/aaanh/main-site-src">
+							https://github.com/aaanh/main-site-src
+						</a>
+					</p>
+					<p>
+						* <span style={{ color: "#00ddff" }}>Status:</span> Studying to become a
+						Computer Engineer
+					</p>
+					<p>
+						* <span style={{ color: "#00ddff" }}>Institution:</span> Concordia
+						University, Montreal, QC. Canada
+					</p>
+					<p>
+						* <span style={{ color: "#00ddff" }}>Specialization:</span> Full-stack
+						Webdev, ML in Motion Detection &amp; NLP, Linux/Windows Server Admin,
+						Orchestration, Network Admin, Computer Hardware.
+					</p>
+					<p>
+						<span style={{ color: "#facc00" }}>69 updates</span> can be applied
+						immediately.
+					</p>
 					<p>To see these additional updates run: apt list --upgrade</p>
 					<br></br>
 
-					<p>Last login: { d.toString() }</p>
+					<p>Last login: {d.toString()}</p>
 				</code>
 
 				<p>
@@ -268,12 +292,9 @@ const ContactContent = ({ command }) => {
 			<p>
 				* <span style={{ color: "#fff" }}>a_en201@encs.concordia.ca</span>
 			</p>
-			<p>
-				* LinkedIn:{" "}
-			</p>
+			<p>* LinkedIn: </p>
 			<p>
 				* <a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
-
 			</p>
 			<br></br>
 			<p>
@@ -286,7 +307,7 @@ const ContactContent = ({ command }) => {
 };
 const ProjectsContent = ({ command }) => {
 	const classes = useStyles();
-	
+
 	return (
 		<div style={{ margin: "1rem" }} className={classes.projects}>
 			<p>
@@ -294,33 +315,62 @@ const ProjectsContent = ({ command }) => {
 				<span style={{ color: "#9f43fa" }}>~$</span>
 				{" " + command}
 			</p>
-			
+
 			<div className={classes.experience}>
 				<h2>Infrastructure Diagram</h2>
 				<img src="/homelab-and-cloud-infra.png" width="80%"></img>
 				<br></br>
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h2><a href="https://dev.hoanganh.tech">Development Blog</a></h2>
-						<p>This is where I detail my testing adventure with new technologies and encounter with new technical knowledge.</p>
+						<h2>
+							<a href="https://dev.hoanganh.tech">Development Blog</a>
+						</h2>
+						<p>
+							This is where I detail my testing adventure with new technologies and
+							encounter with new technical knowledge.
+						</p>
 						<p>Stack: gatsby.js deployed on vercel PaaS.</p>
-						<iframe src="https://dev.hoanganh.tech" width="800px" height="600px"></iframe>
+						<iframe
+							src="https://dev.hoanganh.tech"
+							width="800px"
+							height="600px"
+						></iframe>
 					</div>
 					<div className={classes.experienceDemo}></div>
 				</div>
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h2><a href="https://do-it-demo.hoanganh.tech">Do It</a> (collab, WIP)</h2>
-						<p>I'm developing front-end for this job board web app tailored for the Vietnamese market.</p>
-						<p>Stack: (FE) react/nextjs, redux, material-ui; (BE) python/django api, postgreSQL</p>
-						<iframe src="https://do-it-demo.hoanganh.tech" width="800px" height="600px"></iframe>
+						<h2>
+							<a href="https://do-it-demo.hoanganh.tech">Do It</a> (collab, WIP)
+						</h2>
+						<p>
+							I'm developing front-end for this job board web app tailored for the
+							Vietnamese market.
+						</p>
+						<p>
+							Stack: (FE) react/nextjs, redux, material-ui; (BE) python/django api,
+							postgreSQL
+						</p>
+						<iframe
+							src="https://do-it-demo.hoanganh.tech"
+							width="800px"
+							height="600px"
+						></iframe>
 					</div>
 				</div>
 
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h2><a href="https://github.com/aaanh/coen244-project">Graph Visualization of Panama Papers</a> (final project)</h2>
-						<p>I applied graph theory, traversal algorithm, C++ OOP methodologies into visualizing the Panama Papers dataset</p>
+						<h2>
+							<a href="https://github.com/aaanh/coen244-project">
+								Graph Visualization of Panama Papers
+							</a>{" "}
+							(final project)
+						</h2>
+						<p>
+							I applied graph theory, traversal algorithm, C++ OOP methodologies into
+							visualizing the Panama Papers dataset
+						</p>
 						<p>Stack: C++, bash, Python/jupyterlab/pandas</p>
 						<img src="/coen244/coen244-demo.gif" width="800px"></img>
 						<img src="/coen244/coen244-demo.png" width="600px"></img>
@@ -329,16 +379,33 @@ const ProjectsContent = ({ command }) => {
 
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h2><a href="https://github.com/aaanh/arduino-phys4eng-w2020">Autonomous Maze-Navigating Vehicle</a> (final project)</h2>
-						<p>Lead programmer for this college engineering project in applied Physics. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno.</p>
+						<h2>
+							<a href="https://github.com/aaanh/arduino-phys4eng-w2020">
+								Autonomous Maze-Navigating Vehicle
+							</a>{" "}
+							(final project)
+						</h2>
+						<p>
+							Lead programmer for this college engineering project in applied Physics.
+							3D-printed vehicle navigates by ultrasonic sensors controlled by an
+							Arduino Uno.
+						</p>
 						<p>Stack: C++, arduino</p>
 					</div>
 				</div>
 
 				<div className={classes.experienceEntry}>
 					<div className={classes.experienceText}>
-						<h2><a href="https://github.com/aaanh/mrca-sim-r">Simulate Most Recent Common Ancestor</a> (final project)</h2>
-						<p>Statistical analysis and probabilistic simulation of Most Recent Common Ancestor (MRCA).</p>
+						<h2>
+							<a href="https://github.com/aaanh/mrca-sim-r">
+								Simulate Most Recent Common Ancestor
+							</a>{" "}
+							(final project)
+						</h2>
+						<p>
+							Statistical analysis and probabilistic simulation of Most Recent Common
+							Ancestor (MRCA).
+						</p>
 						<p>Stack: R</p>
 						<img src="/tmrca.png"></img>
 					</div>
@@ -349,16 +416,16 @@ const ProjectsContent = ({ command }) => {
 						<h2>Others:</h2>
 						<ul>
 							<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
-							<li>Deploy VPN server with NAT routing to access geo-locked content and hardened RDP</li>
+							<li>
+								Deploy VPN server with NAT routing to access geo-locked content and
+								hardened RDP
+							</li>
 							<li>Setup private e-mail service for this domain name</li>
 						</ul>
-						
 					</div>
 				</div>
-
 			</div>
 
-			
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
 				<span style={{ color: "#9f43fa" }}>~$</span>
@@ -369,7 +436,7 @@ const ProjectsContent = ({ command }) => {
 };
 const ExperienceContent = ({ command }) => {
 	const classes = useStyles();
-	
+
 	return (
 		<div style={{ margin: "1rem" }}>
 			<p>
@@ -377,46 +444,161 @@ const ExperienceContent = ({ command }) => {
 				<span style={{ color: "#9f43fa" }}>~$</span>
 				{" " + command}
 			</p>
-			
 			<div className={classes.experience}>
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
-						<h2><a href="https://users.encs.concordia.ca/~sac/">SAC Research Group</a> @ Concordia University/Gina-Cody School</h2>
-						<p>as Undergrad Research Assistant</p>
-						<p>I run, test, and report Natural Language Processing models performance.</p>
-						<p>Skills: Python/PyTorch/huggingface-api, Google Colab, statistical analysis, scientific research methodologies.</p>
+				<div className={classes.experienceContent}>
+					<div className={classes.experienceEntry}>
+						<div className={classes.experienceTitle}>
+							<a href="https://genetec.com">Genetec Inc.</a> (Internship, 2021)
+						</div>
+						<div className={classes.experienceText}>
+							IT Support Specialist
+							<details>
+								<summary>Details</summary>
+								<ul>
+									<li>
+										Provide technical assistance and troubleshooting for users
+									</li>
+									<li>Perform infra and team workflow improvement tasks</li>
+									<li>
+										Test new hardware and software compatibility in the
+										environment
+									</li>
+									<li>
+										Manage hybrid AD and Endpoint, account credentials and
+										permission groups.
+									</li>
+									<li>Deploy IT assets: hardware and software</li>
+									<li>Utilize PowerShell scripting</li>
+									<li>Manage VMs and KVM/Hyper-V</li>
+									<li>Extensive use of Jira</li>
+									<li>Handle IT phone calls</li>
+									<li>
+										Maintain asset inventory and specifications. Troubleshoot
+										computer hardware issues.
+									</li>
+									<li>Manage access request according to InfoSec policies</li>
+									<li>Provide escalation and contribute to internal wiki</li>
+									<li>Work usually encompasses OSI layers 5 to 7</li>
+								</ul>
+							</details>
+						</div>
 					</div>
-					{/* <div className={classes.experienceDemo}></div> */}
-				</div>
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
-						<h2><a href="https://www.concordia.ca/ginacody/aits.html">Academic IT Services</a> @ Concordia University/Gina-Cody School</h2>
-						<p>as Service Desk Operator</p>
-						<p>I do Level 2 tech, frontline support, troubleshoot lab equipment (computers, VMs, peripherals), manage user accounts, check software licensing, and inventory.</p>
-						<p>Skills: customer service, software/hardware/network troubleshooting, *nix shell, ssh, vpn, Windows/Linux admin & deployment.</p>
+					<div className={classes.experienceEntry}>
+						<div className={classes.experienceTitle}>
+							<a href="https://www.concordia.ca/ginacody/aits.html">
+								Concordia University{" "}
+							</a>
+							(part-time, 03/2021 - present)
+						</div>
+						<div className={classes.experienceText}>
+							Service Desk Operator @ Academic IT Services
+							<details>
+								<summary>Details</summary>
+								<ul>
+									<li>
+										Offering frontline support to the customers in terms of
+										utilizing the IT services and resources at Concordia.
+									</li>
+									<li>
+										Regularly checking the teaching lab peripherals (i.e.,
+										computers, monitors, projectors), and troubleshooting the
+										found issues.
+									</li>
+									<li>
+										Servicing the walk-in customer or in labs, and answering the
+										phone call.
+									</li>
+									<li>
+										Utilizing the ticketing system to offer efficient IT
+										support.
+									</li>
+									<li>
+										Working in conjunction with Service Desk full-time staff to
+										ensure the functionality of computer labs.
+									</li>
+									<li>
+										Performing inventory for new purchases (computers and
+										equipment) by the engineering faculty.
+									</li>
+									<li>
+										Undertaking other job-related missions assigned by the
+										manager of User Services.
+									</li>
+								</ul>
+							</details>
+						</div>
 					</div>
-					{/* <div className={classes.experienceDemo}></div> */}
-				</div>
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
-						<h2><a href="https://islab.ca">Inertial Sensing Lab</a> @ Montreal, QC.</h2>
-						<p>as Webmaster, Research Student</p>
-						<p>I build and maintain research website, contribute to machine learning source code, maintain code repository</p>
-						<p>Skills: web app deployment, web API, postgreSQL, HTML+CSS+JS, Dev[Sec]Ops, SysAdmin, technical doc, machine learning, stats analysis, programming</p>
+					<div className={classes.experienceEntry}>
+						<div className={classes.experienceTitle}>
+							<a href="https://users.encs.concordia.ca/~sac/">SAC Research Group</a>
+							(part-time, 02/2021 - present)
+						</div>
+						<div className={classes.experienceText}>
+							Undergraduate Assistant
+							<details>
+								<summary>Details</summary>
+								<ul>
+									<li>
+										Assisting in researching practical applications of ML and DL
+										models with current focus on explainable AI (XAI).
+									</li>
+									<li>
+										Previously, reporting performance of NLP models for
+										classification on non-Latin datasets, e.g. XLNet and bert.
+									</li>
+								</ul>
+							</details>
+						</div>
 					</div>
-					<div className={classes.experienceDemo}>
-						<iframe src='https://islab.ca/en/home' width="800px" height="600px"></iframe>
+					<div className={classes.experienceEntry}>
+						<div className={classes.experienceTitle}>
+							<a href="https://islab.ca">Inertial Sensing Lab</a>
+							(project/contract, 2020)
+						</div>
+						<div className={classes.experienceText}>
+							Webmaster, System Administrator
+							<details>
+								<summary>Details</summary>
+								<ul>
+									<li>
+										Build and manage research website, contribute to ML source
+										code, maintain code repository
+									</li>
+								</ul>
+								<iframe
+									src="https://islab.ca"
+									width="500px"
+									height="500px"
+								></iframe>
+							</details>
+						</div>
 					</div>
-				</div>
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
-						<h2><a href="https://maiboatservice.us">Mai Boat Service</a> @ Orlando, Fl.</h2>
-						<p>as Webmaster</p>
-						<p>I build and maintain customer-facing website, increase customer interaction and conversion rate. The website is within top 5 related search result 100% of all time.</p>
-						<p>Skills: React with Next, web API, [Google] SEO.</p>
-					</div>
-					<div className={classes.experienceDemo}>
-						<iframe src='https://maiboatservice.us' width="800px" height="600px"></iframe>
+					<div className={classes.experienceEntry}>
+						<div className={classes.experienceTitle}>
+							<a href="https://maiboatservice.us">Mai Boat Service</a>
+							(contract)
+						</div>
+						<div className={classes.experienceText}>
+							Full-stack Web Developer
+							<details>
+								<summary>Details</summary>
+								<ul>
+									<li>
+										Build and maintain customer-facing website, increase
+										customer interaction and conversion rate.
+									</li>
+									<li>
+										Apply Google SEO: site is within top 5 related search result
+										100% of all time.
+									</li>
+								</ul>
+								<iframe
+									src="https://islab.ca"
+									width="500px"
+									height="500px"
+								></iframe>
+							</details>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -493,18 +675,23 @@ export default function Main(props) {
 				<div style={{ width: "100%", height: "3rem" }}>
 					<ul className={classes.headerNav}>
 						<li>
-							<div className={classes.tab}> {">"}
+							<div className={classes.tab}>
+								{" "}
+								{">"}
 								&nbsp;HATerm&nbsp;&nbsp;&nbsp;&nbsp;X
 							</div>
 						</li>
-						
+
 						<li style={{ marginLeft: "auto", padding: "1rem" }}>
 							<ArrowDownward className={classes.headNavIcons}></ArrowDownward>
 							<Crop32 className={classes.headNavIcons}></Crop32>
-							<Close className={classes.headNavIcons} onClick={(e) => {
-								e.preventDefault();
-								window.location.replace("/empty");
-							}}></Close>
+							<Close
+								className={classes.headNavIcons}
+								onClick={(e) => {
+									e.preventDefault();
+									window.location.replace("/empty");
+								}}
+							></Close>
 						</li>
 					</ul>
 				</div>
