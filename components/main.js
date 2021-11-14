@@ -530,7 +530,7 @@ const ExperienceContent = ({ command }) => {
 					</div>
 					<div className={classes.experienceEntry}>
 						<div className={classes.experienceTitle}>
-							<a href="https://users.encs.concordia.ca/~sac/">SAC Research Group</a>
+							<a href="https://users.encs.concordia.ca/~sac/">SAC Research Group</a>{" "}
 							(part-time, 02/2021 - present)
 						</div>
 						<div className={classes.experienceText}>
@@ -552,8 +552,8 @@ const ExperienceContent = ({ command }) => {
 					</div>
 					<div className={classes.experienceEntry}>
 						<div className={classes.experienceTitle}>
-							<a href="https://islab.ca">Inertial Sensing Lab</a>
-							(project/contract, 2020)
+							<a href="https://islab.ca">Inertial Sensing Lab</a> (project/contract,
+							2020)
 						</div>
 						<div className={classes.experienceText}>
 							Webmaster, System Administrator
@@ -575,8 +575,7 @@ const ExperienceContent = ({ command }) => {
 					</div>
 					<div className={classes.experienceEntry}>
 						<div className={classes.experienceTitle}>
-							<a href="https://maiboatservice.us">Mai Boat Service</a>
-							(contract)
+							<a href="https://maiboatservice.us">Mai Boat Service</a> (contract)
 						</div>
 						<div className={classes.experienceText}>
 							Full-stack Web Developer
