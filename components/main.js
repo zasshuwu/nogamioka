@@ -193,6 +193,65 @@ const useStyles = makeStyles((theme) => ({
 			maxHeight: "600px",
 		},
 	},
+	project: {
+		display: "flex",
+		flexDirection: "column",
+		"& p": {
+			color: "#ddd",
+		},
+		minWidth: "50vw",
+		[theme.breakpoints.down("md")]: {
+			maxWidth: "100vw",
+			maxHeight: "100vh",
+		},
+		maxHeight: "70vh",
+		overflowY: "scroll",
+	},
+	projectEntry: {
+		margin: "1rem",
+		marginLeft: "0",
+		// minHeight: '200px',
+		alignItems: "center",
+		paddingRight: "1rem",
+		[theme.breakpoints.down("sm")]: {
+			margin: 0,
+		},
+		"& iframe": {
+			[theme.breakpoints.down("sm")]: {
+				display: "none",
+			},
+		},
+	},
+	projectText: {
+		display: "flex",
+		flexDirection: "column",
+		"& > *": {
+			maxWidth: "50vw",
+		},
+
+		[theme.breakpoints.down("sm")]: {
+			maxWidth: "100vw",
+			"& > *": {
+				maxWidth: "100vw",
+			},
+		},
+		"& img": {
+			[theme.breakpoints.down("sm")]: {
+				maxWidth: "100vw",
+			},
+		},
+		color: "white",
+		lineHeight: "1.5rem",
+	},
+	projectDemo: {
+		[theme.breakpoints.down("sm")]: {
+			display: "none",
+		},
+		"& img": {
+			maxWidth: "100%",
+			maxHeight: "600px",
+		},
+	},
 	projects: {
 		maxWidth: "80vw",
 		[theme.breakpoints.down("sm")]: {
@@ -286,7 +345,7 @@ const ContactContent = ({ command }) => {
 			</p>
 			<p>* All inquiries: </p>
 			<p>
-				* <span style={{ color: "#fff" }}>iam@hoanganh.tech</span>
+				* <span style={{ color: "#fff" }}>iam@hoanganh.dev</span>
 			</p>
 			<p>* Academic email: </p>
 			<p>
@@ -316,12 +375,12 @@ const ProjectsContent = ({ command }) => {
 				{" " + command}
 			</p>
 
-			<div className={classes.experience}>
+			<div className={classes.project}>
 				<h2>Infrastructure Diagram</h2>
 				<img src="/homelab-and-cloud-infra.png" width="80%"></img>
 				<br></br>
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
 						<h2>
 							<a href="https://dev.hoanganh.tech">Development Blog</a>
 						</h2>
@@ -336,10 +395,10 @@ const ProjectsContent = ({ command }) => {
 							height="600px"
 						></iframe>
 					</div>
-					<div className={classes.experienceDemo}></div>
+					<div className={classes.projectDemo}></div>
 				</div>
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
 						<h2>
 							<a href="https://do-it-demo.hoanganh.tech">Do It</a> (collab, WIP)
 						</h2>
@@ -359,8 +418,8 @@ const ProjectsContent = ({ command }) => {
 					</div>
 				</div>
 
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
 						<h2>
 							<a href="https://github.com/aaanh/coen244-project">
 								Graph Visualization of Panama Papers
@@ -377,8 +436,8 @@ const ProjectsContent = ({ command }) => {
 					</div>
 				</div>
 
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
 						<h2>
 							<a href="https://github.com/aaanh/arduino-phys4eng-w2020">
 								Autonomous Maze-Navigating Vehicle
@@ -394,8 +453,8 @@ const ProjectsContent = ({ command }) => {
 					</div>
 				</div>
 
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
 						<h2>
 							<a href="https://github.com/aaanh/mrca-sim-r">
 								Simulate Most Recent Common Ancestor
@@ -411,8 +470,8 @@ const ProjectsContent = ({ command }) => {
 					</div>
 				</div>
 
-				<div className={classes.experienceEntry}>
-					<div className={classes.experienceText}>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
 						<h2>Others:</h2>
 						<ul>
 							<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
