@@ -134,8 +134,10 @@ export default function ProjectsContent({ command }) {
 							<a href="https://do-it-demo.hoanganh.tech">Do It</a> (collab, WIP)
 						</h2>
 						<p>
-							I'm developing front-end for this job board web app tailored for the
-							Vietnamese market.
+							This is a job board that is catered to my home country job market.
+							I&quot;m developing its front-end and branding, as well as building its
+							in-house infrastructures, i.e. DNS, edge computing, load balancing,
+							cloud identity and acess, InfraSec gatekeeping, etc.
 						</p>
 						<p>
 							Stack: (FE) react/nextjs, redux, material-ui; (BE) python/django api,
