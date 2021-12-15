@@ -67,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
 			maxWidth: "100vw",
 		},
 	},
+	iframe: {
+		background: "white",
+	},
 	"@keyframes gradient": {
 		"0%": {
 			backgroundPosition: "0% 50%",
@@ -121,6 +124,7 @@ export default function ProjectsContent({ command }) {
 						</p>
 						<p>Stack: gatsby.js deployed on vercel PaaS.</p>
 						<iframe
+							className={classes.iframe}
 							src="https://dev.hoanganh.tech"
 							width="800px"
 							height="600px"
