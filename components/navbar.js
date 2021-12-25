@@ -19,8 +19,8 @@ import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import BeenhereIcon from "@material-ui/icons/Beenhere";
 import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
 import VpnLock from "@material-ui/icons/VpnLock";
-import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
-import LaptopIcon from '@material-ui/icons/Laptop';
+import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
+import LaptopIcon from "@material-ui/icons/Laptop";
 
 // modals
 // import Contact from "./contact";
@@ -193,18 +193,8 @@ export default function NavBar({ setCommand, setContent }) {
 	};
 	const handleLinux = (e) => {
 		e.preventDefault();
-		setCommand("linux");
-		window.open("https://linux.hoanganh.tech");
-	};
-	const handleVpn = (e) => {
-		e.preventDefault();
-		setCommand("vpn");
-		window.open("https://vpn.hoanganh.tech");
-	};
-	const handleRDP = (e) => {
-		e.preventDefault();
-		setCommand("rdp");
-		window.open("/windows.hoanganh.tech.rdp");
+		setCommand("unix-docs");
+		window.open("https://unix.hoanganh.tech");
 	};
 
 	const classes = useStyles();
@@ -269,16 +259,6 @@ export default function NavBar({ setCommand, setContent }) {
 					<span className={classes.BtnText}>&nbsp; Awards</span>
 				</Button>
 
-				{/* <Button
-					size="small"
-					onClick={handleXterm}
-					variant="outlined"
-					className={classes.customButtonXterm}
-				>
-					<LaptopIcon fontSize="small"></LaptopIcon>
-					<span className={classes.BtnText}>&nbsp; xterm</span>
-				</Button> */}
-
 				<Button
 					onClick={handleGitHub}
 					variant="outlined"
@@ -293,24 +273,8 @@ export default function NavBar({ setCommand, setContent }) {
 					className={classes.customButtonLinux}
 				>
 					<DeveloperModeIcon fontSize="small"></DeveloperModeIcon>
-					<span className={classes.BtnText}>&nbsp; Linux</span>
+					<span className={classes.BtnText}>&nbsp; Linux/Unix</span>
 				</Button>
-				{/* <Button
-					onClick={handleVpn}
-					variant="outlined"
-					className={classes.customButtonVpn}
-				>
-					<VpnLock fontSize="small"></VpnLock>
-					<span className={classes.BtnText}>&nbsp; VPN</span>
-				</Button>
-				<Button
-					onClick={handleRDP}
-					variant="outlined"
-					className={classes.customButtonRDP}
-				>
-					<DesktopWindowsIcon fontSize="small"></DesktopWindowsIcon>
-					<span className={classes.BtnText}>&nbsp; RDP</span>
-				</Button> */}
 			</div>
 		</div>
 	);
