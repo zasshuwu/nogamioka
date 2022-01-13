@@ -181,11 +181,7 @@ export default function NavBar({ setCommand, setContent }) {
 		setContent("projects");
 		// setValues({ ...values, showProjects: !values.showProjects });
 	};
-	const handleXterm = (e) => {
-		e.preventDefault();
-		setCommand("xterm");
-		window.open("/terminal");
-	};
+
 	const handleGitHub = (e) => {
 		e.preventDefault();
 		setCommand("github");

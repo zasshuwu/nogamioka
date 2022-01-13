@@ -211,7 +211,10 @@ export default function ProjectsContent({ command }) {
 					<div className={classes.projectText}>
 						<h2>Others:</h2>
 						<ul>
-							<li>Deploy and host personal minecraft server (java) on linux-gsm</li>
+							<li>
+								Deploy and host personal minecraft server (java) on bare-metal Linux
+								server with automated backup to AWS S3.
+							</li>
 							<li>
 								Deploy VPN server with NAT routing to access geo-locked content and
 								hardened RDP
