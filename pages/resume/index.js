@@ -92,13 +92,34 @@ export default function Resume({}) {
 				<div className={classes.resume_header}>
 					<h1>Anh Hoang Nguyen&apos;s Resume</h1>
 					<div className={classes.resume_download}>
-						<Button variant="outlined" color="primary" className={classes.export_btn}>
+						<Button
+							onClick={() => {
+								window.print();
+							}}
+							variant="outlined"
+							color="primary"
+							className={classes.export_btn}
+						>
 							.PDF
 						</Button>
-						<Button variant="outlined" color="tertiary" className={classes.export_btn}>
+						<Button
+							onClick={() => {
+								window.alert("Coming soon!");
+							}}
+							variant="outlined"
+							color="tertiary"
+							className={classes.export_btn}
+						>
 							.DOCX
 						</Button>
-						<Button variant="outlined" color="black" className={classes.export_btn}>
+						<Button
+							onClick={() => {
+								window.alert("Coming soon!");
+							}}
+							variant="outlined"
+							color="black"
+							className={classes.export_btn}
+						>
 							.MD
 						</Button>
 					</div>
