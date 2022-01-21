@@ -93,7 +93,7 @@ const MainContent = ({ command }) => {
 			</Head>
 			<div className={classes.message}>
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
-					Welcome to Nguyen Hoang Anh&apos;s Portfolio 4.20 LTS (Yeetus Magus) 😉
+					Welcome to Nguyen Hoang Anh&apos;s Portfolio 6.90 RC (Yeetus Magus) 😉
 				</h1>
 				<Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
@@ -103,8 +103,8 @@ const MainContent = ({ command }) => {
 
 					<p style={{ wordBreak: "break-all" }}>
 						* <span style={{ color: "#00ddff" }}>Documentation:</span>{" "}
-						<a href="https://github.com/aaanh/main-site-src">
-							https://github.com/aaanh/main-site-src
+						<a href="https://github.com/aaanh/homepage">
+							https://github.com/aaanh/homepage.git
 						</a>
 					</p>
 					<p>
