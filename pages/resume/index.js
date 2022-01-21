@@ -40,10 +40,10 @@ export default function Resume({}) {
 
 	return (
 		<Container style={{ fontFamily: "Be Vietnam Pro" }} data-aos="fade-up">
-			<title>Anh's Resume</title>
+			<title>Anh&apos;s Resume</title>
 			<Paper elevation={3} className={classes.resume_wrapper}>
 				<div className={classes.resume_header}>
-					<h1>Anh Hoang Nguyen's Resume</h1>
+					<h1>Anh Hoang Nguyen&apos;s Resume</h1>
 					<div className={classes.resume_download}>
 						<Button variant="outlined" color="primary" className={classes.export_btn}>
 							.PDF
