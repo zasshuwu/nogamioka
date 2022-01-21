@@ -49,18 +49,30 @@ export default function ResumeContact({}) {
 	return (
 		<div className={classes.resume_contact}>
 			<EmailIcon
+				onClick={() => {
+					window.open("mailto:iam@hoanganh.tech");
+				}}
 				className={clsx(classes.resume_contact_icons, classes.mail_icon)}
 				fontSize="large"
 			></EmailIcon>
 			<LinkedInIcon
+				onClick={() => {
+					window.open("https://linkedin.com/in/aaanh");
+				}}
 				className={clsx(classes.resume_contact_icons, classes.linkedin_icon)}
 				fontSize="large"
 			></LinkedInIcon>
 			<GitHubIcon
+				onClick={() => {
+					window.open("https://github.com/aaanh");
+				}}
 				className={clsx(classes.resume_contact_icons, classes.github_icon)}
 				fontSize="large"
 			></GitHubIcon>
 			<TwitterIcon
+				onClick={() => {
+					window.open("https://twitter.com/yeetusmagus");
+				}}
 				className={clsx(classes.resume_contact_icons, classes.twitter_icon)}
 				fontSize="large"
 			></TwitterIcon>
