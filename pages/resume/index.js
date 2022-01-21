@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import ResumeSummary from "./resume_summary";
 import ResumeEducation from "./resume_education";
 import ResumeExperience from "./resume_experience";
+import ResumeProjects from "./resume_projects";
 
 const useStyles = makeStyles((customTheme) => ({
 	resume_wrapper: {
@@ -60,6 +61,7 @@ export default function Resume({}) {
 				<ResumeSummary></ResumeSummary>
 				<ResumeEducation></ResumeEducation>
 				<ResumeExperience></ResumeExperience>
+				<ResumeProjects></ResumeProjects>
 			</Paper>
 		</Container>
 	);
