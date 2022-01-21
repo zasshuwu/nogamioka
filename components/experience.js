@@ -1,5 +1,6 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
+
 import customTheme from "../styles/theme";
 
 const useStyles = makeStyles((theme) => ({
@@ -96,8 +97,10 @@ export default function ExperienceContent({ command }) {
 	return (
 		<div style={{ margin: "1rem" }}>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
-				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
+				<span style={{ color: "#9f43fa" }}>~#</span>
 				{" " + command}
 			</p>
 			<div className={classes.experience}>
@@ -260,8 +263,10 @@ export default function ExperienceContent({ command }) {
 
 			<br></br>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
-				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
+				<span style={{ color: "#9f43fa" }}>~#</span>
 				<span className={classes.animatedCaret}></span>
 			</p>
 		</div>

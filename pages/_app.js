@@ -1,9 +1,14 @@
-import Main from "../components/main";
-import Head from "next/head";
-import "firacode"
+import "../styles/globals.css";
+import { ThemeProvider } from "@mui/material/styles";
+import customTheme from "../styles/theme";
+import "firacode";
 
 function MyApp({ Component, pageProps }) {
-	return (<Component {...pageProps} /> );
+	return (
+		<ThemeProvider theme={customTheme}>
+			<Component {...pageProps} />
+		</ThemeProvider>
+	);
 }
 
 export default MyApp;

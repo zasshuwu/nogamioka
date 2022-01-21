@@ -1,22 +1,17 @@
 // react
 import { React, useState } from "react";
-import clsx from "clsx";
 
 // ui
-import { Typography } from "@material-ui/core";
-import useMediaQuery from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import { useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import customTheme from "../styles/theme";
-import Link from "@material-ui/core/Link";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((customTheme) => ({}));
 
 export default function AwardsContent({ command }) {
 	const classes = useStyles();
@@ -34,8 +29,10 @@ export default function AwardsContent({ command }) {
 	return (
 		<div style={{ margin: "1rem" }}>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
-				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
+				<span style={{ color: "#9f43fa" }}>~#</span>
 				{" " + command}
 			</p>
 			<TableContainer>
@@ -61,8 +58,10 @@ export default function AwardsContent({ command }) {
 				</Table>
 			</TableContainer>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
-				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
+				<span style={{ color: "#9f43fa" }}>~#</span>
 				<span className={classes.animatedCaret}></span>
 			</p>
 		</div>

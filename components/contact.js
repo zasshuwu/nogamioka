@@ -1,6 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import customTheme from "../styles/theme";
 
 const useStyles = makeStyles((theme) => ({
@@ -37,8 +36,10 @@ export default function ContactContent({ command }) {
 	return (
 		<div style={{ margin: "1rem", wordBreak: "break-all" }}>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
-				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
+				<span style={{ color: "#9f43fa" }}>~#</span>
 				{" " + command}
 			</p>
 			<p>
@@ -61,8 +62,10 @@ export default function ContactContent({ command }) {
 			</p>
 			<br></br>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
-				<span style={{ color: "#9f43fa" }}>~$</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
+				<span style={{ color: "#9f43fa" }}>~#</span>
 				<span className={classes.animatedCaret}></span>
 			</p>
 		</div>

@@ -1,32 +1,17 @@
 import { React, useState } from "react";
 
 // ui
-import { Typography } from "@material-ui/core";
-import clsx from "clsx";
-import { useMediaQuery } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import Link from "@material-ui/core/Link";
-import { useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
+import Button from "@mui/material/Button";
 import customTheme from "../styles/theme";
 
 // icons
-import GitHubIcon from "@material-ui/icons/GitHub";
-import HomeIcon from "@material-ui/icons/Home";
-import MailIcon from "@material-ui/icons/Mail";
-import WorkIcon from "@material-ui/icons/Work";
-import AccountTreeIcon from "@material-ui/icons/AccountTree";
-import BeenhereIcon from "@material-ui/icons/Beenhere";
-import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
-import VpnLock from "@material-ui/icons/VpnLock";
-import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
-import LaptopIcon from "@material-ui/icons/Laptop";
-
-// modals
-// import Contact from "./contact";
-// import Experience from "./experience";
-// import Awards from "./awards";
-// import Projects from "./project";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import MailIcon from "@mui/icons-material/Mail";
+import WorkIcon from "@mui/icons-material/Work";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import BeenhereIcon from "@mui/icons-material/Beenhere";
+import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 
 const useStyles = makeStyles((theme) => ({
 	navBarWrapper: {
@@ -36,19 +21,6 @@ const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		borderTop: "solid 1px grey",
 		flexGrow: "1",
-		// [theme.breakpoints.up("md")]: {
-		// 	position: "absolute",
-		// 	bottom: "0",
-		// 	borderTop: "solid 1px grey",
-		// 	display: "flex",
-		// 	"& ul": {
-		// 		"& li": {
-		// 			margin: "0.5rem",
-		// 		},
-		// 	},
-		// 	height: "50px",
-		// 	width: "100%",
-		// },
 	},
 	navBar: {
 		padding: "0",
@@ -159,27 +131,22 @@ export default function NavBar({ setCommand, setContent }) {
 	const toHome = () => {
 		setCommand("cd /home/aaanh");
 		setContent("main");
-		// setValues({ ...values, showMain: !values.showMain });
 	};
 	const handleContact = () => {
 		setCommand("contact");
 		setContent("contact");
-		// setValues({ ...values, showContact: !values.showContact });
 	};
 	const handleExperience = () => {
 		setCommand("experience");
 		setContent("experience");
-		// setValues({ ...values, showExperience: !values.showExperience });
 	};
 	const handleAwards = () => {
 		setCommand("awards");
 		setContent("awards");
-		// setValues({ ...values, showAwards: !values.showAwards });
 	};
 	const handleProjects = () => {
 		setCommand("projects");
 		setContent("projects");
-		// setValues({ ...values, showProjects: !values.showProjects });
 	};
 
 	const handleGitHub = (e) => {
@@ -197,14 +164,6 @@ export default function NavBar({ setCommand, setContent }) {
 
 	return (
 		<div className={classes.navBarWrapper}>
-			{/* <Contact showContact={values.showContact} handleClose={handleContact}></Contact>
-			<Awards showAwards={values.showAwards} handleClose={handleAwards}></Awards>
-			<Projects showProjects={values.showProjects} handleClose={handleProjects}></Projects>
-			<Experience
-				showExperience={values.showExperience}
-				handleClose={handleExperience}
-			></Experience> */}
-
 			<div className={classes.navBar}>
 				<Button
 					size="small"

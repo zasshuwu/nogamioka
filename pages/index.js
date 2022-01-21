@@ -1,13 +1,13 @@
-import React from "react";
-import Main from "../components/main";
 import Head from "next/head";
+
+import Main from "../components/main";
 
 export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Hoang Anh Tech</title>
-				<meta property="og:title" content="Hoang Anh Tech" key="title" />
+				<title>Anh's Portfolio</title>
+				<meta property="og:title" content="Anh's Portfolio" key="title" />
 				<meta
 					property="og:description"
 					content="Hoang Anh's portfolio site, also where web frameworks are experimentally incorporated."
