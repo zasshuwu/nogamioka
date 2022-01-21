@@ -18,13 +18,29 @@ const useStyles = makeStyles((theme) => ({
 	comp: {
 		color: "#1245a8",
 		fontSize: "1.25em",
-		borderBottom: "solid 1px",
+		margin: "0.5rem",
+		[customTheme.breakpoints.down("md")]: {
+			fontSize: "1em",
+		},
 		"&:hover": {
 			fontWeight: "bold",
+		},
+		[customTheme.breakpoints.down("md")]: {
+			textAlign: "center",
 		},
 	},
 	h2: {
 		color: customTheme.palette.tertiary.main,
+	},
+	role: {
+		[customTheme.breakpoints.down("md")]: {
+			textAlign: "center",
+		},
+	},
+	time: {
+		[customTheme.breakpoints.down("md")]: {
+			textAlign: "center",
+		},
 	},
 }));
 

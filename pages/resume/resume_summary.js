@@ -6,9 +6,12 @@ import customTheme from "../../styles/theme";
 const useStyles = makeStyles((theme) => ({
 	resume_summary: {
 		color: customTheme.palette.mode === "light" ? "#000" : "#ddd",
-		borderLeft: "solid 8px #555",
+		borderLeft: "solid 8px #777",
 		padding: "0 1rem",
 		fontSize: "1.25em",
+		[customTheme.breakpoints.down("md")]: {
+			fontSize: "0.9em",
+		},
 	},
 }));
 

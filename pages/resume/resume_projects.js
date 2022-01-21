@@ -41,7 +41,7 @@ export default function ResumeProjects() {
 						margin: "1rem",
 					}}
 				>
-					<CardMedia component="img" height="140" image="placeholder.jpeg" />
+					<CardMedia component="img" height="150" image="projects/homepage.png" />
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
 							<a href="https://hoanganh.tech">This Portfolio Site</a>
@@ -58,7 +58,7 @@ export default function ResumeProjects() {
 							}}
 							size="small"
 						>
-							See in action
+							see it in action
 						</Button>
 						<Button
 							onClick={() => {
@@ -80,7 +80,11 @@ export default function ResumeProjects() {
 						margin: "1rem",
 					}}
 				>
-					<CardMedia component="img" height="140" image="/placeholder.jpeg"></CardMedia>
+					<CardMedia
+						component="img"
+						height="140"
+						image="/projects/unix-docs.png"
+					></CardMedia>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
 							<a href="https://unix.hoanganh.tech">Unix Docs</a>
@@ -98,7 +102,7 @@ export default function ResumeProjects() {
 							}}
 							size="small"
 						>
-							See in action
+							see it in action
 						</Button>
 						<Button
 							onClick={() => {
@@ -120,10 +124,57 @@ export default function ResumeProjects() {
 						margin: "1rem",
 					}}
 				>
-					<CardMedia component="img" height="140" image="/placeholder.jpeg"></CardMedia>
+					<CardMedia
+						component="img"
+						height="140"
+						image="/projects/dev-blog.png"
+					></CardMedia>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
-							<a href="https://unix.hoanganh.tech">
+							<a href="https://dev.hoanganh.tech">Development Blog</a>
+						</Typography>
+						<Typography variant="body2" color="text.secondary">
+							A blog built with Gatsbyjs where I write about new techs, tools, and
+							knowledge I come across.
+						</Typography>
+					</CardContent>
+					<CardActions sx={{ marginTop: "auto" }} className={classes.project_actions}>
+						<Button
+							onClick={() => {
+								window.open("https://dev.hoanganh.tech");
+							}}
+							size="small"
+						>
+							See it in Action
+						</Button>
+						<Button
+							onClick={() => {
+								window.open("https://github.com/aaanh/dev-blog");
+							}}
+							size="small"
+						>
+							GitHub Source
+						</Button>
+					</CardActions>
+				</Card>
+
+				<Card
+					sx={{
+						maxWidth: 345,
+						minHeight: 360,
+						display: "flex",
+						flexDirection: "column",
+						margin: "1rem",
+					}}
+				>
+					<CardMedia
+						component="img"
+						height="140"
+						image="/coen244/coen244-demo.gif"
+					></CardMedia>
+					<CardContent>
+						<Typography gutterBottom variant="h5" component="div">
+							<a href="https://github.com/aaanh/meaningful-graph-traversal">
 								Data Object Parse and Meaningful Traversal
 							</a>
 						</Typography>

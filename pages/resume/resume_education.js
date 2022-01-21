@@ -17,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
 	},
 	edu_year: {
 		margin: "0 0 0 1rem",
+
+		[customTheme.breakpoints.down("md")]: {
+			textAlign: "center",
+		},
 	},
 	edu_school: {
 		margin: "0 0 0 1rem",

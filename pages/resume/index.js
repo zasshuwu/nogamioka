@@ -10,18 +10,29 @@ import ResumeSummary from "./resume_summary";
 import ResumeEducation from "./resume_education";
 import ResumeExperience from "./resume_experience";
 import ResumeProjects from "./resume_projects";
+import { ArrowLeftRounded } from "@mui/icons-material";
 
 const useStyles = makeStyles((customTheme) => ({
 	resume_wrapper: {
 		padding: "1rem",
 		margin: "2rem 1rem",
 		backgroundColor: "#fbfbf8",
+		[customTheme.breakpoints.down("md")]: {
+			margin: "0",
+			minWidth: "100vw",
+			minHeight: "100vh",
+			fontSize: "0.9em",
+			padding: "0.25rem",
+		},
 	},
 	resume_header: {
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
 		flexDirection: "column",
+		[customTheme.breakpoints.down("md")]: {
+			textAlign: "center",
+		},
 	},
 	export_btn: {
 		margin: "0 0.5rem",
@@ -29,6 +40,30 @@ const useStyles = makeStyles((customTheme) => ({
 	resume_download: {
 		display: "flex",
 		alignItems: "center",
+	},
+	back_arrow: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+		border: "solid 1px black",
+		borderRadius: "50%",
+		position: "fixed",
+		"&:hover": {
+			backgroundColor: "#333333dd",
+			color: "#fff",
+			cursor: "pointer",
+		},
+		[customTheme.breakpoints.down("md")]: {
+			display: "none",
+		},
+	},
+	resume_container: {
+		[customTheme.breakpoints.down("md")]: {
+			margin: "0",
+			minWidth: "100vw",
+			minHeight: "100vh",
+			padding: "0",
+		},
 	},
 }));
 
@@ -40,9 +75,20 @@ export default function Resume({}) {
 	}, []);
 
 	return (
-		<Container style={{ fontFamily: "Be Vietnam Pro" }} data-aos="fade-up">
+		<Container
+			className={classes.resume_container}
+			style={{ fontFamily: "Be Vietnam Pro" }}
+			data-aos="fade-up"
+		>
 			<title>Anh&apos;s Resume</title>
 			<Paper elevation={3} className={classes.resume_wrapper}>
+				<ArrowLeftRounded
+					className={classes.back_arrow}
+					sx={{ fontSize: "48pt" }}
+					onClick={() => {
+						window.open("/");
+					}}
+				></ArrowLeftRounded>
 				<div className={classes.resume_header}>
 					<h1>Anh Hoang Nguyen&apos;s Resume</h1>
 					<div className={classes.resume_download}>
