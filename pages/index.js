@@ -1,9 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-
-import customTheme from "../styles/theme";
-import { makeStyles } from "@mui/styles";
-import { useTheme } from "@mui/styles";
 
 import Main from "../components/main";
 

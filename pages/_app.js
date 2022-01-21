@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "../styles/theme";
+import "firacode";
 
 function MyApp({ Component, pageProps }) {
 	return (

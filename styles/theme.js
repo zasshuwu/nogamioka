@@ -40,7 +40,10 @@ const customTheme = createTheme({
 			main: "#30d95d",
 		},
 		secondary: {
-			main: "#d9305a",
+			main: "#f0f0f0",
+		},
+		tertiary: {
+			main: "#2172ff",
 		},
 		navButton: "#f53652",
 		background: {

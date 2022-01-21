@@ -17,6 +17,11 @@ export default class MyDocument extends Document {
 						name="keywords"
 						content="Anh, Hoang, Nguyen, portfolio, web development, react, next, mui, material"
 					/>
+					<link rel="preconnect" href="https://fonts.googleapis.com" />
+					<link
+						href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,700;1,400&display=swap"
+						rel="stylesheet"
+					/>
 				</Head>
 				<body style={{ backgroundColor: "#1a1a1a" }}>
 					<Main />

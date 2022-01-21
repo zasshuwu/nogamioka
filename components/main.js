@@ -96,7 +96,7 @@ const MainContent = ({ command }) => {
 					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus) 😉
 				</h1>
 				<Button onClick={handleResume} variant="outlined" color="primary">
-					View/Download Classic Resume
+					View Classic Resume
 				</Button>
 				<code>
 					<br></br>

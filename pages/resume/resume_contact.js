@@ -1,6 +1,8 @@
 import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@mui/styles";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // icons
 import EmailIcon from "@mui/icons-material/Email";
@@ -22,8 +24,21 @@ const useStyles = makeStyles((theme) => ({
 	mail_icon: {
 		"&:hover": {
 			color: "#1ac1c7",
-			transition: "ease-in-out .25s",
-			cursor: "pointer",
+		},
+	},
+	linkedin_icon: {
+		"&:hover": {
+			color: "#0a66c2",
+		},
+	},
+	github_icon: {
+		"&:hover": {
+			color: "black",
+		},
+	},
+	twitter_icon: {
+		"&:hover": {
+			color: "#1DA1F2",
 		},
 	},
 }));
