@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Anh's Portfolio</title>
+				<title>Anh&apos;s Portfolio</title>
 				<meta property="og:title" content="Anh's Portfolio" key="title" />
 				<meta
 					property="og:description"

@@ -93,7 +93,7 @@ const MainContent = ({ command }) => {
 			</Head>
 			<div className={classes.message}>
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
-					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus) 😉
+					Welcome to Nguyen Hoang Anh&apos;s Portfolio 4.20 LTS (Yeetus Magus) 😉
 				</h1>
 				<Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
