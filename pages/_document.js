@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
 						content="Anh, Hoang, Nguyen, portfolio, web development, react, next, mui, material"
 					/>
 				</Head>
-				<body>
+				<body style={{ backgroundColor: "#1a1a1a" }}>
 					<Main />
 					<NextScript />
 				</body>

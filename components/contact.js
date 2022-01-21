@@ -36,7 +36,9 @@ export default function ContactContent({ command }) {
 	return (
 		<div style={{ margin: "1rem", wordBreak: "break-all" }}>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
 				<span style={{ color: "#9f43fa" }}>~#</span>
 				{" " + command}
 			</p>
@@ -60,7 +62,9 @@ export default function ContactContent({ command }) {
 			</p>
 			<br></br>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
 				<span style={{ color: "#9f43fa" }}>~#</span>
 				<span className={classes.animatedCaret}></span>
 			</p>

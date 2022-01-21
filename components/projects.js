@@ -105,7 +105,9 @@ export default function ProjectsContent({ command }) {
 	return (
 		<div style={{ margin: "1rem" }} className={classes.projects}>
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
 				<span style={{ color: "#9f43fa" }}>~#</span>
 				{" " + command}
 			</p>
@@ -227,7 +229,9 @@ export default function ProjectsContent({ command }) {
 			</div>
 
 			<p>
-				<span style={{ color: customTheme.palette.primary.main }}>aaanh@hoanganhtech:</span>
+				<span style={{ color: customTheme.palette.primary.main }}>
+					root@ANH-WEB-SERVER:
+				</span>
 				<span style={{ color: "#9f43fa" }}>~#</span>
 				<span className={classes.animatedCaret}></span>
 			</p>

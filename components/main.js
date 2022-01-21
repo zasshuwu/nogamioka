@@ -14,6 +14,8 @@ import AwardsContent from "./awards";
 import ExperienceContent from "./experience";
 import ProjectsContent from "./projects";
 import ContactContent from "./contact";
+import { Button } from "@mui/material";
+import { useRouter } from "next/router";
 
 export default function Main(props) {
 	const classes = useStyles();
@@ -67,6 +69,14 @@ export default function Main(props) {
 const MainContent = ({ command }) => {
 	const classes = useStyles();
 	let d = new Date();
+
+	const router = useRouter();
+
+	const handleResume = (e) => {
+		e.preventDefault();
+		router.push("/resume");
+	};
+
 	return (
 		<>
 			<Head>
@@ -86,7 +96,9 @@ const MainContent = ({ command }) => {
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 					Welcome to Nguyen Hoang Anh's Portfolio 4.20 LTS (Yeetus Magus) 😉
 				</h1>
-
+				<Button onClick={handleResume} variant="outlined" color="primary">
+					View/Download Classic Resume
+				</Button>
 				<code>
 					<br></br>
 
