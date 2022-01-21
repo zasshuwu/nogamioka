@@ -2,6 +2,7 @@ import React from "react";
 
 import { makeStyles } from "@mui/styles";
 import { Button, Container, Paper } from "@mui/material";
+import ResumeContact from "./resume_contact";
 
 const useStyles = makeStyles((customTheme) => ({
 	resume_wrapper: {
@@ -37,6 +38,7 @@ export default function Resume({}) {
 							.MD
 						</Button>
 					</div>
+					<ResumeContact></ResumeContact>
 				</div>
 			</Paper>
 		</Container>
