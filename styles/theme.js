@@ -35,12 +35,15 @@ const customTheme = createTheme({
 	// 	},
 	// },
 	palette: {
-		mode: "dark",
+		mode: "light",
 		primary: {
 			main: "#30d95d",
 		},
 		secondary: {
 			main: "#f0f0f0",
+		},
+		black: {
+			main: "#000",
 		},
 		tertiary: {
 			main: "#2172ff",

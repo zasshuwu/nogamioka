@@ -1,10 +1,11 @@
 import React from "react";
 
 import { makeStyles } from "@mui/styles";
+import customTheme from "../../styles/theme";
 
 const useStyles = makeStyles((theme) => ({
 	resume_summary: {
-		color: "#ccc",
+		color: customTheme.palette.mode === "light" ? "#000" : "#ddd",
 		borderLeft: "solid 8px #555",
 		padding: "0 1rem",
 		fontSize: "1.25em",

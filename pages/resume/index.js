@@ -8,11 +8,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import ResumeSummary from "./resume_summary";
 import ResumeEducation from "./resume_education";
+import ResumeExperience from "./resume_experience";
 
 const useStyles = makeStyles((customTheme) => ({
 	resume_wrapper: {
 		padding: "1rem",
-		margin: "1rem",
+		margin: "2rem 1rem",
+		backgroundColor: "#fbfbf8",
 	},
 	resume_header: {
 		display: "flex",
@@ -49,7 +51,7 @@ export default function Resume({}) {
 						<Button variant="outlined" color="tertiary" className={classes.export_btn}>
 							.DOCX
 						</Button>
-						<Button variant="outlined" color="secondary" className={classes.export_btn}>
+						<Button variant="outlined" color="black" className={classes.export_btn}>
 							.MD
 						</Button>
 					</div>
@@ -57,6 +59,7 @@ export default function Resume({}) {
 				</div>
 				<ResumeSummary></ResumeSummary>
 				<ResumeEducation></ResumeEducation>
+				<ResumeExperience></ResumeExperience>
 			</Paper>
 		</Container>
 	);
