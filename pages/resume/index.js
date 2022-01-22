@@ -10,11 +10,14 @@ import ResumeSummary from "./resume_summary";
 import ResumeEducation from "./resume_education";
 import ResumeExperience from "./resume_experience";
 import ResumeProjects from "./resume_projects";
-import { ArrowLeftRounded } from "@mui/icons-material";
+import HomeIcon from "@mui/icons-material/Home";
+import ResumeAwards from "./resume_awards";
+import ResumeOthers from "./resume_others";
+import Top from "../../components/top";
 
 const useStyles = makeStyles((customTheme) => ({
 	resume_wrapper: {
-		padding: "1rem",
+		padding: "1rem 1rem 3rem 1rem",
 		margin: "2rem 1rem",
 		backgroundColor: "#fbfbf8",
 		[customTheme.breakpoints.down("md")]: {
@@ -22,7 +25,7 @@ const useStyles = makeStyles((customTheme) => ({
 			minWidth: "100vw",
 			minHeight: "100vh",
 			fontSize: "0.9em",
-			padding: "0.25rem",
+			padding: "0.25rem 0.25rem 3rem 0.25rem",
 		},
 	},
 	resume_header: {
@@ -75,61 +78,67 @@ export default function Resume({}) {
 	}, []);
 
 	return (
-		<Container
-			className={classes.resume_container}
-			style={{ fontFamily: "Be Vietnam Pro" }}
-			data-aos="fade-up"
-		>
-			<title>Anh&apos;s Resume</title>
-			<Paper elevation={3} className={classes.resume_wrapper}>
-				<ArrowLeftRounded
-					className={classes.back_arrow}
-					sx={{ fontSize: "48pt" }}
-					onClick={() => {
-						window.open("/");
-					}}
-				></ArrowLeftRounded>
-				<div className={classes.resume_header}>
-					<h1>Anh Hoang Nguyen&apos;s Resume</h1>
-					<div className={classes.resume_download}>
-						<Button
-							onClick={() => {
-								window.print();
-							}}
-							variant="outlined"
-							color="primary"
-							className={classes.export_btn}
-						>
-							.PDF
-						</Button>
-						<Button
-							onClick={() => {
-								window.alert("Coming soon!");
-							}}
-							variant="outlined"
-							color="tertiary"
-							className={classes.export_btn}
-						>
-							.DOCX
-						</Button>
-						<Button
-							onClick={() => {
-								window.alert("Coming soon!");
-							}}
-							variant="outlined"
-							color="black"
-							className={classes.export_btn}
-						>
-							.MD
-						</Button>
+		<div>
+			<Container
+				className={classes.resume_container}
+				style={{ fontFamily: "Be Vietnam Pro" }}
+				data-aos="fade-up"
+			>
+				<title>Anh&apos;s Resume</title>
+				<Paper elevation={3} className={classes.resume_wrapper}>
+					<HomeIcon
+						className={classes.back_arrow}
+						sx={{ fontSize: "32pt", padding: "0.5rem" }}
+						onClick={() => {
+							window.open("/");
+						}}
+					></HomeIcon>
+					<div className={classes.resume_header} id="top">
+						<h1>Anh Hoang Nguyen&apos;s Resume</h1>
+						<div className={classes.resume_download}>
+							<Button
+								onClick={() => {
+									window.print();
+								}}
+								variant="outlined"
+								color="primary"
+								className={classes.export_btn}
+							>
+								.PDF
+							</Button>
+							<Button
+								onClick={() => {
+									window.alert("Coming soon!");
+								}}
+								variant="outlined"
+								color="tertiary"
+								className={classes.export_btn}
+							>
+								.DOCX
+							</Button>
+							<Button
+								onClick={() => {
+									window.alert("Coming soon!");
+								}}
+								variant="outlined"
+								color="black"
+								className={classes.export_btn}
+							>
+								.MD
+							</Button>
+						</div>
+						<ResumeContact></ResumeContact>
 					</div>
-					<ResumeContact></ResumeContact>
-				</div>
-				<ResumeSummary></ResumeSummary>
-				<ResumeEducation></ResumeEducation>
-				<ResumeExperience></ResumeExperience>
-				<ResumeProjects></ResumeProjects>
-			</Paper>
-		</Container>
+					<ResumeSummary></ResumeSummary>
+					<ResumeEducation></ResumeEducation>
+					<ResumeExperience></ResumeExperience>
+					<ResumeProjects></ResumeProjects>
+					<ResumeAwards></ResumeAwards>
+					<ResumeOthers></ResumeOthers>
+					<div id="footer"></div>
+				</Paper>
+			</Container>
+			<Top></Top>
+		</div>
 	);
 }

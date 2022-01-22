@@ -13,6 +13,15 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: "0.9em",
 		},
 	},
+	skill_cloud: {
+		padding: "1rem",
+	},
+	skill_topic: {
+		fontWeight: "bold",
+	},
+	h2: {
+		color: customTheme.palette.tertiary.main,
+	},
 }));
 
 export default function ResumeSummary({}) {
@@ -33,12 +42,38 @@ export default function ResumeSummary({}) {
 					and cloud clusters on Linode, AWS, and manage orchestration via Ansible. My
 					tentative endgame is to work in DevOps and CyberSec.
 				</p>
-				<p>
-					I started out in linguistics, psychology, and political science, but have since
-					(2017) departed and pursued my life-long passion in computer science and
-					engineering.
-				</p>
 			</blockquote>
+			<div className={classes.skill_cloud}>
+				<h2 className={classes.h2}>Skills</h2>
+				<ul>
+					<li>
+						<span className={classes.skill_topic}>Programming Languages</span>: C, C++,
+						C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
+					</li>
+					<li>
+						<span className={classes.skill_topic}>Specializations</span>: Web app
+						development, cross-platform with Electron, server orchestration and
+						networking.
+					</li>
+					<li>
+						<span className={classes.skill_topic}>Environments</span>: Linux, macOS,
+						Windows and respective CLI&apos;s.
+					</li>
+					<li>
+						<span className={classes.skill_topic}>Tools</span>: Agile process, git,
+						bash/zsh, PowerShell, vim, vscode, conda.
+					</li>
+					<li>
+						<span className={classes.skill_topic}>Natural languages</span>: vi-vn
+						(native), en-us/ca/uk (bilingual), fr-ca (B1), ja-jp (N5), de-de (casual).
+					</li>
+					<li>
+						<span className={classes.skill_topic}>Personal</span>: Professional manner,
+						responsible, problem solving, willing to learn, team player, empathy,
+						friendly.
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }

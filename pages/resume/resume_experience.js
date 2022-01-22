@@ -113,9 +113,9 @@ export default function ResumeExperience() {
 				</div>
 				<div className={classes.desc}>
 					<ul>
-						<li>Provide technical assistance and troubleshooting for users</li>
-						<li>Perform infra and team workflow improvement tasks</li>
-						<li>Test new hardware and software compatibility in the environment</li>
+						<li>Provide technical assistance and troubleshooting for users.</li>
+						<li>Perform infra and team workflow improvement tasks.</li>
+						<li>Test new hardware and software compatibility in the environment.</li>
 						<li>
 							Manage hybrid AD and Endpoint, account credentials and permission
 							groups.

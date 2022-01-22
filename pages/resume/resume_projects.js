@@ -30,7 +30,7 @@ export default function ResumeProjects() {
 
 	return (
 		<div className={classes.resume_projects}>
-			<h2 className={classes.h2}>Projects</h2>
+			<h2 className={classes.h2}>Notable Projects</h2>
 			<div className={classes.project_cards}>
 				<Card
 					sx={{
@@ -201,6 +201,44 @@ export default function ResumeProjects() {
 							size="small"
 						>
 							GitHub Source
+						</Button>
+					</CardActions>
+				</Card>
+				<Card
+					sx={{
+						maxWidth: 345,
+						minHeight: 360,
+						display: "flex",
+						flexDirection: "column",
+						margin: "1rem",
+					}}
+				>
+					<CardMedia
+						component="img"
+						height="140"
+						image="/projects/halcyon.png"
+					></CardMedia>
+					<CardContent>
+						<Typography gutterBottom variant="h5" component="div">
+							<a href="https://halcyon.hoanganh.dev/">
+								Imaginary Homepage for ConUHacks VI
+							</a>
+						</Typography>
+						<Typography variant="body2" color="text.secondary">
+							Never saw the light of day due to sudden cancellations. Almost 2 months
+							of work and improvements went out the window. The leadership&apos;s
+							operations, ideals and vision no longer aligned with mine. I&apos;m no
+							longer affiliated with ConUHacks or HackConcordia.
+						</Typography>
+					</CardContent>
+					<CardActions sx={{ marginTop: "auto" }} className={classes.project_actions}>
+						<Button
+							onClick={() => {
+								window.open("https://halcyon.hoanganh.dev");
+							}}
+							size="small"
+						>
+							Hide the Pain
 						</Button>
 					</CardActions>
 				</Card>
