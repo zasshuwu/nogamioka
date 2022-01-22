@@ -69,7 +69,7 @@ export default function ResumeSummary({}) {
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Personal</span>: Professional manner,
-						responsible, problem solving, willing to learn, team player, empathy,
+						responsible, problem solving, willing to learn, a team player, empathetic,
 						friendly.
 					</li>
 				</ul>
