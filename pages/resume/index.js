@@ -101,7 +101,7 @@ export default function Resume({}) {
 						<div className={classes.resume_download}>
 							<Button
 								onClick={() => {
-									window.print();
+									window.open("/anh-resume.pdf");
 								}}
 								variant="outlined"
 								color="primary"
@@ -111,7 +111,7 @@ export default function Resume({}) {
 							</Button>
 							<Button
 								onClick={() => {
-									window.alert("Coming soon!");
+									window.open("/anh-resume.docx");
 								}}
 								variant="outlined"
 								color="tertiary"
@@ -121,7 +121,7 @@ export default function Resume({}) {
 							</Button>
 							<Button
 								onClick={() => {
-									window.alert("Coming soon!");
+									window.open("/anh-resume.md");
 								}}
 								variant="outlined"
 								color="black"
