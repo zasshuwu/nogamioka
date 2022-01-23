@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import customTheme from "../styles/theme";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
 	"@keyframes gradient": {
@@ -29,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
 			borderRight: "solid 5px #fff",
 		},
 	},
+	my_face: {
+		borderRadius: "50%",
+	},
 }));
 
 export default function ContactContent({ command }) {
@@ -43,10 +47,12 @@ export default function ContactContent({ command }) {
 				{" " + command}
 			</p>
 			<p>
-				<img
-					style={{ height: "100px", borderRadius: "50%" }}
+				<Image
 					src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
-				></img>
+					width="100px"
+					height="100px"
+					className={classes.my_face}
+				></Image>
 			</p>
 			<p>* All inquiries: </p>
 			<p>

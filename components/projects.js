@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@mui/styles";
 
 import customTheme from "../styles/theme";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
 	project: {
@@ -114,7 +115,7 @@ export default function ProjectsContent({ command }) {
 
 			<div className={classes.project}>
 				<h2>Infrastructure Diagram</h2>
-				<img src="/homelab-and-cloud-infra.png" width="80%"></img>
+				<img src="/static/homelab-and-cloud-infra.png" width="80%"></img>
 				<br></br>
 				<div className={classes.projectEntry}>
 					<div className={classes.projectText}>
