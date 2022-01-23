@@ -14,6 +14,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import ResumeAwards from "./resume_awards";
 import ResumeOthers from "./resume_others";
 import Top from "../../components/top";
+import { useRouter } from "next/router";
 
 const useStyles = makeStyles((customTheme) => ({
 	resume_wrapper: {
@@ -73,6 +74,8 @@ const useStyles = makeStyles((customTheme) => ({
 export default function Resume({}) {
 	const classes = useStyles();
 
+	const router = useRouter();
+
 	useEffect(() => {
 		Aos.init({ duration: 1000 });
 	}, []);
@@ -90,7 +93,7 @@ export default function Resume({}) {
 						className={classes.back_arrow}
 						sx={{ fontSize: "32pt", padding: "0.5rem" }}
 						onClick={() => {
-							window.open("/");
+							router.push("/");
 						}}
 					></HomeIcon>
 					<div className={classes.resume_header} id="top">
@@ -135,7 +138,6 @@ export default function Resume({}) {
 					<ResumeProjects></ResumeProjects>
 					<ResumeAwards></ResumeAwards>
 					<ResumeOthers></ResumeOthers>
-					<div id="footer"></div>
 				</Paper>
 			</Container>
 			<Top></Top>

@@ -24,7 +24,7 @@ export default function Top() {
 			>
 				<ArrowUpwardIcon></ArrowUpwardIcon>
 			</Button>
-			<Button
+			{/* <Button
 				variant="outlined"
 				className={classes.quicknav}
 				onClick={() => {
@@ -32,7 +32,7 @@ export default function Top() {
 				}}
 			>
 				<ArrowDownward></ArrowDownward>
-			</Button>
+			</Button> */}
 		</div>
 	);
 }
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 		position: "fixed",
 		bottom: "3%",
-		right: "3%",
+		right: "5%",
 		padding: "0",
 		margin: "0",
 		boxShadow: customTheme.globalShadow,

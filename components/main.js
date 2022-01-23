@@ -22,6 +22,8 @@ export default function Main(props) {
 	const [command, setCommand] = useState("cd ~");
 	const [screenContent, setContent] = useState("main");
 
+	const router = useRouter();
+
 	return (
 		<div className={classes.root}>
 			<div className={classes.content}>
