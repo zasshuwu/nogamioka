@@ -33,7 +33,6 @@ export default function ResumeSummary({}) {
 				<p>
 					I&apos;m a Bachelor of Computer Engineering student at Concordia University in
 					Montreal, QC. <br />
-					I&apos;m also a member of the Co-op Institute.
 				</p>
 				<p>
 					I actively work on modern web applications, APIs, and frameworks and machine
