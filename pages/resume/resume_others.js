@@ -28,6 +28,17 @@ export default function ResumeOthers() {
 				</li>
 				<li>Gaming</li>
 			</ul>
+			<p
+				style={{
+					textAlign: "center",
+					fontWeight: "lighter",
+					marginTop: "4rem",
+				}}
+			>
+				This online classic-style resume is latest and supersedes all other
+				versions/mutations on other media and platforms, including but not limited to, hard
+				copies, digital copies, LinkedIn, my homepage itself, and etc.
+			</p>
 		</div>
 	);
 }

@@ -98,6 +98,7 @@ export default function Resume({}) {
 					></HomeIcon>
 					<div className={classes.resume_header} id="top">
 						<h1>Anh Hoang Nguyen&apos;s Resume</h1>
+
 						<div className={classes.resume_download}>
 							<Button
 								onClick={() => {
