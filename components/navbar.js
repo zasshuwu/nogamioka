@@ -25,7 +25,6 @@ const useStyles = makeStyles((theme) => ({
 	},
 	navBar: {
 		padding: "0",
-
 		marginLeft: "auto",
 		"& > *": {
 			margin: "0.5rem",
@@ -208,6 +207,7 @@ export default function NavBar({ setCommand, setContent }) {
 				</Button>
 
 				<Button
+					size="small"
 					onClick={handleGitHub}
 					variant="outlined"
 					className={classes.customButtonGitHub}
@@ -216,6 +216,7 @@ export default function NavBar({ setCommand, setContent }) {
 					<span className={classes.BtnText}>&nbsp; @aaanh</span>
 				</Button>
 				<Button
+					size="small"
 					onClick={handleLinux}
 					variant="outlined"
 					className={classes.customButtonLinux}
@@ -224,6 +225,7 @@ export default function NavBar({ setCommand, setContent }) {
 					<span className={classes.BtnText}>&nbsp; Linux/Unix</span>
 				</Button>
 				<Button
+					size="small"
 					className={classes.customButtonBlog}
 					variant="outlined"
 					onClick={() => {
