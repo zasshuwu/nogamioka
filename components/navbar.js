@@ -12,6 +12,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
+import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 
 const useStyles = makeStyles((theme) => ({
 	navBarWrapper: {
@@ -36,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: "#1691f0",
 			color: customTheme.palette.background.main,
+			borderColor: "#1691f0",
 		},
 	},
 	customButtonContact: {
@@ -44,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: customTheme.palette.primary.main,
 			color: customTheme.palette.background.main,
+			borderColor: customTheme.palette.primary.main,
 		},
 	},
 	customButtonExperience: {
@@ -52,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: "#facc00",
 			color: customTheme.palette.background.main,
+			borderColor: "#facc00",
 		},
 	},
 	customButtonProjects: {
@@ -60,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: "#00ddff",
 			color: customTheme.palette.background.main,
+			borderColor: "#00ddff",
 		},
 	},
 	customButtonAwards: {
@@ -68,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: customTheme.palette.navButton,
 			color: customTheme.palette.background.main,
+			borderColor: customTheme.palette.navButton,
 		},
 	},
 	customButtonGitHub: {
@@ -76,6 +82,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: "#fff",
 			color: customTheme.palette.background.main,
+			borderColor: "#fff",
 		},
 	},
 	customButtonLinux: {
@@ -84,30 +91,16 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: "#0077BB",
 			color: customTheme.palette.background.main,
+			borderColor: "#0077BB",
 		},
 	},
-	customButtonVpn: {
-		color: "#fff",
-		borderColor: "#fff",
+	customButtonBlog: {
+		color: "pink",
+		borderColor: "pink",
 		"&:hover": {
-			background: "#fff",
+			background: "pink",
 			color: customTheme.palette.background.main,
-		},
-	},
-	customButtonRDP: {
-		color: "#fff",
-		borderColor: "#fff",
-		"&:hover": {
-			background: "#fff",
-			color: customTheme.palette.background.main,
-		},
-	},
-	customButtonXterm: {
-		color: "#E95420",
-		borderColor: "#E95420",
-		"&:hover": {
-			background: "#E95420",
-			color: customTheme.palette.background.main,
+			borderColor: "pink",
 		},
 	},
 	BtnText: {
@@ -229,6 +222,16 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<DeveloperModeIcon fontSize="small"></DeveloperModeIcon>
 					<span className={classes.BtnText}>&nbsp; Linux/Unix</span>
+				</Button>
+				<Button
+					className={classes.customButtonBlog}
+					variant="outlined"
+					onClick={() => {
+						window.open("https://dev.hoanganh.tech");
+					}}
+				>
+					<DriveFileRenameOutlineIcon fontSize="small"></DriveFileRenameOutlineIcon>
+					<span className={classes.BtnText}>&nbsp; Blog</span>
 				</Button>
 			</div>
 		</div>
