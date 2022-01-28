@@ -194,6 +194,30 @@ export default function ResumeExperience() {
 					</ul>
 				</div>
 			</div>
+			<div className={classes.experience_entry}>
+				<div className={classes.exp_head}>
+					<div className={classes.role}>
+						<h3>Web Developer &mdash; Seasonal</h3>
+					</div>
+					<div className={classes.comp}>
+						<a href="https://maiboatservice.us">Mai Boat Service</a>
+					</div>
+					<div className={classes.time}>06/2018 - now</div>
+				</div>
+				<div className={classes.desc}>
+					<ul>
+						<li>A family-owned boat repair business in Orlando, Florida.</li>
+						<li>
+							Visited them one summer and has been maintaining their website ever
+							since.
+						</li>
+						<li>
+							Nextjs and MUI components for the win at this point. Probably to the
+							moon even.
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	);
 }
