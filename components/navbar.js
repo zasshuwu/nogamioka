@@ -85,21 +85,21 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	customButtonLinux: {
-		color: "#0077BB",
-		borderColor: "#0077BB",
+		color: "#329ddb",
+		borderColor: "#329ddb",
 		"&:hover": {
-			background: "#0077BB",
+			background: "#329ddb",
 			color: customTheme.palette.background.main,
-			borderColor: "#0077BB",
+			borderColor: "#329ddb",
 		},
 	},
 	customButtonBlog: {
-		color: "pink",
-		borderColor: "pink",
+		color: "#a863f7",
+		borderColor: "#a863f7",
 		"&:hover": {
-			background: "pink",
+			background: "#a863f7",
 			color: customTheme.palette.background.main,
-			borderColor: "pink",
+			borderColor: "#a863f7",
 		},
 	},
 	BtnText: {
@@ -221,7 +221,8 @@ export default function NavBar({ setCommand, setContent }) {
 					variant="outlined"
 					className={classes.customButtonLinux}
 				>
-					<DeveloperModeIcon fontSize="small"></DeveloperModeIcon>
+					{/* <DeveloperModeIcon fontSize="small"></DeveloperModeIcon> */}
+					🐧
 					<span className={classes.BtnText}>&nbsp; Linux/Unix</span>
 				</Button>
 				<Button
