@@ -12,8 +12,6 @@ Twitter: <https://twitter.com/yeetusmagus>
 
 I'm a Bachelor of Computer Engineering student at Concordia University in Montreal, QC.
 
-I'm also a member of the Co-op Institute.
-
 I actively work on modern web applications, APIs, and frameworks and machine learning research projects in natural language processing. As an avid adopter of new and exciting cloud, server, and networking technologies, I setup my home lab and cloud clusters on Linode, AWS, and manage orchestration via Ansible. My tentative endgame is to work in DevOps and CyberSec.
 
 ## Skills
@@ -21,7 +19,7 @@ I actively work on modern web applications, APIs, and frameworks and machine lea
 -   **Programming Languages**: C, C++, C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
 -   **Specializations**: Web app development, cross-platform with Electron, server orchestration and networking.
 -   **Environments**: Linux, macOS, Windows and respective CLI's.
--   **Tools**: Agile process, git, bash/zsh, PowerShell, vim, vscode, conda.
+-   **Tools**: Agile process, git, bash/zsh, PowerShell, vim, vscode, conda, OSINT framework.
 -   **Natural languages**: vi-vn (native), en-us/ca/uk (bilingual), fr-ca (B1), ja-jp (N5), de-de (casual).
 -   **Personal**: Professional manner, responsible, problem solving, willing to learn, a team player, empathetic, friendly.
 

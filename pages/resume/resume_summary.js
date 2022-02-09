@@ -60,7 +60,7 @@ export default function ResumeSummary({}) {
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Tools</span>: Agile process, git,
-						bash/zsh, PowerShell, vim, vscode, conda.
+						bash/zsh, PowerShell, vim, vscode, conda, OSINT framework.
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Natural languages</span>: vi-vn
