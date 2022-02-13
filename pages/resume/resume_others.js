@@ -29,21 +29,21 @@ export default function ResumeOthers() {
 				<li>Gaming</li>
 			</ul>
 			<div className={classes.resume_dev_stacks}>
-				<pre>$ DevStack.dump("all")</pre>
+				<pre>$ DevStack.dump(&quot;all&quot;)</pre>
 				<div>
 					{" "}
 					&#12297; React, nodejs, django, flask, postgreSQL, anaconda, TensorFlow, pandas,
 					matplotlib, MERN, oauth, Material-UI, Bootstrap, Tailwind, Nextjs, Redis,
 					Postman, git, Jira, Figma, Adobe Suite, Webhooks.{" "}
 				</div>
-				<pre>$ TechStack.dump("all")</pre>
+				<pre>$ TechStack.dump(&quot;all&quot;)</pre>
 				<div>
 					{" "}
 					&#12297; Apache, nginx, docker, ansible, vagrant, terraform, GitHub Actions,
 					Jenkins, k8s/, grafana, prometheus, HTTP/S, SSL, ssh, port forwarding, Arch |
 					Debian | RHEL Linux, unix tools, bash/zsh/csh, kvm/qemu, hyper-v.
 				</div>
-				<pre>$ InfraStack.dump("all")</pre>
+				<pre>$ InfraStack.dump(&quot;all&quot;)</pre>
 				<div>
 					{" "}
 					&#12297; Linode, Google Cloud, Digital Ocean, Azure, Heroku, Cloudflare
