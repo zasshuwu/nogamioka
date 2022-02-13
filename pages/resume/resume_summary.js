@@ -46,13 +46,14 @@ export default function ResumeSummary({}) {
 				<h2 className={classes.h2}>Skills</h2>
 				<ul>
 					<li>
-						<span className={classes.skill_topic}>Programming Languages</span>: C, C++,
-						C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
+						<span className={classes.skill_topic}>Programming Languages</span>: C (2y),
+						C++ (2y), C# (1y), Python (4y), JavaScript (4y), HTML/CSS (4y), TypeScript
+						(1y), Java (1y).
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Specializations</span>: Web app
-						development, cross-platform with Electron, server orchestration and
-						networking.
+						development (2y), cross-platform with Electron (1y), server orchestration
+						(3y) and networking (2y).
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Environments</span>: Linux, macOS,
