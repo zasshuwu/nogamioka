@@ -4,6 +4,19 @@ import { makeStyles } from "@mui/styles";
 import customTheme from "../styles/theme";
 
 const useStyles = makeStyles((theme) => ({
+	"@global": {
+		"*::-webkit-scrollbar": {
+			width: "0.4em",
+		},
+		"*::-webkit-scrollbar-track": {
+			"-webkit-box-shadow": "inset 0 0 6px #2172ff00",
+		},
+		"*::-webkit-scrollbar-thumb": {
+			backgroundColor: "#30d95daa",
+			outline: "1px solid #00000000",
+			borderRadius: ".5em",
+		},
+	},
 	experience: {
 		display: "flex",
 		flexDirection: "column",
@@ -17,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 		maxHeight: "70vh",
 		overflowY: "scroll",
+		overflowX: "hidden",
 	},
 	experienceEntry: {
 		margin: "1rem",

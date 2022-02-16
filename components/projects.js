@@ -5,6 +5,19 @@ import customTheme from "../styles/theme";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
+	"@global": {
+		"*::-webkit-scrollbar": {
+			width: "0.4em",
+		},
+		"*::-webkit-scrollbar-track": {
+			"-webkit-box-shadow": "inset 0 0 6px #2172ff00",
+		},
+		"*::-webkit-scrollbar-thumb": {
+			backgroundColor: "#30d95daa",
+			outline: "1px solid #00000000",
+			borderRadius: ".5em",
+		},
+	},
 	project: {
 		display: "flex",
 		flexDirection: "column",
@@ -13,11 +26,12 @@ const useStyles = makeStyles((theme) => ({
 		},
 		minWidth: "50vw",
 		[theme.breakpoints.down("md")]: {
-			maxWidth: "100vw",
-			maxHeight: "100vh",
+			// maxWidth: "100vw",
+			// maxHeight: "100vh",
 		},
 		maxHeight: "70vh",
 		overflowY: "scroll",
+		overflowX: "hidden",
 	},
 	projectEntry: {
 		margin: "1rem",

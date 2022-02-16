@@ -185,7 +185,7 @@ const useStyles = makeStyles((theme) => ({
 	content: {
 		background: customTheme.palette.background.main,
 		minWidth: "70%",
-		minHeight: "95%",
+		minHeight: "90%",
 		border: "none",
 		borderRadius: "8px",
 		position: "relative",
