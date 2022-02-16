@@ -110,17 +110,17 @@ const MainContent = ({ command }) => {
 						</a>
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Status:</span> Studying to become a
-						Computer Engineer
+						* <span style={{ color: "#00ddff" }}>Status:</span> 📚 &rightarrow; 🎓 and
+						👀 internships.
 					</p>
 					<p>
 						* <span style={{ color: "#00ddff" }}>Institution:</span> Concordia
 						University, Montreal, QC. Canada
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Specialization:</span> Full-stack
-						Webdev, ML in Motion Detection &amp; NLP, Linux/Windows Server Admin,
-						Orchestration, Network Admin, Computer Hardware.
+						* <span style={{ color: "#00ddff" }}>Specializations:</span> Web
+						Development, DevOps, Server Orchestration, Systems Administration,
+						Networking, and InfraOps.
 					</p>
 					<p>
 						<span style={{ color: "#facc00" }}>69 updates</span> can be applied
