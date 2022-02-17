@@ -110,7 +110,7 @@ const MainContent = ({ command }) => {
 						</a>
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Status:</span> 📚 &rightarrow; 🎓 and
+						* <span style={{ color: "#00ddff" }}>Status:</span> 📚 🎓 and
 						👀 internships.
 					</p>
 					<p>
