@@ -84,7 +84,7 @@ const MainContent = ({ command }) => {
 				<meta property="og:title" content="Hoang Anh Tech" key="title" />
 				<meta
 					property="og:description"
-					content="Hoang Anh's portfolio site, also where web frameworks are experimentally incorporated."
+					content="Nguyen Hoang Anh's portfolio site, also where web frameworks are experimentally incorporated."
 					key="description"
 				></meta>
 				<meta
@@ -110,8 +110,8 @@ const MainContent = ({ command }) => {
 						</a>
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Status:</span> 📚 🎓 and
-						👀 internships.
+						* <span style={{ color: "#00ddff" }}>Status:</span> 📚 🎓 and 👀
+						internships.
 					</p>
 					<p>
 						* <span style={{ color: "#00ddff" }}>Institution:</span> Concordia
@@ -125,6 +125,10 @@ const MainContent = ({ command }) => {
 					<p>
 						<span style={{ color: "#facc00" }}>69 updates</span> can be applied
 						immediately.
+					</p>
+					<p>
+						<span style={{ color: "#facc00" }}>Published Domains:</span> hoanganh.dev;
+						hoanganh.tech
 					</p>
 					<p>To see these additional updates run: apt list --upgrade</p>
 					<br></br>
