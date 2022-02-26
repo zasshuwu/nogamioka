@@ -85,7 +85,7 @@ export default function Resume({}) {
 		<div>
 			<Head>
 				<title>Anh&apos;s Resume</title>
-				<meta property="og:image" content="/carbon.png" key="ogimage"></meta>
+				<meta property="og:image" content="https://hoanganh.tech/carbon.png" key="ogimage"></meta>
 			</Head>
 			<Container
 				className={classes.resume_container}
