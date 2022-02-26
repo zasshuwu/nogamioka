@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import { Button, Container, Paper } from "@mui/material";
 import ResumeContact from "./resume_contact";
+import Head from "next/head"
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -82,6 +83,10 @@ export default function Resume({}) {
 
 	return (
 		<div>
+			<Head>
+				<title>Anh&apos;s Resume</title>
+				<meta property="og:image" content="/carbon.png" key="ogimage"></meta>
+			</Head>
 			<Container
 				className={classes.resume_container}
 				style={{ fontFamily: "Be Vietnam Pro" }}
