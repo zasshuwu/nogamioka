@@ -84,7 +84,7 @@ const MainContent = ({ command }) => {
 				<meta property="og:title" content="Hoang Anh Tech" key="title" />
 				<meta
 					property="og:description"
-					content="Nguyen Hoang Anh's portfolio site, also where web frameworks are experimentally incorporated."
+					content="Nguyen Hoang Anh's portfolio site."
 					key="description"
 				></meta>
 				<meta
@@ -118,12 +118,10 @@ const MainContent = ({ command }) => {
 						University, Montreal, QC. Canada
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Specializations:</span> Web
-						Development, DevOps, Server Orchestration, Systems Administration,
-						Networking, and InfraOps.
+						* <span style={{ color: "#00ddff" }}>Specializations:</span> Software Development, DevOps/SRE, Systems Administration in Windows and Linux.
 					</p>
 					<p>
-						<span style={{ color: "#facc00" }}>69 updates</span> can be applied
+						<span style={{ color: "#facc00" }}>420 updates</span> can be applied
 						immediately.
 					</p>
 					<p>

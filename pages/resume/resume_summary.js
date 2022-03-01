@@ -39,7 +39,7 @@ export default function ResumeSummary({}) {
 					learning research projects in natural language processing. As an avid adopter of
 					new and exciting cloud, server, and networking technologies, I setup my home lab
 					and cloud clusters on Linode, AWS, and manage orchestration via Ansible. My
-					tentative endgame is to work in DevOps and CyberSec.
+					tentative endgame is to work in DevOps and SRE.
 				</p>
 			</blockquote>
 			<div className={classes.skill_cloud}>
@@ -52,7 +52,7 @@ export default function ResumeSummary({}) {
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Specializations</span>: Web app
-						development (2y), cross-platform with Electron (1y), server orchestration
+						development (2y), cross-platform with Electron (1y), systems administration (1.5y), server orchestration
 						(3y) and networking (2y).
 					</li>
 					<li>
