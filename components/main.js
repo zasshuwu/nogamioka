@@ -100,7 +100,7 @@ const MainContent = ({ command }) => {
 				<Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
 				</Button>
-				<code>
+				<div className="code">
 					<br></br>
 
 					<p style={{ wordBreak: "break-all" }}>
@@ -132,7 +132,7 @@ const MainContent = ({ command }) => {
 					<br></br>
 
 					<p>Last login: {d.toString()}</p>
-				</code>
+				</div>
 
 				<p>
 					<span style={{ color: customTheme.palette.primary.main }}>
@@ -169,7 +169,7 @@ const useStyles = makeStyles((theme) => ({
 			background: customTheme.palette.background.main,
 		},
 		"& .MuiTableCell-root": {
-			fontFamily: "monospace",
+			fontFamily: "Fira Code, monospace",
 			color: "#ddd !important",
 		},
 		"& a": {

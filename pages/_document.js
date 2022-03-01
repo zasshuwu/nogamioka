@@ -22,6 +22,7 @@ export default class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,700;1,400&display=swap"
 						rel="stylesheet"
 					/>
+					<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"></link>
 					<script
 						async
 						src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
