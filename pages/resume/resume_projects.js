@@ -134,7 +134,7 @@ export default function ResumeProjects() {
 							<a href="https://dev.hoanganh.tech">Development Blog</a>
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							A blog built with Gatsbyjs where I write about new techs, tools, and
+							A blog built with Nextjs and Tailwind (hosted on Netlify with Github Actions CI) where I write about new techs, tools, and
 							knowledge I come across.
 						</Typography>
 					</CardContent>
