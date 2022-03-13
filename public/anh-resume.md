@@ -81,6 +81,8 @@ SAC Research Group, Concordia University.
 
 ### Systems Administrator &mdash; Contract/On-call (1/2021 &mdash; now)
 
+Inertial Sensing Lab, Montreal, QC.
+
 -   Responsible for building and maintaining the project website.
 -   The website is a hub for both internal and public communications, functioning as a knowledge base, blog, archive, and file repository.
 -   I decide and implement from the tech stacks and the UI/UX design to the web hosting, networking, security, and identity & access management.
@@ -101,8 +103,8 @@ SAC Research Group, Concordia University.
 
 ### Development Blog – <https://dev.hoanganh.tech>
 
--   A blog built with Gatsby.js where I write about new techs, tools, and knowledge I come across through my everyday life.
--   Deployed to Vercel, routed and SSL’d through Cloudflare.
+-   A blog built with Nextjs and Tailwind (hosted on Netlify with Github Actions CI) where I write about new techs, tools, and knowledge I come across through my everyday life.
+-   Routed and SSL’d through Cloudflare.
 
 ### Data Object Parse and Meaningful Graph Traversal – <https://github.com/aaanh/meaning-graph-traversal.git>
 
