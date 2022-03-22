@@ -97,6 +97,7 @@ const MainContent = ({ command }) => {
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 					Welcome to Nguyen Hoang Anh&apos;s Portfolio 6.90 RC (Yeetus Magus) 😉
 				</h1>
+				<p>Anh Hoang Nguyen &copy; 2021-2022. All rights reserved.</p>
 				<Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
 				</Button>
@@ -118,7 +119,8 @@ const MainContent = ({ command }) => {
 						University, Montreal, QC. Canada
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Specializations:</span> Software Development, DevOps/SRE, Systems Administration in Windows and Linux.
+						* <span style={{ color: "#00ddff" }}>Specializations:</span> Software
+						Development, DevOps/SRE, Systems Administration in Windows and Linux.
 					</p>
 					<p>
 						<span style={{ color: "#facc00" }}>420 updates</span> can be applied
