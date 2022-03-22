@@ -54,18 +54,21 @@ export default function ContactContent({ command }) {
 					className={classes.my_face}
 				></Image>
 			</p>
-			<p>* All inquiries: </p>
+
 			<p>
-				* <span style={{ color: "#fff" }}>iam@hoanganh.dev</span>
+				E-mail: <a href="mailto:iam@hoanganh.dev">iam@hoanganh.dev</a>
 			</p>
-			<p>* Academic email: </p>
 			<p>
-				* <span style={{ color: "#fff" }}>a_en201@encs.concordia.ca</span>
+				Academic E-mail:{" "}
+				<a href="mailto:a_en201@encs.concordia.ca">a_en201@encs.concordia.ca</a>
 			</p>
-			<p>* LinkedIn: </p>
 			<p>
-				* <a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
+				LinkedIn: <a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
 			</p>
+			<p>
+				Github: <a href="https://github.com/aaanh">https://github.com/aaanh</a>
+			</p>
+
 			<br></br>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>
