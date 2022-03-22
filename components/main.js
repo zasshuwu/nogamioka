@@ -97,7 +97,9 @@ const MainContent = ({ command }) => {
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 					Welcome to Nguyen Hoang Anh&apos;s Portfolio 6.90 RC (Yeetus Magus) 😉
 				</h1>
-				<p>Anh Hoang Nguyen &copy; 2021-2022. All rights reserved.</p>
+				<p style={{ fontFamily: "Helvetica Neue" }}>
+					&copy; 2021-2022. All rights reserved.
+				</p>
 
 				<Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
