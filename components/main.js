@@ -131,7 +131,7 @@ const MainContent = ({ command }) => {
 					</p>
 					<p>
 						<span style={{ color: "#facc00" }}>Published Domains:</span> hoanganh.dev;
-						hoanganh.tech
+						hoanganh.tech; aaanh.app
 					</p>
 					<p>To see these additional updates run: apt list --upgrade</p>
 					<br></br>

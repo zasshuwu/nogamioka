@@ -58,7 +58,7 @@ export default function ResumeEducation({}) {
 			<div className={classes.edu_block}>
 				<div className={classes.edu_head}>
 					<div className={classes.edu_entry}>
-						<h3>DEC in Pure and Applies Sciences</h3>
+						<h3>DEC in Pure and Applied Sciences</h3>
 					</div>
 					<div className={classes.edu_school}>
 						John Abbott College, Ste-Anne-de-Bellevue, QC.
@@ -68,6 +68,18 @@ export default function ResumeEducation({}) {
 				<div className={classes.edu_description}>
 					<ul>
 						<li>Relevant courses: Linear Algebra, Statistics &amp; Probability</li>
+					</ul>
+					<ul>
+						<li>
+							Research project:{" "}
+							<a
+								style={{ color: "#2172ff" }}
+								href="https://islab.ca/student-reports/nguyen_1700362_written_research_rep_submitted_on_2020-05-28_23h03m46s.pdf"
+							>
+								Development of a Software Environment and User Interface for the
+								Analysis of Accelerometer Data
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
