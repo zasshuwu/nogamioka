@@ -121,6 +121,53 @@ export default function ExperienceContent({ command }) {
 				<div className={classes.experienceContent}>
 					<div className={classes.experienceEntry}>
 						<div className={classes.experienceTitle}>
+							<a href="https://genetec.com">Genetec Inc.</a> (Internship, 2022)
+						</div>
+						<div className={classes.experienceText}>
+							Software Developer in SCMT/DevOps
+							<details>
+								<summary>Details</summary>
+								<ul>
+									<li>
+										Maintain and update the installation program scripts
+										(InstallShield)
+									</li>
+									<li>
+										Create an assistance library for the installation programs
+										in C#/C++
+									</li>
+									<li>
+										Maintain and update compilation scripts for the compilation
+										servers
+									</li>
+									<li>
+										Create C# extensions for the Build Team Foundation library
+									</li>
+									<li>Improve the team&apos;s intranet page</li>
+									<li>
+										Design and add functionalities for the team&apos;s intranet
+										page (ASP .NET): list and management of builds, reports,
+										etc.
+									</li>
+									<li>
+										Develop the installation script of a tool intended for our
+										partners (InstallShield)
+									</li>
+									<li>
+										Analyze different virtualization tools allowing execution of
+										an application in a virtual environment, without having to
+										install it in advance
+									</li>
+									<li>
+										Develop a series of automated tests to be executed after
+										each build of an application
+									</li>
+								</ul>
+							</details>
+						</div>
+					</div>
+					<div className={classes.experienceEntry}>
+						<div className={classes.experienceTitle}>
 							<a href="https://genetec.com">Genetec Inc.</a> (Internship, 2021)
 						</div>
 						<div className={classes.experienceText}>
