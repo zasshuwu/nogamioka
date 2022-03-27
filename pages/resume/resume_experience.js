@@ -53,6 +53,47 @@ export default function ResumeExperience() {
 			<div className={classes.experience_entry}>
 				<div className={classes.exp_head}>
 					<div className={classes.role}>
+						<h3>Software Developer in SCM/DevOps&mdash; Internship</h3>
+					</div>
+					<div className={classes.comp}>
+						<a href="https://genetec.com">Genetec Inc.</a>
+					</div>
+					<div className={classes.time}>5/2022 - 9/2022</div>
+				</div>
+				<div className={classes.desc}>
+					<ul>
+						<li>
+							Maintain and update the installation program scripts (InstallShield)
+						</li>
+						<li>
+							Create an assistance library for the installation programs in C#/C++
+						</li>
+						<li>Maintain and update compilation scripts for the compilation servers</li>
+						<li>Create C# extensions for the Build Team Foundation library</li>
+						<li>Improve the team&apos;s intranet page</li>
+						<li>
+							Design and add functionalities for the team&apos;s intranet page (ASP
+							.NET): list and management of builds, reports, etc.
+						</li>
+						<li>
+							Develop the installation script of a tool intended for our partners
+							(InstallShield)
+						</li>
+						<li>
+							Analyze different virtualization tools allowing execution of an
+							application in a virtual environment, without having to install it in
+							advance
+						</li>
+						<li>
+							Develop a series of automated tests to be executed after each build of
+							an application
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div className={classes.experience_entry}>
+				<div className={classes.exp_head}>
+					<div className={classes.role}>
 						<h3>IT Technician L2 &mdash; Part-time</h3>
 					</div>
 					<div className={classes.comp}>

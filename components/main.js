@@ -97,7 +97,7 @@ const MainContent = ({ command }) => {
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 					Welcome to Nguyen Hoang Anh&apos;s Portfolio 6.90 RC (Yeetus Magus) 😉
 				</h1>
-				<p style={{ fontFamily: "Helvetica Neue" }}>
+				<p style={{ fontFamily: "Helvetica Neue, Calibri, Roboto, sans-serif" }}>
 					&copy; 2021-2022. All rights reserved.
 				</p>
 

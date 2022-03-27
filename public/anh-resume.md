@@ -39,6 +39,20 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 
 ## Experience
 
+### Software Developer in SCM/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
+
+Genetec Inc., Saint-Laurent, QC.
+
+-   Maintain and update the installation program scripts (InstallShield)
+-   Create an assistance library for the installation programs in C#/C++
+-   Maintain and update compilation scripts for the compilation servers
+-   Create C# extensions for the Build Team Foundation library
+-   Improve the team's intranet page
+-   Design and add functionalities for the team's intranet page (ASP .NET): list and management of builds, reports, etc.
+-   Develop the installation script of a tool intended for our partners (InstallShield)
+-   Analyze different virtualization tools allowing execution of an application in a virtual environment, without having to install it in advance
+-   Develop a series of automated tests to be executed after each build of an application
+
 ### IT Technician L2 &mdash; Part-time (3/2021 &mdash; now)
 
 Academic IT Services, Concordia University.
