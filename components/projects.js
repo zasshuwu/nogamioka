@@ -123,9 +123,25 @@ export default function ProjectsContent({ command }) {
 			</p>
 
 			<div className={classes.project}>
-				<h2>Infrastructure Diagram</h2>
-				<img src="/static/homelab-and-cloud-infra.png" width="80%"></img>
-				<br></br>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
+						<h2>
+							<a href="https://linux.hoanganh.tech">Linux/Unix Docs</a>
+						</h2>
+						<p>
+							My simple, copy-paste repertoire of useful Linux/Unix commands and
+							how-to's.
+						</p>
+						<p>Stack: Python3 + Sphinx Docs.</p>
+						<iframe
+							className={classes.iframe}
+							src="https://linux.hoanganh.dev"
+							width="800px"
+							height="600px"
+						></iframe>
+					</div>
+					<div className={classes.projectDemo}></div>
+				</div>
 				<div className={classes.projectEntry}>
 					<div className={classes.projectText}>
 						<h2>
@@ -236,6 +252,8 @@ export default function ProjectsContent({ command }) {
 						</ul>
 					</div>
 				</div>
+				<h2>Infrastructure Diagram</h2>
+				<img src="/static/homelab-and-cloud-infra.png" width="80%"></img>
 			</div>
 
 			<p>
