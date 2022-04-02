@@ -130,7 +130,7 @@ export default function ProjectsContent({ command }) {
 						</h2>
 						<p>
 							My simple, copy-paste repertoire of useful Linux/Unix commands and
-							how-to's.
+							how-to{"'"}s.
 						</p>
 						<p>Stack: Python3 + Sphinx Docs.</p>
 						<iframe
