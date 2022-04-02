@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		"& > *": {
-			maxWidth: "50vw",
+			maxWidth: "100vw",
 		},
 
 		[theme.breakpoints.down("sm")]: {
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
 				maxWidth: "100vw",
 			},
 		},
-		color: "white",
+		color: "#ccc",
 		lineHeight: "1.5rem",
 	},
 	experienceDemo: {

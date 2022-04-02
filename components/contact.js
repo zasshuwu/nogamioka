@@ -38,7 +38,12 @@ const useStyles = makeStyles((theme) => ({
 export default function ContactContent({ command }) {
 	const classes = useStyles();
 	return (
-		<div style={{ margin: "1rem", wordBreak: "break-all" }}>
+		<div
+			style={{
+				margin: "1rem",
+				wordBreak: "break-all",
+			}}
+		>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>
 					root@ANH-WEB-SERVER:
@@ -46,29 +51,38 @@ export default function ContactContent({ command }) {
 				<span style={{ color: "#9f43fa" }}>~#</span>
 				{" " + command}
 			</p>
-			<p>
-				<Image
-					src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
-					width="100px"
-					height="100px"
-					className={classes.my_face}
-				></Image>
-			</p>
+			<div
+				style={{
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "center",
+					alignItems: "center",
+				}}
+			>
+				<p>
+					<Image
+						src="https://avatars.githubusercontent.com/u/37283437?s=400&u=2a2c5c4c8b8db89ec19da727abba8daf277ba57e&v=4"
+						width="100px"
+						height="100px"
+						className={classes.my_face}
+					></Image>
+				</p>
 
-			<p>
-				E-mail: <a href="mailto:iam@hoanganh.dev">iam@hoanganh.dev</a>
-			</p>
-			<p>
-				Academic E-mail:{" "}
-				<a href="mailto:a_en201@encs.concordia.ca">a_en201@encs.concordia.ca</a>
-			</p>
-			<p>
-				LinkedIn: <a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
-			</p>
-			<p>
-				Github: <a href="https://github.com/aaanh">https://github.com/aaanh</a>
-			</p>
-
+				<p>
+					E-mail: <a href="mailto:iam@hoanganh.dev">iam@hoanganh.dev</a>
+				</p>
+				<p>
+					Academic E-mail:{" "}
+					<a href="mailto:a_en201@encs.concordia.ca">a_en201@encs.concordia.ca</a>
+				</p>
+				<p>
+					LinkedIn:{" "}
+					<a href="https://linkedin.com/in/aaanh">https://linkedin.com/in/aaanh</a>
+				</p>
+				<p>
+					Github: <a href="https://github.com/aaanh">https://github.com/aaanh</a>
+				</p>
+			</div>
 			<br></br>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>

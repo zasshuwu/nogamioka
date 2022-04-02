@@ -24,12 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		"& p": {
 			color: "#ddd",
 		},
-		minWidth: "50vw",
-		[theme.breakpoints.down("md")]: {
-			// maxWidth: "100vw",
-			// maxHeight: "100vh",
-		},
-		maxHeight: "70vh",
+		maxHeight: "80vh",
 		overflowY: "scroll",
 		overflowX: "hidden",
 	},
@@ -51,9 +46,8 @@ const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		"& > *": {
-			maxWidth: "50vw",
+			maxWidth: "100%",
 		},
-
 		[theme.breakpoints.down("sm")]: {
 			maxWidth: "100vw",
 			"& > *": {
@@ -61,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
 			},
 		},
 		"& img": {
+			width: "80%",
 			[theme.breakpoints.down("sm")]: {
 				maxWidth: "100vw",
 			},
@@ -78,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	projects: {
-		maxWidth: "80vw",
+		maxWidth: "100%",
 		[theme.breakpoints.down("sm")]: {
 			maxWidth: "100vw",
 		},

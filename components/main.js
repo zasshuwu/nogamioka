@@ -31,9 +31,9 @@ export default function Main(props) {
 					<ul className={classes.headerNav}>
 						<li>
 							<div className={classes.tab}>
-								{" "}
-								{">"}
-								&nbsp;HATerm&nbsp;&nbsp;&nbsp;&nbsp;X
+								<div style={{ flex: "0" }}>X</div>
+								<div style={{ margin: "auto" }}>{"~ "}anhTerm</div>
+								<div>{"⌘1"}</div>
 							</div>
 						</li>
 
@@ -162,6 +162,7 @@ const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		margin: "0",
 		padding: "0",
+
 		color: customTheme.palette.primary.main,
 		justifyContent: "center",
 		alignItems: "center",
@@ -191,8 +192,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	content: {
 		background: customTheme.palette.background.main,
-		minWidth: "70%",
-		minHeight: "90%",
+		minWidth: "95%",
+		minHeight: "95%",
 		border: "none",
 		borderRadius: "8px",
 		position: "relative",
@@ -202,15 +203,19 @@ const useStyles = makeStyles((theme) => ({
 			opacity: "0.9",
 			minHeight: "100vh",
 		},
+		border: "solid .25px #aaa",
 	},
 	tab: {
 		margin: "0",
-		borderBottom: "solid 1px grey",
-		borderRight: "solid 1px grey",
-		borderRadius: "8px 0px",
-		padding: "1rem",
-		color: "white",
+		borderBottom: "solid 1.25px #aaa",
+		borderRight: "solid 1.25px #aaa",
+		borderRadius: "8px 0",
+		display: "flex",
+		justifyContent: "space-between",
+		padding: ".5rem",
+		color: "#aaa",
 		width: "150px",
+		fontSize: ".75em",
 	},
 	message: {
 		margin: "1rem",
