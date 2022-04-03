@@ -209,10 +209,13 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: "8px 0",
 		display: "flex",
 		justifyContent: "space-between",
-		padding: ".5rem",
+		padding: ".75rem .5rem",
 		color: "#aaa",
-		width: "150px",
-		fontSize: ".75em",
+		minWidth: "250px",
+		fontSize: "1em",
+		"& > *": {
+			marginLeft: "1em",
+		},
 	},
 	message: {
 		margin: "1rem",
