@@ -68,7 +68,7 @@ export default function Uses({ isOpen, handleClose }) {
 							<li>
 								Workstation:{" "}
 								<ul>
-									<li>Ryzen 7 3900X, GTX 1080 8GB, 24GB DDR4 @ 3000 MT/s</li>
+									<li>Ryzen 9 3900X, GTX 1080 8GB, 24GB DDR4 @ 3000 MT/s</li>
 								</ul>
 							</li>
 							<li>
@@ -251,7 +251,7 @@ export default function Uses({ isOpen, handleClose }) {
 						</li>
 						<li>
 							Site Reliability Engineering by Beyer, Jones, Petoff, Murphy &mdash; in
-							progres
+							progress
 						</li>
 						<li>DSA Analysis by Clifford A. Shaffer &mdash; in progress</li>
 						<li>Pattern Recognition and ML by Christopher M. Bishop &mdash; to read</li>
