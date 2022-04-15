@@ -112,6 +112,15 @@ const useStyles = makeStyles((theme) => ({
 			borderColor: "pink",
 		},
 	},
+	customButtonResume: {
+		color: "#64FFDA",
+		borderColor: "#64FFDA",
+		"&:hover": {
+			background: "#64FFDA",
+			color: customTheme.palette.background.main,
+			borderColor: "#64FFDA",
+		},
+	},
 	BtnText: {
 		display: "none",
 		[theme.breakpoints.up("md")]: {
@@ -182,7 +191,18 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<span style={{ textTransform: "lowercase" }}>cd ~</span>
 				</Button>
-
+				<Button
+					size="small"
+					onClick={(e) => {
+						e.preventDefault();
+						setCommand("cd /resume");
+						router.push("/resume");
+					}}
+					variant="outlined"
+					className={classes.customButtonResume}
+				>
+					Classic Resume
+				</Button>
 				<Button
 					size="small"
 					onClick={handleContact}

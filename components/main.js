@@ -98,9 +98,9 @@ const MainContent = ({ command }) => {
 					Welcome to Nguyen Hoang Anh&apos;s Portfolio 6.90 RC (Yeetus Magus) 😉
 				</h1>
 
-				<Button onClick={handleResume} variant="outlined" color="primary">
+				{/* <Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
-				</Button>
+				</Button> */}
 				<div className="code">
 					<br></br>
 
