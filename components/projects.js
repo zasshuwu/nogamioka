@@ -132,7 +132,11 @@ export default function ProjectsContent({ command }) {
 							My simple, copy-paste repertoire of useful Linux/Unix commands and
 							how-to{"'"}s.
 						</p>
-						<p>Stack: Python3 + Sphinx Docs.</p>
+						<p>
+							Stack: Python3 + Sphinx Docs. Containerized with Docker. CI/CD with
+							Github Actions, bash scripts, Google Cloud Container Registry + Cloud
+							Run.
+						</p>
 						<iframe
 							className={classes.iframe}
 							src="https://linux.hoanganh.dev"
