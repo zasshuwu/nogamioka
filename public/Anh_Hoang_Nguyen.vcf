@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:2.1
+N;LANGUAGE=en-us:Anh;Nguyen;H.
+N;LANGUAGE=vi-vn:Nguyễn;Anh;H.
+FN:Nguyen, Anh H.
+ORG:Independent
+TITLE:Software Developer
+EMAIL;PREF;INTERNET:iam@hoanganh.dev
+REV:20220503T202800Z
+END:VCARD

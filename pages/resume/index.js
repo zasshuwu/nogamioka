@@ -137,6 +137,16 @@ export default function Resume({}) {
 							>
 								.MD
 							</Button>
+							<Button
+								onClick={() => {
+									window.open("/Anh_Hoang_Nguyen.vcf");
+								}}
+								variant="outlined"
+								color="black"
+								className={classes.export_btn}
+							>
+								vCard
+							</Button>
 						</div>
 						<ResumeContact></ResumeContact>
 					</div>
