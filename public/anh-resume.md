@@ -120,7 +120,7 @@ Inertial Sensing Lab, Montreal, QC.
 -   A blog built with Nextjs and Tailwind (hosted on Netlify with Github Actions CI) where I write about new techs, tools, and knowledge I come across through my everyday life.
 -   Routed and SSL’d through Cloudflare.
 
-### Data Object Parse and Meaningful Graph Traversal – <https://github.com/aaanh/meaning-graph-traversal.git>
+### Data Object Parse and Meaningful Graph Traversal – <https://github.com/aaanh/meaningful-graph-traversal.git>
 
 -   Final project for 2nd level OOP course.
 -   Clean the Panama Papers .csv dataset using Python notebook and pandas.
