@@ -52,8 +52,8 @@ export default function ResumeSummary({}) {
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Specializations</span>: Web app
-						development (2y), cross-platform with Electron (1y), systems administration (1.5y), server orchestration
-						(3y) and networking (2y).
+						development (2y), cross-platform with Electron (1y), systems administration
+						(1.5y), server orchestration (3y) and networking (2y).
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Environments</span>: Linux, macOS,
@@ -70,7 +70,7 @@ export default function ResumeSummary({}) {
 					<li>
 						<span className={classes.skill_topic}>Personal</span>: Professional manner,
 						responsible, problem solving, willing to learn, a team player, empathetic,
-						friendly.
+						friendly, advanced Googling with complex search queries and syntaxes.
 					</li>
 				</ul>
 			</div>
