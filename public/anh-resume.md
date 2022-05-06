@@ -55,6 +55,29 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 -   Analyze different virtualization tools allowing execution of an application in a virtual environment, without having to install it in advance
 -   Develop a series of automated tests to be executed after each build of an application
 
+### Research Assistant &mdash; Casual (1/2021 &mdash; now)
+
+[SAC Research Group, Concordia University.](https://users.encs.concordia.ca/~sac)
+
+> Cloud architecture, system architecture, AI and ML applications research group
+
+-   My current project is to evaluate MLaaS platforms and develop an assessment framework.
+-   I assist in researching practical applications of machine learning and deep learning models with current focus on explainable AI (XAI).
+-   I replicate experiments to verify claims arising during the research of a topic.
+-   I gather information from research literatures and extract meaningful points to aid in the research progress of the group.
+-   Previously, I contributed by running and reporting NLP models for classification on non-Latin datasets, more specifically XLNet and bert.
+-   I also maintain and develop the group's website.
+
+### Full-Stack Developer &mdash; Contract (1/2021 &mdash; now)
+
+[Inertial Sensing Lab, Montreal, QC.](https://islab.ca)
+
+> Physics research lab specializes on inertial and mechanical operations using accelerometer sensors.
+
+-   Responsible for building and maintaining the project website.
+-   The website is a hub for both internal and public communications, functioning as a knowledge base, blog, archive, and file repository.
+-   I decide and implement from the tech stacks and the UI/UX design to the web hosting, networking, security, and identity & access management.
+
 ### IT Technician L2 &mdash; Part-time (3/2021 &mdash; now)
 
 [Academic IT Services, Concordia University.](https://www.concordia.ca/ginacody/aits.html)
@@ -87,29 +110,6 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 -   Maintain asset inventory and specifications. Troubleshoot computer hardware issues.
 -   Manage access request according to InfoSec policies.
 -   Work usually encompasses OSI layers 5 to 7.
-
-### Research Assistant &mdash; Casual (1/2021 &mdash; now)
-
-[SAC Research Group, Concordia University.](https://users.encs.concordia.ca/~sac)
-
-> Cloud architecture, system architecture, AI and ML applications research group
-
--   My current project is to evaluate MLaaS platforms and develop an assessment framework.
--   I assist in researching practical applications of machine learning and deep learning models with current focus on explainable AI (XAI).
--   I replicate experiments to verify claims arising during the research of a topic.
--   I gather information from research literatures and extract meaningful points to aid in the research progress of the group.
--   Previously, I contributed by running and reporting NLP models for classification on non-Latin datasets, more specifically XLNet and bert.
--   I also maintain and develop the group's website.
-
-### Full-Stack Developer &mdash; Contract (1/2021 &mdash; now)
-
-[Inertial Sensing Lab, Montreal, QC.](https://islab.ca)
-
-> Physics research lab specializes on inertial and mechanical operations using accelerometer sensors.
-
--   Responsible for building and maintaining the project website.
--   The website is a hub for both internal and public communications, functioning as a knowledge base, blog, archive, and file repository.
--   I decide and implement from the tech stacks and the UI/UX design to the web hosting, networking, security, and identity & access management.
 
 ## Notable Projects
 
