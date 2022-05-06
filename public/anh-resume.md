@@ -12,22 +12,22 @@ Twitter: <https://twitter.com/yeetusmagus>
 
 I'm a Bachelor of Computer Engineering student at Concordia University in Montreal, QC.
 
-I actively work on modern web applications, APIs, and frameworks and machine learning research projects in natural language processing. As an avid adopter of new and exciting cloud, server, and networking technologies, I setup my home lab and cloud clusters on Linode, AWS, and manage orchestration via Ansible. My tentative endgame is to work in DevOps and CyberSec.
+I actively work on modern web applications, APIs, frameworks and machine learning research projects in natural language processing. As an avid adopter of new cloud and networking technologies, I setup my home lab and cloud clusters on Linode, AWS, and manage orchestration via Ansible and k8s. My tentative endgame is to work in DevOps and SRE.
 
 ## Skills
 
 -   **Programming Languages**: C, C++, C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
--   **Specializations**: Web app development, cross-platform with Electron, server orchestration and networking.
+-   **Specializations**: Web app development, cross-platform with Electron, container technologies
 -   **Environments**: Linux, macOS, Windows and respective CLI's.
 -   **Tools**: Agile process, git, bash/zsh, PowerShell, vim, vscode, conda, OSINT framework.
 -   **Natural languages**: vi-vn (native), en-us/ca/uk (bilingual), fr-ca (B1), ja-jp (N5), de-de (casual).
--   **Personal**: Professional manner, responsible, problem solving, willing to learn, a team player, empathetic, friendly.
+-   **Personal**: Professional manner, responsible, great analytical mindset, willing to learn, team player, empathetic.
 
 ## Education
 
 ### Bachelor of Computer Engineering with Co-op (2020 &mdash; 2024)
 
-Concordia University, Montréal, QC.
+**Concordia University, Montréal, QC.**
 
 -   Relevant courses: Object-oriented Programming, Data Structures & Algorithms, Computer Organization & Software (assembly programming), Discrete Math, Technical Writing and Communications
 
@@ -37,11 +37,11 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 
 -   Relevant courses: Linear Algebra, Statistics & Probability
 
-## Experience
+## Professional Experience
 
 ### Software Developer in SCM/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
 
-Genetec Inc., Saint-Laurent, QC.
+[Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
 
 -   Maintain and update the installation program scripts (InstallShield)
 -   Create an assistance library for the installation programs in C#/C++
@@ -55,7 +55,7 @@ Genetec Inc., Saint-Laurent, QC.
 
 ### IT Technician L2 &mdash; Part-time (3/2021 &mdash; now)
 
-Academic IT Services, Concordia University.
+[Academic IT Services, Concordia University.](https://www.concordia.ca/ginacody/aits.html)
 
 -   Offer frontline support to the customers in terms of utilizing the IT infrastructures, services, and resources at Concordia.
 -   Investigate complicate issues regarding physical systems, networking, internal accounts, and access controls to resolve or to escalate to SysAdmins and NetAdmins.
@@ -69,7 +69,7 @@ Academic IT Services, Concordia University.
 
 ### IT Support Specialist &mdash; Internship (8/2021 &mdash; 12/2021)
 
-Genetec Inc., Saint-Laurent, QC.
+[Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
 
 -   Provide technical assistance and troubleshooting for users.
 -   Perform infra and team workflow improvement tasks.
@@ -84,18 +84,20 @@ Genetec Inc., Saint-Laurent, QC.
 -   Manage access request according to InfoSec policies.
 -   Work usually encompasses OSI layers 5 to 7.
 
-### Undergraduate Researcher &mdash; Casual (1/2021 &mdash; now)
+### Research Assistant &mdash; Casual (1/2021 &mdash; now)
 
-SAC Research Group, Concordia University.
+[SAC Research Group, Concordia University.](https://users.encs.concordia.ca/~sac)
 
+-   My current project is to evaluate MLaaS platforms and develop an assessment framework.
 -   I assist in researching practical applications of machine learning and deep learning models with current focus on explainable AI (XAI).
 -   I replicate experiments to verify claims arising during the research of a topic.
 -   I gather information from research literatures and extract meaningful points to aid in the research progress of the group.
 -   Previously, I contributed by running and reporting NLP models for classification on non-Latin datasets, more specifically XLNet and bert.
+-   I also maintain and develop the group's website.
 
-### Systems Administrator &mdash; Contract/On-call (1/2021 &mdash; now)
+### Full-Stack Developer &mdash; Contract (1/2021 &mdash; now)
 
-Inertial Sensing Lab, Montreal, QC.
+[Inertial Sensing Lab, Montreal, QC.](https://islab.ca)
 
 -   Responsible for building and maintaining the project website.
 -   The website is a hub for both internal and public communications, functioning as a knowledge base, blog, archive, and file repository.
@@ -117,7 +119,7 @@ Inertial Sensing Lab, Montreal, QC.
 
 ### Development Blog – <https://dev.hoanganh.tech>
 
--   A blog built with Nextjs and Tailwind (hosted on Netlify with Github Actions CI) where I write about new techs, tools, and knowledge I come across through my everyday life.
+-   A blog built with Nextjs and Tailwind CSS (hosted on Netlify with Github Actions CI) where I write about new techs, tools, and knowledge I come across through my everyday life.
 -   Routed and SSL’d through Cloudflare.
 
 ### Data Object Parse and Meaningful Graph Traversal – <https://github.com/aaanh/meaningful-graph-traversal.git>
@@ -128,6 +130,8 @@ Inertial Sensing Lab, Montreal, QC.
 -   Output connections between nodes using BFS traversal.
 
 ### Imaginary Homepage for ConUHacks VI – <https://halcyon.hoanganh.dev>
+
+**Front-End Developer and Web Challenge Creator**
 
 -   Disclaimer: I am no longer affiliated with ConUHacks or HackConcordia.
 -   This project never saw the light of day due to sudden cancellations.

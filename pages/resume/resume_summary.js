@@ -35,11 +35,11 @@ export default function ResumeSummary({}) {
 					Montreal, QC. <br />
 				</p>
 				<p>
-					I actively work on modern web applications, APIs, and frameworks and machine
+					I actively work on modern web applications, APIs, frameworks and machine
 					learning research projects in natural language processing. As an avid adopter of
-					new and exciting cloud, server, and networking technologies, I setup my home lab
-					and cloud clusters on Linode, AWS, and manage orchestration via Ansible. My
-					tentative endgame is to work in DevOps and SRE.
+					new cloud and networking technologies, I setup my home lab and cloud clusters on
+					Linode, AWS, and manage orchestration via Ansible and k8s. My tentative endgame
+					is to work in DevOps and SRE.
 				</p>
 			</blockquote>
 			<div className={classes.skill_cloud}>

@@ -211,7 +211,7 @@ export default function ExperienceContent({ command }) {
 							(part-time, 03/2021 - present)
 						</div>
 						<div className={classes.experienceText}>
-							Service Desk Operator @ Academic IT Services
+							I.T. Technician L2 @ Academic IT Services
 							<details>
 								<summary>Details</summary>
 								<ul>
@@ -254,17 +254,33 @@ export default function ExperienceContent({ command }) {
 							(part-time, 02/2021 - present)
 						</div>
 						<div className={classes.experienceText}>
-							Undergraduate Assistant
+							Research Assistant in Machine Learning
 							<details>
 								<summary>Details</summary>
 								<ul>
 									<li>
-										Assisting in researching practical applications of ML and DL
-										models with current focus on explainable AI (XAI).
+										My current project is to evaluate MLaaS platforms and
+										develop an assessment framework.
 									</li>
 									<li>
-										Previously, reporting performance of NLP models for
-										classification on non-Latin datasets, e.g. XLNet and bert.
+										I assist in researching practical applications of machine
+										learning and deep learning models with current focus on
+										explainable AI (XAI).
+									</li>
+									<li>
+										I replicate experiments to verify claims arising during the
+										research of a topic.
+									</li>
+									<li>
+										I gather information from research literatures and extract
+										meaningful points to aid in the research progress of the
+										group.
+									</li>
+
+									<li>
+										Previously, I contributed by running and reporting NLP
+										models for classification on non-Latin datasets, more
+										specifically XLNet and bert.
 									</li>
 								</ul>
 							</details>

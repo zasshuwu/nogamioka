@@ -256,6 +256,14 @@ export default function ResumeExperience() {
 							Nextjs and MUI components for the win at this point. Probably to the
 							moon even.
 						</li>
+						<li>
+							Customer growth reportedly increases by 4 times since the initial
+							release of the website.
+						</li>
+						<li>
+							SEO sees the website at top 5 of Google search results 90% of the time
+							for relevant queries.
+						</li>
 					</ul>
 				</div>
 			</div>
