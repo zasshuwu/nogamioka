@@ -43,6 +43,8 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 
 [Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
 
+> Physical security, access control, and federated cloud-based security center leveraging AI and ML technologies.
+
 -   Maintain and update the installation program scripts (InstallShield)
 -   Create an assistance library for the installation programs in C#/C++
 -   Maintain and update compilation scripts for the compilation servers
@@ -56,6 +58,8 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 ### IT Technician L2 &mdash; Part-time (3/2021 &mdash; now)
 
 [Academic IT Services, Concordia University.](https://www.concordia.ca/ginacody/aits.html)
+
+> I.T. organization specialized in developing and servicing information systems for the Engineering and Computer Science school.
 
 -   Offer frontline support to the customers in terms of utilizing the IT infrastructures, services, and resources at Concordia.
 -   Investigate complicate issues regarding physical systems, networking, internal accounts, and access controls to resolve or to escalate to SysAdmins and NetAdmins.
@@ -88,6 +92,8 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 
 [SAC Research Group, Concordia University.](https://users.encs.concordia.ca/~sac)
 
+> Cloud architecture, system architecture, AI and ML applications research group
+
 -   My current project is to evaluate MLaaS platforms and develop an assessment framework.
 -   I assist in researching practical applications of machine learning and deep learning models with current focus on explainable AI (XAI).
 -   I replicate experiments to verify claims arising during the research of a topic.
@@ -98,6 +104,8 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 ### Full-Stack Developer &mdash; Contract (1/2021 &mdash; now)
 
 [Inertial Sensing Lab, Montreal, QC.](https://islab.ca)
+
+> Physics research lab specializes on inertial and mechanical operations using accelerometer sensors.
 
 -   Responsible for building and maintaining the project website.
 -   The website is a hub for both internal and public communications, functioning as a knowledge base, blog, archive, and file repository.
