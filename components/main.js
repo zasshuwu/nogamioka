@@ -97,6 +97,44 @@ const MainContent = ({ command }) => {
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 					Welcome to Nguyen Hoang Anh&apos;s Portfolio 6.90 RC (Yeetus Magus) 😉
 				</h1>
+				<div className={classes.resume_download}>
+					<Button
+						onClick={() => {
+							window.open("/anh-resume.pdf");
+						}}
+						variant="outlined"
+						color="primary"
+					>
+						.PDF
+					</Button>
+					<Button
+						onClick={() => {
+							window.open("/anh-resume.docx");
+						}}
+						variant="outlined"
+						color="tertiary"
+					>
+						.DOCX
+					</Button>
+					<Button
+						onClick={() => {
+							window.open("/anh-resume.md");
+						}}
+						variant="outlined"
+						color="primary"
+					>
+						.MD
+					</Button>
+					<Button
+						onClick={() => {
+							window.open("/Anh_Hoang_Nguyen.vcf");
+						}}
+						variant="outlined"
+						color="primary"
+					>
+						vCard
+					</Button>
+				</div>
 
 				{/* <Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
@@ -265,6 +303,13 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: "#333333",
 			transition: "500ms ease",
+		},
+	},
+	resume_download: {
+		display: "flex",
+		alignItems: "center",
+		"& > *": {
+			marginRight: "1rem",
 		},
 	},
 }));
