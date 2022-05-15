@@ -127,7 +127,7 @@ export default function ResumeProjects() {
 					<CardMedia
 						component="img"
 						height="140"
-						image="/projects/unix-docs.png"
+						image="/projects/will-i-pass.png"
 					></CardMedia>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
