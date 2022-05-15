@@ -114,6 +114,48 @@ export default function ResumeProjects() {
 						</Button>
 					</CardActions>
 				</Card>
+				<Card
+					sx={{
+						maxWidth: 345,
+						minHeight: 360,
+						display: "flex",
+						flexDirection: "column",
+						margin: "1rem",
+					}}
+				>
+					<CardMedia
+						component="img"
+						height="140"
+						image="/projects/unix-docs.png"
+					></CardMedia>
+					<CardContent>
+						<Typography gutterBottom variant="h5" component="div">
+							<a href="https://will-i-pass.aaanh.app">Will I Pass</a>
+						</Typography>
+						<Typography variant="body2" color="text.secondary">
+							Born from my episodes of procrastination. Targeting most popular
+							user-space platforms.
+						</Typography>
+					</CardContent>
+					<CardActions sx={{ marginTop: "auto" }} className={classes.project_actions}>
+						<Button
+							onClick={() => {
+								window.open("https://will-i-pass.aaanh.app");
+							}}
+							size="small"
+						>
+							see it in action
+						</Button>
+						<Button
+							onClick={() => {
+								window.open("https://github.com/aaanh/will-i-pass");
+							}}
+							size="small"
+						>
+							GitHub Source
+						</Button>
+					</CardActions>
+				</Card>
 
 				<Card
 					sx={{

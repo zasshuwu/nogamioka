@@ -139,6 +139,27 @@ export default function ProjectsContent({ command }) {
 				<div className={classes.projectEntry}>
 					<div className={classes.projectText}>
 						<h2>
+							<a href="https://will-i-pass.aaanh.app">Will I Pass</a>
+						</h2>
+						<p>
+							A work in progress whenever I feel convenient. I have a tendency to
+							procrastinate and drift off while reviewing for finals. So I poured the
+							procrastination efforts into building this app. I target multiple
+							platforms including: web, win32 desktop, debian, and macOS.
+						</p>
+						<p>Stack: React Nextjs, WPF, PyQt, SwiftUI</p>
+						<iframe
+							className={classes.iframe}
+							src="https://will-i-pass.aaanh.app"
+							width="800px"
+							height="600px"
+						></iframe>
+					</div>
+					<div className={classes.projectDemo}></div>
+				</div>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
+						<h2>
 							<a href="https://do-it-demo.hoanganh.tech">Do It</a> (collab, WIP)
 						</h2>
 						<p>
