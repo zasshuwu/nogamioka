@@ -92,7 +92,8 @@ export default function ResumeProjects() {
 						<Typography variant="body2" color="text.secondary">
 							My opinionated copy-paste unix documentations for tools, environment
 							configs, and OOBE setups on Linux/Unix-based distros and operating
-							systems.
+							systems. I also containerize this docs with Docker and deploy on Google
+							Cloud Run.
 						</Typography>
 					</CardContent>
 					<CardActions sx={{ marginTop: "auto" }} className={classes.project_actions}>
@@ -176,8 +177,9 @@ export default function ResumeProjects() {
 							<a href="https://dev.hoanganh.tech">Development Blog</a>
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							A blog built with Gatsbyjs where I write about new techs, tools, and
-							knowledge I come across.
+							A blog built with Nextjs and Tailwind (hosted on Netlify with Github
+							Actions CI) where I write about new techs, tools, and knowledge I come
+							across.
 						</Typography>
 					</CardContent>
 					<CardActions sx={{ marginTop: "auto" }} className={classes.project_actions}>

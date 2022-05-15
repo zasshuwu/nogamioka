@@ -13,6 +13,7 @@ import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
+import { useRouter } from "next/router";
 
 const useStyles = makeStyles((theme) => ({
 	navBarWrapper: {
@@ -102,6 +103,24 @@ const useStyles = makeStyles((theme) => ({
 			borderColor: "#a863f7",
 		},
 	},
+	customButtonUses: {
+		color: "pink",
+		borderColor: "pink",
+		"&:hover": {
+			background: "pink",
+			color: customTheme.palette.background.main,
+			borderColor: "pink",
+		},
+	},
+	customButtonResume: {
+		color: "#64FFDA",
+		borderColor: "#64FFDA",
+		"&:hover": {
+			background: "#64FFDA",
+			color: customTheme.palette.background.main,
+			borderColor: "#64FFDA",
+		},
+	},
 	BtnText: {
 		display: "none",
 		[theme.breakpoints.up("md")]: {
@@ -111,6 +130,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function NavBar({ setCommand, setContent }) {
+	const router = useRouter();
+
 	const [values, setValues] = useState({
 		showContact: false,
 		showExperience: false,
@@ -151,6 +172,11 @@ export default function NavBar({ setCommand, setContent }) {
 		setCommand("unix-docs");
 		window.open("https://unix.hoanganh.tech");
 	};
+	const handleUses = (e) => {
+		e.preventDefault();
+		setCommand("cd /uses");
+		router.push("/uses");
+	};
 
 	const classes = useStyles();
 
@@ -165,7 +191,18 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<span style={{ textTransform: "lowercase" }}>cd ~</span>
 				</Button>
-
+				<Button
+					size="small"
+					onClick={(e) => {
+						e.preventDefault();
+						setCommand("cd /resume");
+						router.push("/resume");
+					}}
+					variant="outlined"
+					className={classes.customButtonResume}
+				>
+					Classic Resume
+				</Button>
 				<Button
 					size="small"
 					onClick={handleContact}
@@ -204,6 +241,15 @@ export default function NavBar({ setCommand, setContent }) {
 				>
 					<BeenhereIcon fontSize="small"></BeenhereIcon>
 					<span className={classes.BtnText}>&nbsp; Awards</span>
+				</Button>
+				<Button
+					size="small"
+					onClick={handleUses}
+					variant="outlined"
+					className={classes.customButtonUses}
+				>
+					<BeenhereIcon fontSize="small"></BeenhereIcon>
+					<span className={classes.BtnText}>&nbsp; Uses</span>
 				</Button>
 
 				<Button

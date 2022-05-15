@@ -5,19 +5,28 @@ import customTheme from "../styles/theme";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
+	"@global": {
+		"*::-webkit-scrollbar": {
+			width: "0.4em",
+		},
+		"*::-webkit-scrollbar-track": {
+			"-webkit-box-shadow": "inset 0 0 6px #2172ff00",
+		},
+		"*::-webkit-scrollbar-thumb": {
+			backgroundColor: "#30d95daa",
+			outline: "1px solid #00000000",
+			borderRadius: ".5em",
+		},
+	},
 	project: {
 		display: "flex",
 		flexDirection: "column",
 		"& p": {
 			color: "#ddd",
 		},
-		minWidth: "50vw",
-		[theme.breakpoints.down("md")]: {
-			maxWidth: "100vw",
-			maxHeight: "100vh",
-		},
-		maxHeight: "70vh",
+		maxHeight: "80vh",
 		overflowY: "scroll",
+		overflowX: "hidden",
 	},
 	projectEntry: {
 		margin: "1rem",
@@ -37,9 +46,8 @@ const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		"& > *": {
-			maxWidth: "50vw",
+			maxWidth: "100%",
 		},
-
 		[theme.breakpoints.down("sm")]: {
 			maxWidth: "100vw",
 			"& > *": {
@@ -47,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
 			},
 		},
 		"& img": {
+			width: "80%",
 			[theme.breakpoints.down("sm")]: {
 				maxWidth: "100vw",
 			},
@@ -64,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	projects: {
-		maxWidth: "80vw",
+		maxWidth: "100%",
 		[theme.breakpoints.down("sm")]: {
 			maxWidth: "100vw",
 		},
@@ -114,9 +123,29 @@ export default function ProjectsContent({ command }) {
 			</p>
 
 			<div className={classes.project}>
-				<h2>Infrastructure Diagram</h2>
-				<img src="/static/homelab-and-cloud-infra.png" width="80%"></img>
-				<br></br>
+				<div className={classes.projectEntry}>
+					<div className={classes.projectText}>
+						<h2>
+							<a href="https://linux.hoanganh.tech">Linux/Unix Docs</a>
+						</h2>
+						<p>
+							My simple, copy-paste repertoire of useful Linux/Unix commands and
+							how-to{"'"}s.
+						</p>
+						<p>
+							Stack: Python3 + Sphinx Docs. Containerized with Docker. CI/CD with
+							Github Actions, bash scripts, Google Cloud Container Registry + Cloud
+							Run.
+						</p>
+						<iframe
+							className={classes.iframe}
+							src="https://linux.hoanganh.dev"
+							width="800px"
+							height="600px"
+						></iframe>
+					</div>
+					<div className={classes.projectDemo}></div>
+				</div>
 				<div className={classes.projectEntry}>
 					<div className={classes.projectText}>
 						<h2>
@@ -248,6 +277,8 @@ export default function ProjectsContent({ command }) {
 						</ul>
 					</div>
 				</div>
+				<h2>Infrastructure Diagram</h2>
+				<img src="/static/homelab-and-cloud-infra.png" width="80%"></img>
 			</div>
 
 			<p>

@@ -4,6 +4,19 @@ import { makeStyles } from "@mui/styles";
 import customTheme from "../styles/theme";
 
 const useStyles = makeStyles((theme) => ({
+	"@global": {
+		"*::-webkit-scrollbar": {
+			width: "0.4em",
+		},
+		"*::-webkit-scrollbar-track": {
+			"-webkit-box-shadow": "inset 0 0 6px #2172ff00",
+		},
+		"*::-webkit-scrollbar-thumb": {
+			backgroundColor: "#30d95daa",
+			outline: "1px solid #00000000",
+			borderRadius: ".5em",
+		},
+	},
 	experience: {
 		display: "flex",
 		flexDirection: "column",
@@ -17,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 		maxHeight: "70vh",
 		overflowY: "scroll",
+		overflowX: "hidden",
 	},
 	experienceEntry: {
 		margin: "1rem",
@@ -37,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		"& > *": {
-			maxWidth: "50vw",
+			maxWidth: "100vw",
 		},
 
 		[theme.breakpoints.down("sm")]: {
@@ -51,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
 				maxWidth: "100vw",
 			},
 		},
-		color: "white",
+		color: "#ccc",
 		lineHeight: "1.5rem",
 	},
 	experienceDemo: {
@@ -107,6 +121,53 @@ export default function ExperienceContent({ command }) {
 				<div className={classes.experienceContent}>
 					<div className={classes.experienceEntry}>
 						<div className={classes.experienceTitle}>
+							<a href="https://genetec.com">Genetec Inc.</a> (Internship, 2022)
+						</div>
+						<div className={classes.experienceText}>
+							Software Developer in SCMT/DevOps
+							<details>
+								<summary>Details</summary>
+								<ul>
+									<li>
+										Maintain and update the installation program scripts
+										(InstallShield)
+									</li>
+									<li>
+										Create an assistance library for the installation programs
+										in C#/C++
+									</li>
+									<li>
+										Maintain and update compilation scripts for the compilation
+										servers
+									</li>
+									<li>
+										Create C# extensions for the Build Team Foundation library
+									</li>
+									<li>Improve the team&apos;s intranet page</li>
+									<li>
+										Design and add functionalities for the team&apos;s intranet
+										page (ASP .NET): list and management of builds, reports,
+										etc.
+									</li>
+									<li>
+										Develop the installation script of a tool intended for our
+										partners (InstallShield)
+									</li>
+									<li>
+										Analyze different virtualization tools allowing execution of
+										an application in a virtual environment, without having to
+										install it in advance
+									</li>
+									<li>
+										Develop a series of automated tests to be executed after
+										each build of an application
+									</li>
+								</ul>
+							</details>
+						</div>
+					</div>
+					<div className={classes.experienceEntry}>
+						<div className={classes.experienceTitle}>
 							<a href="https://genetec.com">Genetec Inc.</a> (Internship, 2021)
 						</div>
 						<div className={classes.experienceText}>
@@ -150,7 +211,7 @@ export default function ExperienceContent({ command }) {
 							(part-time, 03/2021 - present)
 						</div>
 						<div className={classes.experienceText}>
-							Service Desk Operator @ Academic IT Services
+							I.T. Technician L2 @ Academic IT Services
 							<details>
 								<summary>Details</summary>
 								<ul>
@@ -193,17 +254,33 @@ export default function ExperienceContent({ command }) {
 							(part-time, 02/2021 - present)
 						</div>
 						<div className={classes.experienceText}>
-							Undergraduate Assistant
+							Research Assistant in Machine Learning
 							<details>
 								<summary>Details</summary>
 								<ul>
 									<li>
-										Assisting in researching practical applications of ML and DL
-										models with current focus on explainable AI (XAI).
+										My current project is to evaluate MLaaS platforms and
+										develop an assessment framework.
 									</li>
 									<li>
-										Previously, reporting performance of NLP models for
-										classification on non-Latin datasets, e.g. XLNet and bert.
+										I assist in researching practical applications of machine
+										learning and deep learning models with current focus on
+										explainable AI (XAI).
+									</li>
+									<li>
+										I replicate experiments to verify claims arising during the
+										research of a topic.
+									</li>
+									<li>
+										I gather information from research literatures and extract
+										meaningful points to aid in the research progress of the
+										group.
+									</li>
+
+									<li>
+										Previously, I contributed by running and reporting NLP
+										models for classification on non-Latin datasets, more
+										specifically XLNet and bert.
 									</li>
 								</ul>
 							</details>

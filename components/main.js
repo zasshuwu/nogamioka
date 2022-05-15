@@ -31,9 +31,9 @@ export default function Main(props) {
 					<ul className={classes.headerNav}>
 						<li>
 							<div className={classes.tab}>
-								{" "}
-								{">"}
-								&nbsp;HATerm&nbsp;&nbsp;&nbsp;&nbsp;X
+								<div style={{ flex: "0" }}>X</div>
+								<div style={{ margin: "auto" }}>{"~ "}anhTerm</div>
+								<div>{"⌘1"}</div>
 							</div>
 						</li>
 
@@ -84,7 +84,7 @@ const MainContent = ({ command }) => {
 				<meta property="og:title" content="Hoang Anh Tech" key="title" />
 				<meta
 					property="og:description"
-					content="Hoang Anh's portfolio site, also where web frameworks are experimentally incorporated."
+					content="Nguyen Hoang Anh's portfolio site."
 					key="description"
 				></meta>
 				<meta
@@ -97,10 +97,49 @@ const MainContent = ({ command }) => {
 				<h1 style={{ color: customTheme.palette.primary.main, fontSize: "12pt" }}>
 					Welcome to Nguyen Hoang Anh&apos;s Portfolio 6.90 RC (Yeetus Magus) 😉
 				</h1>
-				<Button onClick={handleResume} variant="outlined" color="primary">
+				<div className={classes.resume_download}>
+					<Button
+						onClick={() => {
+							window.open("/anh-resume.pdf");
+						}}
+						variant="outlined"
+						color="primary"
+					>
+						.PDF
+					</Button>
+					<Button
+						onClick={() => {
+							window.open("/anh-resume.docx");
+						}}
+						variant="outlined"
+						color="tertiary"
+					>
+						.DOCX
+					</Button>
+					<Button
+						onClick={() => {
+							window.open("/anh-resume.md");
+						}}
+						variant="outlined"
+						color="primary"
+					>
+						.MD
+					</Button>
+					<Button
+						onClick={() => {
+							window.open("/Anh_Hoang_Nguyen.vcf");
+						}}
+						variant="outlined"
+						color="primary"
+					>
+						vCard
+					</Button>
+				</div>
+
+				{/* <Button onClick={handleResume} variant="outlined" color="primary">
 					View Classic Resume
-				</Button>
-				<code>
+				</Button> */}
+				<div className="code">
 					<br></br>
 
 					<p style={{ wordBreak: "break-all" }}>
@@ -110,27 +149,30 @@ const MainContent = ({ command }) => {
 						</a>
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Status:</span> Studying to become a
-						Computer Engineer
+						* <span style={{ color: "#00ddff" }}>Status:</span> 📚 🎓 and 👀
+						internships.
 					</p>
 					<p>
 						* <span style={{ color: "#00ddff" }}>Institution:</span> Concordia
 						University, Montreal, QC. Canada
 					</p>
 					<p>
-						* <span style={{ color: "#00ddff" }}>Specialization:</span> Full-stack
-						Webdev, ML in Motion Detection &amp; NLP, Linux/Windows Server Admin,
-						Orchestration, Network Admin, Computer Hardware.
+						* <span style={{ color: "#00ddff" }}>Specializations:</span> Software
+						Development, DevOps/SRE, Systems Administration in Windows and Linux.
 					</p>
 					<p>
-						<span style={{ color: "#facc00" }}>69 updates</span> can be applied
+						<span style={{ color: "#facc00" }}>420 updates</span> can be applied
 						immediately.
+					</p>
+					<p>
+						<span style={{ color: "#facc00" }}>Published Domains:</span> hoanganh.dev;
+						hoanganh.tech; aaanh.app
 					</p>
 					<p>To see these additional updates run: apt list --upgrade</p>
 					<br></br>
 
 					<p>Last login: {d.toString()}</p>
-				</code>
+				</div>
 
 				<p>
 					<span style={{ color: customTheme.palette.primary.main }}>
@@ -155,6 +197,7 @@ const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		margin: "0",
 		padding: "0",
+
 		color: customTheme.palette.primary.main,
 		justifyContent: "center",
 		alignItems: "center",
@@ -167,7 +210,7 @@ const useStyles = makeStyles((theme) => ({
 			background: customTheme.palette.background.main,
 		},
 		"& .MuiTableCell-root": {
-			fontFamily: "monospace",
+			fontFamily: "Fira Code, monospace",
 			color: "#ddd !important",
 		},
 		"& a": {
@@ -184,7 +227,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	content: {
 		background: customTheme.palette.background.main,
-		minWidth: "70%",
+		minWidth: "95%",
 		minHeight: "95%",
 		border: "none",
 		borderRadius: "8px",
@@ -195,15 +238,22 @@ const useStyles = makeStyles((theme) => ({
 			opacity: "0.9",
 			minHeight: "100vh",
 		},
+		border: "solid .25px #aaa",
 	},
 	tab: {
 		margin: "0",
-		borderBottom: "solid 1px grey",
-		borderRight: "solid 1px grey",
-		borderRadius: "8px 0px",
-		padding: "1rem",
-		color: "white",
-		width: "150px",
+		borderBottom: "solid 1.25px #aaa",
+		borderRight: "solid 1.25px #aaa",
+		borderRadius: "8px 0",
+		display: "flex",
+		justifyContent: "space-between",
+		padding: ".75rem .5rem",
+		color: "#aaa",
+		minWidth: "250px",
+		fontSize: "1em",
+		"& > *": {
+			marginLeft: "1em",
+		},
 	},
 	message: {
 		margin: "1rem",
@@ -253,6 +303,13 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			background: "#333333",
 			transition: "500ms ease",
+		},
+	},
+	resume_download: {
+		display: "flex",
+		alignItems: "center",
+		"& > *": {
+			marginRight: "1rem",
 		},
 	},
 }));

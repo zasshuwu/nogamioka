@@ -35,24 +35,25 @@ export default function ResumeSummary({}) {
 					Montreal, QC. <br />
 				</p>
 				<p>
-					I actively work on modern web applications, APIs, and frameworks and machine
+					I actively work on modern web applications, APIs, frameworks and machine
 					learning research projects in natural language processing. As an avid adopter of
-					new and exciting cloud, server, and networking technologies, I setup my home lab
-					and cloud clusters on Linode, AWS, and manage orchestration via Ansible. My
-					tentative endgame is to work in DevOps and CyberSec.
+					new cloud and networking technologies, I setup my home lab and cloud clusters on
+					Linode, AWS, and manage orchestration via Ansible and k8s. My tentative endgame
+					is to work in DevOps and SRE.
 				</p>
 			</blockquote>
 			<div className={classes.skill_cloud}>
 				<h2 className={classes.h2}>Skills</h2>
 				<ul>
 					<li>
-						<span className={classes.skill_topic}>Programming Languages</span>: C, C++,
-						C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
+						<span className={classes.skill_topic}>Programming Languages</span>: C (2y),
+						C++ (2y), C# (1y), Python (4y), JavaScript (4y), HTML/CSS (4y), TypeScript
+						(1y), Java (1y).
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Specializations</span>: Web app
-						development, cross-platform with Electron, server orchestration and
-						networking.
+						development (2y), cross-platform with Electron (1y), systems administration
+						(1.5y), server orchestration (3y) and networking (2y).
 					</li>
 					<li>
 						<span className={classes.skill_topic}>Environments</span>: Linux, macOS,
@@ -69,7 +70,7 @@ export default function ResumeSummary({}) {
 					<li>
 						<span className={classes.skill_topic}>Personal</span>: Professional manner,
 						responsible, problem solving, willing to learn, a team player, empathetic,
-						friendly.
+						friendly, advanced Googling with complex search queries and syntaxes.
 					</li>
 				</ul>
 			</div>

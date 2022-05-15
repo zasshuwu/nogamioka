@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import { Button, Container, Paper } from "@mui/material";
 import ResumeContact from "./resume_contact";
+import Head from "next/head";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -36,6 +37,7 @@ const useStyles = makeStyles((customTheme) => ({
 		flexDirection: "column",
 		[customTheme.breakpoints.down("md")]: {
 			textAlign: "center",
+			marginTop: "2rem",
 		},
 	},
 	export_btn: {
@@ -56,9 +58,6 @@ const useStyles = makeStyles((customTheme) => ({
 			backgroundColor: "#333333dd",
 			color: "#fff",
 			cursor: "pointer",
-		},
-		[customTheme.breakpoints.down("md")]: {
-			display: "none",
 		},
 	},
 	resume_container: {
@@ -82,6 +81,14 @@ export default function Resume({}) {
 
 	return (
 		<div>
+			<Head>
+				<title>Anh&apos;s Resume</title>
+				<meta
+					property="og:image"
+					content="https://hoanganh.tech/carbon.png"
+					key="ogimage"
+				></meta>
+			</Head>
 			<Container
 				className={classes.resume_container}
 				style={{ fontFamily: "Be Vietnam Pro" }}
@@ -129,6 +136,16 @@ export default function Resume({}) {
 								className={classes.export_btn}
 							>
 								.MD
+							</Button>
+							<Button
+								onClick={() => {
+									window.open("/Anh_Hoang_Nguyen.vcf");
+								}}
+								variant="outlined"
+								color="black"
+								className={classes.export_btn}
+							>
+								vCard
 							</Button>
 						</div>
 						<ResumeContact></ResumeContact>

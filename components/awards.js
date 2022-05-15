@@ -11,7 +11,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 
-const useStyles = makeStyles((customTheme) => ({}));
+const useStyles = makeStyles((customTheme) => ({
+	
+}));
 
 export default function AwardsContent({ command }) {
 	const classes = useStyles();
@@ -27,7 +29,7 @@ export default function AwardsContent({ command }) {
 		),
 	];
 	return (
-		<div style={{ margin: "1rem" }}>
+		<div style={{ margin: "1rem" }} className={classes.awards}>
 			<p>
 				<span style={{ color: customTheme.palette.primary.main }}>
 					root@ANH-WEB-SERVER:

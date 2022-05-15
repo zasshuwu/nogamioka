@@ -19,10 +19,6 @@ export default function Home() {
 					key="image"
 				></meta>
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-					rel="stylesheet"
-				/>
 			</Head>
 			<style global jsx>
 				{`

@@ -1,0 +1,21 @@
+anh@AAANH01 
+----------- 
+CPU: AMD Ryzen 9 3900X (24) @ 4.000GHz 
+GPU: NVidia GTX 1080 8GB 
+Memory: 4 DIMMs, 2-channel, 24GB DDR4 @ 2900MHz
+
+Displays
+___________
+0: LG Ultra HD 32" @ 60Hz
+1: Acer 1080p 24" @ 60Hz
+
+Peripherals
+-----------
+Pointer 1   : Logitech G305 (white)
+Keyboard 1  : Drop CTRL TKL (space gray) w/ Halo True
+Pointer 2   : Logitech MX Master
+Keyboard 2  : Logitech MX Keys
+Headphone 1 : Sennheiser HD6XX
+DAC         : FiiO Q1 mk 2
+Headphone 2 : Sony WH-1000XM4 (white)
+Webcam      : Logitech C920
