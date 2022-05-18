@@ -243,7 +243,7 @@ export default function Uses({ isOpen, handleClose }) {
 					</div>
 				</div>
 				<div>
-					<h2 className={classes.h2}>Bonus: Books</h2>
+					<h2 className={classes.h2}>Bonus I: Books</h2>
 					<ul>
 						<li>
 							Designing Data-Intensive Applications by Martin Kleppmann &mdash; in
@@ -258,6 +258,31 @@ export default function Uses({ isOpen, handleClose }) {
 						<li>Head First Design Patterns by Eric Freeman &mdash; to read</li>
 						<li>Linux Kernel Development by Robert Love &mdash; to read</li>
 					</ul>
+				</div>
+				<div>
+					<h2 className={classes.h2}>Bonus II: Music</h2>
+					<iframe
+						allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+						frameBorder="0"
+						height="450"
+						style={{
+							width: "100%",
+							maxWidth: "660px",
+							overflow: "hidden",
+							background: "transparent",
+						}}
+						sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+						src="https://embed.music.apple.com/ca/playlist/j-music-definitive/pl.u-d2b01VXu4r973R"
+					></iframe>
+					<iframe
+						style={{ borderRadius: "12px", maxWidth: "660px" }}
+						src="https://open.spotify.com/embed/playlist/1uMebhsxkH9GONLwIiRBzx?utm_source=generator&theme=0"
+						width="100%"
+						height="450"
+						frameBorder="0"
+						allowfullscreen=""
+						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					></iframe>
 				</div>
 			</Paper>
 		</Container>
