@@ -150,6 +150,15 @@ export default function Uses({ isOpen, handleClose }) {
 								</ul>
 							</li>
 							<li>
+								<b>Work:</b> Dell Latitude 5521
+								<ul>
+									<li>
+										<i>Specs: i7-11850H, Intel UHD, 32GB DDR4</i>
+									</li>
+									<li>Dual boot with Asahi Linux</li>
+								</ul>
+							</li>
+							<li>
 								<b>Tablet:</b> iPad Pro 11-in <br />
 								<i>Specs: M1, Wi-Fi only, 128GB</i>
 							</li>
