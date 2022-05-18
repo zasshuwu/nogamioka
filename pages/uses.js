@@ -72,11 +72,11 @@ export default function Uses({ isOpen, handleClose }) {
 					Go To Home
 				</Button>
 				<p>
-					Inspired by
+					Inspired by{" "}
 					<a className={classes.hyper} href="https://twitter.com/wesbos">
 						Wes Bos
 					</a>
-					&apos;s
+					&apos;s{" "}
 					<a className={classes.hyper} href="https://uses.tech">
 						Uses.tech
 					</a>
@@ -155,7 +155,7 @@ export default function Uses({ isOpen, handleClose }) {
 									<li>
 										<i>Specs: i7-11850H, Intel UHD, 32GB DDR4</i>
 									</li>
-									<li>Dual boot with Asahi Linux</li>
+									<li>Windows</li>
 								</ul>
 							</li>
 							<li>
