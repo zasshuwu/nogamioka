@@ -5,6 +5,7 @@ import customTheme from "../styles/theme";
 import { ListAlt } from "@mui/icons-material";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
 	uses: {
@@ -43,6 +44,12 @@ const useStyles = makeStyles((theme) => ({
 			margin: "0",
 		},
 	},
+	hyper: {
+		color: customTheme.palette.tertiary.main,
+		"&:hover": {
+			textDecoration: "underline",
+		},
+	},
 }));
 
 export default function Uses({ isOpen, handleClose }) {
@@ -64,6 +71,16 @@ export default function Uses({ isOpen, handleClose }) {
 				>
 					Go To Home
 				</Button>
+				<p>
+					Inspired by{" "}
+					<a className={classes.hyper} href="https://twitter.com/wesbos">
+						Wes Bos
+					</a>
+					's{" "}
+					<a className={classes.hyper} href="https://uses.tech">
+						Uses.tech
+					</a>
+				</p>
 				<div>
 					<h2 className={classes.h2}>Hardware</h2>
 					<div>
