@@ -4,6 +4,7 @@ import { Paper, Button, Container } from "@mui/material";
 import customTheme from "../styles/theme";
 import { ListAlt } from "@mui/icons-material";
 import Image from "next/image";
+import Head from "next/head";
 
 const useStyles = makeStyles((theme) => ({
 	uses: {
@@ -49,6 +50,9 @@ export default function Uses({ isOpen, handleClose }) {
 	const classes = useStyles();
 	return (
 		<Container className={classes.uses}>
+			<Head>
+				<title>aaanh's Uses</title>
+			</Head>
 			<Paper className={classes.paper}>
 				<h1 className={classes.title}>/uses</h1>
 				<Button
