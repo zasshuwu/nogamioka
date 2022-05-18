@@ -280,7 +280,7 @@ export default function Uses({ isOpen, handleClose }) {
 						width="100%"
 						height="450"
 						frameBorder="0"
-						allowFullscreen=""
+						allowFullScreen=""
 						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 					></iframe>
 				</div>
