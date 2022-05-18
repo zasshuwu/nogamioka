@@ -58,7 +58,7 @@ export default function Uses({ isOpen, handleClose }) {
 	return (
 		<Container className={classes.uses}>
 			<Head>
-				<title>aaanh's Uses</title>
+				<title>aaanh&quot;s Uses</title>
 			</Head>
 			<Paper className={classes.paper}>
 				<h1 className={classes.title}>/uses</h1>
@@ -76,7 +76,7 @@ export default function Uses({ isOpen, handleClose }) {
 					<a className={classes.hyper} href="https://twitter.com/wesbos">
 						Wes Bos
 					</a>
-					's{" "}
+					&quot;s{" "}
 					<a className={classes.hyper} href="https://uses.tech">
 						Uses.tech
 					</a>
