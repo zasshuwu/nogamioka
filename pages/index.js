@@ -103,7 +103,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="overflow-y-scroll h-full p-4 font-fira-code font-bold text-md">
-					<div className="flex space-x-4 items-center">
+					<div className="flex flex-wrap space-x-4 items-center">
 						<Prompt className="text-purple-500"></Prompt>
 						<form onSubmit={(e) => handleSubmit(e)}>
 							<input

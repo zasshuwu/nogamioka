@@ -38,7 +38,7 @@ export default function NavBar({ setCommand, setContent }) {
 	}
 
 	return (
-		<div className="w-full py-2 px-4 min-h-[32px] flex justify-end space-x-2 border-t">
+		<div className="w-full py-2 px-4 min-h-[32px] flex flex-wrap mb-2 justify-end space-x-2 border-t">
 			<button className={navBtnStyle + " hover:bg-purple-500 hover:text-white"}>
 				{"cd ~"}
 			</button>
