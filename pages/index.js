@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import NavBar from "../components/navbar";
 import Contact from "../components/Contact";
+import Help from "../components/Help";
 
 function MinimizeBtn() {
 	return (
@@ -77,7 +78,11 @@ export default function Home() {
 		e.preventDefault();
 		// console.log("Command Fired");
 		cmdList.includes(command) ? setValidCmd(true) : setValidCmd(false);
-		command == "cd /etc/contact" ? setContent("contact") : setContent("home");
+		command == "cd /etc/contact"
+			? setContent("contact")
+			: command == ":help"
+			? setContent("help")
+			: setContent("home");
 	};
 	const Prompt = ({ className }) => {
 		return <p className={className}>{"visitor@aaanh.home > "}</p>;
@@ -102,7 +107,7 @@ export default function Home() {
 						<Prompt className="text-purple-500"></Prompt>
 						<form onSubmit={(e) => handleSubmit(e)}>
 							<input
-								className="w-auto border-none text-sky-500 font-bold mt-1 block px-3 py-2 bg-white border border-slate-300 text-sm placeholder-slate-400
+								className="w-auto border-none text-sky-500 font-bold block px-3 py-2 bg-white border border-slate-300 text-sm placeholder-slate-400
 								focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-transparent
 								disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
 								invalid:border-pink-500 invalid:text-pink-600
@@ -115,11 +120,13 @@ export default function Home() {
 							></input>
 							<input type="submit" hidden></input>
 						</form>
+						<div>{"< "}Be cool and use the CLI 😎</div>
 						<div className="transition-all ease-in-out">
 							{isValidCmd ? null : "🛑 Invalid Command"}
 						</div>
 					</div>
 					{content == "contact" ? <Contact></Contact> : null}
+					{content == "help" ? <Help></Help> : null}
 				</div>
 				<NavBar setCommand={setCommand} setContent={setContent}></NavBar>
 			</div>
