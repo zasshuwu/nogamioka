@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { useState } from "react";
 
 function MinimizeBtn() {
 	return (
@@ -54,11 +55,16 @@ function CloseBtn() {
 }
 
 export default function Home() {
+	const [content, setContent] = useState("home");
+	const [command, setCommand] = useState("");
+
+	const handleCommandInput = () => {};
+
 	return (
 		<div className="flex min-h-screen min-w-screen">
 			<div className="flex flex-col m-auto h-screen w-screen sm:max-h-[768px] sm:max-w-[1366px] rounded-[18pt] shadow-2xl">
 				<div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
-					<div className=" mt-2 ml-2 p-2 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 rounded-[16pt] rounded-b-none text-white">
+					<div className=" mt-2 ml-2 p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 rounded-[16pt] rounded-b-none text-white">
 						<div>~ @ aaanh.home</div>
 						<div> x </div>
 					</div>
@@ -68,35 +74,10 @@ export default function Home() {
 						<CloseBtn></CloseBtn>
 					</div>
 				</div>
-				<div
-					className="overflow-y-scroll h-full p-4
-        "
-				>
-					Reprehenderit est qui cupidatat ex mollit proident eu. Do duis esse exercitation
-					ut. Lorem veniam velit sunt et sit enim deserunt exercitation. Labore veniam
-					commodo cupidatat pariatur qui dolor qui et incididunt sit velit ad sint
-					aliquip. Id ea deserunt do magna. Minim esse ex non aliqua nostrud ea veniam
-					voluptate aute est excepteur officia est ad. Elit reprehenderit amet
-					reprehenderit dolor id ad est dolore aliqua. Adipisicing reprehenderit irure
-					reprehenderit enim dolore proident pariatur occaecat eu ad ad laboris eiusmod.
-					Aliquip dolor excepteur cillum aliqua commodo eu. Laborum commodo labore sunt
-					incididunt do qui proident ex in aute laboris nulla. Duis elit excepteur aliquip
-					exercitation exercitation ex amet non officia culpa id enim. Culpa laborum sint
-					deserunt culpa amet magna irure qui veniam mollit aliqua aliquip. Aliquip ad
-					deserunt eiusmod consectetur anim duis. Aute excepteur consectetur enim et
-					dolore mollit mollit ipsum proident. Occaecat excepteur dolore commodo ipsum
-					labore magna reprehenderit non ipsum. Enim cillum anim cupidatat eiusmod
-					excepteur consectetur occaecat non pariatur. Adipisicing laboris est ullamco eu
-					cillum consequat voluptate occaecat consequat. Officia do reprehenderit laboris
-					veniam. Anim consequat ea id aliqua nulla occaecat. Enim duis minim id aliquip
-					aliqua eu sit commodo elit occaecat occaecat ipsum veniam. Aute proident Lorem
-					mollit exercitation culpa nulla voluptate officia aliqua ad non mollit minim
-					quis. Amet ut dolore exercitation ea est. Culpa sit irure id reprehenderit
-					laboris laborum irure fugiat amet veniam consectetur.
-				</div>
+				<div className="overflow-y-scroll h-full p-4"></div>
 				<div
 					id="navbarplaceholder"
-					className="min-h-[36px] bg-neutral-500 rounded-b-[18pt]"
+					className="min-h-[48px] border-t rounded-b-[18pt]"
 				></div>
 			</div>
 		</div>
