@@ -25,33 +25,48 @@ export default function NavBar({ setCommand, setContent }) {
 		setContent("contact");
 	}
 	function handleExperience() {
-		setCommand("cd ~/contact");
-		setContent("contact");
+		setCommand("cd /var/experience");
+		setContent("experience");
 	}
 	function handleAwards() {
-		setCommand("cd ~/contact");
-		setContent("contact");
+		setCommand("cd /bin/awards");
+		setContent("awards");
 	}
 	function handleProjects() {
-		setCommand("cd ~/contact");
-		setContent("contact");
+		setCommand("cd /lib/projects");
+		setContent("projects");
 	}
 
 	return (
 		<div className="w-full py-2 px-4 min-h-[32px] flex flex-wrap mb-2 justify-end space-x-2 border-t">
-			<button className={navBtnStyle + " hover:bg-purple-500 hover:text-white"}>
+			<button
+				onClick={handleHome}
+				className={navBtnStyle + " hover:bg-purple-500 hover:text-white"}
+			>
 				{"cd ~"}
 			</button>
-			<button className={navBtnStyle + " hover:bg-green-500 hover:text-white"}>
+			<button
+				onClick={handleContact}
+				className={navBtnStyle + " hover:bg-green-500 hover:text-white"}
+			>
 				{"Contact"}
 			</button>
-			<button className={navBtnStyle + " hover:bg-blue-500 hover:text-white"}>
+			<button
+				onClick={handleExperience}
+				className={navBtnStyle + " hover:bg-blue-500 hover:text-white"}
+			>
 				{"Experience"}
 			</button>
-			<button className={navBtnStyle + " hover:bg-yellow-500 hover:text-white"}>
+			<button
+				onClick={handleAwards}
+				className={navBtnStyle + " hover:bg-yellow-500 hover:text-white"}
+			>
 				{"Awards"}
 			</button>
-			<button className={navBtnStyle + " hover:bg-pink-500 hover:text-white"}>
+			<button
+				onClick={handleProjects}
+				className={navBtnStyle + " hover:bg-pink-500 hover:text-white"}
+			>
 				{"Projects"}
 			</button>
 		</div>

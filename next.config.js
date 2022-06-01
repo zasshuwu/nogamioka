@@ -10,4 +10,7 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [],
+	images: {
+		domains: ["avatars.githubusercontent.com"],
+	},
 };

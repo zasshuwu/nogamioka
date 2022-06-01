@@ -1,7 +1,7 @@
 export default function Help() {
 	return (
-		<div className="font-normal h-full w-full flex items-center justify-center">
-			<table>
+		<div className="font-normal max-h-full w-full flex items-center justify-center">
+			<table className="my-4">
 				<thead>
 					<tr>
 						<th>Command</th>

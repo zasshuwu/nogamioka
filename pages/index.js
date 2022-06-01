@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
-import NavBar from "../components/navbar";
+import NavBar from "../components/NavBar";
 import Contact from "../components/Contact";
 import Help from "../components/Help";
 
@@ -89,7 +89,7 @@ export default function Home() {
 	};
 
 	return (
-		<div className="flex min-h-screen min-w-screen">
+		<div className="flex min-h-[80vh] sm:min-h-screen min-w-screen">
 			<div className="flex flex-col m-auto h-screen w-screen sm:max-h-[768px] sm:max-w-[1366px] rounded-[18pt] shadow-2xl">
 				<div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
 					<div className="mt-2 ml-2 p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 rounded-[16pt] rounded-b-none text-white">
