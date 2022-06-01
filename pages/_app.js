@@ -1,14 +1,7 @@
-import "../styles/globals.css";
-import { ThemeProvider } from "@mui/material/styles";
-import customTheme from "../styles/theme";
-import "firacode";
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-	return (
-		<ThemeProvider theme={customTheme}>
-			<Component {...pageProps} />
-		</ThemeProvider>
-	);
+  return <Component {...pageProps} />
 }
 
-export default MyApp;
+export default MyApp
