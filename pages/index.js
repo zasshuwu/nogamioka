@@ -112,11 +112,15 @@ export default function Home() {
 	};
 
 	return (
-		<div className={"flex max-h-[80vh] sm:min-h-screen min-w-screen"}>
+		<div
+			className={
+				"flex max-h-[80vh] sm:min-h-screen min-w-screen dark:text-white dark:bg-neutral-900 transition-all ease-in-out"
+			}
+		>
 			<SEO title="aaanh's Portfolio"></SEO>
 			<div
 				className={
-					"flex flex-col m-auto min-h-[60vh] w-screen rounded-[18pt] shadow-2xl " +
+					"flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl " +
 					(isMaximized ? "sm:h-screen" : "sm:max-h-[768px] sm:max-w-[1366px]")
 				}
 			>
@@ -134,7 +138,12 @@ export default function Home() {
 						<CloseBtn clickEvent={() => router.push("/empty")}></CloseBtn>
 					</div>
 				</div>
-				<div className="overflow-y-scroll overflow-x-hidden h-full p-4 font-fira-code text-md">
+				<div
+					className={
+						"max-h-[80vh] overflow-y-scroll overflow-x-hidden p-4 font-fira-code text-md " +
+						(isMaximized ? "sm:max-h-max" : "sm:max-h-[70vh]")
+					}
+				>
 					<div className="flex flex-wrap space-x-4 items-center">
 						<Prompt className="text-purple-500 font-bold"></Prompt>
 						<form
@@ -144,7 +153,7 @@ export default function Home() {
 						>
 							<input
 								list="cmds"
-								className="w-auto border-none text-sky-500 font-bold block px-3 py-2 bg-white border border-slate-300 text-sm placeholder-slate-400
+								className="w-auto border-none text-sky-500 font-bold block px-3 py-2 dark:bg-neutral-900 bg-white border border-slate-300 text-sm placeholder-slate-400
 								focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-transparent
 								disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
 								invalid:border-pink-500 invalid:text-pink-600

@@ -2,7 +2,7 @@ export default function HomeContent() {
 	let d = new Date();
 
 	return (
-		<div className="font-normal my-4">
+		<div className="sm:text-md text-sm font-normal my-4">
 			<div id="welcome" className="mt-4">
 				<h2 className="text-green-600 font-bold">
 					{"Welcome to Anh's Portfolio 6.90 RC (Yeetus Magus)"}
