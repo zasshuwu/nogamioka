@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-const ThemeSwitcher = () => {
+export const ThemeSwitcher = () => {
 	return (
 		<div className="flex text-slate justify-center dark:transparent dark:border-gray-500 rounded-3xl px-2">
 			<button
@@ -70,6 +70,14 @@ export default function NavBar({ setCommand, setContent }) {
 		setCommand("cd /lib/projects");
 		setContent("projects");
 	}
+	function handleUses() {
+		setCommand("curl -O /uses");
+		router.push("/uses");
+	}
+	function handleHistory() {
+		setCommand("history");
+		setContent("history");
+	}
 
 	return (
 		<div className="w-full py-2 px-4 min-h-[36px] flex flex-wrap mb-2 justify-between space-x-2 border-t">
@@ -110,6 +118,18 @@ export default function NavBar({ setCommand, setContent }) {
 					className={navBtnStyle + " hover:bg-yellow-500 hover:text-white"}
 				>
 					{"🏆 Awards"}
+				</button>
+				<button
+					onClick={handleUses}
+					className={navBtnStyle + " hover:bg-cyan-500 hover:text-white"}
+				>
+					{"💻 Uses"}
+				</button>
+				<button
+					onClick={handleHistory}
+					className={navBtnStyle + " hover:bg-cyan-500 hover:text-white"}
+				>
+					{"🧭 History"}
 				</button>
 			</div>
 		</div>

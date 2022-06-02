@@ -4,18 +4,21 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
+import { ThemeSwitcher } from "../components/navbar";
+
 export default function Uses({ isOpen, handleClose }) {
 	const router = useRouter();
 
 	return (
-		<div className="flex flex-col min-h-screen min-w-screen justify-center items-center">
+		<div className="flex flex-col min-h-screen min-w-screen justify-center items-center dark:bg-neutral-900 dark:text-slate-200 transition-all ease-in-out">
 			<Head>
 				<title>aaanh&apos;s Uses</title>
 			</Head>
-			<div className="w-screen sm:w-[60vw] shadow-lg my-12 p-6">
+			<div className=" w-screen sm:w-[60vw] shadow-lg my-12 p-6">
 				<h1 className="font-bold text-6xl my-4">/uses</h1>
+				<ThemeSwitcher></ThemeSwitcher>
 				<button
-					className="border border-black rounded-md hover:border-transparent hover:bg-green-500 p-2"
+					className="dark:border-transparent border border-black rounded-md hover:border-transparent hover:bg-green-500 p-2 my-2"
 					onClick={(e) => {
 						e.preventDefault();
 						router.push("/");

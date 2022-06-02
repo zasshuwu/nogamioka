@@ -79,6 +79,8 @@ const cmdList = [
 	"cd /bin/awards",
 	"cd /lib/projects",
 	":help",
+	"curl -O /uses",
+	"history",
 ];
 
 export default function Home() {
@@ -88,13 +90,21 @@ export default function Home() {
 	const [isValidCmd, setValidCmd] = useState(true);
 	const [isMaximized, setMaximize] = useState(false);
 
+	const [cmdHistory, addCmdHistory] = useState([]);
+
 	const handleCommandInput = (e) => {
 		setCommand(e.target.value);
 	};
+
+	const addHistory = (cmd) => {
+		addCmdHistory((oldHistory) => [...oldHistory, cmd]);
+	};
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		// console.log("Command Fired");
 		cmdList.includes(command) ? setValidCmd(true) : setValidCmd(false);
+		addHistory(command);
 		command == "cd /etc/contact"
 			? setContent("contact")
 			: command == ":help"
@@ -105,7 +115,14 @@ export default function Home() {
 			? setContent("experience")
 			: command == "cd /lib/projects"
 			? setContent("projects")
-			: setContent("home");
+			: command == "curl -O /uses"
+			? router.push("/uses")
+			: command == "history"
+			? setContent("history")
+			: command == "home"
+			? setContent("home")
+			: null;
+		console.log(cmdHistory);
 	};
 	const Prompt = ({ className }) => {
 		return <p className={className}>{"visitor@aaanh.home > "}</p>;
@@ -166,12 +183,14 @@ export default function Home() {
 							></input>
 							<input type="submit" hidden></input>
 							<datalist id="cmds">
+								<option value=":help"></option>
 								<option value="cd ~"></option>
 								<option value="cd /etc/contact"></option>
 								<option value="cd /var/experience"></option>
 								<option value="cd /bin/awards"></option>
 								<option value="cd /lib/projects"></option>
-								<option value=":help"></option>
+								<option value="curl -O /uses"></option>
+								<option value="history"></option>
 							</datalist>
 						</form>
 						<div className="transition-all ease-in-out">
@@ -181,6 +200,9 @@ export default function Home() {
 							{"< "}Be cool and use the CLI 😎
 						</div>
 					</div>
+					{content == "history" ? (
+						<HistoryContent cmdHistory={cmdHistory}></HistoryContent>
+					) : null}
 					{content == "home" ? <HomeContent></HomeContent> : null}
 					{content == "contact" ? <Contact></Contact> : null}
 					{content == "help" ? <Help></Help> : null}
@@ -190,6 +212,26 @@ export default function Home() {
 				</div>
 				<NavBar setCommand={setCommand} setContent={setContent}></NavBar>
 			</div>
+		</div>
+	);
+}
+
+function HistoryContent({ cmdHistory }) {
+	return (
+		<div>
+			<table>
+				<tr>
+					<th>Index</th>
+					<th>Command</th>
+				</tr>
+
+				{cmdHistory.map((cmd, index) => (
+					<tr key={index}>
+						<td>{index + 1}</td>
+						<td>{cmd}</td>
+					</tr>
+				))}
+			</table>
 		</div>
 	);
 }
