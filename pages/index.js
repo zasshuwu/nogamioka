@@ -5,6 +5,10 @@ import { useState } from "react";
 import NavBar from "../components/NavBar";
 import Contact from "../components/Contact";
 import Help from "../components/Help";
+import HomeContent from "../components/Home";
+import SEO from "../components/SEO";
+import Experience from "../components/Experience";
+import { useRouter } from "next/router";
 
 function MinimizeBtn() {
 	return (
@@ -23,9 +27,12 @@ function MinimizeBtn() {
 	);
 }
 
-function MaximizeBtn() {
+function MaximizeBtn({ clickEvent }) {
 	return (
-		<button className="flex items-center justify-center hover:text-green-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700">
+		<button
+			onClick={clickEvent}
+			className="flex items-center justify-center hover:text-green-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				className="h-6 w-6"
@@ -40,9 +47,12 @@ function MaximizeBtn() {
 	);
 }
 
-function CloseBtn() {
+function CloseBtn({ clickEvent }) {
 	return (
-		<button className="flex items-center justify-center hover:text-red-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700">
+		<button
+			onClick={clickEvent}
+			className="flex items-center justify-center hover:text-red-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				className="h-6 w-6"
@@ -67,9 +77,11 @@ const cmdList = [
 ];
 
 export default function Home() {
+	const router = useRouter();
 	const [content, setContent] = useState("home");
 	const [command, setCommand] = useState();
 	const [isValidCmd, setValidCmd] = useState(true);
+	const [isMaximized, setMaximize] = useState(false);
 
 	const handleCommandInput = (e) => {
 		setCommand(e.target.value);
@@ -82,6 +94,12 @@ export default function Home() {
 			? setContent("contact")
 			: command == ":help"
 			? setContent("help")
+			: command == "cd /bin/awards"
+			? setContent("awards")
+			: command == "cd /var/experience"
+			? setContent("experience")
+			: command == "cd /lib/projects"
+			? setContent("projects")
 			: setContent("home");
 	};
 	const Prompt = ({ className }) => {
@@ -89,8 +107,14 @@ export default function Home() {
 	};
 
 	return (
-		<div className="flex min-h-[80vh] sm:min-h-screen min-w-screen">
-			<div className="flex flex-col m-auto h-screen w-screen sm:max-h-[768px] sm:max-w-[1366px] rounded-[18pt] shadow-2xl">
+		<div className={"flex min-h-[80vh] sm:min-h-screen min-w-screen"}>
+			<SEO title="aaanh's Portfolio"></SEO>
+			<div
+				className={
+					"flex flex-col m-auto h-screen w-screen rounded-[18pt] shadow-2xl " +
+					(isMaximized ? "" : "sm:max-h-[768px] sm:max-w-[1366px]")
+				}
+			>
 				<div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
 					<div className="mt-2 ml-2 p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 rounded-[16pt] rounded-b-none text-white">
 						<div>~ @ aaanh.home</div>
@@ -98,15 +122,20 @@ export default function Home() {
 					</div>
 					<div className="flex justify-end items-center space-x-2 px-2">
 						<MinimizeBtn></MinimizeBtn>
-						<MaximizeBtn></MaximizeBtn>
-						<CloseBtn></CloseBtn>
+						<MaximizeBtn clickEvent={() => setMaximize(!isMaximized)}></MaximizeBtn>
+						<CloseBtn clickEvent={() => router.push("/empty")}></CloseBtn>
 					</div>
 				</div>
-				<div className="overflow-y-scroll h-full p-4 font-fira-code font-bold text-md">
+				<div className="overflow-y-scroll h-full p-4 font-fira-code text-md">
 					<div className="flex flex-wrap space-x-4 items-center">
-						<Prompt className="text-purple-500"></Prompt>
-						<form onSubmit={(e) => handleSubmit(e)}>
+						<Prompt className="text-purple-500 font-bold"></Prompt>
+						<form
+							onSubmit={(e) => {
+								handleSubmit(e);
+							}}
+						>
 							<input
+								list="cmds"
 								className="w-auto border-none text-sky-500 font-bold block px-3 py-2 bg-white border border-slate-300 text-sm placeholder-slate-400
 								focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-transparent
 								disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
@@ -115,18 +144,30 @@ export default function Home() {
 								placeholder="try :help & Enter"
 								name="terminal"
 								onChange={(e) => handleCommandInput(e)}
-								type="text"
 								autoComplete="off"
+								value={command}
 							></input>
 							<input type="submit" hidden></input>
+							<datalist id="cmds">
+								<option value="cd ~"></option>
+								<option value="cd /etc/contact"></option>
+								<option value="cd /var/experience"></option>
+								<option value="cd /bin/awards"></option>
+								<option value="cd /lib/projects"></option>
+								<option value=":help"></option>
+							</datalist>
 						</form>
-						<div>{"< "}Be cool and use the CLI 😎</div>
 						<div className="transition-all ease-in-out">
 							{isValidCmd ? null : "🛑 Invalid Command"}
 						</div>
+						<div className="text-slate-500 font-bold">
+							{"< "}Be cool and use the CLI 😎
+						</div>
 					</div>
+					{content == "home" ? <HomeContent></HomeContent> : null}
 					{content == "contact" ? <Contact></Contact> : null}
 					{content == "help" ? <Help></Help> : null}
+					{content == "experience" ? <Experience></Experience> : null}
 				</div>
 				<NavBar setCommand={setCommand} setContent={setContent}></NavBar>
 			</div>

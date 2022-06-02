@@ -1,6 +1,7 @@
 export default function Help() {
 	return (
-		<div className="font-normal max-h-full w-full flex items-center justify-center">
+		<div className="font-normal max-h-full w-full flex flex-col">
+			<code>Hi, glad you{"'"}re interested. Please find the available commands below 😊</code>
 			<table className="my-4">
 				<thead>
 					<tr>

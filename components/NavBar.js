@@ -19,6 +19,10 @@ export default function NavBar({ setCommand, setContent }) {
 		setCommand("cd ~");
 		setContent("home");
 	}
+	function handleHelp() {
+		setCommand(":help");
+		setContent("help");
+	}
 
 	function handleContact() {
 		setCommand("cd ~/contact");
@@ -46,6 +50,12 @@ export default function NavBar({ setCommand, setContent }) {
 				{"cd ~"}
 			</button>
 			<button
+				onClick={handleHelp}
+				className={navBtnStyle + " hover:bg-slate-500 hover:text-white"}
+			>
+				{":help"}
+			</button>
+			<button
 				onClick={handleContact}
 				className={navBtnStyle + " hover:bg-green-500 hover:text-white"}
 			>
@@ -58,16 +68,16 @@ export default function NavBar({ setCommand, setContent }) {
 				{"Experience"}
 			</button>
 			<button
-				onClick={handleAwards}
-				className={navBtnStyle + " hover:bg-yellow-500 hover:text-white"}
-			>
-				{"Awards"}
-			</button>
-			<button
 				onClick={handleProjects}
 				className={navBtnStyle + " hover:bg-pink-500 hover:text-white"}
 			>
 				{"Projects"}
+			</button>
+			<button
+				onClick={handleAwards}
+				className={navBtnStyle + " hover:bg-yellow-500 hover:text-white"}
+			>
+				{"Awards"}
 			</button>
 		</div>
 	);
