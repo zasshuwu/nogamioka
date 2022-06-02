@@ -4,7 +4,7 @@ import Link from "next/link.js";
 const Entry = ({ entry }) => {
 	return (
 		<div className="my-4 font-['Be_Vietnam_Pro']">
-			<div className="flex items-center space-x-4">
+			<div className="flex flex-wrap sm:items-center sm:flex-row flex-col sm:space-x-4">
 				<div className="font-bold">{entry.role}</div>
 				<div className="text-sm text-pink-400">
 					{entry.start_month}, {entry.start_year} &mdash;{" "}

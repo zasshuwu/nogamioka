@@ -9,6 +9,8 @@ import HomeContent from "../components/Home";
 import SEO from "../components/SEO";
 import Experience from "../components/Experience";
 import { useRouter } from "next/router";
+import Awards from "../components/Awards";
+import Projects from "../components/Projects";
 
 function MinimizeBtn() {
 	return (
@@ -114,8 +116,8 @@ export default function Home() {
 			<SEO title="aaanh's Portfolio"></SEO>
 			<div
 				className={
-					"flex flex-col m-auto max-h-[90vh] w-screen rounded-[18pt] shadow-2xl " +
-					(isMaximized ? "" : "sm:max-h-[768px] sm:max-w-[1366px]")
+					"flex flex-col m-auto min-h-[60vh] w-screen rounded-[18pt] shadow-2xl " +
+					(isMaximized ? "sm:h-screen" : "sm:max-h-[768px] sm:max-w-[1366px]")
 				}
 			>
 				<div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
@@ -132,7 +134,7 @@ export default function Home() {
 						<CloseBtn clickEvent={() => router.push("/empty")}></CloseBtn>
 					</div>
 				</div>
-				<div className="overflow-y-scroll h-full p-4 font-fira-code text-md">
+				<div className="overflow-y-scroll overflow-x-hidden h-full p-4 font-fira-code text-md">
 					<div className="flex flex-wrap space-x-4 items-center">
 						<Prompt className="text-purple-500 font-bold"></Prompt>
 						<form
@@ -174,6 +176,8 @@ export default function Home() {
 					{content == "contact" ? <Contact></Contact> : null}
 					{content == "help" ? <Help></Help> : null}
 					{content == "experience" ? <Experience></Experience> : null}
+					{content == "awards" ? <Awards></Awards> : null}
+					{content == "projects" ? <Projects></Projects> : null}
 				</div>
 				<NavBar setCommand={setCommand} setContent={setContent}></NavBar>
 			</div>

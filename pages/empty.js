@@ -4,8 +4,10 @@ export default function Empty() {
 	const router = useRouter();
 	return (
 		<div
-			style={{ fontFamily: "Comic Sans MS, Comic Sans, cursive" }}
-			className="h-screen w-screen bg-black flex justify-center items-center text-white flex-col space-y-4"
+			style={{
+				fontFamily: "Comic Sans MS, Comic Sans, Comic Neue, Futura, Papyrus, cursive",
+			}}
+			className="min-h-screen min-w-screen bg-black flex justify-center items-center text-white flex-col space-y-4 p-6"
 		>
 			<div>
 				<div
@@ -17,7 +19,7 @@ export default function Empty() {
 			<p className="text-green-500 text-4xl">
 				{"Congrats, you broke the web. Now face the wrath of (g)old internet memes."}
 			</p>
-			<div className="flex">
+			<div className="flex flex-wrap justify-center items-center">
 				<div
 					className="h-64 w-64"
 					style={{

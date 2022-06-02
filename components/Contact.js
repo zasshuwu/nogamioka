@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Contact() {
 	return (
 		<div className="p-4">
-			<div className="rounded-full h-64 w-64 shadow-xl">
+			<div className="rounded-full h-48 w-48 sm:h-64 sm:w-64 shadow-xl">
 				<Image
 					width={"200px"}
 					height={"200px"}
@@ -34,7 +34,7 @@ export default function Contact() {
 						</tr>
 						<tr>
 							<td>LinkedIn</td>
-							<td>
+							<td className="break-all">
 								<Link href="https://linkedin.com/in/aaanh">
 									https://linkedin.com/in/aaanh
 								</Link>

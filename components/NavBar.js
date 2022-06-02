@@ -47,37 +47,37 @@ export default function NavBar({ setCommand, setContent }) {
 				onClick={handleHome}
 				className={navBtnStyle + " hover:bg-purple-500 hover:text-white"}
 			>
-				{"cd ~"}
+				{"1️⃣9️⃣2️⃣ cd ~"}
 			</button>
 			<button
 				onClick={handleHelp}
 				className={navBtnStyle + " hover:bg-slate-500 hover:text-white"}
 			>
-				{":help"}
+				{"📘 :help"}
 			</button>
 			<button
 				onClick={handleContact}
 				className={navBtnStyle + " hover:bg-green-500 hover:text-white"}
 			>
-				{"Contact"}
+				{"📱 Contact"}
 			</button>
 			<button
 				onClick={handleExperience}
 				className={navBtnStyle + " hover:bg-blue-500 hover:text-white"}
 			>
-				{"Experience"}
+				{"👨‍💼 Experience"}
 			</button>
 			<button
 				onClick={handleProjects}
 				className={navBtnStyle + " hover:bg-pink-500 hover:text-white"}
 			>
-				{"Projects"}
+				{"🔧 Projects"}
 			</button>
 			<button
 				onClick={handleAwards}
 				className={navBtnStyle + " hover:bg-yellow-500 hover:text-white"}
 			>
-				{"Awards"}
+				{"🏆 Awards"}
 			</button>
 		</div>
 	);
