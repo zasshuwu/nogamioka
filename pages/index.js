@@ -27,11 +27,14 @@ function MinimizeBtn() {
 	);
 }
 
-function MaximizeBtn({ clickEvent }) {
+function MaximizeBtn({ clickEvent, isMaximized }) {
 	return (
 		<button
 			onClick={clickEvent}
-			className="flex items-center justify-center hover:text-green-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700"
+			className={
+				"flex items-center justify-center hover:text-green-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700 " +
+				(isMaximized ? "rotate-180" : "")
+			}
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -107,11 +110,11 @@ export default function Home() {
 	};
 
 	return (
-		<div className={"flex min-h-[80vh] sm:min-h-screen min-w-screen"}>
+		<div className={"flex max-h-[80vh] sm:min-h-screen min-w-screen"}>
 			<SEO title="aaanh's Portfolio"></SEO>
 			<div
 				className={
-					"flex flex-col m-auto h-screen w-screen rounded-[18pt] shadow-2xl " +
+					"flex flex-col m-auto max-h-[90vh] w-screen rounded-[18pt] shadow-2xl " +
 					(isMaximized ? "" : "sm:max-h-[768px] sm:max-w-[1366px]")
 				}
 			>
@@ -122,7 +125,10 @@ export default function Home() {
 					</div>
 					<div className="flex justify-end items-center space-x-2 px-2">
 						<MinimizeBtn></MinimizeBtn>
-						<MaximizeBtn clickEvent={() => setMaximize(!isMaximized)}></MaximizeBtn>
+						<MaximizeBtn
+							isMaximized={isMaximized}
+							clickEvent={() => setMaximize(!isMaximized)}
+						></MaximizeBtn>
 						<CloseBtn clickEvent={() => router.push("/empty")}></CloseBtn>
 					</div>
 				</div>
