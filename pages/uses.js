@@ -4,7 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-import { ThemeSwitcher } from "../components/navbar";
+import { ThemeSwitcher } from "../components/NavBar";
 
 export default function Uses({ isOpen, handleClose }) {
 	const router = useRouter();
