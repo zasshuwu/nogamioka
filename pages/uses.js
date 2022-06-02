@@ -8,13 +8,14 @@ export default function Uses({ isOpen, handleClose }) {
 	const router = useRouter();
 
 	return (
-		<div>
+		<div className="flex flex-col min-h-screen min-w-screen justify-center items-center">
 			<Head>
 				<title>aaanh&apos;s Uses</title>
 			</Head>
-			<div>
-				<h1>/uses</h1>
+			<div className="w-screen sm:w-[60vw] shadow-lg my-12 p-6">
+				<h1 className="font-bold text-6xl my-4">/uses</h1>
 				<button
+					className="border border-black rounded-md hover:border-transparent hover:bg-green-500 p-2"
 					onClick={(e) => {
 						e.preventDefault();
 						router.push("/");
@@ -27,9 +28,9 @@ export default function Uses({ isOpen, handleClose }) {
 					&apos;s <a href="https://uses.tech">Uses.tech</a>
 				</p>
 				<div>
-					<h2>Hardware</h2>
+					<h2 className=" my-4 text-4xl">Hardware</h2>
 					<div>
-						<h3>Desktop</h3>
+						<h3 className="text-2xl my-4">Desktop</h3>
 						<ul>
 							<li>
 								Workstation:{" "}
@@ -81,7 +82,7 @@ export default function Uses({ isOpen, handleClose }) {
 						</ul>
 					</div>
 					<div>
-						<h3>Laptops/Mobile</h3>
+						<h3 className="text-2xl my-4">Laptops/Mobile</h3>
 						<ul>
 							<li>
 								<b>Primary:</b> MacBook Pro 16-in (2021)
@@ -148,7 +149,7 @@ export default function Uses({ isOpen, handleClose }) {
 						</ul>
 					</div>
 					<div>
-						<h3>Camera</h3>
+						<h3 className="text-2xl">Camera</h3>
 						<ul>
 							<li>Nikon D700</li>
 							<li>Nikon D7000</li>
@@ -158,8 +159,8 @@ export default function Uses({ isOpen, handleClose }) {
 					</div>
 				</div>
 				<div>
-					<h2>Software</h2>
-					<h3>Development</h3>
+					<h2 className=" my-4 text-4xl">Software</h2>
+					<h3 className="text-2xl">Development</h3>
 					<ul>
 						<li>Editor: VSCode (dracula theme) and vim + tmux</li>
 						<li>IDE: Visual Studio, (dreaded) Xcode, CLion</li>
@@ -187,7 +188,7 @@ export default function Uses({ isOpen, handleClose }) {
 							</ul>
 						</li>
 					</ul>
-					<h3>Productivity</h3>
+					<h3 className="text-2xl">Productivity</h3>
 					<ul>
 						<li>
 							Font (mono): Fira Code &mdash; I slather this beautiful typeface
@@ -205,20 +206,20 @@ export default function Uses({ isOpen, handleClose }) {
 					</ul>
 				</div>
 				<div style={{ marginBottom: "2rem" }}>
-					<h2>Photos of my Desk Setup throughout the Time</h2>
+					<h2 className="text-4xl my-4">Photos of my Desk Setup throughout the Time</h2>
 					<div style={{ display: "flex", flexDirection: "column" }}>
-						<h3>January, 2022</h3>
+						<h3 className="text-2xl">January, 2022</h3>
 						<img style={{ width: "50%" }} src="/setup/desk_2022.jpeg"></img>
-						<h3>2021</h3>
+						<h3 className="text-2xl">2021</h3>
 						<img style={{ width: "50%" }} src="/setup/desk_2021.jpeg"></img>
-						<h3>Work office, 2021</h3>
+						<h3 className="text-2xl">Work office, 2021</h3>
 						<img style={{ width: "50%" }} src="/setup/desk_work_2021.jpeg"></img>
-						<h3>2020</h3>
+						<h3 className="text-2xl">2020</h3>
 						<img style={{ width: "50%" }} src="/setup/desk_2020.jpeg"></img>
 					</div>
 				</div>
 				<div>
-					<h2>Bonus I: Books</h2>
+					<h2 className="text-4xl my-4">Bonus I: Books</h2>
 					<ul>
 						<li>
 							Designing Data-Intensive Applications by Martin Kleppmann &mdash; in
@@ -235,7 +236,7 @@ export default function Uses({ isOpen, handleClose }) {
 					</ul>
 				</div>
 				<div>
-					<h2>Bonus II: Music</h2>
+					<h2 className="text-4xl my-4">Bonus II: Music</h2>
 					<iframe
 						allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
 						frameBorder="0"
