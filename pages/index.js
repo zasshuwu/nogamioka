@@ -157,7 +157,7 @@ export default function Home() {
 				</div>
 				<div
 					className={
-						"max-h-[80vh] overflow-y-scroll overflow-x-hidden p-4 font-fira-code text-md " +
+						"max-h-[72vh] overflow-y-scroll overflow-x-hidden p-4 font-fira-code text-md " +
 						(isMaximized ? "sm:max-h-max" : "sm:max-h-[70vh]")
 					}
 				>

@@ -11,6 +11,6 @@ module.exports = {
 	},
 	plugins: [],
 	images: {
-		domains: ["avatars.githubusercontent.com"],
+		domains: ["avatars.githubusercontent.com", "raw.githubusercontent.com"],
 	},
 };
