@@ -137,7 +137,7 @@ export default function Home() {
 			<SEO title="aaanh's Portfolio"></SEO>
 			<div
 				className={
-					"flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl " +
+					"dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl " +
 					(isMaximized ? "sm:h-screen" : "sm:max-h-[768px] sm:max-w-[1366px]")
 				}
 			>

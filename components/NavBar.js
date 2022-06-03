@@ -80,7 +80,7 @@ export default function NavBar({ setCommand, setContent }) {
 	}
 
 	return (
-		<div className="w-full py-2 px-4 min-h-[36px] flex flex-wrap mb-2 justify-between space-x-2 border-t">
+		<div className="dark:bg-neutral-900 w-full py-2 px-4 min-h-[36px] flex flex-wrap mb-2 justify-between space-x-2 border-t">
 			<ThemeSwitcher />
 			<div className="flex flex-wrap">
 				<button
