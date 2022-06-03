@@ -55,7 +55,7 @@ export default function NavBar({ setCommand, setContent }) {
 	}
 
 	function handleContact() {
-		setCommand("cd ~/contact");
+		setCommand("cd /etc/contact");
 		setContent("contact");
 	}
 	function handleExperience() {
