@@ -16,22 +16,23 @@ export default function HomeContent() {
 					</a>
 				</p>
 				<p>
-					* <span className="text-cyan-600">Status:</span> 📚 🎓 and 👀 internships.
+					* <span className="text-cyan-500">Status:</span> 📚 🎓 and 👀 internships.
 				</p>
 				<p>
-					* <span className="text-cyan-600">Institution:</span> Concordia University,
+					* <span className="text-cyan-500">Institution:</span> Concordia University,
 					Montreal, QC. Canada
 				</p>
 				<p>
-					* <span className="text-cyan-600">Specializations:</span> Software Development,
+					* <span className="text-cyan-500">Specializations:</span> Software Development,
 					DevOps/SRE, Systems Administration in Windows and Linux.
 				</p>
 				<p>
-					<span className="text-yellow-600">420 updates</span> can be applied immediately.
+					<span className="text-yellow-600 dark:text-yellow-400">420 updates</span> can be
+					applied immediately.
 				</p>
 				<p>
-					<span className="text-yellow-600">Published Domains:</span> hoanganh.dev;
-					hoanganh.tech; aaanh.app
+					<span className="text-yellow-600 dark:text-yellow-400">Published Domains:</span>{" "}
+					hoanganh.dev; hoanganh.tech; aaanh.app
 				</p>
 				<p>
 					To see these additional updates run:{" "}
