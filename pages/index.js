@@ -12,9 +12,12 @@ import { useRouter } from "next/router";
 import Awards from "../components/Awards";
 import Projects from "../components/Projects";
 
-function MinimizeBtn() {
+function MinimizeBtn({ clickEvent, isMinimized }) {
 	return (
-		<button className="flex items-center justify-center hover:text-yellow-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700">
+		<button
+			onClick={clickEvent}
+			className="flex items-center justify-center hover:text-yellow-500 transition-all ease-in-out rounded-full p-1 hover:bg-slate-700"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				className="h-6 w-6"
@@ -89,6 +92,7 @@ export default function Home() {
 	const [command, setCommand] = useState();
 	const [isValidCmd, setValidCmd] = useState(true);
 	const [isMaximized, setMaximize] = useState(false);
+	const [isMinimized, setMinimize] = useState(false);
 
 	const [cmdHistory, addCmdHistory] = useState([]);
 
@@ -135,10 +139,21 @@ export default function Home() {
 			}
 		>
 			<SEO title="aaanh's Portfolio"></SEO>
+			<button
+				onClick={() => setMinimize(!isMinimized)}
+				className={
+					"hover:bg-green-500 w-20 h-18 invisible flex flex-col justify-center items-center rounded-lg border-green-500 p-2 transition-all ease-in-out border text-2xl absolute left-1/2 bottom-10 " +
+					(isMinimized ? "sm:visible" : "invisible")
+				}
+			>
+				<p>💾</p>
+				<p>·</p>
+			</button>
 			<div
 				className={
-					"dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl " +
-					(isMaximized ? "sm:h-screen" : "sm:max-h-[768px] sm:max-w-[1366px]")
+					"dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl transition-all ease-in-out" +
+					(isMaximized ? "sm:h-screen" : "sm:max-h-[768px] sm:max-w-[1366px]") +
+					(isMinimized ? " sm:invisible" : "")
 				}
 			>
 				<div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
@@ -147,7 +162,10 @@ export default function Home() {
 						<div> x </div>
 					</div>
 					<div className="flex justify-end items-center space-x-2 px-2">
-						<MinimizeBtn></MinimizeBtn>
+						<MinimizeBtn
+							isMinimized={isMinimized}
+							clickEvent={() => setMinimize(!isMinimized)}
+						></MinimizeBtn>
 						<MaximizeBtn
 							isMaximized={isMaximized}
 							clickEvent={() => setMaximize(!isMaximized)}
