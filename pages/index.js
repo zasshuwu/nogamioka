@@ -123,7 +123,7 @@ export default function Home() {
 			? router.push("/uses")
 			: command == "history"
 			? setContent("history")
-			: command == "home"
+			: command == "cd ~"
 			? setContent("home")
 			: null;
 		console.log(cmdHistory);
