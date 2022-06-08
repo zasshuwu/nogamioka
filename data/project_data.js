@@ -37,6 +37,7 @@ export const projectData = [
 		stack: "Nextjs, Tailwindcss. Hosted on Netlify PaaS",
 		iframe: "https://dev.hoanganh.tech",
 		image: "",
+		link_ref: "https://dev.hoanganh.tech",
 	}),
 	createProject({
 		title: "Will I Pass",
