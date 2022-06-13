@@ -135,7 +135,7 @@ export default function Home() {
 	return (
 		<div
 			className={
-				"flex max-h-[80vh] sm:min-h-screen min-w-screen dark:text-white dark:bg-neutral-900 transition-all ease-in-out"
+				"flex max-h-[80vh] sm:h-screen sm:min-h-screen min-w-screen dark:text-white dark:bg-neutral-900 transition-all ease-in-out"
 			}
 		>
 			<SEO title="aaanh's Portfolio"></SEO>
@@ -151,8 +151,8 @@ export default function Home() {
 			</button>
 			<div
 				className={
-					"dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl transition-all ease-in-out" +
-					(isMaximized ? "sm:h-screen" : "sm:max-h-[768px] sm:max-w-[1366px]") +
+					"dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl transition-all ease-in-out " +
+					(isMaximized ? "sm:min-h-screen" : "sm:max-h-[768px] sm:max-w-[1366px]") +
 					(isMinimized ? " sm:invisible" : "")
 				}
 			>

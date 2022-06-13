@@ -12,7 +12,9 @@ body {
 
 a {
 	color: inherit;
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: rgba(100, 200, 100, 0.5);
+	text-underline-offset: 2px;
 }
 a:hover {
 	color: #e324fa;
