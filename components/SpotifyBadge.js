@@ -17,13 +17,16 @@ export function SpotifyBadge({ data }) {
 				)}
 			</div>
 
-			<div className="flex-1">
+			<div className="flex-1 font-['Noto_Sans_JP']">
 				<p className="font-bold component text-sm">
 					{data?.isPlaying
 						? "🎧 " + data.title
 						: "not listening at the moment, any suggestions?"}
 				</p>
 				<p className="text-xs font-dark">{data?.isPlaying ? data.artist : "Spotify"}</p>
+				<p className="text-xs font-light font-dark overflow-ellipsis overflow-hidden whitespace-nowrap w-[172px] text-neutral-500">
+					{data?.isPlaying ? "Album: " + data.album : null}
+				</p>
 			</div>
 			<div className="absolute bottom-1.5 right-1.5">
 				<SiSpotify size={20} color={"#1ED760"} />

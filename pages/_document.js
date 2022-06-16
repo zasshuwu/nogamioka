@@ -20,6 +20,10 @@ class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap"
 						rel="stylesheet"
 					></link>
+					<link
+						href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap"
+						rel="stylesheet"
+					></link>
 				</Head>
 				<body className={`antialiased text-lg leading-base`}>
 					<Main />
