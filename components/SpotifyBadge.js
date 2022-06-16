@@ -7,7 +7,7 @@ export function SpotifyBadge({ data }) {
 			target="_blank"
 			rel="noopener noreferrer"
 			href={data?.isPlaying ? data.songUrl : "https://open.spotify.com/user/fugunagi"}
-			className="relative flex items-center p-5 space-x-4 transition-shadow border rounded-md hover:shadow-md w-80 font-['Be_Vietnam_Pro']"
+			className="relative flex items-center p-2 py-4 space-x-4 transition-shadow border rounded-md hover:shadow-md w-80 font-['Be_Vietnam_Pro']"
 		>
 			<div className="w-16">
 				{data?.isPlaying ? (
@@ -19,7 +19,9 @@ export function SpotifyBadge({ data }) {
 
 			<div className="flex-1">
 				<p className="font-bold component text-sm">
-					{data?.isPlaying ? "🎧 " + data.title : "Any good song suggestions?"}
+					{data?.isPlaying
+						? "🎧 " + data.title
+						: "not listening at the moment, any suggestions?"}
 				</p>
 				<p className="text-xs font-dark">{data?.isPlaying ? data.artist : "Spotify"}</p>
 			</div>
