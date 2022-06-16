@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SpotifyStatus } from "./Home";
+import { SpotifyBadge } from "./SpotifyBadge";
 import useSWR from "swr";
 
 export default function Contact() {
@@ -9,7 +9,7 @@ export default function Contact() {
 
 	return (
 		<div className="p-4">
-			<div className="flex items-center space-x-8">
+			<div className="flex items-center sm:space-x-8 justify-center sm:justify-start flex-wrap">
 				<div className="rounded-full h-48 w-48 sm:h-64 sm:w-64 shadow-xl">
 					<Image
 						width={"200px"}
@@ -20,7 +20,7 @@ export default function Contact() {
 					></Image>
 				</div>
 				<div className="mt-4">
-					<SpotifyStatus data={data}></SpotifyStatus>
+					<SpotifyBadge data={data}></SpotifyBadge>
 				</div>
 			</div>
 			<div className="my-4 font-normal font-['Be_Vietnam_Pro']">
