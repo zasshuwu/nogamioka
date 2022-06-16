@@ -2,15 +2,13 @@
 
 ## Stacks
 
--   Reactjs
--   Nextjs SSG
--   Material-UI
--   Fonts: Fira Code, Be Vietnam Pro, Roboto
+-   Nextjs
+-   TailwindCSS
+-   Fonts: Be Vietnam Pro, Fira Code, Fira Sans,  Noto Sans JP
 
 ## CI
 
--   GitHub Actions
--   Vercel hook
+-   Vercel
 
 ## Networking
 
