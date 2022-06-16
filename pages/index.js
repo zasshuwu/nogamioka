@@ -6,6 +6,7 @@ import { IoMdMail } from "react-icons/io";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Typed from "typed.js";
+import SEO from "../components/SEO";
 
 const TypedBios = () => {
 	const el = useRef(null);
@@ -58,6 +59,7 @@ export default function Splash() {
 
 	return (
 		<div className="overflow-hidden font-['Fira_Sans'] w-screen sm:h-screen h-[88vh] dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
+			<SEO title="aaanh 👾"></SEO>
 			<div className="p-8 flex flex-col justify-center items-center sm:border min-h-[80vh] rounded-md sm:shadow-2xl dark:border-neutral-600 border-neutral-200">
 				<div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 shadow-2xl my-4 relative -top-8">
 					<Image
