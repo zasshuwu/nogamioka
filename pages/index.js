@@ -52,10 +52,10 @@ export default function Splash() {
 	const fetcher = (url) => fetch(url).then((res) => res.json());
 	const { data, error } = useSWR("/api/spotify", fetcher);
 
-	const [themeBtnTxt, setThemeBtnTxt] = useState();
-	useEffect(() => {
-		setThemeBtnTxt(localStorage.getItem("theme"));
-	}, []);
+	const [themeBtnTxt, setThemeBtnTxt] = useState("dark");
+	// useEffect(() => {
+	// 	setThemeBtnTxt(localStorage.getItem("theme"));
+	// }, []);
 
 	return (
 		<div className="overflow-hidden font-['Fira_Sans'] w-screen sm:h-screen h-[88vh] dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
@@ -84,7 +84,7 @@ export default function Splash() {
 					<h3 className="text-neutral-500">Bachelor of Computer Engineering &apos;24</h3>
 					<TypedBios></TypedBios>
 					<div className="my-2 font-mono">
-						<Link href="/home">go to full site</Link>
+						<Link href="/home">goto: full site</Link>
 					</div>
 					<div className="flex space-x-4 justify-center my-4">
 						<a href="https://linkedin.com/in/aaanh">
@@ -116,7 +116,7 @@ export default function Splash() {
 							}
 						}}
 					>
-						{themeBtnTxt === "dark" ? "towards the sun" : "into the shadows"}
+						{themeBtnTxt === "dark" ? "praise the sun" : "race into the night"}
 					</button>
 				</div>
 				<div className="mt-4">
