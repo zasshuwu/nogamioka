@@ -128,7 +128,13 @@ export default function Splash() {
 				So, I am jumping on the bandwagon.
 			</div>
 			<div className="font-sans w-72 text-sm text-left absolute sm:flex hidden left-4 bottom-4 text-neutral-500 dark:text-neutral-500">
-				Anh Hoang Nguyen &copy; {d.getFullYear()}
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+					<img
+						className="border-0 opacity-20"
+						alt="Creative Commons License"
+						src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"
+					/>
+				</a>
 			</div>
 		</div>
 	);
