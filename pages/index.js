@@ -1,12 +1,12 @@
-import { SpotifyBadge } from "../components/SpotifyBadge";
-import useSWR from "swr";
-import Image from "next/image";
-import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 import { IoMdMail } from "react-icons/io";
+import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
+import { SpotifyBadge } from "../components/SpotifyBadge";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import Typed from "typed.js";
 import SEO from "../components/SEO";
+import Typed from "typed.js";
+import useSWR from "swr";
 
 const TypedBios = () => {
 	const el = useRef(null);
@@ -14,11 +14,11 @@ const TypedBios = () => {
 
 	useEffect(() => {
 		const options = {
-			stringsElement: "#bios",
-			typeSpeed: 25,
+			backDelay: 800,
 			backSpeed: 5,
 			loop: true,
-			backDelay: 800,
+			stringsElement: "#bios",
+			typeSpeed: 25,
 		};
 		typed.current = new Typed(el.current, options);
 		return () => typed.current.destroy();
@@ -63,11 +63,11 @@ export default function Splash() {
 			<div className="p-8 flex flex-col justify-center items-center sm:border min-h-[80vh] rounded-md sm:shadow-2xl dark:border-neutral-600 border-neutral-200">
 				<div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 shadow-2xl my-4 relative sm:-top-8 -top-4">
 					<Image
-						width={"200px"}
 						height={"200px"}
 						layout="responsive"
-						style={{ borderRadius: "50%" }}
 						src="/splash-photo.jpeg"
+						style={{ borderRadius: "50%" }}
+						width={"200px"}
 					></Image>
 				</div>
 				<div className="text-center">
@@ -130,8 +130,8 @@ export default function Splash() {
 			<div className="font-sans w-72 text-sm text-left absolute sm:flex hidden left-4 bottom-4 text-neutral-500 dark:text-neutral-500">
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
 					<img
-						className="border-0 opacity-20"
 						alt="Creative Commons License"
+						className="border-0 opacity-20"
 						src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"
 					/>
 				</a>

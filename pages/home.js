@@ -1,18 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import { useRouter } from "next/router";
 import { useState } from "react";
-import NavBar from "../components/NavBar";
+import Awards from "../components/Awards";
 import Contact from "../components/Contact";
+import Experience from "../components/Experience";
 import Help from "../components/Help";
 import HomeContent from "../components/Home";
-import SEO from "../components/SEO";
-import Experience from "../components/Experience";
-import { useRouter } from "next/router";
-import Awards from "../components/Awards";
+import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
+import SEO from "../components/SEO";
 
-function MinimizeBtn({ clickEvent, isMinimized }) {
+function MinimizeBtn({ clickEvent }) {
 	return (
 		<button
 			onClick={clickEvent}
@@ -87,14 +84,13 @@ const cmdList = [
 ];
 
 export default function Home() {
-	const router = useRouter();
-	const [content, setContent] = useState("home");
+	const [cmdHistory, addCmdHistory] = useState([]);
 	const [command, setCommand] = useState();
-	const [isValidCmd, setValidCmd] = useState(true);
+	const [content, setContent] = useState("home");
 	const [isMaximized, setMaximize] = useState(false);
 	const [isMinimized, setMinimize] = useState(false);
-
-	const [cmdHistory, addCmdHistory] = useState([]);
+	const [isValidCmd, setValidCmd] = useState(true);
+	const router = useRouter();
 
 	const handleCommandInput = (e) => {
 		setCommand(e.target.value);
@@ -202,11 +198,11 @@ export default function Home() {
 							<input type="submit" hidden></input>
 							<datalist id="cmds">
 								<option value=":help"></option>
-								<option value="cd ~"></option>
-								<option value="cd /etc/contact"></option>
-								<option value="cd /var/experience"></option>
 								<option value="cd /bin/awards"></option>
+								<option value="cd /etc/contact"></option>
 								<option value="cd /lib/projects"></option>
+								<option value="cd /var/experience"></option>
+								<option value="cd ~"></option>
 								<option value="curl -O /uses"></option>
 								<option value="history"></option>
 							</datalist>
@@ -221,11 +217,11 @@ export default function Home() {
 					{content == "history" ? (
 						<HistoryContent cmdHistory={cmdHistory}></HistoryContent>
 					) : null}
-					{content == "home" ? <HomeContent></HomeContent> : null}
-					{content == "contact" ? <Contact></Contact> : null}
-					{content == "help" ? <Help></Help> : null}
-					{content == "experience" ? <Experience></Experience> : null}
 					{content == "awards" ? <Awards></Awards> : null}
+					{content == "contact" ? <Contact></Contact> : null}
+					{content == "experience" ? <Experience></Experience> : null}
+					{content == "help" ? <Help></Help> : null}
+					{content == "home" ? <HomeContent></HomeContent> : null}
 					{content == "projects" ? <Projects></Projects> : null}
 				</div>
 				<NavBar setCommand={setCommand} setContent={setContent}></NavBar>
