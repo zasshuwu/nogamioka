@@ -14,10 +14,10 @@ const TypedBios = () => {
 	useEffect(() => {
 		const options = {
 			stringsElement: "#bios",
-			typeSpeed: 30,
-			backSpeed: 15,
+			typeSpeed: 25,
+			backSpeed: 5,
 			loop: true,
-			backDelay: 1200,
+			backDelay: 800,
 		};
 		typed.current = new Typed(el.current, options);
 		return () => typed.current.destroy();
@@ -33,6 +33,12 @@ const TypedBios = () => {
 				<li>I love listening to music.</li>
 				<li>I play guitar.</li>
 				<li>A lover for good food.</li>
+				<li>A team-player and result-oriented person.</li>
+				<li>Capable of admistrating Linux systems</li>
+				<li>...and Windows Server.</li>
+				<li>Good knowledge on networking protocols.</li>
+				<li>Well-versed in Docker, k8s, and IaC tools.</li>
+				<li>Firm grasp on security concepts &amp; frameworks.</li>
 			</ul>
 			<span ref={el} className="text-neutral-900 dark:text-neutral-200" />
 		</div>
@@ -40,6 +46,8 @@ const TypedBios = () => {
 };
 
 export default function Splash() {
+	let d = new Date();
+
 	const fetcher = (url) => fetch(url).then((res) => res.json());
 	const { data, error } = useSWR("/api/spotify", fetcher);
 
@@ -93,7 +101,7 @@ export default function Splash() {
 				</div>
 				<div>
 					<button
-						className="hover:bg-violet-500 hover:text-white p-1 rounded-lg transition-all ease-in-out dark:hover:bg-rose-400"
+						className="hover:bg-violet-500 hover:text-white dark:text-neutral-300 hover:dark:text-neutral-900 p-1 px-4 rounded-lg transition-all ease-in-out dark:hover:bg-rose-400 border dark:border-rose-400 dark:border-opacity-40 border-violet-500 border-opacity-40"
 						onClick={() => {
 							if (localStorage.getItem("theme") === "dark") {
 								document.documentElement.classList.remove("dark");
@@ -106,16 +114,19 @@ export default function Splash() {
 							}
 						}}
 					>
-						{themeBtnTxt === "dark" ? "go light" : "go dark"}
+						{themeBtnTxt === "dark" ? "towards the sun" : "into the shadows"}
 					</button>
 				</div>
 				<div className="mt-4">
 					<SpotifyBadge data={data}></SpotifyBadge>
 				</div>
 			</div>
-			<div className="w-72 absolute sm:block hidden right-4 bottom-4 text-justify text-neutral-200 dark:text-neutral-800">
+			<div className="w-72 text-sm text-right absolute sm:block hidden right-4 bottom-4 text-neutral-200 dark:text-neutral-800">
 				Looks like everyone and their grandma is doing these clean, sleek-looking pages. So,
 				I am jumping on the bandwagon.
+			</div>
+			<div className="font-sans w-72 text-sm text-left absolute sm:flex hidden left-4 bottom-4 text-neutral-500 dark:text-neutral-500">
+				Anh Hoang Nguyen &copy; {d.getFullYear()}
 			</div>
 		</div>
 	);
