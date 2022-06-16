@@ -34,6 +34,14 @@ export default function Help() {
 						<td>cd ~</td>
 						<td>Return to home screen</td>
 					</tr>
+					<tr>
+						<td>curl -O uses</td>
+						<td>Retrieve my cool setups</td>
+					</tr>
+					<tr>
+						<td>history</td>
+						<td>Show history of commands, much like on Linux.</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>

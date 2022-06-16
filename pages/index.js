@@ -35,7 +35,7 @@ const TypedBios = () => {
 				<li>I play guitar.</li>
 				<li>A lover for good food.</li>
 				<li>A team-player and result-oriented person.</li>
-				<li>Capable of admistrating Linux systems</li>
+				<li>Capable of administrating Linux systems</li>
 				<li>...and Windows Server.</li>
 				<li>Good knowledge on networking protocols.</li>
 				<li>Well-versed in Docker, k8s, and IaC tools.</li>
@@ -124,8 +124,8 @@ export default function Splash() {
 				</div>
 			</div>
 			<div className="w-72 text-sm text-right absolute sm:block hidden right-4 bottom-4 text-neutral-200 dark:text-neutral-800">
-				Looks like everyone and their grandma is doing these clean, sleek-looking pages. So,
-				I am jumping on the bandwagon.
+				Looks like everyone and their grandma are doing these clean, sleek-looking pages.
+				So, I am jumping on the bandwagon.
 			</div>
 			<div className="font-sans w-72 text-sm text-left absolute sm:flex hidden left-4 bottom-4 text-neutral-500 dark:text-neutral-500">
 				Anh Hoang Nguyen &copy; {d.getFullYear()}
