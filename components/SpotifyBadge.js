@@ -10,7 +10,7 @@ export function SpotifyBadge({ data }) {
 			className="relative flex items-center p-2 py-4 space-x-4 transition-shadow border rounded-md hover:shadow-md w-80 font-['Be_Vietnam_Pro']"
 		>
 			<div className="w-16">
-				{data?.isPlaying ? (
+				{data?.isPlaying && data?.albumImageUrl ? (
 					<img className="w-16 shadow-sm" src={data?.albumImageUrl} alt={data?.album} />
 				) : (
 					<IoIosMusicalNotes size={64} color={"#a78bfa"} />
