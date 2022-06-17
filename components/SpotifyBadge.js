@@ -23,7 +23,7 @@ export function SpotifyBadge({ data }) {
 						? "🎧 " + data.title
 						: "not listening at the moment, any suggestions?"}
 				</p>
-				<p className="text-xs font-dark">{data?.isPlaying ? data.artist : "Spotify"}</p>
+				<p className="text-xs font-dark">{data?.isPlaying ? data.artist : null}</p>
 				<p className="text-xs font-light font-dark overflow-ellipsis overflow-hidden whitespace-nowrap w-[172px] text-neutral-500">
 					{data?.isPlaying ? "Album: " + data.album : null}
 				</p>
