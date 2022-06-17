@@ -4,13 +4,13 @@ import { useRouter } from "next/router";
 export default function Resume() {
 	const router = useRouter();
 	return (
-		<div className="dark:bg-neutral-900 dark:text-white m-4 flex flex-wrap flex-col space-y-2">
+		<div className="dark:bg-neutral-900 dark:text-white p-4 flex flex-wrap flex-col space-y-2 w-screen h-screen">
 			<h1 className="text-4xl">Resume</h1>
 			<hr />
-			<div className="text-slate-600">
+			<div className="text-slate-400">
 				<p>
-					I have deprecated this resume page. This page only exists for external
-					references.
+					I have deprecated this resume page. This page only exists for keep-alive
+					external references.
 				</p>
 
 				<button
