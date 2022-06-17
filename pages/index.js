@@ -60,8 +60,9 @@ export default function Splash() {
 	return (
 		<div className="overflow-hidden font-['Fira_Sans'] w-screen sm:h-screen h-[88vh] dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
 			<SEO title="aaanh 👾"></SEO>
-			<div className="p-8 flex flex-col justify-center items-center sm:border min-h-[80vh] rounded-md sm:shadow-2xl dark:border-neutral-600 border-neutral-200">
-				<div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 shadow-2xl my-4 relative sm:-top-8 -top-4">
+			<div className="relative sm:skew-y-[2deg] p-8 flex flex-col justify-center items-center min-h-[80vh] sm:border sm:min-h-[70vh] rounded-md sm:shadow-lg dark:shadow-rose-500/50 sm:shadow-purple-500/50 dark:border-neutral-600 border-neutral-200">
+				<div className="sm:block relative -top-4 w-16 h-6 border border-neutral-600 rounded-xl hidden"></div>
+				<div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 shadow-2xl my-4 relative sm:-top-2 -top-4">
 					<Image
 						height={"200px"}
 						layout="responsive"
