@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 import Awards from "../components/Awards";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
@@ -139,9 +140,7 @@ export default function Home() {
     console.log(cmdHistory);
   };
   const Prompt = ({ className }) => {
-    return (
-      <p className={className}>{"visitor@aaanh.home > "}</p>
-    );
+    return <p className={className}>{"visitor@aaanh.home > "}</p>;
   };
 
   return (
@@ -173,7 +172,15 @@ export default function Home() {
         <div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
           <div className="mt-2 ml-2 p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 rounded-[16pt] rounded-b-none text-white">
             <div>~ @ aaanh.home</div>
-            <div> x </div>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/");
+              }}
+              className="hover:bg-green-900 rounded-full w-6 h-6 flex items-center justify-center relative top-1"
+            >
+              <IoMdClose></IoMdClose>
+            </button>
           </div>
           <div className="flex justify-end items-center space-x-2 px-2">
             <MinimizeBtn
@@ -192,9 +199,7 @@ export default function Home() {
         <div
           className={
             "max-h-[72vh] overflow-y-scroll overflow-x-hidden p-4 font-fira-code text-md " +
-            (isMaximized
-              ? "sm:max-h-max"
-              : "sm:max-h-[70vh]")
+            (isMaximized ? "sm:max-h-max" : "sm:max-h-[70vh]")
           }
         >
           <div className="flex flex-wrap space-x-4 items-center">
@@ -237,24 +242,14 @@ export default function Home() {
             </div>
           </div>
           {content == "history" ? (
-            <HistoryContent
-              cmdHistory={cmdHistory}
-            ></HistoryContent>
+            <HistoryContent cmdHistory={cmdHistory}></HistoryContent>
           ) : null}
           {content == "awards" ? <Awards></Awards> : null}
-          {content == "contact" ? (
-            <Contact></Contact>
-          ) : null}
-          {content == "experience" ? (
-            <Experience></Experience>
-          ) : null}
+          {content == "contact" ? <Contact></Contact> : null}
+          {content == "experience" ? <Experience></Experience> : null}
           {content == "help" ? <Help></Help> : null}
-          {content == "home" ? (
-            <HomeContent></HomeContent>
-          ) : null}
-          {content == "projects" ? (
-            <Projects></Projects>
-          ) : null}
+          {content == "home" ? <HomeContent></HomeContent> : null}
+          {content == "projects" ? <Projects></Projects> : null}
         </div>
         <NavBar
           setCommand={setCommand}
