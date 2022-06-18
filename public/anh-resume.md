@@ -1,6 +1,6 @@
 # Anh Hoang Nguyen's Resume
 
-Mail: <iam@hoanganh.tech>
+Mail: <iam@hoanganh.dev>
 
 Linkedin: <https://linkedin.com/in/aaanh>
 
@@ -113,19 +113,19 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 
 ## Notable Projects
 
-### Portfolio Site – <https://hoanganh.tech>
+### Portfolio Site – <https://hoanganh.dev>
 
 -   Built with Nextjs framework for Reactjs.
 -   Custom styled and themed using MUI component library.
 
-### Unix Documentations – <https://unix.hoanganh.tech>
+### Unix Documentations – <https://unix.hoanganh.dev>
 
 -   My opinionated copy-paste unix documentations for tools, environment configurations, and out-out-box-experience setups on Linux/Unix-based distributions and operating systems.
 -   Built with Sphinx documentation framework.
 -   Automatically tested and deployed to a bare metal Debian VPS using GitHub Actions.
 -   Routed and SSL’d through Cloudflare.
 
-### Development Blog – <https://dev.hoanganh.tech>
+### Development Blog – <https://blog.hoanganh.dev>
 
 -   A blog built with Nextjs and Tailwind CSS (hosted on Netlify with Github Actions CI) where I write about new techs, tools, and knowledge I come across through my everyday life.
 -   Routed and SSL’d through Cloudflare.

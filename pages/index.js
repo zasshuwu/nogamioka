@@ -58,9 +58,6 @@ export default function Splash() {
   const { data, error } = useSWR("/api/spotify", fetcher);
 
   const [themeBtnTxt, setThemeBtnTxt] = useState("dark");
-  // useEffect(() => {
-  // 	setThemeBtnTxt(localStorage.getItem("theme"));
-  // }, []);
 
   return (
     <div className="overflow-hidden font-['Fira_Sans'] w-screen sm:h-screen h-[88vh] dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
