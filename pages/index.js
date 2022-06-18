@@ -124,19 +124,6 @@ export default function Splash() {
 					<SpotifyBadge data={data}></SpotifyBadge>
 				</div>
 			</div>
-			<div className="w-72 text-sm text-right absolute sm:block hidden right-4 bottom-4 text-neutral-200 dark:text-neutral-800">
-				Looks like everyone and their grandma are doing these clean, sleek-looking pages.
-				So, I am jumping on the bandwagon.
-			</div>
-			<div className="font-sans w-72 text-sm text-left absolute sm:flex hidden left-4 bottom-4 text-neutral-500 dark:text-neutral-500">
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-					<img
-						alt="Creative Commons License"
-						className="border-0 opacity-20"
-						src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"
-					/>
-				</a>
-			</div>
 		</div>
 	);
 }
