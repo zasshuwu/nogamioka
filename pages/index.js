@@ -1,4 +1,4 @@
-import { IoMdMail } from "react-icons/io";
+import { IoMdMail, IoMdMusicalNote } from "react-icons/io";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 import { SpotifyBadge } from "../components/SpotifyBadge";
 import { useState, useEffect, useRef } from "react";
@@ -17,8 +17,8 @@ const TypedBios = () => {
       backDelay: 800,
       backSpeed: 5,
       loop: true,
-      stringsElement: "#bios",
-      typeSpeed: 25,
+      stringsElement: "#intros",
+      typeSpeed: 20,
     };
     typed.current = new Typed(el.current, options);
     return () => typed.current.destroy();
@@ -26,21 +26,27 @@ const TypedBios = () => {
 
   return (
     <div>
-      <ul id="bios" className="hidden">
+      <ul id="intros" className="hidden">
         <li>
           You can simply call me <b className="font-medium">Anh</b>.
         </li>
         <li className="word-wrap">
           I can communicate in VN, EN, FR, JP, DE.
         </li>
-        <li>I love listening to music.</li>
-        <li>I play guitar.</li>
+        <li>
+          I love listening to{" "}
+          <IoMdMusicalNote
+            style={{ display: "inline" }}
+          ></IoMdMusicalNote>
+          .
+        </li>
+        <li>I play acoustic guitar.</li>
         <li>A lover for good food.</li>
-        <li>A team-player and result-oriented person.</li>
-        <li>Capable of administrating Linux systems</li>
-        <li>...and Windows Server.</li>
+        <li>Team-player and result-oriented.</li>
+        <li>Capable of administrating Linux</li>
+        <li>...and Windows.</li>
         <li>Good knowledge on networking protocols.</li>
-        <li>Well-versed in Docker, k8s, and IaC tools.</li>
+        <li>Well-versed in orchestration and IaC tools.</li>
         <li>Firm grasp on security concepts &amp; frameworks.</li>
       </ul>
       <span
@@ -60,11 +66,11 @@ export default function Splash() {
   const [themeBtnTxt, setThemeBtnTxt] = useState("dark");
 
   return (
-    <div className="overflow-hidden font-['Fira_Sans'] w-screen sm:h-screen h-[88vh] dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
+    <div className="overflow-hidden font-['Fira_Sans'] w-screen h-screen dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
       <SEO title="aaanh 👾"></SEO>
-      <div className="relative sm:skew-y-[2deg] p-8 flex flex-col justify-center items-center min-h-[80vh] sm:border sm:min-h-[70vh] rounded-md dark:shadow-[8px_8px_0px_1px_rgba(6,182,212,.5)] sm:shadow-[8px_8px_0px_1px_#8b5cf6] dark:border-neutral-600 border-neutral-200">
-        <div className="sm:block relative -top-4 w-16 h-6 border border-neutral-600 rounded-xl hidden"></div>
-        <div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 shadow-2xl my-4 relative sm:-top-2 -top-4">
+      <div className="relative sm:skew-y-[2deg] p-8 flex flex-col justify-center items-center min-h-[80vh] sm:border sm:min-h-[70vh] rounded-md dark:sm:shadow-[8px_8px_0px_1px_rgba(6,182,212,.9)] sm:shadow-[8px_8px_0px_1px_#8b5cf6] dark:border-neutral-600 border-neutral-200">
+        <div className="dark:drop-shadow-[8px_2px_.5px_rgba(6,182,212,.4)] drop-shadow-[8px_2px_.5px_#8b5cf6bb] sm:block relative -top-4 w-16 h-6 border border-neutral-600 rounded-xl hidden"></div>
+        <div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 my-4 relative sm:-top-2 -top-4 dark:sm:shadow-[8px_0px_0px_1px_rgba(6,182,212,.9)] sm:shadow-[8px_0px_0px_1px_#8b5cf6]">
           <Image
             height={"200px"}
             layout="responsive"
