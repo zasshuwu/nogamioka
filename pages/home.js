@@ -175,7 +175,7 @@ export default function Home() {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                router.push("/");
+                router.push("/empty");
               }}
               className="hover:bg-green-900 rounded-full w-6 h-6 flex items-center justify-center relative top-1"
             >
@@ -191,9 +191,7 @@ export default function Home() {
               isMaximized={isMaximized}
               clickEvent={() => setMaximize(!isMaximized)}
             ></MaximizeBtn>
-            <CloseBtn
-              clickEvent={() => router.push("/empty")}
-            ></CloseBtn>
+            <CloseBtn clickEvent={() => router.push("/")}></CloseBtn>
           </div>
         </div>
         <div
