@@ -1,4 +1,8 @@
-import { IoMdMail, IoMdMusicalNote } from "react-icons/io";
+import {
+  IoIosInformation,
+  IoMdMail,
+  IoMdMusicalNote,
+} from "react-icons/io";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 import { SpotifyBadge } from "../components/SpotifyBadge";
 import { useState, useEffect, useRef } from "react";
@@ -69,6 +73,12 @@ export default function Splash() {
     <div className="overflow-hidden font-['Fira_Sans'] w-screen h-screen dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
       <SEO title="aaanh 👾"></SEO>
       <div className="relative sm:skew-y-[2deg] p-8 flex flex-col justify-center items-center min-h-[80vh] sm:border sm:min-h-[70vh] rounded-md dark:sm:shadow-[8px_8px_0px_1px_rgba(6,182,212,.9)] sm:shadow-[8px_8px_0px_1px_#8b5cf6] dark:border-neutral-600 border-neutral-200">
+        <a
+          href="https://github.com/aaanh/homepage"
+          className="absolute top-4 right-4 w-6 h-6 rounded-full flex justify-center items-center border border-neutral-500 text-neutral-500 hover:text-white dark:hover:border-sky-500 dark:hover:bg-sky-500 hover:bg-purple-500"
+        >
+          <IoIosInformation size="lg"></IoIosInformation>
+        </a>
         <div className="dark:drop-shadow-[8px_2px_.5px_rgba(6,182,212,.4)] drop-shadow-[8px_2px_.5px_#8b5cf6bb] sm:block relative -top-4 w-16 h-6 border border-neutral-600 rounded-xl hidden"></div>
         <div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 my-4 relative sm:-top-2 -top-4 dark:sm:shadow-[8px_0px_0px_1px_rgba(6,182,212,.9)] sm:shadow-[8px_0px_0px_1px_#8b5cf6]">
           <Image

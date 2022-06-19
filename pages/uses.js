@@ -197,6 +197,7 @@ export default function Uses({ isOpen, handleClose }) {
             <li>
               Docs:
               <ul>
+                <li>Obsidian.md</li>
                 <li>Sphinx Doc</li>
                 <li>Confluence</li>
                 <li>Trello</li>
@@ -251,6 +252,10 @@ export default function Uses({ isOpen, handleClose }) {
         <div>
           <h2 className="text-4xl my-4">Bonus I: Books</h2>
           <ul>
+            <li>
+              System Design Interview by Alex Xu &amp; Sahn Lam
+              &mdash; Completed, 2022-06-19
+            </li>
             <li>
               Designing Data-Intensive Applications by Martin
               Kleppmann &mdash; in progress
