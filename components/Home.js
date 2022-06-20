@@ -8,7 +8,7 @@ export default function HomeContent() {
           {"Welcome to Anh's Portfolio 6.90 RC (Yeetus Magus)"}
         </h2>
       </div>
-      <div id="motd" className="my-2">
+      <div id="motd" className="my-2 [&>*]:mt-2">
         <p className="break-all">
           * <span className="text-cyan-500">Documentation:</span>{" "}
           <a href="https://github.com/aaanh/homepage">
@@ -20,7 +20,7 @@ export default function HomeContent() {
           👀 internships.
         </p>
         <p>
-          * <span className="text-cyan-500">Institution:</span>{" "}
+          * <span className="text-cyan-500">Alma mater:</span>{" "}
           Concordia University, Montreal, QC. Canada
         </p>
         <p>

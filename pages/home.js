@@ -87,6 +87,7 @@ function CloseBtn({ clickEvent }) {
 
 const cmdList = [
   "cd ~",
+  "wget resume",
   "cd /etc/contact",
   "cd /var/experience",
   "cd /bin/awards",
@@ -132,6 +133,8 @@ export default function Home() {
       ? setContent("projects")
       : command == "curl -O /uses"
       ? router.push("/uses")
+      : command === "wget /resume"
+      ? router.push("/resume")
       : command == "history"
       ? setContent("history")
       : command == "cd ~"
@@ -140,7 +143,7 @@ export default function Home() {
     console.log(cmdHistory);
   };
   const Prompt = ({ className }) => {
-    return <p className={className}>{"visitor@aaanh.home > "}</p>;
+    return <p className={className}>{"guest@aaanh.home > "}</p>;
   };
 
   return (
@@ -229,6 +232,7 @@ export default function Home() {
                 <option value="cd /var/experience"></option>
                 <option value="cd ~"></option>
                 <option value="curl -O /uses"></option>
+                <option value="wget /resume"></option>
                 <option value="history"></option>
               </datalist>
             </form>
@@ -260,16 +264,17 @@ export default function Home() {
 
 function HistoryContent({ cmdHistory }) {
   return (
-    <div>
-      <table>
-        <tr>
-          <th>Index</th>
-          <th>Command</th>
-        </tr>
-
+    <div className="flex max-h-[600px]">
+      <table className="table-auto border-collapse border-spacing-x-2">
+        <thead>
+          <tr>
+            <th className="px-2">Index</th>
+            <th className="px-2">Command</th>
+          </tr>
+        </thead>
         {cmdHistory.map((cmd, index) => (
           <tr key={index}>
-            <td>{index + 1}</td>
+            <td className="text-sky-500">{index + 1}</td>
             <td>{cmd}</td>
           </tr>
         ))}
