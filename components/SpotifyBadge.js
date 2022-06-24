@@ -21,7 +21,7 @@ export function SpotifyBadge({ data }) {
             alt={data?.album}
           />
         ) : (
-          <IoIosMusicalNotes size={64} color={"#a78bfa"} />
+          <IoIosMusicalNotes size={64} color={"#2dd4bf"} />
         )}
       </div>
 
