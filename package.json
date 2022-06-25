@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "private": true,
   "scripts": {
-    "dev": "next build && next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -21,6 +21,8 @@
     "autoprefixer": "^10.4.7",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "mongodb": "^4.7.0",
+    "next-connect": "^0.12.2",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.3"
   }
