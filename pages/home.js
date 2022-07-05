@@ -9,6 +9,20 @@ import HomeContent from "../components/Home";
 import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
 import SEO from "../components/SEO";
+import dynamic from "next/dynamic";
+
+const DynamicHomeContent = dynamic(() =>
+  import("../components/Home")
+);
+const DynamicExperience = dynamic(() =>
+  import("../components/Experience")
+);
+const DynamicProjects = dynamic(() =>
+  import("../components/Projects")
+);
+const DynamicAwards = dynamic(() => import("../components/Awards"));
+const DynamicContact = dynamic(() => import("../components/Contact"));
+const DynamicHelp = dynamic(() => import("../components/Help"));
 
 function MinimizeBtn({ clickEvent }) {
   return (
@@ -246,12 +260,22 @@ export default function Home() {
           {content == "history" ? (
             <HistoryContent cmdHistory={cmdHistory}></HistoryContent>
           ) : null}
-          {content == "awards" ? <Awards></Awards> : null}
-          {content == "contact" ? <Contact></Contact> : null}
-          {content == "experience" ? <Experience></Experience> : null}
-          {content == "help" ? <Help></Help> : null}
-          {content == "home" ? <HomeContent></HomeContent> : null}
-          {content == "projects" ? <Projects></Projects> : null}
+          {content == "awards" ? (
+            <DynamicAwards></DynamicAwards>
+          ) : null}
+          {content == "contact" ? (
+            <DynamicContact></DynamicContact>
+          ) : null}
+          {content == "experience" ? (
+            <DynamicExperience></DynamicExperience>
+          ) : null}
+          {content == "help" ? <DynamicHelp></DynamicHelp> : null}
+          {content == "home" ? (
+            <DynamicHomeContent></DynamicHomeContent>
+          ) : null}
+          {content == "projects" ? (
+            <DynamicProjects></DynamicProjects>
+          ) : null}
         </div>
         <NavBar
           setCommand={setCommand}
