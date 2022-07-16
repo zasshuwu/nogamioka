@@ -20,17 +20,6 @@ function createProject({
 
 export const projectData = [
   createProject({
-    title: "Linux/Unix Docs",
-    description: [
-      "My simple, copy-paste repertoire of useful Linux/Unix commands and how-to's.",
-    ],
-    stack:
-      "Python3 + Sphinx Docs. Containerized with Docker. CI/CD with Github Actions, bash scripts, Google Cloud Container Registry + Cloud Run.",
-    iframe: "https://linux.hoanganh.tech",
-    image: "",
-    link_ref: "https://linux.hoanganh.tech",
-  }),
-  createProject({
     title: "Dev Blog",
     description: ["All things DevOps, ML, and consumer technology."],
     stack: "Nextjs, Tailwindcss.",
@@ -45,6 +34,17 @@ export const projectData = [
     iframe: "https://will-i-pass.aaanh.app",
     image: "",
     link_ref: "https://will-i-pass.aaanh.app",
+  }),
+  createProject({
+    title: "Linux/Unix Docs",
+    description: [
+      "Currently under overhaul efforts.",
+    ],
+    stack:
+      "Python3 + Sphinx Docs. Containerized with Docker. CI/CD with Github Actions, bash scripts, Google Cloud Container Registry + Cloud Run.",
+    iframe: "https://linux.hoanganh.tech",
+    image: "",
+    link_ref: "https://linux.hoanganh.tech",
   }),
   createProject({
     title: "Data Traversal OOP",
