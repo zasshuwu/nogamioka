@@ -20,7 +20,7 @@ function createProject({
 
 export const projectData = [
   createProject({
-    title: "Dev Blog",
+    title: "Technology Blog",
     description: ["All things DevOps, ML, and consumer technology."],
     stack: "Nextjs, Tailwindcss.",
     iframe: "https://ml.aaanh.com",
@@ -36,15 +36,15 @@ export const projectData = [
     link_ref: "https://will-i-pass.aaanh.app",
   }),
   createProject({
-    title: "Linux/Unix Docs",
+    title: "Script Convenience Store",
     description: [
-      "Currently under overhaul efforts.",
+      "Scripts that you used before but don't remember how to use. Full migration in progress.",
     ],
     stack:
-      "Python3 + Sphinx Docs. Containerized with Docker. CI/CD with Github Actions, bash scripts, Google Cloud Container Registry + Cloud Run.",
-    iframe: "https://linux.hoanganh.tech",
+      "Rust::mdbook, CI with GitHub Actions, CD with Vercel.",
+    iframe: "https://scripts.aaanh.com",
     image: "",
-    link_ref: "https://linux.hoanganh.tech",
+    link_ref: "https://scripts.aaanh.com",
   }),
   createProject({
     title: "Data Traversal OOP",

@@ -7,6 +7,7 @@ const DynamicIndexContent = dynamic(() =>
   import("../components/IndexContent")
 );
 
+
 export default function Splash() {
   const fetcher = (url) => fetch(url).then((res) => res.json());
 
