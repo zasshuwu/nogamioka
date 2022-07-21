@@ -6,6 +6,7 @@ function createProject({
   link_ref = "",
   iframe = "",
   image = "",
+  github = ""
 } = {}) {
   return {
     key,
@@ -15,6 +16,7 @@ function createProject({
     link_ref,
     iframe,
     image,
+    github
   };
 }
 
@@ -26,6 +28,7 @@ export const projectData = [
     iframe: "https://ml.aaanh.com",
     image: "",
     link_ref: "https://ml.aaanh.com",
+    github: "https://github.com/aaanh/ml"
   }),
   createProject({
     title: "Will I Pass",
@@ -34,6 +37,7 @@ export const projectData = [
     iframe: "https://will-i-pass.aaanh.app",
     image: "",
     link_ref: "https://will-i-pass.aaanh.app",
+    github: "https://github.com/aaanh/will-i-pass"
   }),
   createProject({
     title: "Script Convenience Store",
@@ -45,6 +49,7 @@ export const projectData = [
     iframe: "https://scripts.aaanh.com",
     image: "",
     link_ref: "https://scripts.aaanh.com",
+    github: "https://github.com/aaanh/script-convenience-store"
   }),
   createProject({
     title: "Data Traversal OOP",
@@ -70,6 +75,7 @@ export const projectData = [
       "Final Project in Applied Physics. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno.",
     ],
     stack: "C++, arduino",
+    github: "https://github.com/aaanh/arduino-maze-nav"
   }),
   createProject({
     title: "MRCA Simulation",
