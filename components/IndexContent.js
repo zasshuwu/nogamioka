@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
+import { VscTerminalPowershell } from "react-icons/vsc";
 
 const TypedBios = () => {
   const el = useRef(null);
@@ -91,8 +92,8 @@ export default function IndexContent() {
           Bachelor of Computer Engineering &apos;24
         </h3>
         <TypedBios></TypedBios>
-        <div className="my-2 font-mono">
-          <Link href="/home">goto: full site</Link>
+        <div className="my-2 flex justify-center">
+          <a className="flex align-center items-center space-x-2" href="/home"><VscTerminalPowershell></VscTerminalPowershell> <span>Full site</span></a>
         </div>
         <div className="flex space-x-4 justify-center my-4">
           <a href="https://linkedin.com/in/aaanh">

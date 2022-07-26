@@ -11,12 +11,12 @@ export function SpotifyBadge({ data }) {
           ? data.songUrl
           : "https://open.spotify.com/user/fugunagi"
       }
-      className="relative flex items-center p-2 py-4 space-x-4 transition-shadow border rounded-md hover:shadow-md w-80 font-['Be_Vietnam_Pro']"
+      className="relative flex items-center p-2 py-4 space-x-4 transition-all border border-green-500/50 rounded-md hover:shadow-md w-80 font-['Be_Vietnam_Pro']"
     >
       <div className="w-16">
         {data?.isPlaying && data?.albumImageUrl ? (
           <img
-            className="w-16 shadow-sm"
+            className="w-16 shadow-md rounded-md shadow-green-400/80"
             src={data?.albumImageUrl}
             alt={data?.album}
           />
@@ -36,7 +36,7 @@ export function SpotifyBadge({ data }) {
         <p className="text-xs font-dark">
           {data?.isPlaying ? data.artist : null}
         </p>
-        <p className="text-xs font-light font-dark overflow-ellipsis overflow-hidden whitespace-nowrap w-[172px] text-neutral-500">
+        <p className="text-xs font-light font-dark overflow-ellipsis overflow-hidden whitespace-nowrap w-[172px] text-neutral-500 dark:text-neutral-400">
           {data?.isPlaying ? "Album: " + data.album : null}
         </p>
       </div>
