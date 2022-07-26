@@ -92,9 +92,7 @@ export default function IndexContent() {
           Bachelor of Computer Engineering &apos;24
         </h3>
         <TypedBios></TypedBios>
-        <div className="my-2 flex justify-center">
-          <a className="flex align-center items-center space-x-2" href="/home"><VscTerminalPowershell></VscTerminalPowershell> <span>Full site</span></a>
-        </div>
+        
         <div className="flex space-x-4 justify-center my-4">
           <a href="https://linkedin.com/in/aaanh">
             <SiLinkedin size={28}></SiLinkedin>
@@ -129,6 +127,10 @@ export default function IndexContent() {
             ? "praise the sun"
             : "race into the night"}
         </button>
+      </div>
+      <br></br>
+      <div className="my-2 flex justify-center group ">
+        <Link href="/home"><div className="flex align-center items-center space-x-2 group-hover:text-green-500 underline underline-offset-2 hover:cursor-pointer"><VscTerminalPowershell></VscTerminalPowershell> <span>Dive into the matrix</span></div></Link>
       </div>
     </>
   );
