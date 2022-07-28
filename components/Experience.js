@@ -13,7 +13,7 @@ const Entry = ({ entry }) => {
 						: entry.end_month + ", " + entry.end_year}
 				</div>
 			</div>
-			<div className="text-blue-500 hover:underline">
+			<div className="text-blue-500">
 				<Link href={entry.link_ref}>{entry.organization}</Link>
 			</div>
 			<div className="text-sm">
