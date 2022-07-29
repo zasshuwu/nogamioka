@@ -253,9 +253,6 @@ export default function Home() {
             <div className="transition-all ease-in-out">
               {isValidCmd ? null : "🛑 Invalid Command"}
             </div>
-            <div className="text-slate-500 font-bold">
-              {"< "}Be cool and use the CLI 😎
-            </div>
           </div>
           {content == "history" ? (
             <HistoryContent cmdHistory={cmdHistory}></HistoryContent>

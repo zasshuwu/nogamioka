@@ -20,9 +20,9 @@ body {
 a {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: rgba(100, 200, 100, 0.5);
   text-underline-offset: 2px;
 }
+
 a:hover {
   color: #22c55e;
   text-decoration: underline;

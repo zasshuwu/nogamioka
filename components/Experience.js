@@ -16,10 +16,10 @@ const Entry = ({ entry }) => {
 			<div className="text-blue-500">
 				<Link href={entry.link_ref}>{entry.organization}</Link>
 			</div>
-			<div className="text-sm">
+			<div className="text-sm mt-2">
 				{entry.team == "" || entry.team == null ? null : entry.team + " Team"}
 			</div>
-			<details>
+			<details className="text-sm">
 				<summary>Details</summary>
 				<ul>
 					{entry.description.map((desc, index) => (
