@@ -62,7 +62,7 @@ export default function Uses({ isOpen, handleClose }) {
         </div>
         <div>
           <h2 className="text-3xl my-4">Mobile</h2>
-          <img src="/setup/mobile.png" className="max-w-[900px] h-[500px]"></img>
+          <img src="/setup/mobile.png" className="max-w-[900px] h-[500px] dark:bg-transparent bg-slate-900/90 rounded-md"></img>
         </div>
         <div>
           <h2 className="text-3xl my-4">Bonus I: Books</h2>
