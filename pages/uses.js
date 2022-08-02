@@ -27,13 +27,13 @@ function HardwareTabs() {
       </Tab.List>
       <Tab.Panels className="mt-2">
         <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
-            <img src="/setup/desk_2022.png" className="max-w-[800px] h-[400px]"></img>
+            <img src="/setup/desk_2022.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
         </Tab.Panel>
         <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
-          <img src="/setup/macbook.png" className="max-w-[800px] h-[400px]"></img>
+          <img src="/setup/macbook.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
         </Tab.Panel>
         <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
-          <img src="/setup/dell.png" className="max-w-[800px] h-[400px]"></img>
+          <img src="/setup/dell.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
         </Tab.Panel>
       </Tab.Panels>
     </Tab.Group>
@@ -44,7 +44,7 @@ export default function Uses({ isOpen, handleClose }) {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col min-h-screen min-w-screen justify-center items-center dark:bg-neutral-900 dark:text-slate-200 transition-all ease-in-out py-12">
+    <div className="flex flex-col min-h-screen min-w-screen justify-center items-center dark:bg-neutral-900 dark:text-slate-200 transition-all ease-in-out py-12 px-4">
       <Head>
         <title>aaanh&apos;s Uses</title>
       </Head>
@@ -62,7 +62,7 @@ export default function Uses({ isOpen, handleClose }) {
         </div>
         <div>
           <h2 className="text-3xl my-4">Mobile</h2>
-          <img src="/setup/mobile.png" className="max-w-[900px] h-[500px] dark:bg-transparent bg-slate-900/90 rounded-md"></img>
+          <img src="/setup/mobile.png" className="md:max-w-screen md:max-h-[400px] max-w-screen dark:bg-transparent bg-slate-900/90 rounded-md"></img>
         </div>
         <div>
           <h2 className="text-3xl my-4">Bonus I: Books</h2>
