@@ -110,7 +110,7 @@ export default function IndexContent() {
       </div>
       <div>
         <button
-          className="hover:bg-violet-500 hover:text-white dark:text-neutral-300 hover:dark:text-neutral-900 p-1 px-4 rounded-lg transition-all ease-in-out dark:hover:bg-cyan-400 border dark:border-cyan-400 dark:border-opacity-40 border-violet-500 border-opacity-40"
+          className="hover:bg-violet-500 shadow-md shadow-fuchsia-500 dark:shadow-sky-500 hover:text-white dark:text-neutral-300 hover:dark:text-neutral-900 p-1 px-4 rounded-lg transition-all ease-in-out dark:hover:bg-cyan-400 border dark:border-cyan-400 dark:border-opacity-40 border-violet-500 border-opacity-40"
           onClick={() => {
             if (localStorage.getItem("theme") === "dark") {
               document.documentElement.classList.remove("dark");
