@@ -26,13 +26,13 @@ function HardwareTabs() {
           </Tab>
       </Tab.List>
       <Tab.Panels className="mt-2">
-        <Tab.Panel className="flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
+        <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
             <img src="/setup/desk_2022.png" className="max-w-[800px] h-[400px]"></img>
         </Tab.Panel>
-        <Tab.Panel className="flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
+        <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
           <img src="/setup/macbook.png" className="max-w-[800px] h-[400px]"></img>
         </Tab.Panel>
-        <Tab.Panel className="flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
+        <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
           <img src="/setup/dell.png" className="max-w-[800px] h-[400px]"></img>
         </Tab.Panel>
       </Tab.Panels>
