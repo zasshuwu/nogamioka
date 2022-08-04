@@ -38,8 +38,8 @@ export default function Projects() {
               <div className="[&>*]:rounded-md">
                 <Image
                   src={proj.image}
-                  height="206"
-                  width="366"
+                  height="200"
+                  width="300"
                 ></Image>
               </div>
             ) : null}

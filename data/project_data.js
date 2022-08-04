@@ -52,6 +52,15 @@ export const projectData = [
     github: "https://github.com/aaanh/script-convenience-store"
   }),
   createProject({
+    title: "Dockerized Minecraft Server",
+    description: [
+      "Just a cross-platform simple Docker container that runs a Minecraft server.",
+    ],
+    stack: "Docker, java, bash/powershell",
+    github: "https://github.com/aaanh/minecraft-docker",
+    image: "/projects/minecraft-docker.png"
+  }),
+  createProject({
     title: "Data Traversal OOP",
     description: ["Final project in Object-Oriented Programming"],
     stack: "C++, python, pandas",
@@ -59,16 +68,7 @@ export const projectData = [
     image: "/coen244/coen244-demo.gif",
     link_ref: "https://github.com/aaanh/meaningful-graph-traversal",
   }),
-  // createProject({
-  //   title: "Imaginary Hackathon Website",
-  //   description: [
-  //     "Originally developed for ConUHacks VI, but project was scrapped in the middle of development. It features CTF-style games. For sentimental values, I finished it up and deployed in halcyon.",
-  //   ],
-  //   stack: "Nextjs, Material-UI",
-  //   iframe: "https://halcyon.hoanganh.dev",
-  //   link_ref: "https://halcyon.hoanganh.dev",
-  // }),
-
+  
   createProject({
     title: "Maze-Navigating Vehicle",
     description: [
