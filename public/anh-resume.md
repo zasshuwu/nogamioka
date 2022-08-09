@@ -6,8 +6,6 @@ Linkedin: <https://linkedin.com/in/aaanh>
 
 GitHub: <https://github.com/aaanh>
 
-Twitter: <https://twitter.com/yeetusmagus>
-
 ## Introduction
 
 I'm a Bachelor of Computer Engineering student at Concordia University in Montreal, QC.
@@ -39,7 +37,7 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 
 ## Professional Experience
 
-### Software Developer in SCM/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
+### Software Developer in SCMT/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
 
 [Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
 
@@ -118,17 +116,26 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 -   Built with Nextjs framework for Reactjs.
 -   Custom styled and themed using MUI component library.
 
-### Unix Documentations – <https://unix.hoanganh.dev>
+### Script Convenience Store – <https://scripts.aaanh.com>
 
 -   My opinionated copy-paste unix documentations for tools, environment configurations, and out-out-box-experience setups on Linux/Unix-based distributions and operating systems.
 -   Built with Sphinx documentation framework.
 -   Automatically tested and deployed to a bare metal Debian VPS using GitHub Actions.
 -   Routed and SSL’d through Cloudflare.
 
-### Development Blog – <https://blog.hoanganh.dev>
+### Minecraft Server on Docker
+
+- Quick and easy way to start a Minecraft server.
+
+### Development Blog – <https://ml.aaanh.com>
 
 -   A blog built with Nextjs and Tailwind CSS (hosted on Netlify with Github Actions CI) where I write about new techs, tools, and knowledge I come across through my everyday life.
 -   Routed and SSL’d through Cloudflare.
+
+### Will I Pass - <https://will-i-pass.aaanh.app/>
+
+- Input your scores and see if you pass the course 😭.
+- This is where my procrastination goes to.
 
 ### Data Object Parse and Meaningful Graph Traversal – <https://github.com/aaanh/meaningful-graph-traversal.git>
 
@@ -137,7 +144,7 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 -   Parse the cleaned dataset using C++ into graphs and nodes.
 -   Output connections between nodes using BFS traversal.
 
-### Imaginary Homepage for ConUHacks VI – <https://halcyon.hoanganh.dev>
+<!-- ### Imaginary Homepage for ConUHacks VI – <https://halcyon.hoanganh.dev>
 
 **Front-End Developer and Web Challenge Creator**
 
@@ -145,4 +152,14 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 -   This project never saw the light of day due to sudden cancellations.
 -   Almost 2 months of work and improvements went out the window.
 -   Built using Next.js, MUI components and custom styling.
--   Embedded with my own CTF-like web challenge (later stages not available because I shut down my development servers).
+-   Embedded with my own CTF-like web challenge (later stages not available because I shut down my development servers). -->
+
+## Awards
+
+-	FRQNT Stipend Recipient, October 2020, for work in Inertial Sensing Lab under Prof. Larnder.
+
+## Other Interests
+
+-	Music, cultural exchange, travelling.
+-	Messing around with Awesome Selfhosted.
+-	Gaming.
