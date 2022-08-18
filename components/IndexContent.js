@@ -41,8 +41,7 @@ const TypedBios = () => {
         <li>I play acoustic guitar.</li>
         <li>A lover for good food.</li>
         <li>Team-player and result-oriented.</li>
-        <li>Capable of administrating Linux</li>
-        <li>...and Windows.</li>
+        <li>Administer Linux and Windows servers.</li>
         <li>Good knowledge on networking protocols.</li>
         <li>Well-versed in orchestration and IaC tools.</li>
         <li>Firm grasp on security concepts &amp; frameworks.</li>
@@ -81,16 +80,12 @@ export default function IndexContent() {
         <h1 className="font-bold">Anh Hoang Nguyen</h1>
         <h2 className="">
           Software Engineer{" "}
-          {
-            <span className="sm:hidden">
               <br></br>
-            </span>
-          }{" "}
           DevOps &amp; Web Development
         </h2>
-        <h3 className="text-neutral-500">
+        {/* <h3 className="text-neutral-500">
           Bachelor of Computer Engineering &apos;24
-        </h3>
+        </h3> */}
         <TypedBios></TypedBios>
         
         <div className="flex space-x-4 justify-center my-4">

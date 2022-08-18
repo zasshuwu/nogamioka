@@ -87,13 +87,13 @@ export default function NavBar({ setCommand, setContent }) {
 					onClick={handleHome}
 					className={navBtnStyle + " hover:bg-purple-500 hover:text-white"}
 				>
-					{"1️⃣9️⃣2️⃣ cd ~"}
+					{"cd ~"}
 				</button>
 				<button
 					onClick={handleHelp}
 					className={navBtnStyle + " hover:bg-slate-500 hover:text-white"}
 				>
-					{"📘 :help"}
+					{"📘 Help"}
 				</button>
 				<button
 					onClick={handleContact}

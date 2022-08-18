@@ -24,7 +24,7 @@ export default function Projects() {
             <p>{proj.description}</p>
             <br />
             <p className="text-slate-500 text-xs">
-              Stack: {proj.stack}
+              Stack: {proj.stack} 
             </p>
             <br />
             {proj.iframe != "" ? (
