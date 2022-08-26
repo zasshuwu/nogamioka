@@ -2,6 +2,7 @@ import { SpotifyBadge } from "../components/SpotifyBadge";
 import SEO from "../components/SEO";
 import useSWR from "swr";
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 
 const DynamicIndexContent = dynamic(() =>
   import("../components/IndexContent")
@@ -9,6 +10,17 @@ const DynamicIndexContent = dynamic(() =>
 
 
 export default function Splash() {
+
+  useEffect(() => {
+    // set localstorage theme according to global preference
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+      localStorage.setItem("theme", theme);
+    } else {
+      localStorage.setItem("theme", "dark");
+    }
+  })
+
   const fetcher = (url) => fetch(url).then((res) => res.json());
 
   const { data, error } = useSWR("/api/spotify", fetcher);
