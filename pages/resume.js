@@ -10,7 +10,7 @@ export default function Resume() {
       <div className="text-slate-400">
         <p>
           I have deprecated this resume page. This page only exists
-          for keep-alive external references.
+          for keep-alive externally-linked references.
         </p>
 
         <button
