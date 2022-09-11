@@ -18,17 +18,12 @@ As an avid adopter of new cloud and networking technologies, I setup my home lab
 
 [Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
 
-> Physical security, access control, and federated cloud-based security center leveraging AI and ML technologies.
+> Hardware, software, and service provider in physical security, access control, and federated cloud-based security center.
 
--   Maintain and update the installation program scripts (InstallShield)
--   Create an assistance library for the installation programs in C#/C++
--   Maintain and update compilation scripts for the compilation servers
--   Create C# extensions for the Build Team Foundation library
--   Improve the team's intranet page
--   Design and add functionalities for the team's intranet page (ASP .NET): list and management of builds, reports, etc.
--   Develop the installation script of a tool intended for our partners (InstallShield)
--   Analyze different virtualization tools allowing execution of an application in a virtual environment, without having to install it in advance
--   Develop a series of automated tests to be executed after each build of an application
+-   Completed 2 projects involving internal service migrations to on-premise Docker container cluster.
+-   Developed automated scripts for bulk requests with Azure DevOps API endpoints.
+-   Created and maintained software build and release pipelines for multiple target platforms: web app, native Windows, native Linux.
+-   Maintained and troubleshooted infrastructure incidents: Identity and Access Management, networking, OS performance.
 
 ### Research Assistant &mdash; Casual (1/2021 &mdash; now)
 
@@ -37,11 +32,11 @@ As an avid adopter of new cloud and networking technologies, I setup my home lab
 > Cloud architecture, system architecture, AI and ML applications research group
 
 -   My current project is to evaluate MLaaS platforms and develop an assessment framework.
--   I assist in researching practical applications of machine learning and deep learning models with current focus on explainable AI (XAI).
--   I replicate experiments to verify claims arising during the research of a topic.
--   I gather information from research literatures and extract meaningful points to aid in the research progress of the group.
+-   Assist in researching practical applications of machine learning and deep learning models with current focus on explainable AI (XAI).
+-   Replicate experiments to verify claims arising during the research of a topic.
+-   Gather information from research literatures and extract meaningful points to aid in the research progress of the group.
 -   Previously, I contributed by running and reporting NLP models for classification on non-Latin datasets, more specifically XLNet and bert.
--   I also maintain and develop the group's website.
+-   Maintain and develop the group's website.
 
 ### Full-Stack Developer &mdash; Contract (1/2021 &mdash; now)
 
@@ -49,9 +44,9 @@ As an avid adopter of new cloud and networking technologies, I setup my home lab
 
 > Physics research lab specializes on inertial and mechanical operations using accelerometer sensors.
 
--   Responsible for building and maintaining the project website.
+-   Build and maintain the project website.
 -   The website is a hub for both internal and public communications, functioning as a knowledge base, blog, archive, and file repository.
--   I decide and implement from the tech stacks and the UI/UX design to the web hosting, networking, security, and identity & access management.
+-   Architect and implement the tech stacks and the UI/UX design to the web hosting, networking, security, and identity & access management.
 
 ### IT Technician L2 &mdash; Part-time (3/2021 &mdash; now)
 
@@ -91,14 +86,15 @@ As an avid adopter of new cloud and networking technologies, I setup my home lab
 ### Portfolio Site – <https://hoanganh.dev>
 
 -   Built with Nextjs framework for Reactjs.
--   Custom styled and themed using MUI component library.
+-   Custom-styled and themed with TailwindCSS.
+-   Implemented with API endpoints for Spotify play status.
 
 ### Script Convenience Store – <https://scripts.aaanh.com>
 
--   My opinionated copy-paste unix documentations for tools, environment configurations, and out-out-box-experience setups on Linux/Unix-based distributions and operating systems.
--   Built with Sphinx documentation framework.
--   Automatically tested and deployed to a bare metal Debian VPS using GitHub Actions.
--   Routed and SSL’d through Cloudflare.
+- A repository for copy-pasting arcane commands on Linux, Windows, and macOS in case someone forgets.
+- Built with Book.md framework running on Rust.
+- CI/CD with Github Actions.
+- Deployed on Vercel.
 
 ### Minecraft Server on Docker
 
