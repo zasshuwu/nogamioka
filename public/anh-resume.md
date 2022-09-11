@@ -8,32 +8,9 @@ GitHub: <https://github.com/aaanh>
 
 ## Introduction
 
-I'm a Bachelor of Computer Engineering student at Concordia University in Montreal, QC.
+I actively work on modern web applications, APIs, frameworks and machine learning research projects in natural language processing. 
 
-I actively work on modern web applications, APIs, frameworks and machine learning research projects in natural language processing. As an avid adopter of new cloud and networking technologies, I setup my home lab and cloud clusters on Linode, AWS, and manage orchestration via Ansible and k8s. My tentative endgame is to work in DevOps and SRE.
-
-## Skills
-
--   **Programming Languages**: C, C++, C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
--   **Specializations**: Web app development, cross-platform with Electron, container technologies
--   **Environments**: Linux, macOS, Windows and respective CLI's.
--   **Tools**: Agile process, git, bash/zsh, PowerShell, vim, vscode, conda, OSINT framework.
--   **Natural languages**: vi-vn (native), en-us/ca/uk (bilingual), fr-ca (B1), ja-jp (N5), de-de (casual).
--   **Personal**: Professional manner, responsible, great analytical mindset, willing to learn, team player, empathetic.
-
-## Education
-
-### Bachelor of Computer Engineering with Co-op (2020 &mdash; 2024)
-
-**Concordia University, Montréal, QC.**
-
--   Relevant courses: Object-oriented Programming, Data Structures & Algorithms, Computer Organization & Software (assembly programming), Discrete Math, Technical Writing and Communications
-
-### DEC in Pure and Applied Sciences (2017 &mdash; 2020)
-
-John Abbott College, Ste-Anne-de-Bellevue, QC.
-
--   Relevant courses: Linear Algebra, Statistics & Probability
+As an avid adopter of new cloud and networking technologies, I setup my home lab and cloud clusters on Linode, AWS, and manage orchestration via Ansible and k8s.
 
 ## Professional Experience
 
@@ -154,6 +131,28 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 -   Built using Next.js, MUI components and custom styling.
 -   Embedded with my own CTF-like web challenge (later stages not available because I shut down my development servers). -->
 
+## Education
+
+### Bachelor of Computer Engineering with Co-op (2020 &mdash; 2024)
+
+**Concordia University, Montréal, QC.**
+
+-   Relevant courses: Object-oriented Programming, Data Structures & Algorithms, Computer Organization & Software (assembly programming), Discrete Math, Technical Writing and Communications
+
+### DEC in Pure and Applied Sciences (2017 &mdash; 2020)
+
+John Abbott College, Ste-Anne-de-Bellevue, QC.
+
+-   Relevant courses: Linear Algebra, Statistics & Probability
+
+## Skills
+
+-   **Programming Languages**: C, C++, C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
+-   **Specializations**: Web app development, cross-platform with Electron, container technologies
+-   **Environments**: Linux, macOS, Windows and respective CLI's.
+-   **Tools**: Agile process, git, bash/zsh, PowerShell, vim, vscode, conda, OSINT framework.
+-   **Natural languages**: vi-vn (native), en-us/ca/uk (bilingual), fr-ca (B1), ja-jp (N5), de-de (casual).
+-   **Personal**: Professional manner, responsible, great analytical mindset, willing to learn, team player, empathetic.
 ## Awards
 
 -	FRQNT Stipend Recipient, October 2020, for work in Inertial Sensing Lab under Prof. Larnder.
