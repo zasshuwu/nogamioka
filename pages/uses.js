@@ -24,6 +24,16 @@ function HardwareTabs() {
             <button className={"transition-all ease-in-out w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2 " + (selected ? 'bg-green-500 dark:text-neutral-900 text-white' : "dark:text-white text-neutral-900")}>Laptop 2</button>
           )}
           </Tab>
+        <Tab as={Fragment}>
+          {({ selected }) => (
+            <button className={"transition-all ease-in-out w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2 " + (selected ? 'bg-green-500 dark:text-neutral-900 text-white' : "dark:text-white text-neutral-900")}>Laptop 3</button>
+          )}
+          </Tab>
+        <Tab as={Fragment}>
+          {({ selected }) => (
+            <button className={"transition-all ease-in-out w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2 " + (selected ? 'bg-green-500 dark:text-neutral-900 text-white' : "dark:text-white text-neutral-900")}>Server</button>
+          )}
+          </Tab>
       </Tab.List>
       <Tab.Panels className="mt-2">
         <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
@@ -33,7 +43,13 @@ function HardwareTabs() {
           <img src="/setup/macbook.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
         </Tab.Panel>
         <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
-          <img src="/setup/dell.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
+          <img src="/setup/dell-win.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
+        </Tab.Panel>
+        <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
+          <img src="/setup/dell-linux.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
+        </Tab.Panel>
+        <Tab.Panel className="dark:bg-transparent bg-neutral-900/90 flex justify-center rounded-xl border border-neutral-500/50 p-3 ring-white/10 ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-1">
+          <img src="/setup/server_2022.png" className="md:max-w-screen md:max-h-[400px] max-w-screen"></img>
         </Tab.Panel>
       </Tab.Panels>
     </Tab.Group>
