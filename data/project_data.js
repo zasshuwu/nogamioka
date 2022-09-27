@@ -87,7 +87,7 @@ export const projectData = [
       "Final Project in Statistics and Probability. Statistical analysis and probabilistic simulation of Most Recent Common Ancestor.",
     ],
     stack: "R, matplotlib",
-    link_ref: "https://github.com/aaanh/mrca-sim-r",
+    github: "https://github.com/aaanh/mrca-sim-r",
     image:
       "https://raw.githubusercontent.com/aaanh/mrca-sim-r/master/results/tmrca.png",
   }),
