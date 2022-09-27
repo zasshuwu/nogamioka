@@ -6,7 +6,8 @@ function createProject({
   link_ref = "",
   iframe = "",
   image = "",
-  github = ""
+  github = "",
+  docker = ""
 } = {}) {
   return {
     key,
@@ -16,7 +17,8 @@ function createProject({
     link_ref,
     iframe,
     image,
-    github
+    github,
+    docker
   };
 }
 
@@ -58,6 +60,7 @@ export const projectData = [
     ],
     stack: "Docker, java, bash/powershell",
     github: "https://github.com/aaanh/minecraft-docker",
+    docker: "https://hub.docker.com/repository/docker/aaanh/minecraft",
     image: "/projects/minecraft-docker.png"
   }),
   createProject({
@@ -66,7 +69,8 @@ export const projectData = [
     stack: "C++, python, pandas",
     iframe: "",
     image: "/coen244/coen244-demo.gif",
-    link_ref: "https://github.com/aaanh/meaningful-graph-traversal",
+    github: "https://github.com/aaanh/meaningful-graph-traversal",
+    docker: "https://hub.docker.com/repository/docker/aaanh/meaningful-graph-traversal"
   }),
   
   createProject({
