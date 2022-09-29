@@ -74,6 +74,24 @@ export const projectData = [
   }),
   
   createProject({
+    title: "Inertial Sensing Lab",
+    description: [
+      "Website with multimedia CMS, 3rd-party SSO, and SEO optimized for a Physics research group.",
+    ],
+    stack: "Wikijs, custom vanilla js, css, postgreSQL, hosted on Heroku",
+    iframe: "https://islab.ca",
+    link_ref: "https://islab.ca"
+  }),
+  createProject({
+    title: "Mai Boat Service",
+    description: [
+      "Website for Mai Boat Service - a seacraft repair service in Orlando, Florida.",
+    ],
+    stack: "Nextjs, Tailwind",
+    iframe: "https://maiboatservice.us/",
+    link_ref: "https://maiboatservice.us"
+  }),
+  createProject({
     title: "Maze-Navigating Vehicle",
     description: [
       "Final Project in Applied Physics. 3D-printed vehicle navigates by ultrasonic sensors controlled by an Arduino Uno.",

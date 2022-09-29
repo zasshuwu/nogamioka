@@ -11,7 +11,7 @@ export default function Projects() {
         {projectData.map((proj, index) => (
           <div
             key={index}
-            className="h-128 w-[28rem] m-2 p-2 border border-purple-500/50 dark:border-sky-500/50 font-['Be_Vietnam_Pro'] text-sm rounded-lg"
+            className="h-128 w-[30rem] m-2 p-2 border border-purple-500/50 dark:border-sky-500/50 font-['Be_Vietnam_Pro'] text-sm rounded-lg"
           >
             <h3 className="text-rose-500 font-bold text-xl mt-4 flex items-center space-x-2 ">
               {proj?.link_ref ? 
