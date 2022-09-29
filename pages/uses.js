@@ -65,8 +65,8 @@ export default function Uses({ isOpen, handleClose }) {
         <title>aaanh&apos;s Uses</title>
       </Head>
       <div>
-        <div className="flex space-x-4 items-center">
-          <button className="hover:text-blue-500 hover:border-blue-500 border rounded-full p-4" onClick={(e) => { e.preventDefault(); router.push("/home") }}>
+        <div className="flex space-x-1 items-center">
+          <button className="hover:text-green-500 hover:border-green-500 border rounded-full p-4" onClick={(e) => { e.preventDefault(); router.push("/home") }}>
             <FaHome></FaHome>  
           </button>
           <h1 className="text-4xl font-bold text-center">{ "/uses" }</h1>
