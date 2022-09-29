@@ -89,22 +89,22 @@ export default function Uses({ isOpen, handleClose }) {
           <ul>
             <li>
               System Design Interview by Alex Xu &amp; Sahn Lam
-              &mdash; Completed, 2022-06-19
+              &mdash; Completed.
             </li>
             <li>
               Designing Data-Intensive Applications by Martin
-              Kleppmann &mdash; in progress
+              Kleppmann &mdash; Completed.
             </li>
             <li>
               Site Reliability Engineering by Beyer, Jones, Petoff,
-              Murphy &mdash; in progress
+              Murphy &mdash; Completed.
             </li>
             <li>
-              DSA Analysis by Clifford A. Shaffer &mdash; in progress
+              DSA Analysis by Clifford A. Shaffer &mdash; Completed.
             </li>
             <li>
               Pattern Recognition and ML by Christopher M. Bishop
-              &mdash; to read
+              &mdash; Reading.
             </li>
             <li>
               Head First Design Patterns by Eric Freeman &mdash; to
@@ -136,7 +136,6 @@ export default function Uses({ isOpen, handleClose }) {
             src="https://open.spotify.com/embed/playlist/4gXW0Bpuz8TlnCmELENb2X?utm_source=generator"
             width="100%"
             height="450"
-            frameBorder="0"
             allowFullScreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           ></iframe>
