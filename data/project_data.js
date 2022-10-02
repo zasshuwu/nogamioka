@@ -24,6 +24,14 @@ function createProject({
 
 export const projectData = [
   createProject({
+    title: "Photo Reel",
+    description: ["My personal photo reel"],
+    stack: "Nextjs, Tailwindcss, Cloudinary DAM + API, Cloudflare CDN",
+    image: "/projects/photo-reel.png",
+    link_ref: "https://photos.aaanh.ca",
+    github: "https://github.com/aaanh/my-photo-reel"
+  }),
+  createProject({
     title: "Technology Blog",
     description: ["All things DevOps, ML, and consumer technology."],
     stack: "Nextjs, Tailwindcss.",

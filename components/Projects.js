@@ -11,7 +11,7 @@ export default function Projects() {
         {projectData.map((proj, index) => (
           <div
             key={index}
-            className="h-128 w-[30rem] m-2 p-2 border border-purple-500/50 dark:border-sky-500/50 font-['Be_Vietnam_Pro'] text-sm rounded-lg"
+            className="relative h-128 w-[600px] m-2 p-2 border border-purple-500/50 dark:border-sky-500/50 font-['Be_Vietnam_Pro'] text-sm rounded-lg"
           >
             <h3 className="text-rose-500 font-bold text-xl mt-4 flex items-center space-x-2 ">
               {proj?.link_ref ? 
@@ -32,17 +32,16 @@ export default function Projects() {
             {proj.iframe != "" ? (
               <iframe
                 src={proj.iframe}
-                className="w-full h-48 rounded-lg"
+                className="w-full h-[24rem] rounded-lg shadow-2xl"
               ></iframe>
             ) : null}
 
             {proj.image != "" ? (
               <div className="[&>*]:rounded-md">
-                <Image
+                <img
                   src={proj.image}
-                  height="200"
-                  width="300"
-                ></Image>
+                  className="w-full shadow-2xl"
+                ></img>
               </div>
             ) : null}
           </div>
