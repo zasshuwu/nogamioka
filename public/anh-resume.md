@@ -96,6 +96,12 @@ As an avid adopter of new cloud and networking technologies, I setup my home lab
 - CI/CD with Github Actions.
 - Deployed on Vercel.
 
+### Personal Photo Reels – <https://photos.aaanh.ca>
+
+-	My straightforward photo reel of urban and natural landscapes
+-	Built with Nextjs, Tailwind CSS. Front-end and API hosted on Vercel. Asset storage and transformation API on Cloudinary. Cloudflare for caching, edge CDN, and DNS.
+
+
 ### Minecraft Server on Docker
 
 - Quick and easy way to start a Minecraft server.
@@ -144,11 +150,14 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 ## Skills
 
 -   **Programming Languages**: C, C++, C#, Python, JavaScript, HTML/CSS, TypeScript, Java.
--   **Specializations**: Web app development, cross-platform with Electron, container technologies
+-   **Specializations**: Full-stack web development, IAM, cloud-sec, DevSecOps/SRE, containerization
 -   **Environments**: Linux, macOS, Windows and respective CLI's.
 -   **Tools**: Agile process, git, bash/zsh, PowerShell, vim, vscode, conda, OSINT framework.
+-   **Cloud Services**: Google Cloud Platform (functions, firebase, gke, compute-engine, Vertex), AWS (SageMaker, EC2), Azure (AAD, ADO)
+-   **Infra Tools**: Ansible, Terraform, k8s, qemu, VMWare Sphere, Hyper-V
 -   **Natural languages**: vi-vn (native), en-us/ca/uk (bilingual), fr-ca (B1), ja-jp (N5), de-de (casual).
 -   **Personal**: Professional manner, responsible, great analytical mindset, willing to learn, team player, empathetic.
+
 ## Awards
 
 -	FRQNT Stipend Recipient, October 2020, for work in Inertial Sensing Lab under Prof. Larnder.
