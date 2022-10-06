@@ -31,7 +31,9 @@ export function SpotifyBadge({ data }) {
           {data?.isPlaying
             ? data?.type === "episode"
               ? "Listening to a podcast"
-              : "🎧 " + data.title
+                : data?.type === "ad"
+              ? "Spotify Freemium ad spot 🙃"
+                : "🎧 " + data.title
             : "not listening at the moment, any suggestions?"}
         </p>
         <p className="text-xs font-dark">
