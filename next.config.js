@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+})
+
+const nextConfig = withMDX({
   reactStrictMode: true,
   output: 'standalone',
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx,md}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -17,6 +22,7 @@ const nextConfig = {
       "raw.githubusercontent.com",
     ],
   },
-};
+  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx", "md"],
+});
 
 module.exports = nextConfig;
