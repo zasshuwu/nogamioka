@@ -1,5 +1,7 @@
 # <https://hoanganh.dev> | <https://aaanh.ca>
 
+Project is completed, in production, and continuously integrated.
+
 ## Stacks
 
 -   Nextjs
