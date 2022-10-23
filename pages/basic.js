@@ -22,8 +22,8 @@ export default function Basic() {
           <ul>
             <li>Software Developer Intern at Genetec Inc. (Summer 2022)
               <p>Worked on the Azure Platform to create build &amp; release pipelines for the company&apos;s software stack.</p>
-              <p>Completed 2 intern projects in 3 months to migrate the team's legacy build process to the automated CI/CD pipelines, which include an internal language tool and a build status alert web application.</p>
-              <p>Completed 2 intern projects in 3 months to migrate the team's legacy build process to the automated CI/CD pipelines, which include an internal language tool and a build status alert web application.</p>
+              <p>Completed 2 intern projects in 3 months to migrate the team&apos;s legacy build process to the automated CI/CD pipelines, which include an internal language tool and a build status alert web application.</p>
+              <p>Completed 2 intern projects in 3 months to migrate the team&apos;s legacy build process to the automated CI/CD pipelines, which include an internal language tool and a build status alert web application.</p>
             </li>
             
             
