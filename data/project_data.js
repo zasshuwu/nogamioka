@@ -76,7 +76,7 @@ export const projectData = [
     description: ["Final project in Object-Oriented Programming"],
     stack: "C++, python, pandas",
     iframe: "",
-    image: "/coen244/coen244-demo.gif",
+    image: "/coen244/coen244-demo.png",
     github: "https://github.com/aaanh/meaningful-graph-traversal",
     docker: "https://hub.docker.com/repository/docker/aaanh/meaningful-graph-traversal"
   }),
