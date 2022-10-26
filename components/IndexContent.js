@@ -69,11 +69,11 @@ export default function IndexContent() {
       <div className="dark:drop-shadow-[8px_2px_.5px_rgba(6,182,212,.4)] drop-shadow-[8px_2px_.5px_#8b5cf6bb] sm:block relative -top-4 w-16 h-6 border border-neutral-600 rounded-xl hidden"></div>
       <div className="rounded-full h-32 w-32 sm:h-48 sm:w-48 my-4 relative sm:-top-2 -top-4 dark:sm:shadow-[8px_0px_0px_1px_rgba(6,182,212,.9)] sm:shadow-[8px_0px_0px_1px_#8b5cf6]">
         <Image
-          height={"200px"}
+          height={"200"}
           layout="responsive"
           src="/splash-photo.jpeg"
           style={{ borderRadius: "50%" }}
-          width={"200px"}
+          width={"200"}
         ></Image>
       </div>
       <div className="text-center">
