@@ -41,6 +41,15 @@ export const projectData = [
     github: "https://github.com/aaanh/ml"
   }),
   createProject({
+    title: "Augmented Gist",
+    description: ["Get the RAW content of a GitHub Gist using Cloudflare Workers."],
+    stack: "Cloudflare Workers, GitHub API, Nextjs, Tailwindcss.",
+    image: "",
+    github: "https://github.com/aaanh/gist-stuff",
+    link_ref: "https://gist.aaanh.app",
+    iframe: "https://gist.aaanh.app"
+  }),
+  createProject({
     title: "Will I Pass",
     description: ["I procrastinate productively"],
     stack: "Nextjs, Tailwindcss. Hosted on Netlify PaaS",
