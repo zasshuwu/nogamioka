@@ -43,7 +43,7 @@ export const projectData = [
   createProject({
     title: "Augmented Gist",
     description: ["Get the RAW content of a GitHub Gist using Cloudflare Workers."],
-    stack: "Cloudflare Workers, GitHub API, Nextjs, Tailwindcss.",
+    stack: "Cloudflare Workers + Pages, GitHub API, Tailwindcss.",
     image: "",
     github: "https://github.com/aaanh/gist-stuff",
     link_ref: "https://gist.aaanh.app",
