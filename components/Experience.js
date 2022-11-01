@@ -3,7 +3,7 @@ import Link from "next/link.js";
 
 const SkillPill = ({ skill }) => {
 	return (
-		<span className="dark:bg-sky-600 dark:text-white bg-transparent dark:border-transparent border border-purple-500 text-purple-500 text-sm py-1 px-2 rounded-full mb-2">{ skill }</span>
+		<span className="dark:border-sky-500 dark:text-sky-500 bg-transparent dark:border-transparent border border-purple-500 text-purple-500 text-sm py-1 px-2 rounded-full mb-2">{ skill }</span>
 	)
 }
 
@@ -19,7 +19,7 @@ const Entry = ({ entry }) => {
 						: entry.end_month + ", " + entry.end_year}
 				</div>
 			</div>
-			<div className="text-slate-500 dark:text-slate-400">
+			<div className="text-neutral-500 dark:text-neutral-400">
 				<Link href={entry.link_ref}>{entry.organization}</Link>
 			</div>
 			<div className="text-sm mt-2">

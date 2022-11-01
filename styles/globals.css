@@ -17,6 +17,11 @@ body {
   }
 }
 
+datalist {
+
+  align-items: center;
+}
+
 a {
   color: inherit;
   text-decoration: underline;

@@ -157,7 +157,7 @@ export default function Home() {
     console.log(cmdHistory);
   };
   const Prompt = ({ className }) => {
-    return <p className={className}>{"guest@aaanh.home > "}</p>;
+    return <p className={className}>{"guest@aaanh.home $ "}</p>;
   };
 
   return (
@@ -226,7 +226,7 @@ export default function Home() {
             >
               <input
                 list="cmds"
-                className="w-auto border-none text-sky-500 font-bold block px-3 py-2 dark:bg-neutral-900 bg-white border border-slate-300 text-sm placeholder-slate-400
+                className="w-auto border-none text-sky-500 font-bold block px-3 py-2 dark:bg-neutral-900 bg-white border border-slate-300 text-md placeholder-slate-400
 								focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-transparent
 								disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
 								invalid:border-pink-500 invalid:text-pink-600
