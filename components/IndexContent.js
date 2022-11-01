@@ -105,7 +105,7 @@ export default function IndexContent() {
       </div>
       <div>
         <button
-          className="hover:bg-violet-500 shadow-md shadow-fuchsia-500 dark:shadow-sky-500 hover:text-white dark:text-neutral-300 hover:dark:text-neutral-900 p-1 px-4 rounded-lg transition-all ease-in-out dark:hover:bg-cyan-400 border dark:border-cyan-400 dark:border-opacity-40 border-violet-500 border-opacity-40"
+          className="hover:bg-violet-500 shadow-md shadow-violet-500 dark:shadow-sky-500 hover:text-white dark:text-neutral-300 hover:dark:text-neutral-900 p-1 px-4 rounded-lg transition-all ease-in-out dark:hover:bg-cyan-400 border dark:border-cyan-400 dark:border-opacity-40 border-violet-500 border-opacity-40"
           onClick={() => {
             if (localStorage.getItem("theme") === "dark") {
               document.documentElement.classList.remove("dark");
@@ -125,7 +125,7 @@ export default function IndexContent() {
       </div>
       <br></br>
       <div className="my-2 flex justify-center group ">
-        <Link href="/home"><div className="flex align-center items-center space-x-2 group-hover:text-green-500 underline underline-offset-2 hover:cursor-pointer"><VscTerminalPowershell></VscTerminalPowershell> <span>Dive into the matrix</span></div></Link>
+        <Link href="/home"><div className="flex align-center items-center space-x-2 group-hover:text-green-500 hover:cursor-pointer"><VscTerminalPowershell></VscTerminalPowershell> <span>Dive into the matrix</span></div></Link>
       </div>
     </>
   );
