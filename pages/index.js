@@ -8,9 +8,7 @@ const DynamicIndexContent = dynamic(() =>
   import("../components/IndexContent")
 );
 
-
 export default function Splash() {
-
   useEffect(() => {
     // set localstorage theme according to global preference
     const theme = localStorage.getItem("theme");
@@ -19,7 +17,7 @@ export default function Splash() {
     } else {
       localStorage.setItem("theme", "dark");
     }
-  })
+  });
 
   const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -28,7 +26,7 @@ export default function Splash() {
   return (
     <div className="overflow-hidden font-['Fira_Sans'] w-screen h-screen dark:text-white bg-white dark:bg-neutral-900 flex flex-col justify-center items-center transition-all ease-in-out">
       <SEO title="aaanh 👾"></SEO>
-      <div className="relative sm:skew-y-[2deg] p-8 flex flex-col flex-wrap justify-center items-center min-h-[80vh] sm:border sm:min-h-[70vh] min-w-[24vw] rounded-md dark:sm:shadow-[8px_8px_0px_1px_rgba(6,182,212,.9)] sm:shadow-[8px_8px_0px_1px_#8b5cf6] dark:border-neutral-600 border-neutral-200 ">
+      <div className="relative p-8 flex flex-col flex-wrap justify-center items-center min-h-[80vh] sm:border sm:min-h-[70vh] min-w-[24vw] rounded-md dark:sm:shadow-[8px_8px_0px_1px_rgba(6,182,212,.9)] sm:shadow-[8px_8px_0px_1px_#8b5cf6] dark:border-neutral-600 border-neutral-200 ">
         <DynamicIndexContent></DynamicIndexContent>
         <div className="mt-4">
           <SpotifyBadge data={data}></SpotifyBadge>

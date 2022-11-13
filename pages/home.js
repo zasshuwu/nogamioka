@@ -170,7 +170,7 @@ export default function Home() {
       <button
         onClick={() => setMinimize(!isMinimized)}
         className={
-          "hover:bg-green-500 w-20 h-18 invisible flex flex-col justify-center items-center rounded-lg border-green-500 p-2 transition-all ease-in-out border text-2xl absolute left-1/2 bottom-10 " +
+          "hover:bg-green-500 w-20 h-18 invisible flex flex-col justify-center items-center rounded-lg border-green-500 p-2 transition-all ease-in-out border text-2xl absolute left-1/2 bottom-10" +
           (isMinimized ? "sm:visible" : "invisible")
         }
       >
@@ -179,15 +179,15 @@ export default function Home() {
       </button>
       <div
         className={
-          "dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl transition-all ease-in-out " +
+          "dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen shadow-2xl transition-all ease-in-out rounded-b-[16px] " +
           (isMaximized
             ? "sm:min-h-screen"
             : "sm:max-h-[768px] sm:max-w-[1366px]") +
           (isMinimized ? " sm:invisible" : "")
         }
       >
-        <div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
-          <div className="mt-2 ml-2 p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 rounded-[16pt] rounded-b-none text-white">
+        <div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[16px]">
+          <div className=" p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 text-white rounded-t-[16px]">
             <div>~ @ aaanh.home</div>
             <button
               onClick={(e) => {
