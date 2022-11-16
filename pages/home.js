@@ -293,12 +293,14 @@ function HistoryContent({ cmdHistory }) {
             <th className="px-2">Command</th>
           </tr>
         </thead>
-        {cmdHistory.map((cmd, index) => (
-          <tr key={index}>
-            <td className="text-sky-500">{index + 1}</td>
-            <td>{cmd}</td>
-          </tr>
-        ))}
+        <tbody>
+          {cmdHistory.map((cmd, index) => (
+            <tr key={index}>
+              <td className="text-sky-500">{index + 1}</td>
+              <td>{cmd}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
