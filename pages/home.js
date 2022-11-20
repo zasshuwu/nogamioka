@@ -1,13 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import Awards from "../components/Awards";
-import Contact from "../components/Contact";
-import Experience from "../components/Experience";
-import Help from "../components/Help";
-import HomeContent from "../components/Home";
 import NavBar from "../components/NavBar";
-import Projects from "../components/Projects";
 import SEO from "../components/SEO";
 import dynamic from "next/dynamic";
 
