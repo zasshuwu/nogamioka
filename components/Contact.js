@@ -9,13 +9,14 @@ export default function Contact() {
 	return (
 		<div className="p-4">
 			<div className="flex items-center sm:space-x-8 justify-center sm:justify-start flex-wrap">
-				<div className="rounded-full h-48 w-48 sm:h-64 sm:w-64 shadow-xl">
+				<div className="rounded-full h-[200px] w-[200px] sm:h-[200px] sm:w-[200px] shadow-xl">
 					<Image
-						width={"200px"}
-						height={"200px"}
+						width={200}
+						height={200}
 						layout="responsive"
 						style={{ borderRadius: "50%" }}
 						src="https://avatars.githubusercontent.com/u/37283437?v=4"
+						alt="Github Profile Photo"
 					></Image>
 				</div>
 				
@@ -23,7 +24,7 @@ export default function Contact() {
 					<table>
 						<tbody>
 							<tr>
-								<td className="text-pink-500">E-mail</td>
+								<td className="text-rose-500">E-mail</td>
 								<td>
 									<Link href="mailto:iam@hoanganh.dev">
 										{"iam [at] hoanganh [dot] dev"}
@@ -31,7 +32,7 @@ export default function Contact() {
 								</td>
 							</tr>
 							<tr>
-								<td className="text-pink-500">Academic</td>
+								<td className="text-rose-500">Academic</td>
 								<td>
 									<Link href="mailto:anhhoangnguyen@concordia.ca">
 										{"anhhoangnguyen [at] concordia [dot] ca"}
@@ -39,7 +40,7 @@ export default function Contact() {
 								</td>
 							</tr>
 							<tr>
-								<td className="text-pink-500">LinkedIn</td>
+								<td className="text-rose-500">LinkedIn</td>
 								<td className="break-all">
 									<Link href="https://linkedin.com/in/aaanh">
 										https://linkedin.com/in/aaanh

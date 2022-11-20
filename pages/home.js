@@ -151,7 +151,7 @@ export default function Home() {
     console.log(cmdHistory);
   };
   const Prompt = ({ className }) => {
-    return <p className={className}>{"guest@aaanh.home > "}</p>;
+    return <p className={className}>{"guest@aaanh.home $ "}</p>;
   };
 
   return (
@@ -164,7 +164,7 @@ export default function Home() {
       <button
         onClick={() => setMinimize(!isMinimized)}
         className={
-          "hover:bg-green-500 w-20 h-18 invisible flex flex-col justify-center items-center rounded-lg border-green-500 p-2 transition-all ease-in-out border text-2xl absolute left-1/2 bottom-10 " +
+          "hover:bg-green-500 w-20 h-18 invisible flex flex-col justify-center items-center rounded-lg border-green-500 p-2 transition-all ease-in-out border text-2xl absolute left-1/2 bottom-10" +
           (isMinimized ? "sm:visible" : "invisible")
         }
       >
@@ -173,15 +173,15 @@ export default function Home() {
       </button>
       <div
         className={
-          "dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen rounded-[18pt] shadow-2xl transition-all ease-in-out " +
+          "dark:bg-neutral-900 flex flex-col m-auto w-screen sm:max-h-screen shadow-2xl transition-all ease-in-out rounded-b-[16px] " +
           (isMaximized
             ? "sm:min-h-screen"
             : "sm:max-h-[768px] sm:max-w-[1366px]") +
           (isMinimized ? " sm:invisible" : "")
         }
       >
-        <div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[18pt]">
-          <div className="mt-2 ml-2 p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 rounded-[16pt] rounded-b-none text-white">
+        <div className="flex justify-between items-center max-h-14 w-full bg-green-500 bg-opacity-80 rounded-t-[16px]">
+          <div className=" p-2 px-4 min-w-[100px] flex space-x-10 bg-black bg-opacity-10 text-white rounded-t-[16px]">
             <div>~ @ aaanh.home</div>
             <button
               onClick={(e) => {
@@ -220,7 +220,7 @@ export default function Home() {
             >
               <input
                 list="cmds"
-                className="w-auto border-none text-sky-500 font-bold block px-3 py-2 dark:bg-neutral-900 bg-white border border-slate-300 text-sm placeholder-slate-400
+                className="w-auto border-none text-sky-500 font-bold block px-3 py-2 dark:bg-neutral-900 bg-white border border-slate-300 text-md placeholder-slate-400
 								focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-transparent
 								disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
 								invalid:border-pink-500 invalid:text-pink-600
@@ -287,12 +287,14 @@ function HistoryContent({ cmdHistory }) {
             <th className="px-2">Command</th>
           </tr>
         </thead>
-        {cmdHistory.map((cmd, index) => (
-          <tr key={index}>
-            <td className="text-sky-500">{index + 1}</td>
-            <td>{cmd}</td>
-          </tr>
-        ))}
+        <tbody>
+          {cmdHistory.map((cmd, index) => (
+            <tr key={index}>
+              <td className="text-sky-500">{index + 1}</td>
+              <td>{cmd}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );

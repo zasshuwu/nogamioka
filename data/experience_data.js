@@ -11,6 +11,7 @@ function createExperience({
 	end_year = 0,
 	description = [""],
 	link_ref = "",
+	skills = []
 } = {}) {
 	return {
 		key,
@@ -25,6 +26,7 @@ function createExperience({
 		end_year,
 		description,
 		link_ref,
+		skills
 	};
 }
 
@@ -56,12 +58,10 @@ export const experienceData = [
 		end_month: month[8],
 		end_year: 2022,
 		description: [
-			"Extensive use of Azure DevOps (ADO) platform to create, maintain, and troubleshoot builds and releases of software products",
-			"Utilize knowledge of the Windows environment (services, registry base, etc.) during development process.",
-			"Author, test, and configure Docker containers.",
-			"Maintain and update compilation scripts for the compilation servers.",
-			"Utilize C++, C#, and scripting languages (Bash script, JavaScript, PS1, etc.) to create custom build solutions and automated toolings for release pipelines.",
+			"The work revolves around the Azure DevOps platform, managing code repositories, building & deploying pipelines, API tooling, dev tooling, automation, and containers (Docker) orchestration.",
+			"Learned and improved personal DevOps skills, software development practices, and problem analysis skills."
 		],
+		skills: ['CI/CD', 'DevOps', 'Container Orchestration', 'IAM', 'GitOps', 'C#', 'Bash', 'Linux', 'Shell Scripting', 'Powershell']
 	}),
 	createExperience({
 		organization: "Concordia University",
@@ -74,9 +74,11 @@ export const experienceData = [
 		end_month: 0,
 		end_year: 0,
 		description: [
-			"My research activities are performed under the advisory and supervision of Professor Liu with focus on machine learning platforms, processes, and services. My goal is to evaluate and benchmark these systems so as to assist platform users in deciding their AI/ML pipelines and stacks. My research focus complements my professional development in DevOps and systems design/architecture.",
-			"I also develop, deploy, and maintain the research group website (nextjs, tailwind, firestore).",
+			"My research activities focus on machine learning platforms, processes, and services.",
+			"Current project goal is to evaluate and benchmark these systems to formulate metrics on the operational costs and overhead when performing ML engineering tasks. My research complements my professional development in DevOps and systems design/architecture.",
+			"I also (WIP) am developing the group's public-facing website."
 		],
+		skills: ['MLOps', 'DevOps', 'Web Development', 'Python', 'IaaS', 'GitOps', 'Next.js', 'Tailwind CSS', 'React', 'Linux', 'Cloud Computing', 'TensorFlow', 'Powershell']
 	}),
 	createExperience({
 		organization: "AITS @Concordia University",
@@ -89,14 +91,12 @@ export const experienceData = [
 		end_month: 0,
 		end_year: 0,
 		description: [
-			"Offering frontline support to the customers in terms of utilizing the IT infrastructures, services, and resources at Concordia.",
-			"Regularly checking the teaching lab peripherals (i.e., computers, monitors, projectors), and troubleshooting the found issues.",
-			"I extensively use Linux CLI tools and bash scripting to query information and troubleshoot application, system, network, and user account issues on the engineering school distributed Linux (SL and CentOS) servers.",
-			"I efficiently communicate and relay crucial information for senior analysts to assist in reaching the best resolutions compliant with our system policies and satisfactory for end-users.",
-			"Training new staff and suggest workflow improvements.",
-			"I have successfully offered numerous in-depth analyses and solutions on complex issues regarding end-user networking and operating system nuances.",
-			"Maintain internal technical wiki. I was also responsible for migrating the wiki to a better platform.",
+			"Troubleshoot end-user environment in Windows, Linux, and macOS desktop and remote server sessions on Linux shells and Windows RDS.",
+			"Deal with complicated issues involving hardware, software, and network infrastructure.",
+			"Investigate operational incidents and either resolve or triage to senior teams.",
+			"I migrate and maintain the team's knowledge base with scheduled backups. I also contribute to the university's high performance computing (the Speed HPC) group's repository."
 		],
+		skills: ['Asset Management', 'Incident Investigation', 'IAM', 'Bash', 'Linux', 'System Administration', 'Technical Support', 'OS', 'Powershell']
 	}),
 	createExperience({
 		organization: "Genetec Inc.",
@@ -109,14 +109,9 @@ export const experienceData = [
 		end_month: month[12],
 		end_year: 2021,
 		description: [
-			"Provide technical assistance and troubleshooting for users",
-			"Deploy IT assets: hardware and software",
-			"Manage cloud VMs and KVM/Hyper-V",
-			"Utilize PowerShell and bash scripting",
-			"Work encompasses OSI layers 5 to 7",
-			"Manage access request according to InfoSec policies",
-			"Manage hybrid AD and Endpoint, account credentials and permission groups",
+			"Assistance and troubleshooting for end-users, on-premise AD and Azure AD management, incident response and investigation, hardware/software asset management and deployment, infrastructure and workflow improvement."
 		],
+		skills: ['Active Directory', 'Jira', 'Automation', 'IAM', 'Technical Support', 'OS', 'Powershell']
 	}),
 	// createExperience({
 	// 	organization: "Inertial Sensing Lab",
