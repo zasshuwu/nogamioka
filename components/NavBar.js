@@ -35,7 +35,7 @@ export default function NavBar({ setCommand, setContent }) {
   const router = useRouter();
 
   const navBtnStyle =
-    "px-4 font-['Be_Vietnam_Pro'] text-sm rounded-[16px] justify-center items-center flex transition-all ease-in-out";
+    "px-4 py-2 font-['Be_Vietnam_Pro'] text-sm rounded-[16px] justify-center items-center flex transition-all ease-in-out";
 
   function handleHome() {
     setCommand("cd ~");

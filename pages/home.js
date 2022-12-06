@@ -132,22 +132,22 @@ export default function Home() {
     command == "cd /etc/contact"
       ? setContent("contact")
       : command == ":help"
-      ? setContent("help")
-      : command == "cd /bin/awards"
-      ? setContent("awards")
-      : command == "cd /var/experience"
-      ? setContent("experience")
-      : command == "cd /lib/projects"
-      ? setContent("projects")
-      : command == "curl -O /uses"
-      ? router.push("/uses")
-      : command === "wget /resume"
-      ? router.push("/resume")
-      : command == "history"
-      ? setContent("history")
-      : command == "cd ~"
-      ? setContent("home")
-      : null;
+        ? setContent("help")
+        : command == "cd /bin/awards"
+          ? setContent("awards")
+          : command == "cd /var/experience"
+            ? setContent("experience")
+            : command == "cd /lib/projects"
+              ? setContent("projects")
+              : command == "curl -O /uses"
+                ? router.push("/uses")
+                : command === "wget /resume"
+                  ? router.push("/resume")
+                  : command == "history"
+                    ? setContent("history")
+                    : command == "cd ~"
+                      ? setContent("home")
+                      : null;
     console.log(cmdHistory);
   };
   const Prompt = ({ className }) => {
@@ -157,7 +157,7 @@ export default function Home() {
   return (
     <div
       className={
-        "flex max-h-[80vh] sm:h-screen sm:min-h-screen min-w-screen dark:text-white dark:bg-neutral-900 transition-all ease-in-out"
+        "flex sm:max-h-[80vh] sm:min-h-screen h-screen min-w-screen dark:text-white dark:bg-neutral-900 transition-all ease-in-out"
       }
     >
       <SEO title="aaanh's Portfolio"></SEO>
@@ -165,7 +165,7 @@ export default function Home() {
         onClick={() => setMinimize(!isMinimized)}
         className={
           "hover:bg-green-500 w-20 h-18 invisible flex flex-col justify-center items-center rounded-lg border-green-500 p-2 transition-all ease-in-out border text-2xl absolute left-1/2 bottom-10" +
-          (isMinimized ? "sm:visible" : "invisible")
+          (isMinimized ? " sm:visible" : " invisible")
         }
       >
         <p>💾</p>

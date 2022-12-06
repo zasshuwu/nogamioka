@@ -179,10 +179,10 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/mdx@^12.3.1":
-  "integrity" "sha512-b7G3CsAwyD/8Eo6uDjCCqNwEi68LTyo/JYPC0N2Yu3yl/iveMDCi03ME+9JsnFPr3DcjmGSKc1ioiYM4dJUkTg=="
-  "resolved" "https://registry.npmjs.org/@next/mdx/-/mdx-12.3.1.tgz"
-  "version" "12.3.1"
+"@next/mdx@^12.3.2":
+  "integrity" "sha512-oFOEfMLTXGzThstNd5ptxa2e024hw7QndBGPrmuCotBgWNxVn70B6tGxpHkfdP0prc3IH6+5dPBpaVIpt1EWvg=="
+  "resolved" "https://registry.npmjs.org/@next/mdx/-/mdx-12.3.2.tgz"
+  "version" "12.3.2"
 
 "@next/swc-win32-x64-msvc@13.0.0":
   "integrity" "sha512-FFOGGWwTCRMu9W7MF496Urefxtuo2lttxF1vwS+1rIRsKvuLrWhVaVTj3T8sf2EBL6gtJbmh4TYlizS+obnGKA=="
