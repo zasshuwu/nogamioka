@@ -115,7 +115,7 @@ export default function Uses(setups: any) {
         </KBarPortal>
       </KBarProvider>
       <HomeLayout>
-        <div className="m-auto mt-8">
+        <div className="m-auto mt-8 p-2">
           <div className="flex items-center space-x-1">
             <button
               className="rounded-full border p-4 hover:border-green-500 hover:text-green-500"

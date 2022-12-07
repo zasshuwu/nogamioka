@@ -16,20 +16,12 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import { useRouter } from "next/router";
+import Resume from "@/components/Resume";
 
 const Home: NextPage = () => {
   const router = useRouter();
 
-  const handleSnapContact = (component: any) => {
-    setComponentsToRender((existing: any) => [...existing, component]);
-  };
-  const handleSnapExperience = (component: any) => {
-    setComponentsToRender((existing: any) => [...existing, component]);
-  };
-  const handleSnapAbout = (component: any) => {
-    setComponentsToRender((existing: any) => [...existing, component]);
-  };
-  const handleSnapProjects = (component: any) => {
+  const handleSnapIn = (component: any) => {
     setComponentsToRender((existing: any) => [...existing, component]);
   };
 
@@ -45,32 +37,39 @@ const Home: NextPage = () => {
 
   const actions: any = [
     {
+      id: "about",
+      name: "About",
+      shortcut: ["a"],
+      keywords: "about info information whoami",
+      perform: () => handleSnapIn(<About />),
+    },
+    {
       id: "contact",
       name: "Contact",
       shortcut: ["c"],
       keywords: "contact email phone",
-      perform: () => handleSnapContact(<Contact />),
+      perform: () => handleSnapIn(<Contact />),
     },
     {
       id: "experience",
       name: "Experience",
       shortcut: ["e"],
       keywords: "experience work position role job",
-      perform: () => handleSnapExperience(<Experience />),
+      perform: () => handleSnapIn(<Experience />),
     },
     {
       id: "projects",
       name: "Projects",
       shortcut: ["p"],
       keywords: "projects personal",
-      perform: () => handleSnapProjects(<Projects />),
+      perform: () => handleSnapIn(<Projects />),
     },
     {
-      id: "about",
-      name: "About",
-      shortcut: ["a"],
-      keywords: "about info information whoami",
-      perform: () => handleSnapAbout(<About />),
+      id: "resume",
+      name: "Resume",
+      shortcut: ["r"],
+      keywords: "resume cv",
+      perform: () => handleSnapIn(<Resume />),
     },
     {
       id: "uses",
@@ -89,7 +88,7 @@ const Home: NextPage = () => {
     {
       id: "index",
       name: "Index",
-      shortcut: ["h"],
+      shortcut: ["i"],
       keywords: "login index root",
       perform: () => router.push("/"),
     },
@@ -104,8 +103,9 @@ const Home: NextPage = () => {
           typeof item === "string" ? (
             <div>{item}</div>
           ) : (
-            <div className="cursor-pointer rounded-lg bg-base-300 p-2 text-white hover:bg-accent">
-              {item.name}
+            <div className="my-1 flex cursor-pointer items-center justify-between bg-neutral p-2 text-white hover:bg-accent">
+              <span>{item.name}</span>
+              <span className="kbd kbd-sm">{item.shortcut}</span>
             </div>
           )
         }
@@ -128,15 +128,13 @@ const Home: NextPage = () => {
       <HomeLayout
         openComponents={componentsToRender}
         handleCloseSnapIn={handleCloseSnapIn}
-        handleSnapAbout={() => handleSnapAbout(<About />)}
-        handleSnapProjects={() => handleSnapProjects(<Projects />)}
-        handleSnapExperience={() => handleSnapExperience(<Experience />)}
-        handleSnapContact={() => handleSnapContact(<Contact />)}
+        handleSnapAbout={() => handleSnapIn(<About />)}
+        handleSnapProjects={() => handleSnapIn(<Projects />)}
+        handleSnapExperience={() => handleSnapIn(<Experience />)}
+        handleSnapContact={() => handleSnapIn(<Contact />)}
+        handleSnapResume={() => handleSnapIn(<Resume />)}
       >
-        <main
-          data-theme="dracula"
-          className="flex min-h-[96.5vh] items-center justify-center p-2 pt-10 pb-10"
-        >
+        <main className="flex min-h-[96.5vh] items-center justify-center p-2 pt-10 pb-10">
           {componentsToRender.length == 0 ? (
             <div>
               <div>{"There's nothing here, spooky 👻"}</div>
@@ -147,7 +145,14 @@ const Home: NextPage = () => {
               </div>
             </div>
           ) : null}
-          <div className="flex flex-wrap space-y-2 sm:grid sm:grid-cols-2 sm:gap-1 sm:space-y-0">
+          <div
+            className={
+              "flex flex-wrap space-y-2 " +
+              (componentsToRender.length == 1
+                ? "flex"
+                : "sm:grid sm:grid-cols-2 sm:gap-1 sm:space-y-0")
+            }
+          >
             {componentsToRender?.map((component: any, idx: number) => (
               <div className="min-h-1/4 border border-slate-500 p-4" key={idx}>
                 {component}
