@@ -51,6 +51,7 @@ Project is completed, in production, and continuously integrated.
 
 ## Major Version Deployments
 
-- https://v1.aaanh.ca
-- https://v2.aaanh.ca
-- https://v3.aaanh.ca
+- Production: https://aaanh.ca
+- v3: https://v3.aaanh.ca
+- v2: https://v2.aaanh.ca
+- v1: https://v1.aaanh.ca
