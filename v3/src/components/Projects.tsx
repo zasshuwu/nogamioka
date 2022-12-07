@@ -1,10 +1,9 @@
 import { projectData } from "@/data/project_data";
 import Link from "next/link";
-import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { FaDocker } from "react-icons/fa";
 
-export default function Projects(props: any) {
+export default function Projects() {
   return (
     <div className="max-h-[500px] overflow-y-scroll">
       <h2 className="mb-4 text-4xl text-accent">Projects</h2>

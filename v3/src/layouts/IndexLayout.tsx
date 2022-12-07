@@ -1,13 +1,10 @@
-import { type NextPage } from "next";
 import Head from "next/head";
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-const IndexLayout = ({ children, openComponents }: any) => {
+const IndexLayout = ({ children }: any) => {
   const [dateTime, setDateTime] = useState("");
-
-  const pathName = useRouter().pathname;
 
   useEffect(() => {
     const interval = setInterval(() => {
