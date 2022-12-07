@@ -48,8 +48,8 @@ const HomeLayout = ({
               className="rounded-box bg-base-100 px-2 shadow"
               data-choose-theme
             >
-              <option value="">Default</option>
-              <option value="mytheme">{"Anh's"}</option>
+              <option value="mytheme">Default</option>
+              <option value="cyberpunk">Cyberpunk</option>
               <option value="dracula">Dracula</option>
               <option value="light">Light</option>
             </select>

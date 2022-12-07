@@ -8,15 +8,23 @@ module.exports = {
   daisyui: {
     themes: [{
       mytheme: {
-        "primary": "#4ade80",
-        "secondary": "#fc4ef0",
-        "accent": "#67e8f9",
-        "neutral": "#1E1D2B",
-        "base-100": "#07091a",
-        "info": "#38bdf8",
-        "success": "#38bdf8",
-        "warning": "#E28D03",
-        "error": "#FB565E",
+        "primary": "#a2e271",
+
+        "secondary": "#e879f9",
+
+        "accent": "#5eead4",
+
+        "neutral": "#1C222B",
+
+        "base-100": "#111827",
+
+        "info": "#19A2EB",
+
+        "success": "#5BE693",
+
+        "warning": "#F8BD35",
+
+        "error": "#F3587C",
       },
     }, "light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
   },
