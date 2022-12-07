@@ -48,3 +48,9 @@ Project is completed, in production, and continuously integrated.
 
 -   What if I found a bug that I can fix?
     > Feel free to fork and submit a PR 😉
+
+## Major Version Deployments
+
+- https://v1.aaanh.ca
+- https://v2.aaanh.ca
+- https://v3.aaanh.ca
