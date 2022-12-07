@@ -37,9 +37,6 @@ const Home: NextPage = () => {
     setComponentsToRender(
       componentsToRender.filter((_: any, i: number) => i !== index)
     );
-
-    console.log("Fired");
-    console.log(componentsToRender);
   }
 
   const [componentsToRender, setComponentsToRender] = useState<any>([
