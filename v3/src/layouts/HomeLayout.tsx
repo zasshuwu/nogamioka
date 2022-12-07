@@ -52,9 +52,9 @@ const HomeLayout = ({
         <div className="hidden font-semibold text-info sm:block">
           {dateTime}
         </div>
-        <div>
-<div className="hidden sm:block sm:w-64">
-          Command Palette: <span className="kbd kbd-xs">CTRL / ⌘</span> +{" "}
+        <div className="flex sm:w-64">
+<div className="hidden sm:block">
+          Command: <span className="kbd kbd-xs">CTRL / ⌘</span> +{" "}
           <span className="kbd kbd-xs">K</span>
         </div>
         <div className="dropdown-end dropdown">
