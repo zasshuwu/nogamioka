@@ -45,14 +45,14 @@ const HomeLayout = ({
           "sticky top-0 left-0 flex h-8 w-full items-center justify-between bg-base-300 px-4"
         }
       >
-        <div className="sm:w-64">
+        <div className="sm:w-72">
           <Link href="/">🏡</Link>
         </div>
 
         <div className="hidden font-semibold text-info sm:block">
           {dateTime}
         </div>
-        <div className="flex sm:w-64">
+        <div className="flex sm:w-72">
 <div className="hidden sm:block">
           Command: <span className="kbd kbd-xs">CTRL / ⌘</span> +{" "}
           <span className="kbd kbd-xs">K</span>
