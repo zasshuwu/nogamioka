@@ -13,5 +13,12 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: [
+      "photos.app.goo.gl",
+      "avatars.githubusercontent.com",
+      "raw.githubusercontent.com",
+    ],
+  },
 };
 export default config;
