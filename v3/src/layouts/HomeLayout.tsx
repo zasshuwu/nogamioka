@@ -20,7 +20,7 @@ const HomeLayout = ({
   const router = useRouter();
 
   const playCyberpunk = () => {
-    let dataTheme = localStorage.getItem("theme");
+    const dataTheme = localStorage.getItem("theme");
     if (dataTheme == "cyberpunk") {
       const fx = new Audio("/cyberpunk.mp3");
       fx.play();
