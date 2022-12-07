@@ -19,6 +19,14 @@ const HomeLayout = ({
   const [dateTime, setDateTime] = useState("");
   const router = useRouter();
 
+  const playCyberpunk = () => {
+    let dataTheme = localStorage.getItem("theme");
+    if (dataTheme == "cyberpunk") {
+      const fx = new Audio("/cyberpunk.mp3");
+      fx.play();
+    }
+  };
+
   useEffect(() => {
     themeChange(false);
     const interval = setInterval(() => {
@@ -47,6 +55,7 @@ const HomeLayout = ({
               tabIndex={0}
               className="rounded-box bg-base-100 px-2 shadow"
               data-choose-theme
+              onChange={() => playCyberpunk()}
             >
               <option value="mytheme">Default</option>
               <option value="cyberpunk">Cyberpunk</option>
