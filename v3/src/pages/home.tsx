@@ -82,6 +82,20 @@ const Home: NextPage = () => {
       keywords: "setup uses workstation laptop tech",
       perform: () => router.push("/uses"),
     },
+    {
+      id: "home",
+      name: "Home",
+      shortcut: ["h"],
+      keywords: "home homepage",
+      perform: () => router.push("/home"),
+    },
+    {
+      id: "index",
+      name: "Index",
+      shortcut: ["h"],
+      keywords: "login index root",
+      perform: () => router.push("/"),
+    },
   ];
 
   const RenderResult = () => {

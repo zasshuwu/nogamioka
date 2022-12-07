@@ -31,7 +31,7 @@ const Index: NextPage = () => {
           className="to-neutral-neutral-900 flex min-h-full w-full flex-col items-center justify-center bg-gradient-to-b"
         >
           <div
-            className="btn flex h-auto flex-wrap items-center justify-center space-y-2 rounded-lg border p-4 normal-case hover:cursor-pointer sm:justify-between sm:space-x-2"
+            className="btn flex h-auto flex-wrap items-center justify-center space-y-2 space-x-2 rounded-lg border p-4 normal-case hover:cursor-pointer"
             onClick={() => setShowLogin((old) => !old)}
           >
             <img
