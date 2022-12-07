@@ -1,0 +1,34 @@
+$color-main: #e43f5a;
+$nav-bg: #0c1b3f;
+$color-header: #3958a7;
+$color-nav-link: rgb(235, 235, 235);
+$color-nav-link-active: $color-main;
+
+.splash-wrapper {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background: $nav-bg;
+	color: $color-main;
+	.splash {
+		display: block;
+		font-size: 20pt;
+		margin: 2rem 0;
+		&:hover {
+			cursor: default;
+		}
+	}
+	.scroll-down {
+		position: absolute;
+		bottom: 5%;
+		color: rgb(0, 228, 152);
+		h1 {
+			font-size: 16pt;
+		}
+	}
+}
