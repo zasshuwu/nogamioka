@@ -96,6 +96,7 @@ const HomeLayout = ({
           </div>
         </div>
       </div>
+
       {children}
 
       <div className="sticky bottom-0 left-0 flex w-full flex-wrap items-center justify-start bg-base-300 px-2 sm:h-10">

@@ -39,25 +39,21 @@ function HardwareTabs({ showSetup, setShowSetup }: any) {
       </div>
       <div className="my-2">
         {setups.map((setup, idx) => (
-          <>
+          <div key={idx}>
             {setup?.title == showSetup ? (
-              <div key={idx}>
-                <img className="w-[800px]" src={setup.url}></img>
-              </div>
+              <img className="w-[800px]" src={setup.url}></img>
             ) : null}
-          </>
+          </div>
         ))}
       </div>
     </>
   );
 }
 
-export default function Uses(setups: any) {
-  const [showSetup, setShowSetup] = useState("");
-
-  useEffect(() => {
-    setShowSetup(setups[0]?.title);
-  }, []);
+export default function Uses(
+  setups: [{ key: number; url: string; title: string }]
+) {
+  const [showSetup, setShowSetup] = useState("Desktop");
 
   const router = useRouter();
   const actions: any = [
@@ -186,7 +182,7 @@ export default function Uses(setups: any) {
                 overflow: "hidden",
                 background: "transparent",
               }}
-              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
               src="https://embed.music.apple.com/ca/playlist/j-song-that-slaps/pl.u-mJy8Z2BtDZAkp6"
             ></iframe>
             <br />

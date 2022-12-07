@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 
 const IndexLayout = ({ children }: any) => {
   const [dateTime, setDateTime] = useState("");
