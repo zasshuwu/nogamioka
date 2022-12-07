@@ -52,12 +52,12 @@ const HomeLayout = ({
         <div className="hidden font-semibold text-info sm:block">
           {dateTime}
         </div>
-
-        <div className="hidden sm:block sm:w-64">
+        <div>
+<div className="hidden sm:block sm:w-64">
           Command Palette: <span className="kbd kbd-xs">CTRL / ⌘</span> +{" "}
           <span className="kbd kbd-xs">K</span>
         </div>
-        <div className="dropdown-end dropdown block sm:hidden">
+        <div className="dropdown-end dropdown">
           <label tabIndex={0} className="badge-accent badge m-1">
             Menu
           </label>
@@ -82,6 +82,8 @@ const HomeLayout = ({
             </li>
           </ul>
         </div>
+        </div>
+        
       </div>
       {children}
 
