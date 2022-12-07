@@ -23,7 +23,7 @@ const HomeLayout = ({
   handleSnapProjects,
 }: any) => {
   const [dateTime, setDateTime] = useState("");
-
+  const router = useRouter();
   const pathName = useRouter().pathname;
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const HomeLayout = ({
   }, []);
 
   return (
-    <div className="relative flex flex-col">
+    <div className="relative flex flex-col" data-theme="dracula">
       <Head>
         <title>{"Anh's Homepage"}</title>
         <meta name="description" content="This is where I experiment." />
@@ -76,6 +76,9 @@ const HomeLayout = ({
             </li>
             <li>
               <button onClick={() => handleSnapProjects()}>Projects</button>
+            </li>
+            <li>
+              <button onClick={() => router.push("/uses")}>Uses</button>
             </li>
           </ul>
         </div>

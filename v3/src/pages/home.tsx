@@ -15,8 +15,11 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
   const handleSnapContact = (component: any) => {
     setComponentsToRender((existing: any) => [...existing, component]);
   };
@@ -71,6 +74,13 @@ const Home: NextPage = () => {
       shortcut: ["a"],
       keywords: "about info information whoami",
       perform: () => handleSnapAbout(<About />),
+    },
+    {
+      id: "uses",
+      name: "Uses",
+      shortcut: ["a"],
+      keywords: "setup uses workstation laptop tech",
+      perform: () => router.push("/uses"),
     },
   ];
 
