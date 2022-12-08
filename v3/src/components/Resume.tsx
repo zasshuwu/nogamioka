@@ -24,3 +24,5 @@ export default function Resume() {
     </>
   );
 }
+
+Resume.displayName = "Resume"

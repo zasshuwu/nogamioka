@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 import { themeChange } from "theme-change";
+import {GrFormClose} from "react-icons/gr"
 
 const HomeLayout = ({
   children,
@@ -113,9 +114,11 @@ const HomeLayout = ({
           <button
             key={idx}
             onClick={() => handleCloseSnapIn(idx)}
-            className="btn-ghost m-2 flex w-28 items-center justify-center rounded-lg bg-success text-black hover:text-error"
+            className="text-sm m-2 flex w-fit items-center justify-center rounded-lg bg-success text-black hover:text-error px-2"
           >
-            {idx + 1 + ": "} {component?.type?.displayName}
+            {idx + 1 + ": "} {component?.type?.displayName} <span className="h-2 w-2 flex justify-center items-center mx-1 p-2 bg-stone-500/20 rounded-full font-mono">
+            X
+            </span>
           </button>
         ))}
       </div>
