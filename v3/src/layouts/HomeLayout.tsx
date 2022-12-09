@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 import { themeChange } from "theme-change";
-import {GrFormClose} from "react-icons/gr"
+import { GrFormClose } from "react-icons/gr";
 
 const HomeLayout = ({
   children,
@@ -54,7 +54,7 @@ const HomeLayout = ({
             <label>Theme</label>
             <select
               tabIndex={0}
-              className="rounded-box bg-base-100 px-2 shadow"
+              className="rounded-box bg-base-100 px-2 text-sm shadow"
               data-choose-theme
               onChange={() => playCyberpunk()}
             >
@@ -114,10 +114,11 @@ const HomeLayout = ({
           <button
             key={idx}
             onClick={() => handleCloseSnapIn(idx)}
-            className="text-sm m-2 flex w-fit items-center justify-center rounded-lg bg-success text-black hover:text-error px-2"
+            className="m-2 flex w-fit items-center justify-center rounded-lg bg-success px-2 text-sm text-black hover:text-error"
           >
-            {idx + 1 + ": "} {component?.type?.displayName} <span className="h-2 w-2 flex justify-center items-center mx-1 p-2 bg-stone-500/20 rounded-full font-mono">
-            X
+            {idx + 1 + ": "} {component?.type?.displayName}{" "}
+            <span className="mx-1 flex h-2 w-2 items-center justify-center rounded-full bg-stone-500/20 p-2 font-mono">
+              X
             </span>
           </button>
         ))}
