@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { FaHome } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import HomeLayout from "@/layouts/HomeLayout";
 
 import {
@@ -50,9 +50,7 @@ function HardwareTabs({ showSetup, setShowSetup }: any) {
   );
 }
 
-export default function Uses(
-  setups: [{ key: number; url: string; title: string }]
-) {
+export default function Uses() {
   const [showSetup, setShowSetup] = useState("Desktop");
 
   const router = useRouter();

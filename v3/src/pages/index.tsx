@@ -3,6 +3,8 @@ import { type NextPage } from "next";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import IndexLayout from "@/layouts/IndexLayout";
+import { SpotifyBadge } from "@/components/SpotifyBadge";
+import useSWR from "swr";
 
 const Index: NextPage = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -19,6 +21,10 @@ const Index: NextPage = () => {
     }
   };
 
+  const fetcher = (url: any) => fetch(url).then((res) => res.json());
+
+  const { data, error } = useSWR("/api/spotify", fetcher);
+
   const handlePasswordInput = (e: any) => {
     setPassword(e.target.value);
   };
@@ -26,9 +32,15 @@ const Index: NextPage = () => {
   return (
     <>
       <IndexLayout>
-        <main className="to-neutral-neutral-900 flex min-h-full w-full flex-col items-center justify-center bg-gradient-to-b">
+        <main
+          className="to-neutral-neutral-900 flex min-h-full w-full flex-col items-center bg-gradient-to-b sm:justify-center"
+          data-theme="mytheme"
+        >
+          <div className="mb-8 mt-36 sm:absolute sm:right-6 sm:top-12 sm:m-0">
+            <SpotifyBadge data={data}></SpotifyBadge>
+          </div>
           <div className="flex flex-col items-center">
-            <h2 className="my-4 text-6xl text-primary">Log in as</h2>
+            <h2 className="my-4 text-6xl text-emerald-500">Log in as</h2>
             <div
               className="btn flex h-auto w-fit flex-wrap items-center justify-center space-y-2 space-x-2 rounded-lg border p-4 normal-case hover:cursor-pointer"
               onClick={() => setShowLogin((old) => !old)}
