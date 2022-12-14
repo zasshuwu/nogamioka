@@ -18,6 +18,7 @@ const config = {
       "photos.app.goo.gl",
       "avatars.githubusercontent.com",
       "raw.githubusercontent.com",
+      "i.scdn.co"
     ],
   },
 };

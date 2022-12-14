@@ -1,5 +1,6 @@
 import { SiSpotify } from "react-icons/si";
 import { IoIosMusicalNotes } from "react-icons/io";
+import Image from "next/image";
 
 export function SpotifyBadge({ data }: any) {
   return (
@@ -15,26 +16,27 @@ export function SpotifyBadge({ data }: any) {
     >
       <div className="w-16">
         {data?.isPlaying && data?.albumImageUrl ? (
-          <img
+          <Image
+            height={72}
+            width={72}
             className={"w-16 rounded-md"}
-            // className={"w-16 shadow-md rounded-md shadow-[#a99398]"}
             src={data?.albumImageUrl}
             alt={data?.album}
           />
         ) : (
-          <IoIosMusicalNotes size={64} color={"#2dd4bf"} />
+          <IoIosMusicalNotes size={64} className="text-primary" />
         )}
       </div>
 
-      <div className="flex-1 font-sans">
-        <p className="component text-sm font-bold">
+      <div className="flex-1 text-left font-sans">
+        <p className="component text-sm font-bold normal-case">
           {data?.isPlaying
             ? data?.type === "episode"
               ? "Listening to a podcast"
               : data?.type === "ad"
               ? "Spotify Freemium ad spot 🙃"
               : "🎧 " + data.title
-            : "not listening at the moment, any suggestions?"}
+            : "Not listening at the moment, any suggestions?"}
         </p>
         <p className="font-dark text-xs">
           {data?.isPlaying ? data.artist : null}
@@ -48,7 +50,7 @@ export function SpotifyBadge({ data }: any) {
         </p>
       </div>
       <div className="absolute bottom-1.5 right-1.5">
-        <SiSpotify size={20} color={"#1ED760"} />
+        <SiSpotify size={16} color={"#1ED760"} />
       </div>
     </a>
   );

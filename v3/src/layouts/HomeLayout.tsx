@@ -49,9 +49,9 @@ const HomeLayout = ({
         }
       >
         <div className="flex sm:w-72">
-          <Link href="/">🏡</Link>
+          <Link href={router.asPath === "/home" ? "/" : "/home"}>🏡</Link>
           <div className="mx-2 space-x-2">
-            <label>Theme</label>
+            <label className="text-sm">{"Theme ::"}</label>
             <select
               tabIndex={0}
               className="rounded-box bg-base-100 px-2 text-sm shadow"
@@ -61,6 +61,7 @@ const HomeLayout = ({
               <option value="mytheme">Default</option>
               <option value="cyberpunk">Cyberpunk</option>
               <option value="dracula">Dracula</option>
+              <option value="business">Business</option>
               <option value="light">Light</option>
             </select>
           </div>
