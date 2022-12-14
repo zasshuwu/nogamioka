@@ -29,7 +29,6 @@ const IndexLayout = ({ children }: any) => {
         }
       >
         <div className="flex sm:w-72">
-          <Link href={router.asPath === "/home" ? "/" : "/home"}>🏡</Link>
           <div className="mx-2 space-x-2">
             <label className="text-sm">{"Theme ::"}</label>
             <select
