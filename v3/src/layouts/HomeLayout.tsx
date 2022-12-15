@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 import { themeChange } from "theme-change";
-import { GrFormClose } from "react-icons/gr";
 
 const HomeLayout = ({
   children,

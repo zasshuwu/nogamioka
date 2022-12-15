@@ -11,7 +11,7 @@ function createExperience({
 	end_year = 0,
 	description = [""],
 	link_ref = "",
-	skills = []
+	skills = [""]
 } = {}) {
 	return {
 		key,

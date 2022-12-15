@@ -25,6 +25,10 @@ const Index: NextPage = () => {
 
   const { data, error } = useSWR("/api/spotify", fetcher);
 
+  if (error) {
+    console.log(error);
+  }
+
   const handlePasswordInput = (e: any) => {
     setPassword(e.target.value);
   };

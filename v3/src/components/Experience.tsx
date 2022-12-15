@@ -1,10 +1,33 @@
 import { experienceData } from "@/data/experience_data.js";
 import Link from "next/link.js";
-const SkillPill = ({ skill }: any) => {
+
+interface SkillProps {
+  skill: string;
+}
+
+interface EntryProps {
+  entry: {
+    key: number;
+    skills: Array<string>;
+    description: Array<string>;
+    role: string;
+    start_month: number;
+    start_year: number;
+    end_month: number;
+    end_year: number;
+    link_ref: string;
+    organization: string;
+    team: string;
+    type: string;
+    location: string;
+  };
+}
+
+const SkillPill = ({ skill }: SkillProps) => {
   return <span className="badge-secondary badge m-1">{skill}</span>;
 };
 
-const Entry = ({ entry }: any) => {
+const Entry = ({ entry }: EntryProps) => {
   return (
     <div className="my-4">
       <div className="flex flex-col flex-wrap sm:flex-row sm:items-center sm:space-x-4">
@@ -25,19 +48,20 @@ const Entry = ({ entry }: any) => {
       <details className="text-sm">
         <summary>Details</summary>
         <ul>
-          {entry.description.map((desc: string, index: number) => (
-            <li className="list-inside list-disc" key={index}>
-              {desc}
-            </li>
-          ))}
+          {entry.description &&
+            entry.description.map((desc: string, index: number) => (
+              <li className="list-inside list-disc" key={index}>
+                {desc}
+              </li>
+            ))}
         </ul>
       </details>
 
       <div className="mt-2 flex flex-wrap space-x-1">
-        {entry.skills.length !== 0 ? (
+        {entry.skills && entry.skills.length !== 0 ? (
           <>
             Skills:&nbsp;
-            {entry?.skills.map((skill: [string], idx: number) => (
+            {entry.skills.map((skill: string, idx: number) => (
               <SkillPill key={idx} skill={skill}></SkillPill>
             ))}
           </>
@@ -51,8 +75,8 @@ export default function Experience() {
   return (
     <div className="max-h-[500px] overflow-y-scroll">
       <h2 className="mb-4 text-4xl text-accent">Experience</h2>
-      {experienceData.map((entry, index) => (
-        <Entry entry={entry} key={index}></Entry>
+      {experienceData.map((e: EntryProps["entry"], index: number) => (
+        <Entry entry={e} key={index}></Entry>
       ))}
     </div>
   );

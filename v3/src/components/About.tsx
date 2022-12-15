@@ -1,4 +1,6 @@
-const About = () => {
+import * as React from "react";
+
+const About: React.FC = () => {
   return (
     <div>
       <div id="welcome" className="mt-4">

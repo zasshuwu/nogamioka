@@ -1,11 +1,8 @@
 import Head from "next/head";
 import { themeChange } from "theme-change";
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
 
 const IndexLayout = ({ children }: any) => {
-  const router = useRouter();
   const [dateTime, setDateTime] = useState("");
 
   useEffect(() => {
