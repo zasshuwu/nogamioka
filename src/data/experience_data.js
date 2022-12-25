@@ -47,7 +47,7 @@ const month = {
 
 export const experienceData = [
 	createExperience({
-		organization: "Nuance Communications + Microsoft",
+		organization: "Nuance + Microsoft",
 		link_ref: "https://nuance.com",
 		role: "Software Developer",
 		type: "Internship, Full-time",
@@ -58,7 +58,7 @@ export const experienceData = [
 		end_year: 2023,
 	}),
 	createExperience({
-		organization: "Genetec Inc.",
+		organization: "Genetec",
 		link_ref: "https://genetec.com",
 		role: "Software Developer",
 		team: "Software Configuration Management & Tools",
@@ -110,7 +110,7 @@ export const experienceData = [
 		skills: ['Asset Management', 'Incident Investigation', 'IAM', 'Bash', 'Linux', 'System Administration', 'Technical Support', 'OS', 'Powershell']
 	}),
 	createExperience({
-		organization: "Genetec Inc.",
+		organization: "Genetec",
 		link_ref: "https://genetec.com",
 		role: "IT Specialist",
 		type: "Part-time",
