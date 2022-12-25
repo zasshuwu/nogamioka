@@ -16,6 +16,14 @@ As an avid adopter of new cloud and networking technologies, I setup my home lab
 
 ## Professional Experience
 
+### Software Developer &mdash; Internship (1/2023 &mdash; 5/2023)
+
+[Nuance Communications | Microsoft, Montréal, QC.](https://nuance.com)
+
+> Healthcare AI solutions & services. Deep learning solutions in multiple industries.
+
+Details TBA
+
 ### Software Developer in SCMT/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
 
 [Genetec Inc., Saint-Laurent, QC.](https://genetec.com)

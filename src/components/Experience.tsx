@@ -32,6 +32,7 @@ const Entry = ({ entry }: EntryProps) => {
     <div className="my-4">
       <div className="flex flex-col flex-wrap sm:flex-row sm:items-center sm:space-x-4">
         <div className="font-bold">{entry.role}</div>
+        <div className="font-light">{entry.type}</div>
         <div className="text-sm text-primary">
           {entry.start_month}, {entry.start_year} &mdash;{" "}
           {entry.end_month == 0 && entry.end_year == 0
@@ -45,28 +46,29 @@ const Entry = ({ entry }: EntryProps) => {
       <div className="mt-2 text-sm">
         {entry.team == "" || entry.team == null ? null : entry.team + " Team"}
       </div>
-      <details className="text-sm">
-        <summary>Details</summary>
-        <ul>
-          {entry.description &&
-            entry.description.map((desc: string, index: number) => (
-              <li className="list-inside list-disc" key={index}>
-                {desc}
-              </li>
-            ))}
-        </ul>
-      </details>
-
-      <div className="mt-2 flex flex-wrap space-x-1">
-        {entry.skills && entry.skills.length !== 0 ? (
-          <>
+      {
+        entry.description.length > 1 ? 
+        <details className="text-sm">
+          <summary>Details</summary>
+          <ul>
+            {entry.description &&
+              entry.description.map((desc: string, index: number) => (
+                <li className="list-inside list-disc" key={index}>
+                  {desc}
+                </li>
+              ))}
+          </ul>
+        </details> : null
+      }
+      {
+        entry.skills.length > 1 ? <div className="mt-2 flex flex-wrap space-x-1">
             Skills:&nbsp;
             {entry.skills.map((skill: string, idx: number) => (
               <SkillPill key={idx} skill={skill}></SkillPill>
             ))}
-          </>
-        ) : null}
-      </div>
+      </div> : null
+      }
+      
     </div>
   );
 };
