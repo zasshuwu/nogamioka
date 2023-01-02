@@ -8,7 +8,7 @@ LogRocket.init("6m72da/homepage");
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
-      < Component {...pageProps} />;
+      < Component {...pageProps} />
       <Analytics></Analytics>
     </>
   )
