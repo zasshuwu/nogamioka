@@ -57,7 +57,7 @@ export const experienceData = [
 		start_year: 2023,
 		end_month: month[5],
 		end_year: 2023,
-		description: "TBA",
+		description: ["TBA"],
 		skills: ["TBA"]
 	}),
 	createExperience({
