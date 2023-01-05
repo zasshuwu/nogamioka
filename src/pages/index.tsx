@@ -21,9 +21,10 @@ const Index: NextPage = () => {
     }
   };
 
-  const fetcher = (url: any) => fetch(url).then((res) => res.json());
+  const fetchSongMetadata = (url: string) => fetch(url).then((res) => res.json());
 
-  const { data, error } = useSWR("/api/spotify", fetcher);
+  const { data, error } = useSWR("/api/spotify", fetchSongMetadata);
+
 
   if (error) {
     console.log(error);

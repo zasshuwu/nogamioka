@@ -74,36 +74,38 @@ const HomeLayout = ({
             Command: <span className="kbd kbd-xs">CTRL / ⌘</span> +{" "}
             <span className="kbd kbd-xs">K</span>
           </div>
-          <div className="dropdown-end dropdown">
-            <label tabIndex={0} className="badge-accent badge m-1">
-              Menu
-            </label>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
-            >
-              <li>
-                <button onClick={() => handleSnapAbout()}>About</button>
-              </li>
-              <li>
-                <button onClick={() => handleSnapContact()}>Contact</button>
-              </li>
-              <li>
-                <button onClick={() => handleSnapExperience()}>
-                  Experience
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleSnapProjects()}>Projects</button>
-              </li>
-              <li>
-                <button onClick={() => handleSnapResume()}>Resume</button>
-              </li>
-              <li>
-                <button onClick={() => router.push("/uses")}>Uses</button>
-              </li>
-            </ul>
-          </div>
+          {router.pathname == "/uses" ? null : (
+            <div className="dropdown-end dropdown">
+              <label tabIndex={0} className="badge-accent badge m-1">
+                Menu
+              </label>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
+              >
+                <li>
+                  <button onClick={() => handleSnapAbout()}>About</button>
+                </li>
+                <li>
+                  <button onClick={() => handleSnapContact()}>Contact</button>
+                </li>
+                <li>
+                  <button onClick={() => handleSnapExperience()}>
+                    Experience
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleSnapProjects()}>Projects</button>
+                </li>
+                <li>
+                  <button onClick={() => handleSnapResume()}>Resume</button>
+                </li>
+                <li>
+                  <button onClick={() => router.push("/uses")}>Uses</button>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
 
@@ -124,7 +126,7 @@ const HomeLayout = ({
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default HomeLayout

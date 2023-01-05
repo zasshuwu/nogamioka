@@ -14,7 +14,7 @@
     "draggable": "^4.2.0",
     "kbar": "^0.1.0-beta.39",
     "logrocket": "^3.0.1",
-    "next": "13.0.2",
+    "next": "^13.1.1",
     "nth-check": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "18.2.0",

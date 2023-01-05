@@ -9,6 +9,11 @@
 const config = {
   reactStrictMode: true,
   swcMinify: true,
+  // modularizeImports: {
+  //   'kbar': {
+  //     transform: 'kbar/{{member}}'
+  //   }
+  // },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
