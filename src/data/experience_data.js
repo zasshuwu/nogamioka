@@ -50,7 +50,7 @@ export const experienceData = [
 		organization: "Nuance + Microsoft",
 		link_ref: "https://nuance.com",
 		role: "Software Developer",
-		team: "Enterprise R&D",
+		team: "Core Technology R&D",
 		type: "Internship, Full-time",
 		location: "Montreal, Quebec, Canada",
 		start_month: month[1],
