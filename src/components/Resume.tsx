@@ -1,40 +1,55 @@
+import HomeLayout from "@/layouts/HomeLayout";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Resume() {
-  const [progressVal, updateProgressVal] = useState(0)
+  const [progressVal, updateProgressVal] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (progressVal < 100) {
-        const random = Math.floor(Math.random() * 2)
-        updateProgressVal(prevVal => (prevVal + random));
+        const random = Math.floor(Math.random() * 2);
+        updateProgressVal((prevVal) => prevVal + random);
       } else {
-        updateProgressVal(100)
+        updateProgressVal(100);
       }
     }, 5);
     return () => clearInterval(interval);
-  }, [progressVal])
+  }, [progressVal]);
 
   return (
     <>
       <div className="text-center">
         <h1 className="text-4xl">Resume/CV Download Module</h1>
-        <div className="flex justify-center items-center">
-          <progress className="mr-2 progress progress-secondary w-full transition-all ease-in-out" value={progressVal.toString()} max="100"></progress>
-          { progressVal }%
+        <div className="flex items-center justify-center">
+          <progress
+            className="progress progress-secondary mr-2 w-full transition-all ease-in-out"
+            value={progressVal.toString()}
+            max="100"
+          ></progress>
+          {progressVal}%
         </div>
         <div className="text-slate-400">
           <p>You can download my resume in the following formats below.</p>
-          <br/>
+          <br />
           <div className="flex items-center justify-center space-x-4 text-blue-500 underline underline-offset-2">
-            <Link className="btn" href="/anh-resume.md" download target="_blank">
+            <Link
+              className="btn"
+              href="/anh-resume.md"
+              download
+              target="_blank"
+            >
               .MD
             </Link>
             <Link className="btn" href="/anh-resume.pdf" target="_blank">
               {".PDF (in browser)"}
             </Link>
-            <Link className="btn" href="/anh-resume.pdf" download target="_blank">
+            <Link
+              className="btn"
+              href="/anh-resume.pdf"
+              download
+              target="_blank"
+            >
               {".PDF (download)"}
             </Link>
           </div>
@@ -44,4 +59,4 @@ export default function Resume() {
   );
 }
 
-Resume.displayName = "Resume"
+Resume.displayName = "Resume";

@@ -33,6 +33,7 @@ const Home: NextPage = () => {
 
   const [componentsToRender, setComponentsToRender] = useState<any>([
     <About key={0}></About>,
+    <Resume key={1}></Resume>,
   ]);
 
   const actions: any = [
