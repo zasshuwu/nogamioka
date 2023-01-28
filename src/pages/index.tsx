@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import IndexLayout from "@/layouts/IndexLayout";
 import { SpotifyBadge } from "@/components/SpotifyBadge";
 import useSWR from "swr";
+import Link from "next/link";
 
 const Index: NextPage = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -21,10 +22,10 @@ const Index: NextPage = () => {
     }
   };
 
-  const fetchSongMetadata = (url: string) => fetch(url).then((res) => res.json());
+  const fetchSongMetadata = (url: string) =>
+    fetch(url).then((res) => res.json());
 
   const { data, error } = useSWR("/api/spotify", fetchSongMetadata);
-
 
   if (error) {
     console.log(error);
@@ -74,6 +75,12 @@ const Index: NextPage = () => {
                 </form>
               </div>
             )}
+            <br />
+            <div className="flex w-full justify-center">
+              <Link className="link" href="/home">
+                Bypass
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-auto flex items-center space-x-2 sm:absolute sm:bottom-2 sm:left-2">
