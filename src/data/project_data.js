@@ -32,6 +32,13 @@ export const projectData = [
     github: "https://github.com/aaanh/my-photo-reel"
   }),
   createProject({
+    title: "NAG-DevOps/speed-hpc",
+    link_ref: "NAG-DevOps/speed-hpc",
+    description: ["Concordia University's HPC cluster.", "Develop Latex to HTML build pipeline for the documentation.", "Create battery-included devcontainer environment for authoring LaTeX.", "Create GitHub Actions pipeline for deploying the HTML docs."],
+    stack: "LaTeX, Docker, Github Actions, devcontainer, Makefile",
+    iframe: "https://nag-devops.github.io/speed-hpc/",
+  }),
+  createProject({
     title: "Technology Blog",
     description: ["All things DevOps, ML, and consumer technology."],
     stack: "Nextjs, Tailwindcss.",

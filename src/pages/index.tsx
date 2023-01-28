@@ -75,10 +75,13 @@ const Index: NextPage = () => {
                 </form>
               </div>
             )}
-            <br />
-            <div className="flex w-full justify-center">
+
+            <div className="mt-4 flex w-full flex-col justify-center">
               <Link className="link" href="/home">
                 Bypass
+              </Link>
+              <Link className="link" href="/resume">
+                Resume
               </Link>
             </div>
           </div>
