@@ -57,8 +57,8 @@ export const experienceData = [
 		start_year: 2023,
 		end_month: month[5],
 		end_year: 2023,
-		description: ["TBA"],
-		skills: ["TBA"]
+		description: ["Backend API development", "Microservices development"],
+		skills: ["k8s", "Docker", "Linux", "Git", "Azure DevOps", "IAM", "GitOps", "helm"]
 	}),
 	createExperience({
 		organization: "Genetec",
