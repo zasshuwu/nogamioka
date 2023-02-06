@@ -10,9 +10,9 @@ GitHub: <https://github.com/aaanh>
 
 ## Introduction
 
-I actively work on modern web applications, APIs, frameworks and machine learning research projects in natural language processing.
+I actively work on modern web applications, APIs, frameworks and machine learning research projects in natural language processing (NLP) and computer vision (CV).
 
-As an avid adopter of new cloud and networking technologies, I setup my home lab and cloud clusters on Linode, AWS, and manage orchestration via Ansible and k8s.
+In addition in my free time, I build scalable distributed compute clusters with monitoring using hypervisor and container technologies, most notably my homelab.
 
 ## Professional Experience
 
