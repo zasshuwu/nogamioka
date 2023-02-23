@@ -40,12 +40,12 @@ export const projectData = [
   }),
   createProject({
     title: "Technology Blog",
-    description: ["All things DevOps, ML, and consumer technology."],
+    description: ["All things DevOps, ML, IT, Cloud, and consumer technology."],
     stack: "Nextjs, Tailwindcss.",
-    iframe: "https://ml.aaanh.com",
+    iframe: "https://blog.aaanh.com",
     image: "",
-    link_ref: "https://ml.aaanh.com",
-    github: "https://github.com/aaanh/ml"
+    link_ref: "https://blog.aaanh.com",
+    github: "https://github.com/aaanh/blog"
   }),
   createProject({
     title: "Augmented Gist",
