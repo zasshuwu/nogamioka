@@ -3,7 +3,7 @@ import LogRocket from "logrocket";
 import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-LogRocket.init("6m72da/homepage");
+LogRocket.init(process.env.LOGROCKET_MONITORING || '');
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
