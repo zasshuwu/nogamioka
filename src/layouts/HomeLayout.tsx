@@ -32,7 +32,7 @@ const HomeLayout = ({
     const interval = setInterval(() => {
       setDateTime(new Date().toLocaleTimeString());
     }, 1000);
-    return () => clearInterval(interval)
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -127,6 +127,6 @@ const HomeLayout = ({
       </div>
     </div>
   );
-}
+};
 
-export default HomeLayout
+export default HomeLayout;

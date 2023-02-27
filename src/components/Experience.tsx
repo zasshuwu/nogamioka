@@ -46,8 +46,7 @@ const Entry = ({ entry }: EntryProps) => {
       <div className="mt-2 text-sm">
         {entry.team == "" || entry.team == null ? null : entry.team + " Team"}
       </div>
-      {
-        entry.description.length > 1 ? 
+      {entry.description.length > 1 ? (
         <details className="text-sm">
           <summary>Details</summary>
           <ul>
@@ -58,17 +57,16 @@ const Entry = ({ entry }: EntryProps) => {
                 </li>
               ))}
           </ul>
-        </details> : null
-      }
-      {
-        entry.skills.length > 1 ? <div className="mt-2 flex flex-wrap space-x-1">
-            Skills:&nbsp;
-            {entry.skills.map((skill: string, idx: number) => (
-              <SkillPill key={idx} skill={skill}></SkillPill>
-            ))}
-      </div> : null
-      }
-      
+        </details>
+      ) : null}
+      {entry.skills.length > 1 ? (
+        <div className="mt-2 flex flex-wrap space-x-1">
+          Skills:&nbsp;
+          {entry.skills.map((skill: string, idx: number) => (
+            <SkillPill key={idx} skill={skill}></SkillPill>
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 };
