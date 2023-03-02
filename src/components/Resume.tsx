@@ -32,9 +32,9 @@ export default function Resume() {
         <div className="text-slate-400">
           <p>You can download my resume in the following formats below.</p>
           <br />
-          <div className="flex flex-wrap items-center justify-center space-x-4 text-blue-500 underline underline-offset-2">
+          <div className="flex flex-wrap items-center justify-center text-blue-500 underline underline-offset-2">
             <Link
-              className="btn"
+              className="btn m-2"
               href="/anh-resume.md"
               download
               target="_blank"
@@ -45,7 +45,7 @@ export default function Resume() {
               {".PDF (in browser)"}
             </Link>
             <Link
-              className="btn"
+              className="btn m-2"
               href="/anh-resume.pdf"
               download
               target="_blank"
