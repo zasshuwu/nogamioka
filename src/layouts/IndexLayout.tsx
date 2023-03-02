@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { themeChange } from "theme-change";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const IndexLayout = ({ children }: any) => {
   const [dateTime, setDateTime] = useState("");
@@ -41,7 +42,17 @@ const IndexLayout = ({ children }: any) => {
           </div>
         </div>
         <div className="font-semibold text-info">{dateTime}</div>
-        <div className="hidden sm:block sm:w-72"></div>
+        <div className="hidden justify-end space-x-2 sm:flex sm:w-72">
+          {/* <div className="mt-4 flex w-full flex-col justify-center"> */}
+          <Link className="link" href="/home">
+            Bypass
+          </Link>
+          &nbsp;|
+          <Link className="link" href="/resume">
+            Resume
+          </Link>
+        </div>
+        {/* </div> */}
       </div>
       {children}
     </div>

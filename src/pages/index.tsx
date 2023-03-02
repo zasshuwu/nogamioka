@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import IndexLayout from "@/layouts/IndexLayout";
 import { SpotifyBadge } from "@/components/SpotifyBadge";
 import useSWR from "swr";
-import Link from "next/link";
 
 const Index: NextPage = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -75,23 +74,14 @@ const Index: NextPage = () => {
                 </form>
               </div>
             )}
-
-            <div className="mt-4 flex w-full flex-col justify-center">
-              <Link className="link" href="/home">
-                Bypass
-              </Link>
-              <Link className="link" href="/resume">
-                Resume
-              </Link>
-            </div>
           </div>
         </div>
         <div className="mt-auto flex items-center space-x-2 sm:absolute sm:bottom-2 sm:left-2">
           <span className="badge">Anh&apos;s Portfolio</span>
           <span>{"::"}</span>
-          <span className="badge">v420.69 RC</span>
+          <span className="badge">v420 LTS</span>
           <span>{"::"}</span>
-          <span className="badge">Crazy Chameleon</span>
+          <span className="badge">Lame Lizard</span>
         </div>
       </div>
     </IndexLayout>
