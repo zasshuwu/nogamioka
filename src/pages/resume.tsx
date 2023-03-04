@@ -13,10 +13,10 @@ const Resume: NextPage = () => {
         </h1>
         <div>
           <ul className="flex flex-col space-y-2">
-            <li>
+            <li title="No longer supported, to maintain information integrity.">
               <Link
-                className="btn"
-                href="/anh-resume.md"
+                className="btn-disabled btn"
+                href="/"
                 download
                 target="_blank"
               >
