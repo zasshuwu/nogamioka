@@ -171,18 +171,6 @@ export default function Uses() {
           </div>
           <div>
             <h2 className="my-4 text-3xl">Bonus II: Music</h2>
-            <iframe
-              allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-              height="450"
-              style={{
-                width: "100%",
-                maxWidth: "660px",
-                overflow: "hidden",
-                background: "transparent",
-              }}
-              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-              src="https://embed.music.apple.com/ca/playlist/j-song-that-slaps/pl.u-mJy8Z2BtDZAkp6"
-            ></iframe>
             <br />
             <iframe
               style={{ borderRadius: "12px", maxWidth: "660px" }}
