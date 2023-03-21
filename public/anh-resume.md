@@ -1,8 +1,8 @@
 # Anh Hoang Nguyen's Resume
 
-Website: <https://aaanh.ca>
+Website: <https://aaanh.com>
 
-Mail: <iam@hoanganh.dev>
+Mail: <anhnguyen@aaanh.com>
 
 Linkedin: <https://linkedin.com/in/aaanh>
 
@@ -24,6 +24,8 @@ In addition in my free time, I build scalable distributed compute clusters with 
 
 - Core Technology R&D
 - Develop backend API and microservices.
+- Consistently contribute features and implementations each sprint.
+- Apply DevSecOps and CI/CD best practices. 
 
 ### Software Developer in SCMT/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
 
@@ -94,6 +96,28 @@ In addition in my free time, I build scalable distributed compute clusters with 
 
 ## Notable Projects
 
+### GPT Web Client - <https://gpt-demo.aaanh.app>
+
+- A web client for the OpenAI GPT-4 API.
+- Built with Nextjs, Tailwind CSS, FluentUI.
+- Cloudflare for caching, edge CDN, and DNS.
+- Redis and Nextjs middleware for rate limiting.
+- Host on baremetal with Nginx reverse proxy and Cloudflare Zero Trust for OAuth SSO.
+
+### Personal Photo Reels – <https://photos.aaanh.ca>
+
+- My straightforward photo reel of urban and natural landscapes
+- Built with Nextjs, Tailwind CSS. Front-end and API hosted on Vercel. 
+- Asset storage and transformation API on Cloudinary. 
+- Cloudflare for caching, edge CDN, and DNS.
+
+### NAG-DevOps/speed-hpc - <https://github.com/NAG-DevOps/speed-hpc>
+
+- Concordia University's HPC cluster.
+- Develop Latex to HTML build pipeline for the documentation.
+- Create battery-included devcontainer environment for authoring LaTeX.
+- Create GitHub Actions pipeline for deploying the HTML docs.
+
 ### Portfolio Site – <https://aaanh.ca>
 
 - Built with Nextjs framework for Reactjs.
@@ -106,18 +130,6 @@ In addition in my free time, I build scalable distributed compute clusters with 
 - Built with Book.md framework running on Rust.
 - CI/CD with Github Actions.
 - Deployed on Vercel.
-
-### Personal Photo Reels – <https://photos.aaanh.ca>
-
-- My straightforward photo reel of urban and natural landscapes
-- Built with Nextjs, Tailwind CSS. Front-end and API hosted on Vercel. Asset storage and transformation API on Cloudinary. Cloudflare for caching, edge CDN, and DNS.
-
-### NAG-DevOps/speed-hpc - <https://github.com/NAG-DevOps/speed-hpc>
-
-- Concordia University's HPC cluster.
-- Develop Latex to HTML build pipeline for the documentation.
-- Create battery-included devcontainer environment for authoring LaTeX.
-- Create GitHub Actions pipeline for deploying the HTML docs.
 
 ### Development Blog – <https://ml.aaanh.com>
 
@@ -159,9 +171,3 @@ John Abbott College, Ste-Anne-de-Bellevue, QC.
 ## Awards
 
 - FRQNT Stipend Recipient, October 2020, for work in Inertial Sensing Lab under Prof. Larnder.
-
-## Other Interests
-
-- Music, cultural exchange, travelling.
-- Messing around with Awesome Selfhosted.
-- Gaming.
