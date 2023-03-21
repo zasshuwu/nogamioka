@@ -16,7 +16,7 @@ const About: React.FC = () => {
           </a>
         </p>
         <p>
-          * <span className="text-info">Status:</span> 📚 🎓 and 👀 internships.
+          * <span className="text-info">Status:</span> Building cool stuff 🛠
         </p>
         <p>
           * <span className="text-info">Alma mater:</span> Concordia University,
