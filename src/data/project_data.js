@@ -24,6 +24,14 @@ function createProject({
 
 export const projectData = [
   createProject({
+    title: "GPT Test Bench @AAANH Labs",
+    description: ["I play around with GPT models."],
+    stack: "Nextjs, Tailwindcss, DaisyUI, FluentUI, API, middleware, Vercel Edge, Infrastructures, Networking",
+    link_ref: "https://gpt-demo.aaanh.ca",
+    github: "https://github.com/aaanh/gpt-test-bench",
+    iframe: "https://gpt-demo.aaanh.app"
+  }),
+  createProject({
     title: "Photo Reel",
     description: ["My personal photo reel"],
     stack: "Nextjs, Tailwindcss, Cloudinary DAM + API, Cloudflare CDN",
