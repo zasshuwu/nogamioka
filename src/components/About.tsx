@@ -29,7 +29,7 @@ const About: React.FC = () => {
 
         <p>
           <span className="text-warning">Domains:</span>{" "}
-          {"hoanganh.{dev, tech}; aaanh.{app, ca, com}"}
+          {"hoanganh.dev; aaanh.{app, ca, com}"}
         </p>
       </div>
     </div>
