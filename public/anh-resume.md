@@ -20,12 +20,13 @@ In addition in my free time, I build scalable distributed compute clusters with 
 
 [Nuance Communications](https://nuance.com) + [Microsoft](https://microsoft.com), Montréal, QC.
 
-> Healthcare AI solutions & services. Deep learning solutions in multiple industries.
+> Healthcare and Conversational AI solutions & services. Deep learning solutions in multiple industries.
 
-- Core Technology R&D
-- Develop backend API and microservices.
+- Enterprise Core Technology R&D.
+- Develop extensive backend API and microservices platform.
+- Ship and deploy big-ticket items using Kubernetes and Helm.
 - Consistently contribute features and implementations each sprint.
-- Apply DevSecOps and CI/CD best practices. 
+- Apply DevSecOps and CI/CD best practices via tools like GitLab CI, Harness, Azure DevOps. 
 
 ### Software Developer in SCMT/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
 
@@ -47,7 +48,6 @@ In addition in my free time, I build scalable distributed compute clusters with 
 - My current project is to evaluate MLaaS platforms and develop an assessment framework.
 - Assist in researching practical applications of machine learning and deep learning models with current focus on explainable AI (XAI).
 - Replicate experiments to verify claims arising during the research of a topic.
-- Gather information from research literatures and extract meaningful points to aid in the research progress of the group.
 - Previously, I contributed by running and reporting NLP models for classification on non-Latin datasets, more specifically XLNet and bert.
 - Maintain and develop the group's website.
 
@@ -71,17 +71,12 @@ In addition in my free time, I build scalable distributed compute clusters with 
 - Investigate complicate issues regarding physical systems, networking, internal accounts, and access controls to resolve or to escalate to SysAdmins and NetAdmins.
 - Suggest insightful improvements for service desk work processes and cross-team communications.
 - Regularly check the teaching lab peripherals (i.e., computers, monitors, projectors), and troubleshoot the found issues.
-- Service the walk-in customer or in labs, and answering the phone call.
-- Utilize the ticketing system to offer efficient IT support.
 - Work in conjunction with full-time staff to ensure the functionality of computer labs.
-- Perform inventory for new purchases (computers and equipment) by the engineering faculty.
-- Undertake other job-related missions assigned by the manager of User Services.
 
 ### IT Support Specialist &mdash; Internship (8/2021 &mdash; 12/2021)
 
 [Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
 
-- Provide technical assistance and troubleshooting for users.
 - Perform infra and team workflow improvement tasks.
 - Test new hardware and software compatibility in the environment.
 - Manage hybrid AD and Endpoint, account credentials and permission groups.
@@ -89,10 +84,7 @@ In addition in my free time, I build scalable distributed compute clusters with 
 - Utilize PowerShell and bash scripting.
 - Manage cloud VMs and KVM/Hyper-V.
 - Extensive use of Jira ticketing system and contribute to internal wiki.
-- Handle IT phone calls.
-- Maintain asset inventory and specifications. Troubleshoot computer hardware issues.
 - Manage access request according to InfoSec policies.
-- Work usually encompasses OSI layers 5 to 7.
 
 ## Notable Projects
 
