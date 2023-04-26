@@ -116,7 +116,7 @@ const HomeLayout = ({
           <button
             key={idx}
             onClick={() => handleCloseSnapIn(idx)}
-            className="m-2 flex w-fit items-center justify-center rounded-lg bg-success px-2 text-sm text-black hover:text-error"
+            className="m-2 flex w-fit items-center justify-center rounded-lg bg-success px-2 text-sm text-black hover:text-neutral-100"
           >
             {idx + 1 + ": "} {component?.type?.displayName}{" "}
             <span className="mx-1 flex h-2 w-2 items-center justify-center rounded-full bg-stone-500/20 p-2 font-mono">

@@ -24,7 +24,7 @@ interface EntryProps {
 }
 
 const SkillPill = ({ skill }: SkillProps) => {
-  return <span className="badge-secondary badge m-1">{skill}</span>;
+  return <span className="badge-secondary badge m-1 text-black">{skill}</span>;
 };
 
 const Entry = ({ entry }: EntryProps) => {

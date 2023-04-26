@@ -34,6 +34,8 @@ const Home: NextPage = () => {
   const [componentsToRender, setComponentsToRender] = useState<any>([
     <About key={0}></About>,
     <Resume key={1}></Resume>,
+    <Experience key={2}></Experience>,
+    <Projects key={3}></Projects>,
   ]);
 
   const actions: any = [
