@@ -16,9 +16,9 @@ import {
 const setups = [
   { key: 0, url: "/setup/desk_2022.png", title: "Desktop" },
   { key: 1, url: "/setup/macbook.png", title: "Macbook" },
-  { key: 2, url: "/setup/dell-win.png", title: "Laptop 1" },
-  { key: 3, url: "/setup/dell-linux.png", title: "Laptop 2" },
-  { key: 4, url: "/setup/server_2022.png", title: "Server" },
+  { key: 2, url: "/setup/framework.png", title: "Laptop 1" },
+  { key: 3, url: "/setup/dell-win.png", title: "Laptop 2" },
+  { key: 4, url: "/setup/server.png", title: "Server" },
 ];
 
 function HardwareTabs({ showSetup, setShowSetup }: any) {
@@ -174,7 +174,7 @@ export default function Uses() {
             <br />
             <iframe
               style={{ borderRadius: "12px", maxWidth: "660px" }}
-              src="https://open.spotify.com/embed/playlist/3UtdvYQCE4IxF8LHAMzCkk?utm_source=generator"
+              src="https://open.spotify.com/embed/playlist/5XJEw4sV8twrY2nvrpjIJt?utm_source=generator"
               width="100%"
               height="450"
               allowFullScreen={true}
