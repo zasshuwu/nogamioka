@@ -174,7 +174,7 @@ export default function Uses() {
             <br />
             <iframe
               style={{ borderRadius: "12px", maxWidth: "660px" }}
-              src="https://open.spotify.com/embed/playlist/5XJEw4sV8twrY2nvrpjIJt?utm_source=generator"
+              src="https://open.spotify.com/embed/playlist/6p1R5pLVlAvxr5gn0ixUHU?utm_source=generator"
               width="100%"
               height="450"
               allowFullScreen={true}
