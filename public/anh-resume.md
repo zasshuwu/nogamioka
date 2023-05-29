@@ -69,13 +69,18 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 ## Notable Projects
 
 - GPT Web Client - <https://gpt-demo.aaanh.app>
+- Portfolio Site – <https://aaanh.ca>
+- Script Convenience Store – <https://aaanh.app>
 - Personal Photo Reels – <https://photos.aaanh.ca>
 - NAG-DevOps/speed-hpc - <https://github.com/NAG-DevOps/speed-hpc>
-- Script Convenience Store – <https://aaanh.app>
-- Portfolio Site – <https://aaanh.ca>
 - Development Blog – <https://ml.aaanh.com>
 - Personal URL Shortener - <https://s.aaanh.ca>
 - Data Object Parse and Meaningful Graph Traversal – <https://github.com/aaanh/meaningful-graph-traversal.git>
+
+## Volunteering
+
+- VP Technology @ [Gina Cody School Entrepreneurship Society](https://gcesconcordia.com) (2023 &mdash; 2024)
+- Photographer @ [HackConcordia](https://hackconcordia.io) (ConUHack VII, 2023)
 
 ## Education
 
