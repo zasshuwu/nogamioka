@@ -1,5 +1,5 @@
 import HomeLayout from "@/layouts/HomeLayout";
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import Link from "next/link";
 
 const Resume: NextPage = () => {

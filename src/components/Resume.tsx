@@ -1,4 +1,3 @@
-import HomeLayout from "@/layouts/HomeLayout";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -23,11 +22,7 @@ export default function Resume() {
         <h1 className="text-4xl">Resume/CV Download Module</h1>
         <div className="flex items-center justify-center">
           <progress
-<<<<<<< Updated upstream
-            className="progress progress-secondary mr-2 w-full transition-all ease-in-out -z-10"
-=======
             className="progress-secondary progress mr-2 w-full transition-all ease-in-out"
->>>>>>> Stashed changes
             value={progressVal.toString()}
             max="100"
           ></progress>
