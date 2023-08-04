@@ -38,6 +38,16 @@ const Resume: NextPage = () => {
                 {".PDF (download)"}
               </Link>
             </li>
+            <li>
+              <Link
+                className="btn"
+                href="/anh-resume.docx"
+                download
+                target="_blank"
+              >
+                {".DOCX (download)"}
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

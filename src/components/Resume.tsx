@@ -23,7 +23,11 @@ export default function Resume() {
         <h1 className="text-4xl">Resume/CV Download Module</h1>
         <div className="flex items-center justify-center">
           <progress
+<<<<<<< Updated upstream
             className="progress progress-secondary mr-2 w-full transition-all ease-in-out -z-10"
+=======
+            className="progress-secondary progress mr-2 w-full transition-all ease-in-out"
+>>>>>>> Stashed changes
             value={progressVal.toString()}
             max="100"
           ></progress>
@@ -51,6 +55,14 @@ export default function Resume() {
               target="_blank"
             >
               {".PDF (download)"}
+            </Link>
+            <Link
+              className="btn m-2"
+              href="/anh-resume.docx"
+              download
+              target="_blank"
+            >
+              {".DOCX (download)"}
             </Link>
           </div>
         </div>
