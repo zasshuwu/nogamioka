@@ -37,8 +37,7 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 
 > Digital twin simulations and custom supply chain solutions.
 
-- Architect, develop, and deploy distributed front-end application for managing simulation models.
-- Architect, develop, and deploy backend API for manipulating model database.
+- Architect, develop, and deploy distributed front-end application for managing simulation models and backend API for manipulating model database.
 - Stack: Python Django, React JavaScript/TypeScript, and others TBD.
 
 ### Software Developer in SCMT/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
@@ -78,12 +77,11 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 
 ## Notable Projects
 
-- GPT Web Client - <https://gpt-demo.aaanh.app>
 - Portfolio Site - <https://aaanh.ca>
+- GPT Web Client - <https://gpt-demo.aaanh.app>
 - Script Convenience Store - <https://aaanh.app>
-- Personal Photo Reels - <https://photos.aaanh.ca>
 - NAG-DevOps/speed-hpc - <https://github.com/NAG-DevOps/speed-hpc>
-- Development Blog - <https://ml.aaanh.com>
+- Personal Photo Reels - <https://photos.aaanh.ca>
 - Personal URL Shortener - <https://s.aaanh.ca>
 - Data Object Parse and Meaningful Graph Traversal - <https://github.com/aaanh/meaningful-graph-traversal.git>
 
@@ -96,13 +94,3 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 
 - Bachelor of Engineering (2020 &mdash; 2024) @ Concordia University, Montréal, QC.
 - DEC in Applied Sciences (2017 &mdash; 2020) @ John Abbott College, Ste-Anne-de-Bellevue, QC.
-
-## Skills
-
-- **Computer languages**: typescript/javascript, go, python, rust, c++, java, bash, PowerShell
-- **Specializations**: Full-stack development, DevSecOps, platform engineering, microservices.
-- **Environments**: Linux, macOS, Windows.
-- **Tools**: Docker, k8s, helm, terraform, ansible, Github Actions, Gitlab CI, Azure DevOps, Bing/Google, RTFM.
-- **Cloud Services**: Azure Cloud Platform, Google Cloud Platform, AWS.
-- **Natural languages**: Vietnamese, English, French, Japanese, German.
-- **Personal**: Professional manner, responsible, great analytical mindset, willing to learn, team player, empathetic.
