@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@vercel/analytics": "^0.1.6",
     "daisyui": "^2.42.1",
     "draggable": "^4.2.0",

@@ -1,5 +1,6 @@
 import { projectData } from "@/data/project_data";
 import Link from "next/link";
+import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaDocker } from "react-icons/fa";
 
@@ -40,9 +41,13 @@ export default function Projects() {
               ) : null}
             </h3>
             <br />
-            <p>{proj.description}</p>
+            <section className="prose">
+              <ul>
+                {proj.description.map((desc, index: number) => (<li key={index}>{desc}</li>))}
+              </ul>
+            </section>
             <br />
-            <p className="text-xs text-slate-500">Stack: {proj.stack}</p>
+            <p className="text-sm text-slate-500">Stack: {proj.stack}</p>
             <br />
             {proj.iframe != "" ? (
               <iframe

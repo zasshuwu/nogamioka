@@ -23,6 +23,7 @@ function createProject({
 }
 
 export const projectData = [
+
   createProject({
     title: "GPT Test Bench @AAANH Labs",
     description: ["I play around with GPT models."],
@@ -30,6 +31,14 @@ export const projectData = [
     link_ref: "https://gpt-demo.aaanh.ca",
     github: "https://github.com/aaanh/gpt-test-bench",
     iframe: "https://gpt-demo.aaanh.app"
+  }),
+  createProject({
+    title: "GCES Concordia Homepage",
+    description: ["Design and develop the website.", "Integrate dynamic CMS and content database", "Improve SEO", "Setup CI/CD pipeline"],
+    stack: "Nextjs 13+, Tailwindcss, DaisyUI, edge functions, supabase, sanity CMS, Cloudflare, Github Actions",
+    link_ref: "https://gcesconcordia.com",
+    github: "https://github.com/gcesconcordia/gcesconcordia.com",
+    iframe: "https://gcesconcordia.com"
   }),
   createProject({
     title: "Photo Reel",
