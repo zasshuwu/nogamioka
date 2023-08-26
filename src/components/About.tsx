@@ -24,7 +24,7 @@ const About: React.FC = () => {
         </p>
         <p>
           * <span className="text-info">Specializations:</span> Software
-          Development, DevOps/SRE, Systems Administration in Windows and Linux.
+          Development, DevSecOps, Cloud Computing, and Platform Engineering
         </p>
 
         <p>
