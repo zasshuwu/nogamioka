@@ -22,7 +22,7 @@ export default function Resume() {
         <h1 className="text-4xl">Resume/CV Download Module</h1>
         <div className="flex items-center justify-center">
           <progress
-            className="progress-secondary progress mr-2 w-full transition-all ease-in-out"
+            className="progress progress-secondary -z-10 mr-2 w-full transition-all ease-in-out"
             value={progressVal.toString()}
             max="100"
           ></progress>
