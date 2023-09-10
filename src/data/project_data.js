@@ -23,22 +23,28 @@ function createProject({
 }
 
 export const projectData = [
-
   createProject({
-    title: "GPT Test Bench @AAANH Labs",
+    title: "GPT Playground",
     description: ["I play around with GPT models."],
-    stack: "Nextjs, Tailwindcss, DaisyUI, FluentUI, API, middleware, Vercel Edge, Infrastructures, Networking",
-    link_ref: "https://gpt-demo.aaanh.ca",
-    github: "https://github.com/aaanh/gpt-test-bench",
-    iframe: "https://gpt-demo.aaanh.app"
+    stack:
+      "Nextjs, Tailwindcss, DaisyUI, FluentUI, API, middleware, Vercel Edge, Infrastructures, Networking",
+    link_ref: "https://gpt.aaanh.app",
+    github: "https://github.com/aaanh/gpt-playground",
+    iframe: "https://gpt.aaanh.app",
   }),
   createProject({
     title: "GCES Concordia Homepage",
-    description: ["Design and develop the website.", "Integrate dynamic CMS and content database", "Improve SEO", "Setup CI/CD pipeline"],
-    stack: "Nextjs 13+, Tailwindcss, DaisyUI, edge functions, supabase, sanity CMS, Cloudflare, Github Actions",
+    description: [
+      "Design and develop the website.",
+      "Integrate dynamic CMS and content database",
+      "Improve SEO",
+      "Setup CI/CD pipeline",
+    ],
+    stack:
+      "Nextjs 13+, Tailwindcss, DaisyUI, edge functions, supabase, sanity CMS, Cloudflare, Github Actions",
     link_ref: "https://gcesconcordia.com",
     github: "https://github.com/gcesconcordia/gcesconcordia.com",
-    iframe: "https://gcesconcordia.com"
+    iframe: "https://gcesconcordia.com",
   }),
   createProject({
     title: "Photo Reel",
@@ -95,9 +101,9 @@ export const projectData = [
       "Scripts that you used before but don't remember how to use. Full migration in progress.",
     ],
     stack: "Rust::mdbook, CI with GitHub Actions, CD with Vercel.",
-    iframe: "https://scripts.aaanh.com",
+    iframe: "https://script.aaanh.app",
     image: "",
-    link_ref: "https://scripts.aaanh.com",
+    link_ref: "https://script.aaanh.app",
     github: "https://github.com/aaanh/script-convenience-store",
   }),
   createProject({
