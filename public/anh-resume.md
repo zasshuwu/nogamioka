@@ -31,6 +31,15 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 - Implemented security enhancements for service-to-service communications across clusters.
 - Automated VM patching process with ansible and cronjobs.
 
+### Research Assistant in Software Development and Platform Engineering &mdash; Contract, Part-time (9/2023 &mdash; TBD)
+
+[CERC Next-Generation Cities](https://www.concordia.ca/research/chairs/smart-cities.html), Montréal, QC.
+
+> Smart, Sustainable and Resilient Communities and Cities.
+
+- Research and build information system platforms across software product lifecycle.
+- Develop Big Data operational pipelines, CI/CD solutions, and monitoring capabilities.
+
 ### Full-stack Developer &mdash; MITACS Internship (In progress, 2023-2024)
 
 [SimWell Inc.](https://simwell.io), Montréal, QC.
