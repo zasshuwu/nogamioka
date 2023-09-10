@@ -87,11 +87,11 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 ## Notable Projects
 
 - Portfolio Site - <https://aaanh.ca>
-- GPT Web Client - <https://gpt-demo.aaanh.app>
-- Script Convenience Store - <https://aaanh.app>
+- GPT Web Client - <https://gpt.aaanh.app>
+- Script Convenience Store - <https://scripts.aaanh.app>
 - NAG-DevOps/speed-hpc - <https://github.com/NAG-DevOps/speed-hpc>
-- Personal Photo Reels - <https://photos.aaanh.ca>
-- Personal URL Shortener - <https://s.aaanh.ca>
+- Personal Photo Reels - <https://photos.aaanh.com>
+- GCES Concordia - <https://gcesconcordia.com>
 - Data Object Parse and Meaningful Graph Traversal - <https://github.com/aaanh/meaningful-graph-traversal.git>
 
 ## Volunteering
