@@ -47,8 +47,8 @@ const month = {
 
 export const experienceData = [
   createExperience({
-    organization: "Nuance + Microsoft",
-    link_ref: "https://nuance.com",
+    organization: "Microsoft",
+    link_ref: "https://www.microsoft.com/en-us/industry/nuance",
     role: "Software Developer",
     team: "Core Technology R&D, Fabric",
     type: "Internship, Full-time",
@@ -63,23 +63,6 @@ export const experienceData = [
       "Cloud infrastructure management",
     ],
     skills: ["k8s", "Docker", "Linux", "Azure DevOps", "IAM", "GitOps", "helm"],
-  }),
-  createExperience({
-    organization: "CERC Smart Cities",
-    link_ref: "https://www.concordia.ca/research/chairs/smart-cities.html",
-    role: "Software Developer RA",
-    team: "Software",
-    type: "Contract, Part-time",
-    location: "Montreal, Quebec, Canada",
-    start_month: month[9],
-    start_year: 2023,
-    end_month: 0,
-    end_year: 0,
-    description: [
-      "Research and build information system platforms across software product lifecycle.",
-      "Develop Big Data operational pipelines, CI/CD solutions, and monitoring capabilities.",
-    ],
-    skills: ["Docker", "Linux", "GitOps", "Jenkins", "IAM", "python", "SQL"],
   }),
   createExperience({
     organization: "Genetec",
@@ -189,63 +172,4 @@ export const experienceData = [
       "Powershell",
     ],
   }),
-  // createExperience({
-  // 	organization: "Inertial Sensing Lab",
-  // 	link_ref: "https://islab.ca",
-  // 	role: "Full-Stack Web Developer, Systems Administrator",
-  // 	type: "Contract, On-call",
-  // 	location: "Montreal, Quebec, Canada",
-  // 	start_month: month[10],
-  // 	start_year: 2020,
-  // 	end_month: month[5],
-  // 	end_year: 2021,
-  // 	description: [
-  // 		"Responsible for building and maintaining the project website. The website is a hub for both internal and public communications. I decide and implement from the tech stacks and the UI/UX design to the web hosting, networking, and security. The site functions as a knowledge base, blog, archive, and file repository.",
-  // 	],
-  // }),
-  // createExperience({
-  // 	organization: "Inertial Sensing Lab",
-  // 	link_ref:
-  // 		"https://islab.ca/student-reports/nguyen_1700362_written_research_rep_submitted_on_2020-05-28_23h03m46s.pdf",
-  // 	role: "Student Researcher",
-  // 	type: "On-call",
-  // 	location: "Saint-Anne-de-Bellevue, Quebec, Canada",
-  // 	start_month: month[11],
-  // 	start_year: 2019,
-  // 	end_month: month[10],
-  // 	end_year: 2020,
-  // 	description: [
-  // 		"One semester working with inertia sensing devices. Worked on the software architect of the project. Project used Python for data processing and analysis with Tensorflow v1 for data inference and tkinter for building UI.",
-  // 	],
-  // }),
-  // createExperience({
-  // 	organization: "Mai Boat Service",
-  // 	link_ref: "https://maiboatservice.us",
-  // 	role: "Full-Stack Web Developer",
-  // 	type: "Contract",
-  // 	location: "Orlando, Florida, United States",
-  // 	start_month: month[5],
-  // 	start_year: 2017,
-  // 	end_month: month[5],
-  // 	end_year: 2021,
-  // 	description: [
-  // 		"The website is built using Nextjs. styled with Tailwindcss, hosted on Vercel, and DNS routed through Cloudflare with DDoS and bot protections.",
-  // 	],
-  // }),
-  // createExperience({
-  //   organization: "John Abbott College",
-  //   link_ref: "https://johnabbott.qc.ca",
-  //   role: "Tutor",
-  //   type: "Volunteer",
-  //   location: "Saint-Anne-de-Bellevue, Quebec, Canada",
-  //   start_month: month[1],
-  //   start_year: 2017,
-  //   end_month: month[5],
-  //   end_year: 2017,
-  //   description: [
-  //     "Tutored Macroeconomics.",
-  //     "My pedagogy approach was to have the students try problems first, then pointed out the errors, and guided their path to the final solution.",
-  //     "I facilitated multiple students achieve at least 70% on their midterms and finals. Among those, 2 went from below passing to passing the course.",
-  //   ],
-  // }),
 ];
