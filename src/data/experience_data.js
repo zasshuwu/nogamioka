@@ -153,7 +153,7 @@ export const experienceData = [
     organization: "Genetec",
     link_ref: "https://genetec.com",
     role: "IT Specialist",
-    type: "Part-time",
+    type: "Internship, Full-time",
     location: "Saint-Laurent, Québec, Canada",
     start_month: month[8],
     start_year: 2021,
