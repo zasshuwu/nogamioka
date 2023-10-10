@@ -31,15 +31,6 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 - Implemented security enhancements for service-to-service communications across clusters.
 - Automated VM patching process with ansible and cronjobs.
 
-### Full-stack Developer &mdash; MITACS Internship (In progress, 2023-2024)
-
-[SimWell Inc.](https://simwell.io), Montréal, QC.
-
-> Digital twin simulations and custom supply chain solutions.
-
-- Architect, develop, and deploy distributed front-end application for managing simulation models and backend API for manipulating model database.
-- Stack: Python Django, React JavaScript/TypeScript, and others TBD.
-
 ### Software Developer in SCMT/DevOps &mdash; Internship (5/2022 &mdash; 9/2022)
 
 > Hardware and software in physical security, access control, and unified security center.
