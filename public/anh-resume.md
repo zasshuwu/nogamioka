@@ -17,7 +17,7 @@
 
 ## Introduction
 
-I actively work on modern web applications, APIs, frameworks and machine learning research projects in natural language processing (NLP) and computer vision (CV).
+I actively work on full-stack web applications, micro-service architecture, API development and machine learning research projects in natural language processing (NLP).
 
 ## Professional Experience
 
@@ -35,7 +35,7 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 
 > Hardware and software in physical security, access control, and unified security center.
 
-[Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
+[Genetec Inc.](https://genetec.com), Saint-Laurent, QC.
 
 - Completed 2 projects involving migration to on-premise Docker container cluster.
 - Created and maintained software build/release pipelines for web app, native Windows, native Linux.
@@ -47,13 +47,13 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 - Evaluated MLaaS platforms, developed assessment framework, and contributed to research on explainable AI (XAI).
 - Replicated experiments, ran NLP models for classification on non-Latin datasets, and maintained group's website.
 
-### Full-Stack Developer &mdash; Contract (1/2021 &mdash; now)
+### Full-Stack Developer &mdash; Contract
 
-[Inertial Sensing Lab, Montreal, QC.](https://islab.ca)
+[Inertial Sensing Lab](https://islab.ca), Montreal, QC.
 
 - Built and maintained project website, including architecture, UI/UX design, web hosting, networking, security, and IAM.
 
-### IT Technician L2 &mdash; Part-time (3/2021 &mdash; now)
+### IT Technician L2 &mdash; Part-time (3/2021 &mdash; 12/2022)
 
 [Academic IT Services, Concordia University.](https://www.concordia.ca/ginacody/aits.html)
 
@@ -62,7 +62,7 @@ I actively work on modern web applications, APIs, frameworks and machine learnin
 
 ### IT Specialist &mdash; Internship (8/2021 &mdash; 12/2021)
 
-[Genetec Inc., Saint-Laurent, QC.](https://genetec.com)
+[Genetec Inc.](https://genetec.com), Saint-Laurent, QC.
 
 - Performed infra and workflow improvements, tested hardware/software compatibility, managed AD/Endpoint, and utilized PowerShell/bash scripting.
 
