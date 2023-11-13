@@ -70,7 +70,7 @@ export default function Index() {
                 <input
                   type="password"
                   placeholder="Try 'letmein'"
-                  className="bg-opacity-0 bg-black focus:outline-none"
+                  className="bg-opacity-0 bg-black focus:outline-none w-48"
                   value={password}
                   onChange={(e) => handlePasswordInput(e)}
                   tabIndex={showLogin ? 0 : -1}
