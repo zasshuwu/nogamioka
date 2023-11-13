@@ -1,19 +1,30 @@
-
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-  swcMinify: true,
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
   },
   images: {
-    domains: [
-      "photos.app.goo.gl",
-      "avatars.githubusercontent.com",
-      "raw.githubusercontent.com",
-      "i.scdn.co"
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "photos.app.goo.gl",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+      },
     ],
   },
 };
+
 export default config;

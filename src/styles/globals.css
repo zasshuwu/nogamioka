@@ -1,22 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;600;700&display=swap");
-
-body {
-  font-family: 'Segoe UI', Fira Sans, Inter, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen;
-}
-
-th,
-td,
-tr {
-  padding: 8pt;
-  border: solid 1px #bbbbbb88;
-}
-
-th {
-  background: #ccc;
-}
