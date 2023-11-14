@@ -5,3 +5,13 @@
 input[type="password"]::placeholder {
   font-size: larger;
 }
+
+.window::-webkit-scrollbar,
+.entry-card::-webkit-scrollbar {
+  display: none;
+}
+
+.window::-webkit-scrollbar,
+.entry-card::-webkit-scrollbar {
+  scrollbar-width: none;
+}
