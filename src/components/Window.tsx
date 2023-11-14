@@ -100,7 +100,7 @@ const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleClos
           </button>
         </div>
       </div>
-      <div className="overflow-scroll h-[90%]">{children}</div>
+      <div className="overflow-scroll window h-[90%]">{children}</div>
       <div
         style={{
           position: "absolute",
