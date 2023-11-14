@@ -13,7 +13,7 @@ export interface IWindow {
 const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleCloseWindow }: IWindow) => {
   const [isDragging, setIsDragging] = useState(false)
   const [isResizing, setIsResizing] = useState(false)
-  const [size, setSize] = useState({ width: windowTitle == "Intro" ? 500 * 2 : 500, height: windowTitle == "Intro" ? 500 * 1.5 : 500 })
+  const [size, setSize] = useState({ width: 800, height: 500 })
   const [position, setPosition] = useState({ x: 150 + (queuePosition ?? 0) * 25, y: 25 + (queuePosition ?? 0) * 25 })
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
   const isShow = true
