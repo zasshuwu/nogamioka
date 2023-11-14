@@ -81,7 +81,7 @@ const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleClos
         zIndex: zIndex
       }}
       className={
-        "overflow-scroll rounded-lg bg-black/70 backdrop-blur-xl window hidden sm:block"
+        "rounded-lg bg-black/50 backdrop-blur-xl window hidden sm:block"
       }
       onMouseDown={onMouseDownDrag}
     >
@@ -100,7 +100,7 @@ const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleClos
           </button>
         </div>
       </div>
-      <div style={{ overflow: "auto", padding: "10px" }}>{children}</div>
+      <div className="overflow-scroll h-[90%]">{children}</div>
       <div
         style={{
           position: "absolute",
@@ -115,12 +115,8 @@ const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleClos
     </div>
 
     {/* For sm and below screen sizes */}
-    <div className="sm:hidden overflow-scroll rounded-lg bg-black/70 backdrop-blur-xl window">
+    <div className="sm:hidden rounded-lg bg-black/60 backdrop-blur-xl window absolute top-0 bottom-0 left-0 right-0">
       <div
-        style={{
-          width: "100%",
-          cursor: "move",
-        }}
         className="flex h-8 items-center justify-between rounded-t-lg bg-sky-500 p-1 backdrop-blur-lg"
       >
         {Icon}
@@ -131,19 +127,7 @@ const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleClos
           </button>
         </div>
       </div>
-      <div style={{ overflow: "auto", padding: "10px" }}>{children}</div>
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          right: 0,
-          cursor: "nwse-resize",
-          width: "20px",
-          height: "20px",
-        }}
-        // className="rounded bg--900/80"
-        onMouseDown={onMouseDownResize}
-      />
+      <div className="p-4 overflow-scroll h-[92.5%]">{children}</div>
     </div>
   </>
 }

@@ -4,7 +4,7 @@ import { FaCamera, FaGithub, FaLinkedin, FaMailBulk, FaMicrosoft } from "react-i
 const Intro = () => {
   const year = new Date().getFullYear();
 
-  return <div className="prose prose-lg dark:prose-invert mx-auto my-4">
+  return <div className="prose prose-lg dark:prose-invert mx-auto my-4 h-full">
     <h1>{"My name is Anh H Nguyen,"}</h1>
     <p>{`or just simply "Anh". I am a struggling engineering student by day and powerhouse of a dev by night.`}</p>
     <div className="flex items-center justify-center">
