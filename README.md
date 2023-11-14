@@ -1,5 +1,7 @@
 # <https://aaanh.com>
 
+⚠️ ARCHIVE MODE, designated as v3, latest production iteration is v4 (master branch).
+
 Project is completed, in production, and continuously integrated.
 
 ## Stacks (latest iteration)
