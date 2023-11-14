@@ -6,6 +6,7 @@ import Window, { type IWindow } from "~/components/Window";
 import { AiOutlineInfo } from "react-icons/ai";
 
 import Intro from "~/components/Intro";
+import LoadingScreen from "~/components/Loading";
 
 
 export default function Home() {

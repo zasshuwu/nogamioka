@@ -56,7 +56,7 @@ export default function Index() {
           <p className="md:text-4xl text-2xl">{dateString}</p>
         </div>
         <div className={`absolute bottom-28 flex flex-col items-center justify-center space-y-2`}>
-          <div className={`flex flex-col items-center transition-all duration-300 ease-in-out ${showLogin ? 'translate-y-[-12px]' : 'translate-y-[6px]'}`}>
+          <div className={`hover:bg-white/20 p-2 hover:backdrop-blur rounded-xl flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${showLogin ? 'translate-y-[-12px]' : 'translate-y-[6px]'}`}>
             <button onClick={() => setShowLogin((old) => !old)} className="relative h-32 w-32 rounded-full border">
               <Image className="object-contain rounded-full p-1" src="https://avatars.githubusercontent.com/u/37283437?v=4" fill={true} alt="Profile picture"></Image>
             </button>
