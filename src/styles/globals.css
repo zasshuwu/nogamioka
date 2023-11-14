@@ -15,3 +15,13 @@ input[type="password"]::placeholder {
 .entry-card::-webkit-scrollbar {
   scrollbar-width: none;
 }
+
+progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  border: solid 2px;
+}
+progress::-webkit-progress-value {
+  background-color: skyblue;
+  border-radius: 1rem;
+}

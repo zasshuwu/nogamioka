@@ -22,7 +22,7 @@ export default function Resume() {
         <h1 className="text-4xl">Resume/CV Download Module</h1>
         <div className="flex items-center justify-center">
           <progress
-            className="progress progress-secondary -z-10 mr-2 w-full transition-all ease-in-out"
+            className="-z-10 mr-2 w-full transition-all ease-in-out"
             value={progressVal.toString()}
             max="100"
           ></progress>
@@ -31,20 +31,20 @@ export default function Resume() {
         <div className="text-slate-400">
           <p>You can download my resume in the following formats below.</p>
           <br />
-          <div className="flex flex-wrap items-center justify-center text-blue-500 underline underline-offset-2">
+          <div className="flex flex-wrap items-center justify-center text-white text-lg">
             <Link
-              className="btn m-2"
+              className="border p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
               href="/anh-resume.md"
               download
               target="_blank"
             >
               .MD
             </Link>
-            <Link className="btn" href="/anh-resume.pdf" target="_blank">
+            <Link className="border p-2 rounded-lg hover:bg-white/10 transition-all ease-in-out" href="/anh-resume.pdf" target="_blank">
               {".PDF (in browser)"}
             </Link>
             <Link
-              className="btn m-2"
+              className="border p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
               href="/anh-resume.pdf"
               download
               target="_blank"
@@ -52,7 +52,7 @@ export default function Resume() {
               {".PDF (download)"}
             </Link>
             <Link
-              className="btn m-2"
+              className="border p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
               href="/anh-resume.docx"
               download
               target="_blank"
