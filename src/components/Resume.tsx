@@ -32,14 +32,6 @@ export default function Resume() {
           <p>You can download my resume in the following formats below.</p>
           <br />
           <div className="flex flex-wrap items-center justify-center text-white text-lg">
-            <Link
-              className="border p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
-              href="/anh-resume.md"
-              download
-              target="_blank"
-            >
-              .MD
-            </Link>
             <Link className="border p-2 rounded-lg hover:bg-white/10 transition-all ease-in-out" href="/anh-resume.pdf" target="_blank">
               {".PDF (in browser)"}
             </Link>
