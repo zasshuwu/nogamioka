@@ -20,7 +20,7 @@ const Intro = () => {
       </ul>
     </div>
     <p>{`Ever since I got bitten by the radioactive coding bug in 2018, I have had my deft fingers on a lot of pies that are in production on both the frontend, the backend, and the middle-end (a.k.a. middleware).`}</p>
-    <p>{`I spend the rest of my unallocated time doing homework (duh!), reading technical books (e.g., the System Design Interview), discovering new technology stacks through my homelab that has a 3-node kubernetes cluster, enjoying a "relaxing" time gaming with friends, and on (un)healthy amounts of sleep.`}</p>
+    <p>{`I spend the rest of my unallocated time doing homework (duh!), reading technical books (e.g., the System Design Interview), discovering new technology stacks through my homelab that has a 3-node kubernetes cluster, enjoying a "relaxing" time gaming with friends, and collaborating with colleagues and friends on innovative projects.`}</p>
     <blockquote>{`- Anh, circa ${year}`}</blockquote>
   </div>
 }
