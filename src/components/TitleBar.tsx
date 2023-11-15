@@ -36,7 +36,7 @@ function TitleBar(props: TitleBarProps) {
     <section className="font-mono w-48 text-end flex justify-end">
       <Link className={`px-2 py-1 mr-2 dark:hover:bg-white/30 dark:bg-white/10 transition-all ease-in-out duration-300 rounded`} href="/home"><BsHouseExclamation></BsHouseExclamation></Link>
       <Link className={`px-2 py-1 mr-2 dark:hover:bg-white/30 dark:bg-white/10 transition-all ease-in-out duration-300 rounded`} href="/uses"><BsWrench></BsWrench></Link>
-      <span className="w-24 text-end flex justify-center">{dateTime == "" ? <div className="relative h-6 w-6">
+      <span className="w-28 text-end flex justify-center">{dateTime == "" ? <div className="relative h-6 w-6">
         <Image fill={true} src="/logos/aaanh.png" alt="Loading..." className="motion-safe:animate-spin animate-ping h-20 w-20 object-contain" />
       </div> : dateTime}</span>
     </section>
