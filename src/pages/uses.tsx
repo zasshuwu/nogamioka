@@ -10,8 +10,8 @@ const Uses = () => {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <HomeLayout currentView="Uses">
-      <div className="flex justify-center">
-        <div className="prose bg-white dark:bg-neutral-900 z-10 p-4 dark:prose-invert">
+      <div className="flex justify-center my-8">
+        <div className="prose bg-white dark:bg-neutral-900 z-10 p-4 dark:prose-invert rounded-lg">
           <h1>/uses</h1>
           <h2>Hardware Capabilities</h2>
           <h3>Strike Group, Amphibious Assault, and Unconventional Warfare</h3>

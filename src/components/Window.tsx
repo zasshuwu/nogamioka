@@ -81,7 +81,7 @@ const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleClos
         zIndex: zIndex
       }}
       className={
-        "rounded-lg bg-black/50 backdrop-blur-xl window hidden sm:block"
+        "rounded-lg dark:bg-black/60 bg-white/40 backdrop-blur-xl window hidden sm:block"
       }
       onMouseDown={onMouseDownDrag}
     >
@@ -115,7 +115,7 @@ const Window = ({ children, windowTitle, queuePosition, Icon, zIndex, handleClos
     </div>
 
     {/* For sm and below screen sizes */}
-    <div className="sm:hidden rounded-lg bg-black/60 backdrop-blur-xl window absolute top-0 bottom-0 left-0 right-0">
+    <div className="sm:hidden rounded-lg dark:bg-black/60 bg-white/40 backdrop-blur-xl window absolute top-0 bottom-0 left-0 right-0">
       <div
         className="flex h-8 items-center justify-between rounded-t-lg bg-sky-500 p-1 backdrop-blur-lg"
       >

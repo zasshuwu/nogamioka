@@ -30,7 +30,7 @@ const EntryCard = (props: EntryProps) => {
     setIsFlip((prev) => !prev)
   }
 
-  return <div className="h-48 w-80 bg-neutral-800 rounded-md m-2 flex flex-col p-2 relative overflow-scroll entry-card">
+  return <div className="h-48 w-80 dark:bg-neutral-800 border-black border dark:border-none rounded-md m-2 flex flex-col p-2 relative overflow-scroll entry-card">
     {!isFlip ? <><a href={props.link_ref} className='relative h-16 w-32'>
       <Image className='object-contain bg-transparent transition-all ease-in-out px-2 rounded hover:bg-black/20' src={`/logos/${props.organization}.png`} fill={true} alt={props.organization}></Image>
     </a>
@@ -42,7 +42,7 @@ const EntryCard = (props: EntryProps) => {
       <p><span className='text-sky-500'>{props.team}</span></p>
       <ul className='list-disc list-inside'>{props.description.map((d: string, idx: number) => <li key={idx}>{d}</li>)}</ul>
     </div>}
-    <button onClick={handleFlip} className='absolute bottom-2 right-2 rounded-full border h-6 w-6 flex justify-center items-center text-center hover:bg-white/20 hover:cursor-pointer transition-all ease-in-out duration-300'>&rarr;</button>
+    <button onClick={handleFlip} className='absolute bottom-2 right-2 rounded-full border h-6 w-6 flex justify-center items-center text-center hover:dark:bg-sky-500/20 hover:cursor-pointer transition-all ease-in-out duration-300 border-black dark:border-white hover:bg-sky-500/20'>&rarr;</button>
   </div>
 }
 

@@ -28,15 +28,15 @@ export default function Resume() {
           ></progress>
           {progressVal}%
         </div>
-        <div className="text-slate-400">
+        <div className="dark:text-slate-400 text-slate-800">
           <p>You can download my resume in the following formats below.</p>
           <br />
-          <div className="flex flex-wrap items-center justify-center text-white text-lg">
-            <Link className="border p-2 rounded-lg hover:bg-white/10 transition-all ease-in-out" href="/anh-resume.pdf" target="_blank">
+          <div className="flex flex-wrap items-center justify-center dark:text-white text-black text-lg">
+            <Link className="border border-black dark:border-white p-2 rounded-lg hover:bg-white/10 transition-all ease-in-out" href="/anh-resume.pdf" target="_blank">
               {".PDF (in browser)"}
             </Link>
             <Link
-              className="border p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
+              className="border border-black dark:border-white p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
               href="/anh-resume.pdf"
               download
               target="_blank"
@@ -44,7 +44,7 @@ export default function Resume() {
               {".PDF (download)"}
             </Link>
             <Link
-              className="border p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
+              className="border border-black dark:border-white p-2 rounded-lg hover:bg-white/10 m-2 transition-all ease-in-out"
               href="/anh-resume.docx"
               download
               target="_blank"

@@ -21,11 +21,11 @@ interface IViewExplorer {
 const File = ({ windowTitle, handleOpenView, }: { windowTitle: string, handleOpenView: (view: string) => void }) => {
 
 
-  return <div onClick={() => handleOpenView(windowTitle)} className="flex flex-col transition-all ease-in-out duration-300 rounded-lg hover:cursor-pointer items-center w-fit h-fit hover:bg-black/30 hover:backdrop-blur-md bg-transparent p-2">
+  return <div onClick={() => handleOpenView(windowTitle)} className="flex flex-col transition-all ease-in-out duration-300 rounded-lg hover:cursor-pointer items-center w-fit h-fit hover:dark:bg-black/30 hover:bg-white/30 hover:backdrop-blur-md bg-transparent p-2">
     <div className="w-14 h-10 bg-sky-500 rounded-md shadow-lg">
     </div>
     <div className="">
-      <span className="[text-shadow:_1px_2px_5px_var(--tw-shadow-color)] shadow-black">
+      <span className="[text-shadow:_1px_2px_5px_var(--tw-shadow-color)] dark:shadow-black">
         {windowTitle}
       </span>
     </div>

@@ -49,15 +49,15 @@ export default function Index() {
       </Head>
       {dateTime == "" ? <LoadingScreen></LoadingScreen> : <IndexLayout>
         <div className={`relative h-screen w-screen`}>
-          <Image className={`transition-all ease-in-out duration-300 object-cover opacity-40 ${showLogin ? "blur-lg" : ""}`} src="/wallpaper.jpg" fill={true} alt="wallpaper"></Image>
+          <Image className={`transition-all ease-in-out duration-300 object-cover opacity-60 dark:opacity-40 ${showLogin ? "blur-lg" : ""}`} src="/wallpaper.jpg" fill={true} alt="wallpaper"></Image>
         </div>
-        <div className="absolute top-12 md:text-8xl text-6xl text-center flex flex-col justify-center items-center transition-all ease-in-out">
+        <div className="absolute top-12 md:text-8xl text-6xl text-center flex flex-col justify-center items-center transition-all ease-in-out space-y-4">
           <p>{dateTime}</p>
           <p className="md:text-4xl text-2xl">{dateString}</p>
         </div>
         <div className={`absolute bottom-28 flex flex-col items-center justify-center space-y-2`}>
           <div className={`hover:bg-white/20 p-2 hover:backdrop-blur rounded-xl flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${showLogin ? 'translate-y-[-12px]' : 'translate-y-[6px]'}`}>
-            <button onClick={() => setShowLogin((old) => !old)} className="relative h-32 w-32 rounded-full border">
+            <button onClick={() => setShowLogin((old) => !old)} className="relative h-32 w-32 rounded-full border-2 border-neutral-500">
               <Image className="object-contain rounded-full p-1" src="https://avatars.githubusercontent.com/u/37283437?v=4" fill={true} alt="Profile picture"></Image>
             </button>
             <div>

@@ -10,7 +10,7 @@ export interface IProjects {
 }
 
 const ProjectCard = ({ title, description, link_ref, screenshot }: IProjects) => {
-  return <div className="flex m-2 rounded p-4 bg-slate-800 flex-col">
+  return <div className="flex m-2 rounded p-4 bg-slate-800 text-neutral-200 flex-col">
     <p><a className="underline underline-offset-4 text-xl hover:text-sky-500" href={link_ref}>{title}</a></p>
     <p>{description}</p>
     {screenshot !== "" ? <div className="relative h-72 w-96">
