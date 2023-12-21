@@ -2,6 +2,13 @@ import { type IProjects } from "~/components/Projects";
 
 export const project_data: IProjects[] = [
   {
+    title: "Reroll.ing",
+    description: "Full-stack gacha (FFO) simulator",
+    link_ref: "https://reroll.ing",
+    screenshot: "",
+    stack: "Nextjs (Frontend), Golang Gin (API server), Python (DataOps), SQLite3, Nginx (Reverse proxy), Cloudflare (DNS, network cache)"
+  },
+  {
     title: "GPT Playground",
     description: "Proof of Concept for chat interface connected to the OpenAI API.",
     link_ref: "https://gpt.aaanh.app",
