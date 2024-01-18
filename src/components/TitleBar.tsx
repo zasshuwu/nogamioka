@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BsHouseExclamation, BsWrench } from "react-icons/bs";
 import sf_pro_display from "~/fonts/sf_pro";
-import LoadingScreen from "./Loading";
 
 export const Logo = () => {
   return <Link href="/" className="">

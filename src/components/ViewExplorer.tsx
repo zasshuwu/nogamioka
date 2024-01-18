@@ -16,8 +16,6 @@ interface IViewExplorer {
   handleCloseWindow: (view: string) => void
 }
 
-
-
 const File = ({ windowTitle, handleOpenView, }: { windowTitle: string, handleOpenView: (view: string) => void }) => {
 
 

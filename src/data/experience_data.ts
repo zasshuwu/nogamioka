@@ -17,6 +17,22 @@ const month = {
 
 export const experienceData: EntryProps[] = [
   {
+    organization: "SimWell",
+    link_ref: "https://simwell.io",
+    role: "Simulation Software Consultant",
+    // team: "Core Technology R&D, Fabric",
+    type: "Contract, Part-time",
+    location: "Laval, Quebec, Canada",
+    start_month: month[1],
+    start_year: 2024,
+    end_month: month[5],
+    end_year: 2024,
+    description: [
+      "Distributed microservices and frontend development",
+    ],
+    skills: [""],
+  },
+  {
     organization: "Microsoft",
     link_ref: "https://www.microsoft.com/en-us/industry/nuance",
     role: "Software Developer",
