@@ -9,6 +9,13 @@ export const project_data: IProjects[] = [
     stack: "Nextjs (Frontend), Golang Gin (API server), Python (DataOps), SQLite3, Nginx (Reverse proxy), Cloudflare (DNS, network cache)"
   },
   {
+    title: "Personal URL Shortener",
+    description: "Lightweight service worker for shortening and redirecting URLs",
+    link_ref: "https://anh.to",
+    screenshot: "",
+    stack: "Cloudflare Workers, Cloudflare KV store, good 'ol JavaScript"
+  },
+  {
     title: "GPT Playground",
     description: "Proof of Concept for chat interface connected to the OpenAI API.",
     link_ref: "https://gpt.aaanh.app",
