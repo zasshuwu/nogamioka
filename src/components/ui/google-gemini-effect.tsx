@@ -24,17 +24,17 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <div className={cn("sticky top-40", className)}>
-      <p className="bg-gradient-to-b from-neutral-100 to-neutral-300 bg-clip-text pb-4 text-center text-lg font-normal text-transparent md:text-7xl">
+      <p className="bg-gradient-to-b from-neutral-100 to-neutral-300 bg-clip-text pb-4 text-center text-2xl font-normal text-transparent md:text-7xl">
         {title ?? `Build with Aceternity UI`}
       </p>
-      <p className="mx-auto mt-4 max-w-lg text-center text-xs font-normal text-neutral-400 md:text-xl">
+      <p className="text-md mx-auto mt-4 max-w-lg text-center font-normal text-neutral-400 md:text-xl">
         {description ??
           `Scroll this component and see the bottom SVG come to life wow this
         works!`}
       </p>
       <div className="bg-red-transparent absolute -top-60 flex  h-[890px] w-full items-center justify-center md:-top-40 ">
         <Link
-          href="#"
+          href="#services"
           className="z-30 mx-auto mt-8 w-fit rounded-full bg-white px-2 py-1 text-xs font-bold text-black md:mt-24 md:px-4  md:py-2 md:text-base"
         >
           View Services

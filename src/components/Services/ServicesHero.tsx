@@ -23,7 +23,7 @@ export default function ServicesHero() {
     >
       <GoogleGeminiEffect
         title="AAANH Software Development"
-        description="I built full-stack software systems that just works."
+        description="I build full-stack software systems that just works."
         pathLengths={[
           pathLengthFirst,
           pathLengthSecond,
