@@ -1,5 +1,6 @@
 import { type IWindow } from "./Window"
 
+import Link from"next/link"
 import { AiFillInfoCircle, AiFillProject, AiFillQuestionCircle } from "react-icons/ai";
 import { BsBriefcaseFill } from "react-icons/bs"
 import { FaScroll } from "react-icons/fa"
@@ -81,6 +82,15 @@ const ViewExplorer = ({ setCurrentView, addWindow, handleCloseWindow }: IViewExp
   }
 
   return <div className="flex flex-col space-y-4 items-center absolute left-4">
+    <Link href="/services" className="flex flex-col transition-all ease-in-out duration-300 rounded-lg hover:cursor-pointer items-center w-fit h-fit hover:dark:bg-black/30 hover:bg-white/30 hover:backdrop-blur-md bg-transparent p-2">
+    <div className="w-14 h-10 bg-sky-500 rounded-md shadow-lg">
+    </div>
+    <div className="">
+      <span className="[text-shadow:_1px_2px_5px_var(--tw-shadow-color)] dark:shadow-black">
+        Services
+      </span>
+    </div>
+  </Link>
     {views.map((v: IWindow, idx: number) => <File handleOpenView={handleOpenView} key={idx} windowTitle={v.windowTitle}></File>)}
   </div>
 
