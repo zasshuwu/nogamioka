@@ -9,6 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@azure/msal-browser": "^3.10.0",
+    "@azure/msal-react": "^2.0.12",
     "@t3-oss/env-nextjs": "^0.7.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
