@@ -12,7 +12,7 @@ export const ProfileData = (props: {
   };
 }) => {
   return (
-    <div id="profile-div">
+    <div className="flex flex-col items-center">
       <p>
         <strong>First Name: </strong> {props.graphData.givenName}
       </p>
