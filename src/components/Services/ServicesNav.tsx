@@ -15,11 +15,10 @@ export default function ServicesNav() {
       <span className="text-white/80">
         {`/ `}
         <Link className="hover:underline" href="/home">
-          Home
+          home
         </Link>
         &nbsp;
-        {`/ `}
-        <Link className="capitalize hover:underline" href={`/${pathname}`}>
+        <Link className="lowercase hover:underline" href={`/${pathname}`}>
           {pathname}
         </Link>
       </span>

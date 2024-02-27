@@ -39,7 +39,7 @@ const ProfileContent = () => {
       {graphData ? (
         <ProfileData graphData={graphData} />
       ) : (
-        <>
+        <div className="flex flex-col items-center">
           <p>
             <strong>First Name: </strong>
           </p>
@@ -55,7 +55,7 @@ const ProfileContent = () => {
           <button className="my-2 bg-blue-500 p-1" onClick={RequestProfileData}>
             Request Profile Information
           </button>
-        </>
+        </div>
       )}
     </>
   );
@@ -128,7 +128,7 @@ const MainContent = () => {
   );
 };
 
-export default function Msazure() {
+export default function Sso() {
   const isAuthenticated = useIsAuthenticated();
 
   return (
