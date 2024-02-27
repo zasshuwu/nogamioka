@@ -7,7 +7,7 @@ import {
   AuthenticatedTemplate,
   UnauthenticatedTemplate,
 } from "@azure/msal-react";
-import { useState, type ReactNode } from "react";
+import { useState } from "react";
 import { ProfileData } from "~/components/msal/ProfileData";
 import ServiceLayout from "~/layouts/ServiceLayout";
 import { loginRequest } from "~/lib/authConfig";
