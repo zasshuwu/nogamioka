@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export default function ServicesNav() {
   const router = useRouter();
-  const pathname = router.pathname.substring(1);
+  const pathname = router.pathname.replace("/", "/ ");
 
   return (
     <nav className="flex items-center space-x-2 p-4">
@@ -18,7 +18,7 @@ export default function ServicesNav() {
           home
         </Link>
         &nbsp;
-        <Link className="lowercase hover:underline" href={`/${pathname}`}>
+        <Link className="lowercase hover:underline" href={`${router.pathname}`}>
           {pathname}
         </Link>
       </span>
