@@ -2,12 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {
-  GoogleLogin,
-  GoogleOAuthProvider,
-  googleLogout,
-  useGoogleLogin,
-} from "@react-oauth/google";
+import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import { useEffect, useState } from "react";
 import ServiceLayout from "~/layouts/ServiceLayout";
 
