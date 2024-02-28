@@ -116,13 +116,24 @@ const ViewExplorer = ({
         </div>
       </Link>
       <Link
-        href="/sso"
+        href="/sso/msft"
         className="flex h-fit w-fit flex-col items-center rounded-lg bg-transparent p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white/30 hover:backdrop-blur-md hover:dark:bg-black/30"
       >
         <div className="h-10 w-14 rounded-md bg-sky-500 shadow-lg"></div>
         <div className="">
           <span className="[text-shadow:_1px_2px_5px_var(--tw-shadow-color)] dark:shadow-black">
-            MSAL Test
+            MSFT SSO
+          </span>
+        </div>
+      </Link>
+      <Link
+        href="/sso/google"
+        className="flex h-fit w-fit flex-col items-center rounded-lg bg-transparent p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white/30 hover:backdrop-blur-md hover:dark:bg-black/30"
+      >
+        <div className="h-10 w-14 rounded-md bg-sky-500 shadow-lg"></div>
+        <div className="">
+          <span className="[text-shadow:_1px_2px_5px_var(--tw-shadow-color)] dark:shadow-black">
+            Google SSO
           </span>
         </div>
       </Link>
