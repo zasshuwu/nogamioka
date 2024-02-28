@@ -4,10 +4,12 @@ import { useRouter } from "next/router";
 
 export default function ServicesNav() {
   const router = useRouter();
-  const pathname = router.pathname.replace("/", "/ ");
+  const pathname = router.pathname.replaceAll("/", " / ");
+
+  console.log(pathname);
 
   return (
-    <nav className="flex items-center space-x-2 p-4">
+    <nav className="flex items-center space-x-2 border-b border-neutral-400 p-4 dark:border-neutral-800">
       <div className="flex items-center space-x-2">
         <Logo></Logo>
         <span>AAANH</span>
@@ -17,7 +19,6 @@ export default function ServicesNav() {
         <Link className="hover:underline" href="/home">
           home
         </Link>
-        &nbsp;
         <Link className="lowercase hover:underline" href={`${router.pathname}`}>
           {pathname}
         </Link>

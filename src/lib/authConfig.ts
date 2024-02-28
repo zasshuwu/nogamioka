@@ -17,7 +17,7 @@ export const msalConfig = {
     clientId: "***REMOVED***",
     authority:
       "***REMOVED***",
-    redirectUri: "https://ms.aaanh.com/sso",
+    redirectUri: "https://ms.aaanh.com/sso/msft",
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
