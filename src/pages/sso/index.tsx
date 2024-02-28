@@ -7,6 +7,7 @@ import {
   AuthenticatedTemplate,
   UnauthenticatedTemplate,
 } from "@azure/msal-react";
+import Image from "next/image";
 import { useState } from "react";
 import { ProfileData } from "~/components/msal/ProfileData";
 import ServiceLayout from "~/layouts/ServiceLayout";
@@ -33,25 +34,27 @@ const ProfileContent = () => {
 
   return (
     <>
-      <h5 className="card-title">
+      <h5 className="text-center text-2xl">
         Welcome, <span className="font-bold italic">{accounts[0]?.name}</span>
       </h5>
       {graphData ? (
         <ProfileData graphData={graphData} />
       ) : (
         <div className="flex flex-col items-center">
-          <p>
-            <strong>First Name: </strong>
-          </p>
-          <p>
-            <strong>Last Name: </strong>
-          </p>
-          <p>
-            <strong>Email: </strong>
-          </p>
-          <p>
-            <strong>Id: </strong>
-          </p>
+          <div className="">
+            <p>
+              <strong>First Name: </strong>
+            </p>
+            <p>
+              <strong>Last Name: </strong>
+            </p>
+            <p>
+              <strong>Email: </strong>
+            </p>
+            <p>
+              <strong>Id: </strong>
+            </p>
+          </div>
           <button className="my-2 bg-blue-500 p-1" onClick={RequestProfileData}>
             Request Profile Information
           </button>
@@ -78,10 +81,15 @@ function SignInButton() {
 
   return (
     <button
-      className="rounded bg-blue-500 p-1"
+      className="relative h-[41px] w-[215px] rounded p-1"
       onClick={() => handleSignIn("redirect")}
     >
-      Sign in
+      <Image
+        src="/msft-sso.png"
+        alt="Microsoft SSO"
+        fill={true}
+        className="object-contain"
+      ></Image>
     </button>
   );
 }
