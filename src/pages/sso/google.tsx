@@ -71,7 +71,9 @@ export default function GoogleSso() {
             <p>Email Address: {profile.email}</p>
             <br />
             <br />
-            <button onClick={logOut}>Log out</button>
+            <button className="rounded bg-red-500 p-1" onClick={logOut}>
+              Log out
+            </button>
           </div>
         ) : (
           <>
