@@ -96,7 +96,7 @@ const ViewExplorer = ({
   };
 
   return (
-    <div className="absolute left-4 flex flex-col items-center space-y-4">
+    <div className="absolute left-4 flex md:flex-col items-center space-y-4">
       {views.map((v: IWindow, idx: number) => (
         <File
           handleOpenView={handleOpenView}
@@ -117,7 +117,7 @@ const ViewExplorer = ({
       </Link>
       <Link
         href="/sso/msft"
-        className="flex h-fit w-fit md:flex-col items-center rounded-lg bg-transparent p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white/30 hover:backdrop-blur-md hover:dark:bg-black/30"
+        className="flex h-fit w-fit flex-col items-center rounded-lg bg-transparent p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white/30 hover:backdrop-blur-md hover:dark:bg-black/30"
       >
         <div className="h-10 w-14 rounded-md bg-sky-500 shadow-lg"></div>
         <div className="">
