@@ -96,7 +96,7 @@ const ViewExplorer = ({
   };
 
   return (
-    <div className="absolute left-4 flex md:flex-col items-center space-y-4">
+    <div className="absolute left-4 flex max-w-4xl flex-wrap items-center space-x-2 md:flex-col md:space-x-0 md:space-y-4">
       {views.map((v: IWindow, idx: number) => (
         <File
           handleOpenView={handleOpenView}
