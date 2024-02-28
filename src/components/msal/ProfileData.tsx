@@ -13,18 +13,22 @@ export const ProfileData = (props: {
 }) => {
   return (
     <div className="flex flex-col items-center">
-      <p>
-        <strong>First Name: </strong> {props.graphData.givenName}
-      </p>
-      <p>
-        <strong>Last Name: </strong> {props.graphData.surname}
-      </p>
-      <p>
-        <strong>Email: </strong> {props.graphData.userPrincipalName}
-      </p>
-      <p>
-        <strong>Id: </strong> {props.graphData.id.replace(/[^-]/g, "*")}
-      </p>
+      <div className="">
+        <p>
+          <strong>First Name: </strong> <code>{props.graphData.givenName}</code>
+        </p>
+        <p>
+          <strong>Last Name: </strong> <code>{props.graphData.surname}</code>
+        </p>
+        <p>
+          <strong>Email: </strong>{" "}
+          <code>{props.graphData.userPrincipalName}</code>
+        </p>
+        <p>
+          <strong>Id: </strong>{" "}
+          <code>{props.graphData.id.replace(/[^-]/g, "*")}</code>
+        </p>
+      </div>
     </div>
   );
 };
