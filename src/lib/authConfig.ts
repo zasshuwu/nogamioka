@@ -12,11 +12,13 @@ import { LogLevel } from "@azure/msal-browser";
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md
  */
 
+const clientId = process.env.MSFT_SSO_CLIENT_ID ?? "";
+const authority = process.env.MSFT_SSO_AUTHORITY ?? "";
+
 export const msalConfig = {
   auth: {
-    clientId: "509c2dda-fe28-40f0-83aa-33dfa789c50c",
-    authority:
-      "https://login.microsoftonline.com/9c89db13-4abb-467e-bd01-4b1b49dda27e",
+    clientId: clientId,
+    authority: `https://login.microsoftonline.com/${authority}`,
     redirectUri: "https://ms.aaanh.com/sso/msft",
   },
   cache: {

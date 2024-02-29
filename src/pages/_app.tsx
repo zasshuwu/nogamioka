@@ -5,17 +5,21 @@ import { type AppType } from "next/dist/shared/lib/utils";
 
 import "~/styles/globals.css";
 
-const config = {
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_SSO_CLIENT_ID ?? "";
+
+const MSFT_CLIENT_ID = process.env.MSFT_SSO_CLIENT_ID ?? "";
+
+const msalConfig = {
   auth: {
-    clientId: "509c2dda-fe28-40f0-83aa-33dfa789c50c",
+    clientId: MSFT_CLIENT_ID,
   },
 };
 
-const publicClientApplication = new PublicClientApplication(config);
+const publicClientApplication = new PublicClientApplication(msalConfig);
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <GoogleOAuthProvider clientId="879749396928-jp95jro4l9uif4mf77crv62sgk4la2on.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
       <MsalProvider instance={publicClientApplication}>
         <Component {...pageProps} />
       </MsalProvider>
