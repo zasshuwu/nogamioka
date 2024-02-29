@@ -5,9 +5,9 @@ import { type AppType } from "next/dist/shared/lib/utils";
 
 import "~/styles/globals.css";
 
-const GOOGLE_CLIENT_ID = process.env.GOOGLE_SSO_CLIENT_ID ?? "";
+const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_SSO_CLIENT_ID ?? "";
 
-const MSFT_CLIENT_ID = process.env.MSFT_SSO_CLIENT_ID ?? "";
+const MSFT_CLIENT_ID = process.env.NEXT_PUBLIC_MSFT_SSO_CLIENT_ID ?? "";
 
 const msalConfig = {
   auth: {

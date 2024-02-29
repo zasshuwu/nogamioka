@@ -12,8 +12,8 @@ import { LogLevel } from "@azure/msal-browser";
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md
  */
 
-const clientId = process.env.MSFT_SSO_CLIENT_ID ?? "";
-const authority = process.env.MSFT_SSO_AUTHORITY ?? "";
+const clientId = process.env.NEXT_PUBLIC_MSFT_SSO_CLIENT_ID ?? "";
+const authority = process.env.NEXT_PUBLIC_MSFT_SSO_AUTHORITY ?? "";
 
 export const msalConfig = {
   auth: {
