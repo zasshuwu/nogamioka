@@ -7,6 +7,14 @@ Project is completed, in production, and continuously integrated.
 -   [Nextjs](https://nextjs.org)
 -   [create-t3-app](https://github.com/t3-oss/create-t3-app)
 -   [TailwindCSS](https://tailwindcss.com)
+-   [Shadcn](https://ui.shadcn.com/) (partial, `/services`)
+-   [Aceternity](https://ui.aceternity.com/) (partial, `/services`)
+
+## Experimental Features
+
+- Single Sign On (SSO) demos:
+  - Microsoft <https://aaanh.com/sso/msft> via App Registration on Entra
+  - Google <https://aaanh.com/sso/google> via Google Cloud API & Services
 
 ## CI and hosting
 
