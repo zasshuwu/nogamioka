@@ -1,4 +1,3 @@
-import HomeLayout from "~/layouts/HomeLayout";
 import ServiceLayout from "~/layouts/ServiceLayout";
 
 export default function PrivacyPolicy() {

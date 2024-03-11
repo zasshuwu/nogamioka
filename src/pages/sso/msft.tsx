@@ -11,8 +11,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { ProfileData } from "~/components/msal/ProfileData";
 import ServiceLayout from "~/layouts/ServiceLayout";
-import { loginRequest } from "~/lib/authConfig";
-import { callMsGraph } from "~/lib/graph";
+import { loginRequest } from "~/lib/msft/authConfig";
+import { callMsGraph } from "~/lib/msft/graph";
 
 const ProfileContent = () => {
   const { instance, accounts } = useMsal();
