@@ -36,7 +36,7 @@ const Uses = () => {
             <li>Sigma Art 24-70mm, f2.8, DG DN</li>
             <li>Sigma Art 30mm, f2.8, DN</li>
             <li>Nikkor 28-70mm f2.8 ED</li>
-            <li>Nikkor 24-86mm f3.5-4.5 VR</li>
+            <li>Nikkor 24-85mm f3.5-4.5 VR</li>
             <li>Nikkor 50mm f1.8 VR</li>
             <li>Nikkor 70-300mm f4.5-5.6</li>
             <li>Nikon Speedlight SB-300</li>
