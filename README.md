@@ -4,11 +4,11 @@ Project is completed, in production, and continuously integrated.
 
 ## Stacks (latest iteration)
 
--   [Nextjs](https://nextjs.org)
--   [create-t3-app](https://github.com/t3-oss/create-t3-app)
--   [TailwindCSS](https://tailwindcss.com)
--   [Shadcn](https://ui.shadcn.com/) (partial, `/services`)
--   [Aceternity](https://ui.aceternity.com/) (partial, `/services`)
+- [Nextjs](https://nextjs.org)
+- [create-t3-app](https://github.com/t3-oss/create-t3-app)
+- [TailwindCSS](https://tailwindcss.com)
+- [Shadcn](https://ui.shadcn.com/) (partial, `/services`)
+- [Aceternity](https://ui.aceternity.com/) (partial, `/services`)
 
 ## Experimental Features
 
@@ -18,18 +18,18 @@ Project is completed, in production, and continuously integrated.
 
 ## CI and hosting
 
--   [Vercel](https://vercel.com)
+- [Vercel](https://vercel.com)
 
 ## Networking
 
--   Cloudflare DNS
--   Cloudflare SSL
+- Cloudflare DNS
+- Cloudflare SSL
 
 ## Security
 
--   Bot fight
--   IP blacklisting
--   DDoS protection
+- Bot fight
+- IP blacklisting
+- DDoS protection
 
 ## How to run locally
 
@@ -39,11 +39,13 @@ Project is completed, in production, and continuously integrated.
 ### Commands to get up and running
 
 - Windows
+
 ```
 git clone https://github.com/aaanh/homepage; cd homepage; npm i; npm run dev
 ```
 
 - Linux, macOS
+
 ```
 git clone https://github.com/aaanh/homepage && cd homepage && npm i && npm run dev
 ```
@@ -75,7 +77,7 @@ Note: I currently am not maintaining a Dockerfile for this project version, but 
 
 ## How to connect Spotify API (Only applied to v2 and v3)
 
--   You'll need to createa Spotify Developer Application <https://developer.spotify.com/dashboard/>
--   You will need to get the various keys/SECRETS (pictured below). Recommended tutorial to do so: <https://dev.to/theodorusclarence/how-to-show-now-playing-in-spotify-with-next-js-15h5>
+- You'll need to createa Spotify Developer Application <https://developer.spotify.com/dashboard/>
+- You will need to get the various keys/SECRETS (pictured below). Recommended tutorial to do so: <https://dev.to/theodorusclarence/how-to-show-now-playing-in-spotify-with-next-js-15h5>
 
 <img width="304" alt="Screen Shot 2022-06-17 at 1 32 16 PM" src="https://user-images.githubusercontent.com/37283437/174349215-4c23ba9e-8dde-46c6-a079-b30fa4434f88.png">
