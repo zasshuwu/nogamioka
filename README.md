@@ -7,8 +7,7 @@ Project is completed, in production, and continuously integrated.
 - [Nextjs](https://nextjs.org)
 - [create-t3-app](https://github.com/t3-oss/create-t3-app)
 - [TailwindCSS](https://tailwindcss.com)
-- [Shadcn](https://ui.shadcn.com/) (partial, `/services`)
-- [Aceternity](https://ui.aceternity.com/) (partial, `/services`)
+- [Shadcn](https://ui.shadcn.com/)
 
 ## Experimental Features
 
