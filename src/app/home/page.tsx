@@ -4,6 +4,7 @@ import { useCallback, useRef, useState } from "react";
 import ResizableSection from "./components/resizable-section";
 import Browser from "./components/browser";
 import Viewer from "./components/viewer";
+import { VscRemote, VscSourceControl } from "react-icons/vsc";
 
 export default function Home({ searchParams }: { searchParams: { view: string } }) {
   const resizerRef = useRef<HTMLDivElement>(null);
@@ -48,24 +49,30 @@ export default function Home({ searchParams }: { searchParams: { view: string } 
 
   return (
     <main
-      className="w-full h-screen bg-gray-100 relative"
+      className="w-full h-screen bg-background relative grid-rows-[1fr_2rem] grid"
       ref={containerRef}
       onMouseMove={onMouseMove}
       onMouseUp={onMouseUp}
       onMouseLeave={onMouseUp}
     >
-      <ResizableSection ref={leftSectionRef} isLeft={true}>
-        <Browser></Browser>
-      </ResizableSection>
-      <div
-        ref={resizerRef}
-        className="select-none w-0.5 bg-green-500 cursor-ew-resize absolute top-0 h-full"
-        style={{ left: '49.75%' }}
-        onMouseDown={onMouseDown}
-      ></div>
-      <ResizableSection ref={rightSectionRef} isLeft={false}>
-        <Viewer view={searchParams.view}></Viewer>
-      </ResizableSection>
+      <div className="relative z-10 w-full">
+        <ResizableSection ref={leftSectionRef} isLeft={true}>
+          <Browser></Browser>
+        </ResizableSection>
+        <div
+          ref={resizerRef}
+          className="select-none w-0.5 bg-green-500 cursor-ew-resize absolute top-0 h-full"
+          style={{ left: '49.8%' }}
+          onMouseDown={onMouseDown}
+        ></div>
+        <ResizableSection ref={rightSectionRef} isLeft={false}>
+          <Viewer view={searchParams.view}></Viewer>
+        </ResizableSection>
+      </div>
+      <div className="bg-blue-950 flex items-center">
+        <div className="h-full flex items-center px-2 bg-green-500 text-background"><VscRemote></VscRemote>&nbsp;AAANH.COM</div>
+        <div className="h-full flex items-center px-2"><VscSourceControl></VscSourceControl>&nbsp;v4.1</div>
+      </div>
     </main>
   );
 }

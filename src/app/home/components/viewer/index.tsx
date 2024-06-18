@@ -2,6 +2,7 @@ import About from "@/components/About"
 import Experience from "@/components/Experience"
 import Projects from "@/components/Projects"
 import Resume from "@/components/Resume"
+import ViewContainer from "./view-container"
 
 interface IViewer {
   view: string
@@ -10,16 +11,16 @@ interface IViewer {
 export default function Viewer({ view }: IViewer) {
   switch (view) {
     case 'about': {
-      return <About></About>
+      return <ViewContainer title={view}><About></About></ViewContainer>
     }
     case 'experience': {
-      return <Experience></Experience>
+      return <ViewContainer title={view}><Experience></Experience></ViewContainer>
     }
     case 'projects': {
-      return <Projects></Projects>
+      return <ViewContainer title={view}><Projects></Projects></ViewContainer>
     }
     case 'resume': {
-      return <Resume></Resume>
+      return <ViewContainer title={view}><Resume></Resume></ViewContainer>
     }
   }
 }
