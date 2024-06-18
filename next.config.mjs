@@ -1,5 +1,8 @@
-/** @type {import("next").NextConfig} */
-const config = {
+// @ts-check
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   reactStrictMode: true,
   i18n: {
     locales: ['en'],
@@ -35,4 +38,4 @@ const config = {
   }
 };
 
-export default config;
+export default nextConfig;

@@ -1,6 +1,8 @@
 import { ThemeProvider } from '@/components/theme-provider';
 import '@/styles/globals.css';
 
+import interphases from '@/fonts/interphases';
+
 export const metadata = {
   title: 'AAANH',
   description: `AAANH's Homepage`
@@ -13,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${interphases.className}`}>
         {' '}
         <ThemeProvider
           attribute="class"

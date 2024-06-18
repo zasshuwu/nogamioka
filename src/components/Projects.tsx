@@ -38,7 +38,7 @@ const ProjectCard = ({
       ) : null}
       <br></br>
       {link_ref !== '' &&
-      (!link_ref.includes('github') || link_ref.includes('nag-devops')) ? (
+        (!link_ref.includes('github') || link_ref.includes('nag-devops')) ? (
         <iframe src={link_ref} className="h-[50vh] bg-white"></iframe>
       ) : null}
     </div>

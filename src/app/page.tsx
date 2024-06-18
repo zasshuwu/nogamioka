@@ -56,9 +56,8 @@ export default function Index() {
         <IndexLayout>
           <div className={`relative h-screen w-screen`}>
             <Image
-              className={`object-cover opacity-60 transition-all duration-300 ease-in-out dark:opacity-40 ${
-                showLogin ? 'blur-lg' : ''
-              }`}
+              className={`object-cover opacity-60 transition-all duration-300 ease-in-out dark:opacity-40 ${showLogin ? 'blur-lg' : ''
+                }`}
               src="/wallpaper.jpg"
               fill={true}
               alt="wallpaper"
@@ -72,9 +71,8 @@ export default function Index() {
             className={`absolute bottom-28 flex flex-col items-center justify-center space-y-2`}
           >
             <div
-              className={`flex flex-col items-center justify-center rounded-xl p-2 transition-all duration-300 ease-in-out hover:bg-white/20 hover:backdrop-blur ${
-                showLogin ? 'translate-y-[-12px]' : 'translate-y-[6px]'
-              }`}
+              className={`flex flex-col items-center justify-center rounded-xl p-2 transition-all duration-300 ease-in-out hover:bg-white/20 hover:backdrop-blur ${showLogin ? 'translate-y-[-12px]' : 'translate-y-[6px]'
+                }`}
             >
               <button
                 onClick={() => setShowLogin((old) => !old)}
@@ -92,11 +90,10 @@ export default function Index() {
               </div>
             </div>
             <div
-              className={`form-control mt-2 transition-all duration-300 ease-in-out ${
-                showLogin
-                  ? 'translate-y-[5px] opacity-100'
-                  : 'pointer-events-none translate-y-[-12px] opacity-0'
-              }`}
+              className={`form-control mt-2 transition-all duration-300 ease-in-out ${showLogin
+                ? 'translate-y-[5px] opacity-100'
+                : 'pointer-events-none translate-y-[-12px] opacity-0'
+                }`}
             >
               <form onSubmit={handleLogin}>
                 <div className="flex items-center rounded-lg border p-2">
