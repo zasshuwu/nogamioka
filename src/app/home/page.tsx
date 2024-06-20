@@ -83,7 +83,7 @@ export default function Home({ searchParams }: { searchParams: { view: string } 
       </div>
       <div className="bg-blue-950 flex items-center">
         <div className="h-full flex items-center px-2 bg-green-500 text-background"><VscRemote />&nbsp;AAANH.COM</div>
-        <div className="h-full flex items-center px-2"><VscSourceControl />&nbsp;v4.1</div>
+        <div className="h-full flex items-center px-2"><VscSourceControl />&nbsp;v5</div>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ export default function ViewContainer({ title, children }: { title: string, chil
       <span className="flex items-center"><FaReact></FaReact>&nbsp;{title}.tsx</span>
     </div>
     <RequestCode title={title} setCode={setCode}></RequestCode>
-    <div className="p-2 max-h-48 overflow-y-scroll">
+    <div className="p-4 overflow-auto">
       <pre>
         <code className="language-typescript">
           <HighlightedCode></HighlightedCode>
