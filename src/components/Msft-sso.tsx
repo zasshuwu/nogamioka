@@ -2,12 +2,12 @@ import {
   useIsAuthenticated,
   useMsal,
   AuthenticatedTemplate,
-  UnauthenticatedTemplate
+  UnauthenticatedTemplate,
+  MsalProvider
 } from '@azure/msal-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import { ProfileData } from '@/components/msal/ProfileData';
-import ServiceLayout from '@/layouts/ServiceLayout';
 import { loginRequest } from '@/lib/msft/authConfig';
 import { callMsGraph } from '@/lib/msft/graph';
 
@@ -57,6 +57,7 @@ const ProfileContent = () => {
           </button>
         </div>
       )}
+
     </>
   );
 };
@@ -123,11 +124,7 @@ const MainContent = () => {
       <AuthenticatedTemplate>
         <ProfileContent />
       </AuthenticatedTemplate>
-
       <UnauthenticatedTemplate>
-        <h5>
-          <center>Please sign-in to see your profile information.</center>
-        </h5>
       </UnauthenticatedTemplate>
     </div>
   );
@@ -137,16 +134,14 @@ export default function Sso() {
   const isAuthenticated = useIsAuthenticated();
 
   return (
-    <ServiceLayout>
-      <div className="p-4 md:p-8">
-        <h2 className="text-center text-4xl">MSAL Testing Sandbox</h2>
-        <br />
-        <br />
-        <MainContent></MainContent>
-        <div className="flex justify-center">
-          {isAuthenticated ? <SignOutButton /> : <SignInButton />}
-        </div>
+    <div className="p-4 md:p-8">
+      <h2 className="text-center text-4xl">MSAL Testing Sandbox</h2>
+      <br />
+      <br />
+      <MainContent></MainContent>
+      <div className="flex justify-center">
+        {isAuthenticated ? <SignOutButton /> : <SignInButton />}
       </div>
-    </ServiceLayout>
+    </div>
   );
 }

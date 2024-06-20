@@ -48,41 +48,41 @@ export default function GoogleSso() {
   }, [user]);
 
   return (
-    <ServiceLayout>
-      <main className="p-4 md:p-8">
-        <h2 className="text-2xl font-bold">Google SSO Testing Sandbox</h2>
-        {user && profile ? (
-          <div>
+
+    <main className="p-4 md:p-8">
+      <h2 className="text-2xl font-bold">Google SSO Testing Sandbox</h2>
+      {user && profile ? (
+        <div>
+          <img
+            className="rounded-full"
+            src={profile.picture}
+            alt="user image"
+          />
+          <p>Name: {profile.name}</p>
+          <p>Email Address: {profile.email}</p>
+          <br />
+          <br />
+          <button className="rounded bg-red-500 p-1" onClick={logOut}>
+            Log out
+          </button>
+        </div>
+      ) : (
+        <>
+          <button
+            className="flex space-x-2 rounded bg-neutral-800 p-2 hover:bg-opacity-90"
+            onClick={() => login()}
+          >
             <img
-              className="rounded-full"
-              src={profile.picture}
-              alt="user image"
+              className="h-6 w-6"
+              src="https://www.svgrepo.com/show/475656/google-color.svg"
+              loading="lazy"
+              alt="google logo"
             />
-            <p>Name: {profile.name}</p>
-            <p>Email Address: {profile.email}</p>
-            <br />
-            <br />
-            <button className="rounded bg-red-500 p-1" onClick={logOut}>
-              Log out
-            </button>
-          </div>
-        ) : (
-          <>
-            <button
-              className="flex space-x-2 rounded bg-neutral-800 p-2 hover:bg-opacity-90"
-              onClick={() => login()}
-            >
-              <img
-                className="h-6 w-6"
-                src="https://www.svgrepo.com/show/475656/google-color.svg"
-                loading="lazy"
-                alt="google logo"
-              />
-              <span>Sign in with Google</span>
-            </button>
-          </>
-        )}
-      </main>
-    </ServiceLayout>
+            <span>Sign in with Google</span>
+          </button>
+        </>
+      )}
+    </main>
+
   );
 }

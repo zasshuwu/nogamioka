@@ -13,7 +13,10 @@ const views = [
   'about',
   'experience',
   'projects',
-  'resume'
+  'resume',
+  'uses',
+  'msft-sso',
+  'google-sso'
 ]
 
 export default function Browser() {

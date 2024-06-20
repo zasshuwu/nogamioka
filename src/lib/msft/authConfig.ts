@@ -5,20 +5,22 @@
 
 import { LogLevel } from '@azure/msal-browser';
 
+const CLIENT_ID = "509c2dda-fe28-40f0-83aa-33dfa789c50c";
+export const API_SCOPE = "api://" + CLIENT_ID + "/AAANH Enterprise Application";
 /**
  * Configuration object to be passed to MSAL instance on creation.
  * For a full list of MSAL.js configuration parameters, visit:
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md
  */
 
-const clientId = process.env.NEXT_PUBLIC_MSFT_SSO_CLIENT_ID ?? '';
-const authority = process.env.NEXT_PUBLIC_MSFT_SSO_AUTHORITY ?? '';
+const clientId = '509c2dda-fe28-40f0-83aa-33dfa789c50c';
+const authority = '9c89db13-4abb-467e-bd01-4b1b49dda27e';
 
 export const msalConfig = {
   auth: {
     clientId: clientId,
     authority: `https://login.microsoftonline.com/${authority}`,
-    redirectUri: 'https://ms.aaanh.com/sso/msft'
+    redirectUri: 'http://localhost:3000/home'
   },
   cache: {
     cacheLocation: 'sessionStorage', // This configures where your cache will be stored

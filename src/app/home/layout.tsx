@@ -9,7 +9,7 @@ export async function generateMetadata() {
 }
 
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
-  return <div>
+  return <main>
     {children}
-  </div>
+  </main>
 }
