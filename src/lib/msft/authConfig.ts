@@ -5,8 +5,8 @@
 
 import { LogLevel } from '@azure/msal-browser';
 
-const CLIENT_ID = "509c2dda-fe28-40f0-83aa-33dfa789c50c";
-export const API_SCOPE = "api://" + CLIENT_ID + "/AAANH Enterprise Application";
+const CLIENT_ID = '509c2dda-fe28-40f0-83aa-33dfa789c50c';
+export const API_SCOPE = 'api://' + CLIENT_ID + '/AAANH Enterprise Application';
 /**
  * Configuration object to be passed to MSAL instance on creation.
  * For a full list of MSAL.js configuration parameters, visit:
@@ -20,7 +20,7 @@ export const msalConfig = {
   auth: {
     clientId: clientId,
     authority: `https://login.microsoftonline.com/${authority}`,
-    redirectUri: 'http://localhost:3000/home'
+    redirectUri: 'https://aaanh.com/home'
   },
   cache: {
     cacheLocation: 'sessionStorage', // This configures where your cache will be stored

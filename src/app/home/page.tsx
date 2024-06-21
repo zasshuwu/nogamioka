@@ -6,6 +6,7 @@ import Browser from "./components/browser";
 import Viewer from "./components/viewer";
 import { VscRemote, VscSourceControl } from "react-icons/vsc";
 import RequestCode from "./components/viewer/request-code";
+import { Button } from "@/components/ui/button";
 
 export default function Home({ searchParams }: { searchParams: { view: string } }) {
   const resizerRef = useRef<HTMLDivElement>(null);
@@ -62,19 +63,21 @@ export default function Home({ searchParams }: { searchParams: { view: string } 
     };
   }, [onMouseMove, onMouseUp]);
 
+  const explorerInitialWidth = '25%'
+
   return (
     <div
       className="w-full h-screen bg-background relative grid-rows-[1fr_2rem] grid"
       ref={containerRef}
     >
       <div className="relative z-10 w-full h-full flex">
-        <ResizableSection ref={leftSectionRef} isLeft={true}>
+        <ResizableSection initialWidth={explorerInitialWidth} ref={leftSectionRef} isLeft={true}>
           <Browser />
         </ResizableSection>
         <div
           ref={resizerRef}
-          className="select-none w-0.5 bg-green-500 cursor-ew-resize absolute top-0 h-full"
-          style={{ left: '49.8%' }}
+          className="select-none w-0.5 hover:w-2 bg-green-500 cursor-ew-resize absolute top-0 h-full"
+          style={{ left: explorerInitialWidth }}
           onMouseDown={onMouseDown}
         ></div>
         <ResizableSection ref={rightSectionRef} isLeft={false}>
@@ -82,8 +85,8 @@ export default function Home({ searchParams }: { searchParams: { view: string } 
         </ResizableSection>
       </div>
       <div className="bg-blue-950 flex items-center">
-        <div className="h-full flex items-center px-2 bg-green-500 text-background"><VscRemote />&nbsp;AAANH.COM</div>
-        <div className="h-full flex items-center px-2"><VscSourceControl />&nbsp;v5</div>
+        <a href="https://github.com/aaanh" className="transition-all ease-in-out duration-150 hover:bg-green-600 h-full flex items-center px-2 bg-green-500 text-background"><VscRemote />&nbsp;AAANH.COM</a>
+        <a href="https://github.com/aaanh/homepage" className="transition-all ease-in-out duration-150 hover:bg-white/10 h-full flex items-center px-2"><VscSourceControl />&nbsp;v5</a>
       </div>
     </div>
   );
