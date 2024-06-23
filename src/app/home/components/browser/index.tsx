@@ -2,8 +2,8 @@
 
 import { useRouter, useSearchParams } from "next/navigation"
 import React from "react"
-import { FaReact } from "react-icons/fa"
 import Image from 'next/image'
+import Logo from "@/components/logo"
 
 interface IBrowser {
   setActiveView: React.Dispatch<React.SetStateAction<string>>
@@ -28,7 +28,7 @@ export default function Browser() {
     <h2 className="text-lg uppercase p-2">Explorer</h2>
     <ul>
       {views.map((view, idx) => (
-        <li onClick={() => router.push(view === 'home' ? '/home' : `/home?view=${view}`,)} key={idx} className={`transition-all duration-100 ease-in-out px-2 flex items-center hover:bg-primary/10 cursor-pointer ${searchParams.get('view') === view ? "bg-yellow-400/20 hover:bg-yellow-400/30" : null}`}><FaReact></FaReact>&nbsp;{view}.tsx</li>
+        <li onClick={() => router.push(view === 'home' ? '/home' : `/home?view=${view}`,)} key={idx} className={`transition-all duration-100 ease-in-out px-2 flex items-center hover:bg-primary/10 cursor-pointer ${searchParams.get('view') === view ? "bg-yellow-400/20 hover:bg-yellow-400/30" : null}`}><Logo className="w-4 h-4"></Logo>&nbsp;{view}.tsx</li>
       ))}
     </ul>
     <section className="mt-auto m-2 p-2 py-0 bg-green-500/10 rounded-lg grid grid-cols-[65px_auto] gap-2 divide-x divide-primary/30 w-fit">
