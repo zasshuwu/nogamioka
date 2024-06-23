@@ -6,11 +6,13 @@ import RequestCode from "./request-code";
 import hljs from 'highlight.js'
 import typescript from 'highlight.js/lib/languages/typescript'
 import 'highlight.js/styles/github-dark.css';
+import { VscLoading } from "react-icons/vsc";
 
 export default function ViewContainer({ title, children }: { title: string, children: React.ReactNode }) {
   const fullpath = usePathname();
   const pathnames = fullpath.split('/').filter(path => path)
   const [code, setCode] = useState('')
+  const [isLoadingCode, setIsLoadingCode] = useState(false)
 
   useEffect(() => {
     setCode('')
@@ -33,13 +35,14 @@ export default function ViewContainer({ title, children }: { title: string, chil
       <span>{pathnames.map((path) => path + (title.length > 0 ? ' > ' : null))}&nbsp;</span>
       <span className="flex items-center"><FaReact></FaReact>&nbsp;{title}.tsx</span>
     </div>
-    <RequestCode title={title} setCode={setCode}></RequestCode>
+    <RequestCode isLoadingCode={isLoadingCode} setIsLoadingCode={setIsLoadingCode} title={title} setCode={setCode}></RequestCode>
     <div className="p-4 overflow-auto">
-      <pre>
+      {isLoadingCode ? <VscLoading className="animate-spin text-green-500" size={200} /> : <pre>
         <code className="language-typescript">
           <HighlightedCode></HighlightedCode>
         </code>
-      </pre>
+      </pre>}
+
     </div>
     {code.length < 1 ? children : null}
   </div>

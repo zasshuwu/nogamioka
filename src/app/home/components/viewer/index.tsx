@@ -6,6 +6,7 @@ import ViewContainer from "./view-container"
 import Uses from "@/components/Uses"
 import Sso from "@/components/Msft-sso"
 import GoogleSso from "@/components/Google-sso"
+import Motd from "@/components/Motd"
 
 interface IViewer {
   view: string,
@@ -33,6 +34,11 @@ export default function Viewer({ view }: IViewer) {
     }
     case 'google-sso': {
       return <ViewContainer title={view}><GoogleSso></GoogleSso></ViewContainer>
+    }
+    default: {
+      return <ViewContainer title={'motd'}>
+        <Motd></Motd>
+      </ViewContainer>
     }
   }
 }
