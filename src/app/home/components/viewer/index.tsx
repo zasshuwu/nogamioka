@@ -7,6 +7,7 @@ import Uses from "@/components/Uses"
 import Sso from "@/components/Msft-sso"
 import GoogleSso from "@/components/Google-sso"
 import Motd from "@/components/Motd"
+import Contact from "@/components/Contact"
 
 interface IViewer {
   view: string,
@@ -34,6 +35,9 @@ export default function Viewer({ view }: IViewer) {
     }
     case 'google-sso': {
       return <ViewContainer title={view}><GoogleSso></GoogleSso></ViewContainer>
+    }
+    case 'contact': {
+      return <ViewContainer title={view}><Contact></Contact></ViewContainer>
     }
     default: {
       return <ViewContainer title={'motd'}>

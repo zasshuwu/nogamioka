@@ -28,15 +28,19 @@ export default function ViewContainer({ title, children }: { title: string, chil
   };
 
   return <div>
-    <h1 className="p-2 text-lg bg-white/10 w-fit flex items-center text-green-500">
-      <Logo className="w-4 h-4"></Logo>&nbsp;{title}.tsx
-    </h1>
-    <div className="p-1 flex items-center text-primary/50">
-      <span>{pathnames.map((path) => path + (title.length > 0 ? ' > ' : null))}&nbsp;</span>
-      <span className="flex items-center"><Logo className="w-4 h-4"></Logo>&nbsp;{title}.tsx</span>
+    <div className="fixed top-0 bg-background w-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] z-10">
+      <div className="flex items-center space-x-2">
+        <h1 className="p-2 text-lg bg-white/10 w-fit flex items-center text-green-500">
+          <Logo className="w-4 h-4"></Logo>&nbsp;{title}.tsx
+        </h1>
+        <RequestCode isLoadingCode={isLoadingCode} setIsLoadingCode={setIsLoadingCode} title={title} setCode={setCode}></RequestCode>
+      </div>
+      <div className="p-2 flex items-center text-primary/50">
+        <span>{pathnames.map((path) => path + (title.length > 0 ? ' > ' : null))}&nbsp;</span>
+        <span className="flex items-center"><Logo className="w-4 h-4"></Logo>&nbsp;{title}.tsx</span>
+      </div>
     </div>
-    <RequestCode isLoadingCode={isLoadingCode} setIsLoadingCode={setIsLoadingCode} title={title} setCode={setCode}></RequestCode>
-    <div className="p-4 overflow-auto">
+    <div className="p-4 overflow-auto mt-40">
       {isLoadingCode ? <VscLoading className="animate-spin text-green-500" size={200} /> : <pre>
         <code className="language-typescript">
           <HighlightedCode></HighlightedCode>

@@ -17,7 +17,8 @@ const views = [
   'resume',
   'uses',
   'msft-sso',
-  'google-sso'
+  'google-sso',
+  'contact'
 ]
 
 export default function Browser() {
@@ -25,7 +26,9 @@ export default function Browser() {
   const searchParams = useSearchParams()
 
   return <div className="flex flex-col h-full">
-    <h2 className="text-lg uppercase p-2">Explorer</h2>
+    <div className="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+      <h2 className="text-lg uppercase p-2">Explorer</h2>
+    </div>
     <ul>
       {views.map((view, idx) => (
         <li onClick={() => router.push(view === 'home' ? '/home' : `/home?view=${view}`,)} key={idx} className={`transition-all duration-100 ease-in-out px-2 flex items-center hover:bg-primary/10 cursor-pointer ${searchParams.get('view') === view ? "bg-yellow-400/20 hover:bg-yellow-400/30" : null}`}><Logo className="w-4 h-4"></Logo>&nbsp;{view}.tsx</li>
