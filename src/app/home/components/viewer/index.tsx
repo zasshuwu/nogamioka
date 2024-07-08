@@ -10,39 +10,28 @@ import Motd from "@/components/Motd"
 import Contact from "@/components/Contact"
 
 interface IViewer {
-  view: string,
+  view: string;
+  hideSidebar: boolean;
+  setHideSidebar: (s: boolean) => void
 }
 
-export default function Viewer({ view }: IViewer) {
-  switch (view) {
-    case 'about': {
-      return <ViewContainer title={view}><About></About></ViewContainer>
-    }
-    case 'experience': {
-      return <ViewContainer title={view}><Experience></Experience></ViewContainer>
-    }
-    case 'projects': {
-      return <ViewContainer title={view}><Projects></Projects></ViewContainer>
-    }
-    case 'resume': {
-      return <ViewContainer title={view}><Resume></Resume></ViewContainer>
-    }
-    case 'uses': {
-      return <ViewContainer title={view}><Uses></Uses></ViewContainer>
-    }
-    case 'msft-sso': {
-      return <ViewContainer title={view}><Sso></Sso></ViewContainer>
-    }
-    case 'google-sso': {
-      return <ViewContainer title={view}><GoogleSso></GoogleSso></ViewContainer>
-    }
-    case 'contact': {
-      return <ViewContainer title={view}><Contact></Contact></ViewContainer>
-    }
-    default: {
-      return <ViewContainer title={'motd'}>
-        <Motd></Motd>
-      </ViewContainer>
-    }
-  }
+const componentMap: { [key: string]: React.ComponentType } = {
+  'about': About,
+  'experience': Experience,
+  'projects': Projects,
+  'resume': Resume,
+  'uses': Uses,
+  'msft-sso': Sso,
+  'google-sso': GoogleSso,
+  'contact': Contact,
+};
+
+export default function Viewer({ view, hideSidebar, setHideSidebar }: IViewer) {
+  const Component = componentMap[view] || Motd;
+
+  return (
+    <ViewContainer setHideSidebar={setHideSidebar} hideSidebar={hideSidebar} title={view ?? 'motd'}>
+      <Component />
+    </ViewContainer>
+  );
 }

@@ -7,8 +7,9 @@ import typescript from 'highlight.js/lib/languages/typescript'
 import 'highlight.js/styles/github-dark.css';
 import { VscLoading } from "react-icons/vsc";
 import Logo from "@/components/logo";
+import { Button } from "@/components/ui/button";
 
-export default function ViewContainer({ title, children }: { title: string, children: React.ReactNode }) {
+export default function ViewContainer({ title, children, setHideSidebar, hideSidebar }: { title: string, children: React.ReactNode, setHideSidebar: (state: boolean) => void, hideSidebar: boolean }) {
   const fullpath = usePathname();
   const pathnames = fullpath.split('/').filter(path => path)
   const [code, setCode] = useState('')
@@ -34,6 +35,7 @@ export default function ViewContainer({ title, children }: { title: string, chil
           <Logo className="w-4 h-4"></Logo>&nbsp;{title}.tsx
         </h1>
         <RequestCode isLoadingCode={isLoadingCode} setIsLoadingCode={setIsLoadingCode} title={title} setCode={setCode}></RequestCode>
+        <Button variant={"secondary"} className="m-2 h-6 w-fit hover:bg-green-500" size={'sm'} onClick={() => setHideSidebar(!hideSidebar)}>Show/Hide Sidebar</Button>
       </div>
       <div className="p-2 flex items-center text-primary/50">
         <span>{pathnames.map((path) => path + (title.length > 0 ? ' > ' : null))}&nbsp;</span>

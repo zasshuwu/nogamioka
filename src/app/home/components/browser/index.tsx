@@ -31,11 +31,11 @@ export default function Browser() {
     </div>
     <ul>
       {views.map((view, idx) => (
-        <li onClick={() => router.push(view === 'home' ? '/home' : `/home?view=${view}`,)} key={idx} className={`transition-all duration-100 ease-in-out px-2 flex items-center hover:bg-primary/10 cursor-pointer ${searchParams.get('view') === view ? "bg-yellow-400/20 hover:bg-yellow-400/30" : null}`}><Logo className="w-4 h-4"></Logo>&nbsp;{view}.tsx</li>
+        <li onClick={() => router.push(view === 'home' ? '/home' : `/home?view=${view}`,)} key={idx} className={`text-sm md:text-lg transition-all duration-100 ease-in-out px-2 flex items-center hover:bg-primary/10 cursor-pointer ${searchParams.get('view') === view ? "bg-yellow-400/20 hover:bg-yellow-400/30" : null}`}><Logo className="w-4 h-4"></Logo>&nbsp;{view}.tsx</li>
       ))}
     </ul>
-    <section className="mt-auto m-2 p-2 py-0 bg-green-500/10 rounded-lg grid grid-cols-[65px_auto] gap-2 divide-x divide-primary/30 w-fit">
-      <div className="flex items-center justify-center py-2">
+    <section className="mt-auto m-2 p-2 py-0 bg-green-500/10 rounded-lg grid md:grid-cols-[65px_auto] gap-2 md:divide-x divide-primary/30 w-fit">
+      <div className="items-center justify-center py-2 md:flex hidden">
         <div className="h-16 w-16 relative">
           <Image src="https://avatars.githubusercontent.com/u/37283437?v=4" fill={true} alt="avatar" className="object-contain rounded-full shadow-lg"></Image>
         </div>
