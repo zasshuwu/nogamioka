@@ -8,6 +8,8 @@ import 'highlight.js/styles/github-dark.css';
 import { VscLoading } from "react-icons/vsc";
 import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 
 export default function ViewContainer({ title, children, setHideSidebar, hideSidebar }: { title: string, children: React.ReactNode, setHideSidebar: (state: boolean) => void, hideSidebar: boolean }) {
   const fullpath = usePathname();
@@ -30,12 +32,18 @@ export default function ViewContainer({ title, children, setHideSidebar, hideSid
 
   return <div>
     <div className="fixed top-0 bg-background w-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] z-10">
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center">
         <h1 className="p-2 text-lg bg-white/10 w-fit flex items-center text-green-500">
           <Logo className="w-4 h-4"></Logo>&nbsp;{title}.tsx
         </h1>
-        <RequestCode isLoadingCode={isLoadingCode} setIsLoadingCode={setIsLoadingCode} title={title} setCode={setCode}></RequestCode>
-        <Button variant={"secondary"} className="m-2 h-6 w-fit hover:bg-green-500" size={'sm'} onClick={() => setHideSidebar(!hideSidebar)}>Show/Hide Sidebar</Button>
+        <RequestCode code={code} isLoadingCode={isLoadingCode} setIsLoadingCode={setIsLoadingCode} title={title} setCode={setCode} />
+
+        <Button variant={"secondary"} className="m-2 h-6 w-fit hover:bg-green-500" size={'sm'} onClick={() => setHideSidebar(!hideSidebar)}>
+          <FaEye className={cn(hideSidebar ? "hidden" : "")}></FaEye>
+          <FaEyeSlash className={cn(hideSidebar ? "" : "hidden")}></FaEyeSlash>
+          &nbsp;
+          <span>Sidebar</span>
+        </Button>
       </div>
       <div className="p-2 flex items-center text-primary/50">
         <span>{pathnames.map((path) => path + (title.length > 0 ? ' > ' : null))}&nbsp;</span>
