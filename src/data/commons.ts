@@ -49,3 +49,13 @@ export const ExperienceSchema = z.object({
 })
 
 export type Experience = z.infer<typeof ExperienceSchema>
+
+export const ProjectSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  screenshot: z.string().optional(),
+  stack: z.string(),
+  link_ref: z.string().optional()
+})
+
+export type Project = z.infer<typeof ProjectSchema>
