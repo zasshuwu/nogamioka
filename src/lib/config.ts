@@ -1,23 +1,22 @@
-import { Owner, OwnerSchema } from "@/data/commons"
+import { Owner, OwnerSchema } from "@/data/commons";
 
 export default function getConfig() {
-
   const ownerData: Owner = {
-    firstName: 'Anh',
-    middleName: 'Hoang',
-    lastName: 'Nguyen',
-    github: 'aaanh',
-    linkedin: 'aaanh',
-    jobTitle: 'Software Developer',
-    homepage: 'https://aaanh.com'
-  }
+    firstName: "Anh",
+    middleName: "Hoang",
+    lastName: "Nguyen",
+    github: "aaanh",
+    linkedin: "aaanh",
+    jobTitle: "Software Developer",
+    homepage: "https://aaanh.com",
+    instagram: "aaanhnya",
+  };
 
-  const { data, error } = OwnerSchema.safeParse(ownerData)
+  const { data, error } = OwnerSchema.safeParse(ownerData);
 
   if (error) {
-    throw new Error("Invalid owner data. Unable to parse: ", error)
+    throw new Error("Invalid owner data. Unable to parse: ", error);
   }
 
-  return { owner: data }
+  return { owner: data };
 }
-
