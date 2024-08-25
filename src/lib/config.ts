@@ -15,7 +15,7 @@ export default function getConfig() {
   const { data, error } = OwnerSchema.safeParse(ownerData)
 
   if (error) {
-    throw new Error("Invalid owner data. Unable to parse.")
+    throw new Error("Invalid owner data. Unable to parse: ", error)
   }
 
   return { owner: data }
