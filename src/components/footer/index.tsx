@@ -7,9 +7,14 @@ export default function Footer() {
 
   return (
     <Container className="md:grid-cols-1">
-      <ContentCard className="space-x-2">
-        <span>&copy; {year}</span>
-        <GlowText text="Anh Hoang Nguyen" />
+      <ContentCard className="flex flex-col">
+        <div className="flex items-center justify-center space-x-2">
+          <span>&copy; {year}</span>
+          <GlowText text="Anh Hoang Nguyen" />
+        </div>
+        <div>
+          <p>Homepage &mdash; Version 6.0.0-alpha</p>
+        </div>
       </ContentCard>
     </Container>
   );

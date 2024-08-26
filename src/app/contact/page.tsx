@@ -18,7 +18,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { sendContactMessage } from "./action";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { LucideArrowLeft } from "lucide-react";
 
 const FormSchema = z.object({
   subject: z.string({ message: "Subject line is malformed." }),
@@ -52,11 +54,20 @@ export default function Contact() {
     setIsSending(false);
     setErrorMsg("E-mail sent.");
 
-    redirect("/");
+    router.push("/");
   }
 
   return (
-    <main className="flex items-center justify-center min-h-screen">
+    <main className="flex items-center justify-center min-h-screen flex-col">
+      <Link
+        href="/"
+        className="flex space-x-2 items-center justify-center group"
+      >
+        <LucideArrowLeft />
+        <span className="group-hover:underline underline-offset-2">
+          Back to home
+        </span>
+      </Link>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
