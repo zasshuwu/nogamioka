@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     <Container id="projects" className="lg:grid-cols-4">
-      <ContentCard className="text-4xl">
+      <ContentCard className="text-4xl lg:col-span-2">
         <LucideActivity />
         &nbsp;
         <GlowText text="Projects" />
