@@ -22,6 +22,8 @@ export default function Navigator() {
             href={
               target === "Resume"
                 ? "/anh-resume.pdf"
+                : target === "Contact"
+                ? `/${target.toLowerCase()}`
                 : "#" + target.toLowerCase()
             }
           >
