@@ -23,7 +23,7 @@ export default function About() {
   }
 
   // Example usage
-  const startDate = new Date("2021-01-01");
+  const startDate = new Date("2020-01-01");
   const endDate = new Date();
   const years = calculateYearsBetweenDates(startDate, endDate);
 

@@ -11,10 +11,15 @@ export default function Page() {
     <div className="flex flex-col space-y-4 p-4">
       <Heading />
       <About />
+      <br />
       <Navigator />
+      <br />
       <Experiences />
+      <br />
       <Projects />
+      <br />
       <Gears />
+      <br />
       <Footer />
     </div>
   );
