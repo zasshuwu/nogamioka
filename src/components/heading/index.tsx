@@ -6,10 +6,10 @@ import Clock from "./clock";
 
 export default function Heading() {
   return (
-    <Container className="lg:grid-cols-[2fr_1fr_0.25fr] grid-cols-2">
-      <ContentCard>
+    <Container className="lg:grid-cols-[0.25fr_1fr_0.25fr] grid-cols-2">
+      <ContentCard className="">
         <Logo className="h-16 w-16" />
-        &nbsp;<span className="text-4xl">AAANH</span>
+        <span className="md:text-4xl text-xl">AAANH</span>
       </ContentCard>
       <ContentCard>
         <Clock />

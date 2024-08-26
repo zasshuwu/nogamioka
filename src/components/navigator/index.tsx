@@ -8,12 +8,12 @@ export default function Navigator() {
   const targets = ["Experiences", "Projects", "Resume", "Contact", "Gears"];
 
   return (
-    <Container className="lg:grid-cols-[2fr_3fr]">
+    <Container className="lg:grid-cols-[1fr_4fr]">
       <ContentCard className="text-4xl text-accent border-none">
         <LucideCompass />
         &nbsp; Navigator
       </ContentCard>
-      <Container className="grid-cols-2">
+      <Container className="grid lg:grid-cols-4">
         {targets.map((target) => (
           <Link
             key={target}

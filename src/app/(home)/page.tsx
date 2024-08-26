@@ -3,6 +3,8 @@ import About from "@/components/about";
 import Navigator from "@/components/navigator";
 import Experiences from "@/components/experiences";
 import Projects from "@/components/projects";
+import Gears from "@/components/gears";
+import Footer from "@/components/footer";
 
 export default function Page() {
   return (
@@ -12,6 +14,8 @@ export default function Page() {
       <Navigator />
       <Experiences />
       <Projects />
+      <Gears />
+      <Footer />
     </div>
   );
 }

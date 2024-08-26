@@ -64,3 +64,43 @@ export const ProjectSchema = z.object({
 });
 
 export type Project = z.infer<typeof ProjectSchema>;
+
+export const GearSchema = z.object({
+  type: z.enum([
+    "Desktop",
+    "Laptop",
+    "Tablet",
+    "Phone",
+    "Camera",
+    "Lens",
+    "Peripheral/Accessory",
+  ]),
+  brand: z.string(),
+  model: z.string(),
+});
+
+export type Gear = z.infer<typeof GearSchema>;
+
+export const GearComputingSchema = GearSchema.extend({
+  cpu: z.string(),
+  gpu: z.string().default("Integrated"),
+  ram: z.string(),
+  storage: z.string(),
+});
+
+export type GearComputing = z.infer<typeof GearComputingSchema>;
+
+export const GearLensSchema = GearSchema.extend({
+  focal: z.string(),
+  aperture: z.string(),
+  featureCodes: z.string(),
+});
+
+export type GearLens = z.infer<typeof GearLensSchema>;
+
+export const GearSoftwareSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+});
+
+export type GearSoftware = z.infer<typeof GearSoftwareSchema>;

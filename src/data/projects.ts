@@ -48,7 +48,7 @@ export default function getProjects() {
     },
     {
       title: "My Photo Reel",
-      description: "",
+      description: "Select photographic memoirs",
       link_ref: "https://photos.aaanh.ca",
       screenshot: "",
       stack: "Nextjs, Tailwindcss, Cloudinary DAM + API, Cloudflare CDN",
@@ -56,7 +56,7 @@ export default function getProjects() {
     {
       title: "Concordia University Speed HPC Manual",
       description:
-        "Develop Latex to HTML build pipeline for the documentation. Create battery-included devcontainer environment for authoring LaTeX. Create GitHub Actions pipeline for deploying the HTML docs.",
+        "Develop Latex to HTML build pipeline. Create devcontainer environment for authoring LaTeX. Create GitHub Actions pipeline for deploying the HTML docs.",
       stack: "LaTeX, Docker, Github Actions, devcontainer, Makefile",
       screenshot: "",
       link_ref: "https://nag-devops.github.io/speed-hpc/",
