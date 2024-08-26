@@ -23,7 +23,7 @@ export default function Experiences() {
         >
           <a href={exp.link} className="relative h-14 w-28">
             <Image
-              className="object-contain bg-transparent transition-all ease-in-out px-2 rounded hover:bg-black/20"
+              className="object-contain bg-foreground text-background dark:bg-transparent transition-all ease-in-out p-2 rounded hover:bg-black/20"
               src={`/logos/${exp.organization}.png`}
               fill={true}
               alt={exp.organization}
