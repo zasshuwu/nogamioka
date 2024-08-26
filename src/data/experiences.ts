@@ -7,7 +7,7 @@ export default function getExperiences() {
       organization: "Undisclosed",
       link: "https://aaanh.com",
       role: "Software Developer",
-      type: "Contract, Part-time",
+      type: "(Undisclosed organization)",
       location: "Canada",
       startMonth: 4,
       startYear: 2024,

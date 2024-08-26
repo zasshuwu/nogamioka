@@ -19,7 +19,11 @@ export default function Navigator() {
           <Link
             key={target}
             className="group"
-            href={`#${target.toLowerCase()}`}
+            href={
+              target === "Resume"
+                ? "/anh-resume.pdf"
+                : "#" + target.toLowerCase()
+            }
           >
             <ContentCard className="text-3xl relative text-center">
               <span className="relative">{target}</span>
