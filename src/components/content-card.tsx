@@ -11,7 +11,7 @@ export default function ContentCard({
   return (
     <section
       className={cn(
-        "bg-surface min-h-24 flex items-center justify-center border border-foreground/30 shadow-lg p-4 rounded-lg",
+        "content-card bg-surface min-h-24 flex items-center justify-center shadow-lg p-4 rounded-lg",
         className
       )}
     >

@@ -110,6 +110,6 @@ progress::-webkit-progress-value {
   border-radius: 1rem;
 }
 
-a {
-  @apply hover:opacity-80 transition-all ease-in-out
+a > .content-card {
+  @apply hover:bg-foreground/10 transition-all ease-in-out duration-200
 }

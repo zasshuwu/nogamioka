@@ -9,7 +9,7 @@ export default function Experiences() {
   const experiences = getExperiences();
 
   return (
-    <Container className="lg:grid-cols-4">
+    <Container id="experiences" className="lg:grid-cols-4">
       <ContentCard className="text-4xl">
         <LucideBriefcaseBusiness />
         &nbsp;

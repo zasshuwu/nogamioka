@@ -1,40 +1,30 @@
-import getExperiences from "@/data/experiences";
 import Container from "../container";
 import ContentCard from "../content-card";
 import GlowText from "../glow-text";
-import { LucideBriefcaseBusiness } from "lucide-react";
+import { LucideActivity } from "lucide-react";
 import Image from "next/image";
+import getProjects from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
-  const experiences = getExperiences();
+  const projects = getProjects();
 
   return (
-    <Container className="lg:grid-cols-4">
+    <Container id="projects" className="lg:grid-cols-4">
       <ContentCard className="text-4xl">
-        <LucideBriefcaseBusiness />
+        <LucideActivity />
         &nbsp;
-        <GlowText text="Experiences" />
+        <GlowText text="Projects" />
       </ContentCard>
 
-      {experiences.map((exp, idx) => (
-        <ContentCard
-          key={`experience-${idx}`}
-          className="grid grid-cols-[1fr_2fr_1fr] gap-2"
-        >
-          <a href={exp.link} className="relative h-14 w-28 rounded-lg">
-            <Image
-              className="object-contain bg-transparent transition-all ease-in-out p-2 rounded hover:bg-black/20"
-              src={`/logos/${exp.organization}.png`}
-              fill={true}
-              alt={exp.organization}
-            ></Image>
-          </a>
-          <div className="text-center">
-            <p>{exp.role}</p>
-            <p className="text-muted-foreground text-sm">{exp.type}</p>
-          </div>
-          <div className="text-center">{exp.startYear}</div>
-        </ContentCard>
+      {projects.map((p) => (
+        <Link key={p.title} href={p.link_ref ?? ""}>
+          <ContentCard className="grid grid-rows-[3rem_1fr_1fr] min-h-60 text-center items-start gap-2">
+            <h3 className="text-xl">{p.title}</h3>
+            <p className="text-muted-foreground">{p.description}</p>
+            <p className="text-sm text-accent/80">{p.stack}</p>
+          </ContentCard>
+        </Link>
       ))}
     </Container>
   );
