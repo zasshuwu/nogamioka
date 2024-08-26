@@ -21,10 +21,8 @@ export default function Navigator() {
             className="group"
             href={`#${target.toLowerCase()}`}
           >
-            <ContentCard className="text-3xl relative text-left justify-start">
+            <ContentCard className="text-3xl relative text-center">
               <span className="relative">{target}</span>
-              &nbsp;
-              <LucideLink2 className="opacity-0 group-hover:opacity-100 transition-all ease-in-out" />
             </ContentCard>
           </Link>
         ))}
