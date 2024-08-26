@@ -10,7 +10,7 @@ export default function Experiences() {
 
   return (
     <Container id="experiences" className="lg:grid-cols-4">
-      <ContentCard className="text-4xl">
+      <ContentCard className="text-4xl lg:col-span-2 lg:row-span-2">
         <LucideBriefcaseBusiness />
         &nbsp;
         <GlowText text="Experiences" />

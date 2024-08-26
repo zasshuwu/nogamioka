@@ -11,37 +11,35 @@ export default function Gears() {
   const { computing, gears, lenses } = getGears();
 
   return (
-    <Container className="lg:grid-cols-[1fr_4fr]">
-      <ContentCard className="sm:text-4xl text-2xl">
+    <Container className="lg:grid-cols-4 grid-cols-1">
+      <ContentCard className="sm:text-4xl text-2xl lg:col-span-2 lg:row-span-2">
         <LucideAnvil />
         &nbsp;
         <GlowText text="Gears" />
       </ContentCard>
-      <Container className="lg:grid-cols-4">
-        <ContentCard className="sm:text-4xl text-2xl">
-          <h4>Computing</h4>
+      <ContentCard className="sm:text-4xl text-2xl lg:col-span-2">
+        <h4>Computing</h4>
+      </ContentCard>
+      {computing?.map((gear, idx) => (
+        <ContentCard key={gear.model + idx}>
+          <ComputingComponent {...gear} />
         </ContentCard>
-        {computing?.map((gear, idx) => (
-          <ContentCard key={gear.model + idx}>
-            <ComputingComponent {...gear} />
-          </ContentCard>
-        ))}
-        <ContentCard className="sm:text-4xl text-2xl">
-          <h4>Photography</h4>
+      ))}
+      <ContentCard className="sm:text-4xl text-2xl lg:col-span-2">
+        <h4>Photography</h4>
+      </ContentCard>
+
+      {gears?.map((gear) => (
+        <ContentCard key={gear.model}>
+          <GearComponent {...gear} />
         </ContentCard>
+      ))}
 
-        {gears?.map((gear) => (
-          <ContentCard key={gear.model}>
-            <GearComponent {...gear} />
-          </ContentCard>
-        ))}
-
-        {lenses?.map((gear) => (
-          <ContentCard key={gear.model}>
-            <LensComponent {...gear} />
-          </ContentCard>
-        ))}
-      </Container>
+      {lenses?.map((gear) => (
+        <ContentCard key={gear.model}>
+          <LensComponent {...gear} />
+        </ContentCard>
+      ))}
     </Container>
   );
 }

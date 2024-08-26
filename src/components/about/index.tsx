@@ -47,26 +47,26 @@ export default function About() {
         <p className="text-yellow-500">{years} years of experience</p>
       </ContentCard>
       <Container className="grid grid-cols-2">
-        <ContentCard className="space-x-2 text-4xl">
-          <Link href={owner.github}>
+        <Link href={owner.github}>
+          <ContentCard className="space-x-2 text-4xl">
             <FaGithub />
-          </Link>
-        </ContentCard>
-        <ContentCard className="space-x-2 text-4xl">
-          <Link href={owner.linkedin} className="text-blue-400">
+          </ContentCard>
+        </Link>
+        <Link href={owner.linkedin} className="text-blue-400">
+          <ContentCard className="space-x-2 text-4xl">
             <FaLinkedin />
-          </Link>
-        </ContentCard>
-        <ContentCard className="space-x-2 text-4xl">
-          <Link href={owner.homepage} className="text-green-500">
+          </ContentCard>
+        </Link>
+        <Link href={owner.homepage} className="text-green-500">
+          <ContentCard className="space-x-2 text-4xl">
             <FaGlobe />
-          </Link>
-        </ContentCard>
-        <ContentCard className="space-x-2 text-4xl">
-          <Link href={owner.instagram} className="text-pink-500">
+          </ContentCard>
+        </Link>
+        <Link href={owner.instagram} className="text-pink-500">
+          <ContentCard className="space-x-2 text-4xl">
             <FaInstagram />
-          </Link>
-        </ContentCard>
+          </ContentCard>
+        </Link>
       </Container>
     </Container>
   );
