@@ -76,7 +76,7 @@ export default function SpotifyStatusCard({
                 {formatTime(progress_ms)} / {formatTime(item?.duration_ms || 0)}
               </p>
             </div>
-            <div className="ml-2 w-full h-[0.5rem] bg-zinc-300 dark:bg-zinc-600 rounded-lg flex items-center">
+            <div className="ml-1 mr-1 w-full h-[0.5rem] bg-zinc-300 dark:bg-zinc-600 rounded-lg flex items-center">
               <div
                 className="h-[0.5rem] bg-primary rounded-lg"
                 style={{ width: `${progressPercentage}%` }}
