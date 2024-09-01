@@ -1,6 +1,10 @@
+"use client";
+
+import { getSpotifyStatus } from "@/app/(home)/actions";
 import Container from "../container";
 import ContentCard from "../content-card";
 import GlowText from "../glow-text";
+import { Button } from "../ui/button";
 
 export default function Footer() {
   const year = new Date().getFullYear();
