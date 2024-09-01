@@ -40,7 +40,7 @@ export default function Spotify() {
   useEffect(() => {
     fetchSpotifyStatus(); // Initial fetch
 
-    const pollInterval = setInterval(fetchSpotifyStatus, 90000); // Poll every 1 min 30 sec
+    const pollInterval = setInterval(fetchSpotifyStatus, 30000); // Poll every 30 seconds
 
     return () => clearInterval(pollInterval);
   }, [nowPlayingData.item?.uri]); // Dependency is the song URI
@@ -61,7 +61,7 @@ export default function Spotify() {
           // If the song has ended, reset the progress and trigger a new fetch
           setLocalProgress(0);
           setStartTime(Date.now());
-          // Trigger a fetch in a way that ensures it will occur soon
+          // Trigger a re-fetch
           fetchSpotifyStatus();
         } else {
           setLocalProgress(

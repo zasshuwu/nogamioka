@@ -30,7 +30,7 @@ export default function SpotifyStatusCard({
           ? item?.external_urls?.spotify
           : "https://open.spotify.com/user/fugunagi"
       }
-      className="btn-ghost btn relative flex h-fit w-80 items-center space-x-4 rounded-md border border-zinc-500 p-3 transition-all hover:border-primary"
+      className="btn-ghost btn relative flex h-fit w-80 items-center space-x-4 rounded-md border border-zinc-500 p-2 transition-all hover:border-primary"
     >
       <div className="w-16">
         {is_playing && item?.album?.images?.[0].url ? (
@@ -46,20 +46,20 @@ export default function SpotifyStatusCard({
         )}
       </div>
 
-      <div className="flex-1 text-left font-sans">
+      <div className="flex-1 text-left font-sans pr-5">
         <p className="component text-sm font-bold normal-case">
           {is_playing
             ? currently_playing_type === "episode"
               ? "Listening to a podcast"
               : currently_playing_type === "ad"
               ? "Spotify Freemium ad spot 🙃"
-              : "🎧 " + item?.name
+              : item?.name
             : "Not listening at the moment, any suggestions?"}
         </p>
         <p className="font-dark text-xs">
           {is_playing ? item?.artists?.[0].name : null}
         </p>
-        <p className="font-dark text-neutral-500 dark:text-neutral-400 w-[172px] overflow-hidden overflow-ellipsis whitespace-nowrap text-xs font-light">
+        <p className="font-dark text-primary/80 w-[172px] overflow-hidden overflow-ellipsis whitespace-nowrap text-xs font-light">
           {is_playing
             ? "Album: " +
               (item?.album?.name !== undefined ? item.album.name : "Episode")
@@ -70,13 +70,15 @@ export default function SpotifyStatusCard({
         {/* Progress bar */}
 
         {is_playing && (
-          <div className="grid grid-cols-[1fr_2fr]">
-            <div className="ml-2 text-xs text-neutral-500 dark:text-neutral-400">
-              {formatTime(progress_ms)} / {formatTime(item?.duration_ms || 0)}
+          <div className="grid grid-cols-[1fr_2.5fr] items-center">
+            <div className="text-xs text-primary">
+              <p>
+                {formatTime(progress_ms)} / {formatTime(item?.duration_ms || 0)}
+              </p>
             </div>
-            <div className="bottom-0 left-0 w-24 h-1.5 bg-zinc-300 dark:bg-zinc-600 mt-2">
+            <div className="w-full h-[0.5rem] bg-zinc-300 dark:bg-zinc-600 rounded-lg flex items-center">
               <div
-                className="h-full bg-primary"
+                className="h-[0.5rem] bg-primary rounded-lg"
                 style={{ width: `${progressPercentage}%` }}
               ></div>
             </div>
