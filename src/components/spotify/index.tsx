@@ -22,22 +22,22 @@ export default function Spotify() {
 
   const progressIntervalRef = useRef<NodeJS.Timeout | null>(null); // Ref to store the interval ID
 
+  const fetchSpotifyStatus = async () => {
+    try {
+      const data = await getSpotifyStatus();
+      if (data.item?.uri !== nowPlayingData.item?.uri) {
+        // Compare using URI
+        setNowPlayingData(data);
+        setLocalProgress(data.progress_ms);
+        setStartTime(Date.now());
+      }
+    } catch (error) {
+      console.error("Error fetching Spotify status:", error);
+    }
+  };
+
   // 1. useEffect to Poll for Song Changes
   useEffect(() => {
-    const fetchSpotifyStatus = async () => {
-      try {
-        const data = await getSpotifyStatus();
-        if (data.item?.uri !== nowPlayingData.item?.uri) {
-          // Compare using URI
-          setNowPlayingData(data);
-          setLocalProgress(data.progress_ms);
-          setStartTime(Date.now());
-        }
-      } catch (error) {
-        console.error("Error fetching Spotify status:", error);
-      }
-    };
-
     fetchSpotifyStatus(); // Initial fetch
 
     const pollInterval = setInterval(fetchSpotifyStatus, 90000); // Poll every 1 min 30 sec
@@ -45,7 +45,7 @@ export default function Spotify() {
     return () => clearInterval(pollInterval);
   }, [nowPlayingData.item?.uri]); // Dependency is the song URI
 
-  // 2. useEffect to Handle Progress Emulation
+  // 2. useEffect to Handle Progress Emulation and Re-fetch
   useEffect(() => {
     if (nowPlayingData.is_playing) {
       // Clear any existing interval before starting a new one
@@ -57,9 +57,17 @@ export default function Spotify() {
       progressIntervalRef.current = setInterval(() => {
         const elapsedTime = Date.now() - startTime;
         const newProgress = nowPlayingData.progress_ms + elapsedTime;
-        setLocalProgress(
-          Math.min(newProgress, nowPlayingData.item?.duration_ms || 0)
-        );
+        if (newProgress >= (nowPlayingData.item?.duration_ms || 0)) {
+          // If the song has ended, reset the progress and trigger a new fetch
+          setLocalProgress(0);
+          setStartTime(Date.now());
+          // Trigger a fetch in a way that ensures it will occur soon
+          fetchSpotifyStatus();
+        } else {
+          setLocalProgress(
+            Math.min(newProgress, nowPlayingData.item?.duration_ms || 0)
+          );
+        }
       }, 1000); // Update progress every second
     } else if (progressIntervalRef.current) {
       clearInterval(progressIntervalRef.current);
