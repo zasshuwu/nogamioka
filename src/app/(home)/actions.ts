@@ -1,17 +1,10 @@
 "use server";
 
+import { AccessTokenResponseSchema, NowPlayingSchema } from "@/lib/types";
 import { env } from "@/env/server";
-import { z } from "zod";
 
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
-
-const AccessTokenResponseSchema = z.object({
-  access_token: z.string(),
-  token_type: z.string(),
-  expires_in: z.number(),
-  scope: z.string(),
-});
 
 async function getAccessToken() {
   const authToken = Buffer.from(
@@ -46,40 +39,6 @@ async function getAccessToken() {
   return data;
 }
 
-const NowPlayingSchema = z.object({
-  progress_ms: z.number().optional().default(0),
-  item: z
-    .object({
-      duration_ms: z.number().optional().default(0),
-      preview_url: z
-        .string()
-        .url()
-        .optional()
-        .default("https://open.spotify.com/user/fugunagi"),
-
-      album: z
-        .object({
-          images: z.array(z.object({ url: z.string().url() })).optional(),
-          name: z.string(),
-        })
-        .optional(),
-      external_urls: z
-        .object({
-          spotify: z.string().url().optional(),
-        })
-        .optional(),
-      artists: z
-        .array(
-          z.object({
-            name: z.string().optional(),
-          })
-        )
-        .optional(),
-    })
-    .optional(),
-  currently_playing_type: z.string().optional(),
-});
-
 async function getNowPLaying() {
   const accessToken = (await getAccessToken())?.access_token;
 
@@ -91,11 +50,7 @@ async function getNowPLaying() {
 
   const raw = await res.json();
 
-  console.log(raw);
-
   const data = NowPlayingSchema.parse(raw);
-
-  console.log(data);
 
   return data;
 }

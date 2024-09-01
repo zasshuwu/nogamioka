@@ -5,12 +5,15 @@ import Experiences from "@/components/experiences";
 import Projects from "@/components/projects";
 import Gears from "@/components/gears";
 import Footer from "@/components/footer";
+import Spotify from "@/components/spotify";
 
 export default function Page() {
   return (
     <div className="flex flex-col space-y-4 p-4">
       <Heading />
       <About />
+      <br />
+      <Spotify />
       <br />
       <Navigator />
       <br />
