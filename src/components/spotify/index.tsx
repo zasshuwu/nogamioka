@@ -45,7 +45,7 @@ export default function Spotify() {
     return () => clearInterval(pollInterval);
   }, [nowPlayingData.item?.uri]); // Dependency is the song URI
 
-  // 2. useEffect to Handle Progress Emulation and Re-fetch
+  // 2. useEffect to update emulated playing peogress interval and refetching logic
   useEffect(() => {
     if (nowPlayingData.is_playing) {
       // Clear any existing interval before starting a new one
