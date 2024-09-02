@@ -40,7 +40,7 @@ export default function Spotify() {
   useEffect(() => {
     fetchSpotifyStatus(); // Initial fetch
 
-    const pollInterval = setInterval(fetchSpotifyStatus, 30000); // Poll every 30 seconds
+    const pollInterval = setInterval(fetchSpotifyStatus, 10000); // Poll every 10 seconds
 
     return () => clearInterval(pollInterval);
   }, [nowPlayingData.item?.uri]); // Dependency is the song URI
