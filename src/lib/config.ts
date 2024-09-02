@@ -10,6 +10,7 @@ export default function getConfig() {
     jobTitle: "Software Developer",
     homepage: "https://aaanh.com",
     instagram: "aaanhnya",
+    repository: "https://github.com/aaanh/homepage",
   };
 
   const { data, error } = OwnerSchema.safeParse(ownerData);

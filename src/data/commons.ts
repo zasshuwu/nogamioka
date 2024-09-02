@@ -19,6 +19,11 @@ export const OwnerSchema = z.object({
   instagram: z
     .string()
     .transform((instagram) => `https://instagram.com/${instagram}`),
+  repository: z
+    .string()
+    .url()
+    .optional()
+    .default("https://github.com/aaanh/homepage"),
 });
 
 export type Owner = z.infer<typeof OwnerSchema>;

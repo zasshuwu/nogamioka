@@ -113,3 +113,7 @@ progress::-webkit-progress-value {
 a > .content-card {
   @apply hover:bg-foreground/10 transition-all ease-in-out duration-200
 }
+
+.link {
+  @apply hover:decoration-solid underline-offset-4 decoration-dotted underline
+}
