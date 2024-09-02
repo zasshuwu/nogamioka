@@ -22,8 +22,7 @@ export default function About() {
     return Math.floor(years); // Use Math.floor to get the whole number of years
   }
 
-  // Example usage
-  const startDate = new Date("2020-01-01");
+  const startDate = new Date("2022-01-01");
   const endDate = new Date();
   const years = calculateYearsBetweenDates(startDate, endDate);
 
