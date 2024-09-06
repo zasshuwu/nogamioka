@@ -22,7 +22,7 @@ export default function AppleMusicStatusCard({
             height={72}
             width={72}
             className={"w-16 rounded-md"}
-            src={albumCoverUrl}
+            src={albumCoverUrl ?? "https://github.com/aaanh.png"}
             alt={albumCoverUrl}
           />
         ) : (
@@ -31,10 +31,12 @@ export default function AppleMusicStatusCard({
       </div>
 
       <div className="flex-1 text-left font-sans pr-5">
-        <p className="component text-sm font-bold normal-case">{title}</p>
-        <p className="font-dark text-xs">{artist}</p>
+        <p className="component text-sm font-bold normal-case">
+          {title ?? "Not listening at the moment"}
+        </p>
+        <p className="font-dark text-xs">{artist ?? "Artist: ---"}</p>
         <p className="font-dark text-primary/80 w-[172px] overflow-hidden overflow-ellipsis whitespace-nowrap text-xs font-light">
-          {`Album: ${albumTitle}`}
+          {`Album: ${albumTitle ?? "---"}`}
         </p>
       </div>
       <div className="absolute bottom-1.5 right-1.5">
