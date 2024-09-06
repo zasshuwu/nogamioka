@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { addClient, removeClient } from "@/lib/apple-music/broadcast";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 export function GET(request: NextRequest) {
   const headers = new Headers({
     "Content-Type": "text/event-stream",
