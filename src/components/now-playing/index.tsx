@@ -116,7 +116,7 @@ export default function Spotify() {
 
   return (
     <Container className="xl:grid-cols-2 grid-cols-1">
-      <ContentCard className="col-span-2 text-4xl border-none space-x-2">
+      <ContentCard className="xl:col-span-2 text-4xl border-none space-x-2">
         <LucideMusic2 />
         <GlowText text="Now Playing" />
       </ContentCard>
