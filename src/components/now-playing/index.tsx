@@ -110,22 +110,20 @@ export default function Spotify() {
   }, [nowPlayingData.is_playing, startTime, nowPlayingData.progress_ms]); // Dependencies are the play state, startTime, and initial progress
 
   return (
-    <Container>
-      <ContentCard className="text-4xl border-none space-x-2">
+    <Container className="lg:grid-cols-2">
+      <ContentCard className="col-span-2 text-4xl border-none space-x-2">
         <LucideMusic2 />
         <GlowText text="Now Playing" />
       </ContentCard>
-      <Container>
-        <ContentCard>
-          <SpotifyStatusCard
-            {...nowPlayingData}
-            progress_ms={localProgress}
-          ></SpotifyStatusCard>
-        </ContentCard>
-        <ContentCard>
-          <AppleMusicStatusCard {...appleNowPlayingData} />
-        </ContentCard>
-      </Container>
+      <ContentCard>
+        <SpotifyStatusCard
+          {...nowPlayingData}
+          progress_ms={localProgress}
+        ></SpotifyStatusCard>
+      </ContentCard>
+      <ContentCard>
+        <AppleMusicStatusCard {...appleNowPlayingData} />
+      </ContentCard>
     </Container>
   );
 }
