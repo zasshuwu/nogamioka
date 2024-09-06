@@ -5,11 +5,7 @@ import Container from "../container";
 import ContentCard from "../content-card";
 import SpotifyStatusCard from "../spotify/status-card";
 import { getSpotifyStatus } from "@/app/(home)/actions";
-import {
-  AppleMusicNowPlaying,
-  AppleMusicNowPlayingSchema,
-  NowPlaying,
-} from "@/lib/types";
+import { AppleMusicNowPlaying, NowPlaying } from "@/lib/types";
 import GlowText from "../glow-text";
 import { LucideMusic2 } from "lucide-react";
 import AppleMusicStatusCard from "../apple-music/status-card";

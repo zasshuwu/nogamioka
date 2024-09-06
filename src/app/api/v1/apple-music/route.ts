@@ -12,6 +12,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid data" }, { status: 400 });
     }
 
+    if (parsed.data.endpointKey !== env.APPLE_MUSIC_ENDPOINT_KEY) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+
     const nowPlayingData = parsed.data;
 
     try {

@@ -12,6 +12,7 @@ export const env = createEnv({
     SPOTIFY_REFRESH_TOKEN: z.string(),
     KV_HOMEPAGE_REST_API_URL: z.string(),
     KV_HOMEPAGE_REST_API_TOKEN: z.string(),
+    APPLE_MUSIC_ENDPOINT_KEY: z.string(),
   },
   // If you're using Next.js < 13.4.4, you'll need to specify the runtimeEnv manually
   experimental__runtimeEnv: {
@@ -24,6 +25,7 @@ export const env = createEnv({
     SPOTIFY_REFRESH_TOKEN: process.env.SPOTIFY_REFRESH_TOKEN,
     KV_HOMEPAGE_REST_API_URL: process.env.KV_HOMEPAGE_REST_API_URL,
     KV_HOMEPAGE_REST_API_TOKEN: process.env.KV_HOMEPAGE_REST_API_TOKEN,
+    APPLE_MUSIC_ENDPOINT_KEY: process.env.APPLE_MUSIC_ENDPOINT_KEY,
   },
   // For Next.js >= 13.4.4, you only need to destructure client variables:
   // experimental__runtimeEnv: {
