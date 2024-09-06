@@ -1,15 +1,16 @@
 import { env } from "@/env/server";
-import { createClient } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 import { unstable_noStore } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
   unstable_noStore();
   try {
-    const kvStore = createClient({
+    const kvStore = new Redis({
       url: env.KV_HOMEPAGE_REST_API_URL,
       token: env.KV_HOMEPAGE_REST_API_TOKEN,
     });
+
     const latestNowPlayingData = await kvStore.get("latest");
 
     if (!latestNowPlayingData) {

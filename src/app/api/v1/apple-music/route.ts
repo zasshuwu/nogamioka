@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { AppleMusicNowPlayingSchema } from "@/lib/types";
-import { createClient } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 import { env } from "@/env/server";
 
 export async function POST(request: NextRequest) {
@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const nowPlayingData = parsed.data;
 
     try {
-      const kvStore = createClient({
+      const kvStore = new Redis({
         url: env.KV_HOMEPAGE_REST_API_URL,
         token: env.KV_HOMEPAGE_REST_API_TOKEN,
       });
