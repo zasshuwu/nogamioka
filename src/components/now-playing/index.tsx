@@ -60,13 +60,18 @@ export default function Spotify() {
     }
   };
 
+  const POLL_PERIOD = 10000; // Time before re-polling the playing status in ms
+
   // 1. useEffect to Poll for Song Changes
   useEffect(() => {
     fetchSpotifyStatus(); // Initial fetch
     fetchAppleMusicStatus();
 
-    const pollIntervalSpotify = setInterval(fetchSpotifyStatus, 15000); // Poll every 15 seconds
-    const pollIntervalAppleMusic = setInterval(fetchAppleMusicStatus, 15000); // Poll every 15 seconds
+    const pollIntervalSpotify = setInterval(fetchSpotifyStatus, POLL_PERIOD);
+    const pollIntervalAppleMusic = setInterval(
+      fetchAppleMusicStatus,
+      POLL_PERIOD
+    );
 
     return () => {
       clearInterval(pollIntervalSpotify);

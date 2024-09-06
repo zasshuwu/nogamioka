@@ -24,7 +24,9 @@ export async function POST(request: NextRequest) {
         token: env.KV_HOMEPAGE_REST_API_TOKEN,
       });
       // Set the latest value in Vercel KV using a specific key
-      await kvStore.set("latest", JSON.stringify(nowPlayingData)); // "latest" key holds the most recent now playing data
+      await kvStore.set("latest", JSON.stringify(nowPlayingData), {
+        ex: 15,
+      }); // "latest" key holds the most recent now playing data
 
       return NextResponse.json(
         { message: "Added currently playing information" },
