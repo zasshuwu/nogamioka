@@ -5,7 +5,7 @@ import Experiences from "@/components/experiences";
 import Projects from "@/components/projects";
 import Gears from "@/components/gears";
 import Footer from "@/components/footer";
-import Spotify from "@/components/spotify";
+import Spotify from "@/components/now-playing";
 
 export default function Page() {
   return (

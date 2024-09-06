@@ -39,7 +39,7 @@ async function getAccessToken() {
   return data;
 }
 
-async function getNowPLaying() {
+async function getNowPlaying() {
   const accessToken = (await getAccessToken())?.access_token;
 
   const res = await fetch(NOW_PLAYING_ENDPOINT, {
@@ -56,5 +56,5 @@ async function getNowPLaying() {
 }
 
 export async function getSpotifyStatus() {
-  return await getNowPLaying();
+  return await getNowPlaying();
 }

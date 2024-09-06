@@ -45,3 +45,12 @@ export const NowPlayingSchema = z.object({
 });
 
 export type NowPlaying = z.infer<typeof NowPlayingSchema>;
+
+export const AppleMusicNowPlayingSchema = z.object({
+  title: z.string(),
+  albumTitle: z.string(),
+  artist: z.string(),
+  albumCoverUrl: z.string().optional(),
+});
+
+export type AppleMusicNowPlaying = z.infer<typeof AppleMusicNowPlayingSchema>;

@@ -3,11 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 import Container from "../container";
 import ContentCard from "../content-card";
-import SpotifyStatusCard from "./status-card";
+import SpotifyStatusCard from "../spotify/status-card";
 import { getSpotifyStatus } from "@/app/(home)/actions";
-import { NowPlaying } from "@/lib/types";
+import { AppleMusicNowPlaying, NowPlaying } from "@/lib/types";
 import GlowText from "../glow-text";
 import { LucideMusic2 } from "lucide-react";
+import AppleMusicStatusCard from "../apple-music/status-card";
 
 export default function Spotify() {
   const [nowPlayingData, setNowPlayingData] = useState<NowPlaying>({
@@ -16,11 +17,32 @@ export default function Spotify() {
     is_playing: false,
     item: undefined,
   });
+  const [appleNowPlayingData, setAppleNowPlayingData] =
+    useState<AppleMusicNowPlaying>({
+      title: "",
+      albumTitle: "",
+      artist: "",
+      albumCoverUrl: "/aaanh.png",
+    });
 
   const [localProgress, setLocalProgress] = useState(0); // Local progress state
   const [startTime, setStartTime] = useState(0); // Time when the song started
 
   const progressIntervalRef = useRef<NodeJS.Timeout | null>(null); // Ref to store the interval ID
+
+  useEffect(() => {
+    const eventSource = new EventSource("/api/v1/apple-music-now-playing");
+
+    eventSource.onmessage = (e) => {
+      console.log(e.data);
+      const data: AppleMusicNowPlaying = JSON.parse(e.data);
+      setAppleNowPlayingData(data);
+    };
+
+    return () => {
+      eventSource.close();
+    };
+  }, []);
 
   const fetchSpotifyStatus = async () => {
     try {
@@ -86,12 +108,17 @@ export default function Spotify() {
         <LucideMusic2 />
         <GlowText text="Now Playing" />
       </ContentCard>
-      <ContentCard>
-        <SpotifyStatusCard
-          {...nowPlayingData}
-          progress_ms={localProgress}
-        ></SpotifyStatusCard>
-      </ContentCard>
+      <Container>
+        <ContentCard>
+          <SpotifyStatusCard
+            {...nowPlayingData}
+            progress_ms={localProgress}
+          ></SpotifyStatusCard>
+        </ContentCard>
+        <ContentCard>
+          <AppleMusicStatusCard {...appleNowPlayingData} />
+        </ContentCard>
+      </Container>
     </Container>
   );
 }

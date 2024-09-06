@@ -33,6 +33,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'www.svgrepo.com'
+      },
+      {
+        protocol: 'https',
+        hostname: '**.mzstatic.com'
       }
     ]
   }
