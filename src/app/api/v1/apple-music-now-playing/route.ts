@@ -1,19 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
-
-let clients: any[] = [];
+import { addClient, removeClient } from "@/lib/apple-music/broadcast";
 
 export function GET(request: NextRequest) {
-  // Set up SSE headers
   const headers = new Headers({
     "Content-Type": "text/event-stream",
     "Cache-Control": "no-cache",
     Connection: "keep-alive",
   });
 
-  // Create a readable stream for SSE
   const stream = new ReadableStream({
     start(controller) {
-      // Add the client to the list
       const client = {
         send: (data: string) => {
           controller.enqueue(new TextEncoder().encode(`data: ${data}\n\n`));
@@ -23,22 +19,14 @@ export function GET(request: NextRequest) {
         },
       };
 
-      clients.push(client);
+      addClient(client);
 
-      // Handle connection close event
       request.signal.addEventListener("abort", () => {
-        clients = clients.filter((c) => c !== client);
+        removeClient(client);
         client.close();
       });
     },
   });
 
   return new Response(stream, { headers });
-}
-
-// Utility function to broadcast data to all connected clients
-export function broadcast(data: object) {
-  clients.forEach((client) => {
-    client.send(JSON.stringify(data));
-  });
 }

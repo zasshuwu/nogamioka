@@ -37,6 +37,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: '**.mzstatic.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com'
       }
     ]
   }

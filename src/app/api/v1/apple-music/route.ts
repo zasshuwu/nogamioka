@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { broadcast } from "../apple-music-now-playing/route";
+import { broadcast } from "@/lib/apple-music/broadcast";
 import { AppleMusicNowPlayingSchema } from "@/lib/types";
 
 export async function POST(request: NextRequest) {

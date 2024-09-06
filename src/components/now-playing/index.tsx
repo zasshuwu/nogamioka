@@ -19,10 +19,10 @@ export default function Spotify() {
   });
   const [appleNowPlayingData, setAppleNowPlayingData] =
     useState<AppleMusicNowPlaying>({
-      title: "",
-      albumTitle: "",
-      artist: "",
-      albumCoverUrl: "/aaanh.png",
+      title: "Not playing anything",
+      albumTitle: "---",
+      artist: "---",
+      albumCoverUrl: "https://github.com/aaanh-enterprise.png",
     });
 
   const [localProgress, setLocalProgress] = useState(0); // Local progress state
