@@ -13,7 +13,7 @@ export default function AppleMusicStatusCard({
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href={"https://github.com/aaanh-enterprise.png"}
+      href={"https://music.apple.com/profile/aaanh"}
       className="btn-ghost btn relative flex h-fit w-80 items-center space-x-4 rounded-md border border-zinc-500 p-2 transition-all hover:border-primary"
     >
       <div className="w-16">
