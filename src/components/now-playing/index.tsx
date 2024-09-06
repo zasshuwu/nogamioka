@@ -115,7 +115,7 @@ export default function Spotify() {
   }, [nowPlayingData.is_playing, startTime, nowPlayingData.progress_ms]); // Dependencies are the play state, startTime, and initial progress
 
   return (
-    <Container className="lg:grid-cols-2">
+    <Container className="xl:grid-cols-2 grid-cols-1">
       <ContentCard className="col-span-2 text-4xl border-none space-x-2">
         <LucideMusic2 />
         <GlowText text="Now Playing" />
