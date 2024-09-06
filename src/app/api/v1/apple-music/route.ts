@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { broadcast } from "@/lib/apple-music/broadcast";
 import { AppleMusicNowPlayingSchema } from "@/lib/types";
+import { createClient } from "@vercel/kv";
+import { env } from "@/env/server";
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,12 +14,29 @@ export async function POST(request: NextRequest) {
 
     const nowPlayingData = parsed.data;
 
-    broadcast(nowPlayingData);
+    try {
+      const kvStore = createClient({
+        url: env.KV_HOMEPAGE_REST_API_URL,
+        token: env.KV_HOMEPAGE_REST_API_TOKEN,
+      });
+      // Set the latest value in Vercel KV using a specific key
+      await kvStore.set("latest", JSON.stringify(nowPlayingData)); // "latest" key holds the most recent now playing data
 
-    return NextResponse.json({ message: "Data broadcasted" }, { status: 200 });
+      return NextResponse.json(
+        { message: "Added currently playing information" },
+        { status: 200 }
+      );
+    } catch (kvError) {
+      console.log(kvError);
+      return NextResponse.json(
+        { message: "Failed to set now playing data", error: kvError },
+        { status: 500 }
+      );
+    }
   } catch (e: any) {
+    console.log(e);
     return NextResponse.json(
-      { message: "Unable to broadcast data" },
+      { message: "Unable to add currently playing information" },
       { status: 500 }
     );
   }

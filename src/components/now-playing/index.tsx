@@ -5,7 +5,11 @@ import Container from "../container";
 import ContentCard from "../content-card";
 import SpotifyStatusCard from "../spotify/status-card";
 import { getSpotifyStatus } from "@/app/(home)/actions";
-import { AppleMusicNowPlaying, NowPlaying } from "@/lib/types";
+import {
+  AppleMusicNowPlaying,
+  AppleMusicNowPlayingSchema,
+  NowPlaying,
+} from "@/lib/types";
 import GlowText from "../glow-text";
 import { LucideMusic2 } from "lucide-react";
 import AppleMusicStatusCard from "../apple-music/status-card";
@@ -30,28 +34,30 @@ export default function Spotify() {
 
   const progressIntervalRef = useRef<NodeJS.Timeout | null>(null); // Ref to store the interval ID
 
-  useEffect(() => {
-    const eventSource = new EventSource("/api/v1/apple-music-now-playing");
-
-    eventSource.onmessage = (e) => {
-      console.log(e.data);
-      const data: AppleMusicNowPlaying = JSON.parse(e.data);
-      setAppleNowPlayingData(data);
-    };
-
-    return () => {
-      eventSource.close();
-    };
-  }, []);
+  const fetchAppleMusicStatus = async () => {
+    try {
+      const res = await fetch("/api/v1/apple-music-now-playing", {
+        cache: "no-store",
+      });
+      const data = await res.json();
+      if (data) {
+        setAppleNowPlayingData(data);
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   const fetchSpotifyStatus = async () => {
     try {
       const data = await getSpotifyStatus();
-      if (data.item?.uri !== nowPlayingData.item?.uri) {
-        // Compare using URI
-        setNowPlayingData(data);
-        setLocalProgress(data.progress_ms);
-        setStartTime(Date.now());
+      if (data) {
+        if (data.item?.uri !== nowPlayingData.item?.uri) {
+          // Compare using URI
+          setNowPlayingData(data);
+          setLocalProgress(data.progress_ms);
+          setStartTime(Date.now());
+        }
       }
     } catch (error) {
       console.error("Error fetching Spotify status:", error);
@@ -61,10 +67,15 @@ export default function Spotify() {
   // 1. useEffect to Poll for Song Changes
   useEffect(() => {
     fetchSpotifyStatus(); // Initial fetch
+    fetchAppleMusicStatus();
 
-    const pollInterval = setInterval(fetchSpotifyStatus, 10000); // Poll every 10 seconds
+    const pollIntervalSpotify = setInterval(fetchSpotifyStatus, 15000); // Poll every 15 seconds
+    const pollIntervalAppleMusic = setInterval(fetchAppleMusicStatus, 15000); // Poll every 15 seconds
 
-    return () => clearInterval(pollInterval);
+    return () => {
+      clearInterval(pollIntervalSpotify);
+      clearInterval(pollIntervalAppleMusic);
+    };
   }, [nowPlayingData.item?.uri]); // Dependency is the song URI
 
   // 2. useEffect to update emulated playing peogress interval and refetching logic

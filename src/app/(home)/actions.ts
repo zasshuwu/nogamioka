@@ -24,19 +24,23 @@ async function getAccessToken() {
     }),
   });
 
-  const raw = await res.json();
+  try {
+    const raw = await res.json();
 
-  const { data, error } = AccessTokenResponseSchema.safeParse(raw);
+    const { data, error } = AccessTokenResponseSchema.safeParse(raw);
 
-  if (error) {
-    console.error(
-      "Error fetching access token from Spotify API\nPlease contact the developer https://aaanh.com/contact with the error message: ",
-      error
-    );
-    return null;
+    if (error) {
+      console.error(
+        "Error fetching access token from Spotify API\nPlease contact the developer https://aaanh.com/contact with the error message: ",
+        error
+      );
+      return null;
+    }
+
+    return data;
+  } catch (e) {
+    console.log("Unable to fetch access token");
   }
-
-  return data;
 }
 
 async function getNowPlaying() {
@@ -48,11 +52,15 @@ async function getNowPlaying() {
     },
   });
 
-  const raw = await res.json();
+  try {
+    const raw = await res.json();
 
-  const data = NowPlayingSchema.parse(raw);
+    const data = NowPlayingSchema.parse(raw);
 
-  return data;
+    return data;
+  } catch (e) {
+    console.log("Nothing was fetched");
+  }
 }
 
 export async function getSpotifyStatus() {

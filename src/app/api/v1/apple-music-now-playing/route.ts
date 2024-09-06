@@ -1,35 +1,29 @@
+import { env } from "@/env/server";
+import { createClient } from "@vercel/kv";
+import { unstable_noStore } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
-import { addClient, removeClient } from "@/lib/apple-music/broadcast";
 
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
+export async function GET(request: NextRequest) {
+  unstable_noStore();
+  try {
+    const kvStore = createClient({
+      url: env.KV_HOMEPAGE_REST_API_URL,
+      token: env.KV_HOMEPAGE_REST_API_TOKEN,
+    });
+    const latestNowPlayingData = await kvStore.get("latest");
 
-export function GET(request: NextRequest) {
-  const headers = new Headers({
-    "Content-Type": "text/event-stream",
-    "Cache-Control": "no-cache",
-    Connection: "keep-alive",
-  });
+    if (!latestNowPlayingData) {
+      return NextResponse.json(
+        { message: "No currently playing information" },
+        { status: 404 }
+      );
+    }
 
-  const stream = new ReadableStream({
-    start(controller) {
-      const client = {
-        send: (data: string) => {
-          controller.enqueue(new TextEncoder().encode(`data: ${data}\n\n`));
-        },
-        close: () => {
-          controller.close();
-        },
-      };
-
-      addClient(client);
-
-      request.signal.addEventListener("abort", () => {
-        removeClient(client);
-        client.close();
-      });
-    },
-  });
-
-  return new Response(stream, { headers });
+    return NextResponse.json(latestNowPlayingData, { status: 200 });
+  } catch (error) {
+    return NextResponse.json(
+      { message: "Failed to fetch currently playing information", error },
+      { status: 500 }
+    );
+  }
 }
