@@ -73,7 +73,7 @@ export default function SpotifyStatusCard({
         {/* Progress bar */}
 
         {is_playing && (
-          <div className="grid grid-cols-[1fr_2.5fr] items-center">
+          <div className="grid grid-cols-[1fr_2.25fr] items-center">
             <div className="text-xs text-primary">
               <p>
                 {formatTime(progress_ms)} / {formatTime(item?.duration_ms || 0)}
