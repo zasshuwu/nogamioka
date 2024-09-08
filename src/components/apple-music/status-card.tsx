@@ -8,12 +8,13 @@ export default function AppleMusicStatusCard({
   albumTitle,
   albumCoverUrl,
   artist,
+  lyricsUri,
 }: AppleMusicNowPlaying) {
   return (
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href={"https://music.apple.com/profile/aaanh"}
+      href={lyricsUri}
       className="btn-ghost btn relative flex h-fit w-80 items-center space-x-4 rounded-md border border-zinc-500 p-2 transition-all hover:border-primary"
     >
       <div className="w-16">

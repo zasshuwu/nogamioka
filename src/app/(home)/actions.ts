@@ -2,6 +2,8 @@
 
 import { AccessTokenResponseSchema, NowPlayingSchema } from "@/lib/types";
 import { env } from "@/env/server";
+import { GeniusClient } from "@/integrations/genius";
+import { unstable_noStore } from "next/cache";
 
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
@@ -59,10 +61,26 @@ async function getNowPlaying() {
 
     return data;
   } catch (e) {
-    console.log("Nothing was fetched");
+    console.log("Nothing was fetched from Spotify");
   }
 }
 
 export async function getSpotifyStatus() {
   return await getNowPlaying();
+}
+
+export async function searchLyricsOnGenius(query: string) {
+  unstable_noStore();
+  const client = new GeniusClient();
+
+  const res = await client.searchSong(query);
+
+  const lyricsUri = res.response.hits[0].result.relationships_index_url;
+
+  if (lyricsUri) {
+    return lyricsUri;
+  } else {
+    console.log("Unable to find lyrics");
+    return undefined;
+  }
 }

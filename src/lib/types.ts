@@ -52,6 +52,7 @@ export const AppleMusicNowPlayingSchema = z.object({
   artist: z.string(),
   albumCoverUrl: z.string().optional(),
   endpointKey: z.string().optional(),
+  lyricsUri: z.string().url().optional(),
 });
 
 export type AppleMusicNowPlaying = z.infer<typeof AppleMusicNowPlayingSchema>;

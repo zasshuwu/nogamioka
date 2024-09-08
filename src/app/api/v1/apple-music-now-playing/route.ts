@@ -1,9 +1,9 @@
 import { env } from "@/env/server";
 import { Redis } from "@upstash/redis";
 import { unstable_noStore } from "next/cache";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   unstable_noStore();
   try {
     const kvStore = new Redis({

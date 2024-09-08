@@ -13,6 +13,7 @@ export const env = createEnv({
     KV_HOMEPAGE_REST_API_URL: z.string(),
     KV_HOMEPAGE_REST_API_TOKEN: z.string(),
     APPLE_MUSIC_ENDPOINT_KEY: z.string(),
+    GENIUS_ACCESS_TOKEN: z.string(),
   },
   // If you're using Next.js < 13.4.4, you'll need to specify the runtimeEnv manually
   experimental__runtimeEnv: {
@@ -26,6 +27,7 @@ export const env = createEnv({
     KV_HOMEPAGE_REST_API_URL: process.env.KV_HOMEPAGE_REST_API_URL,
     KV_HOMEPAGE_REST_API_TOKEN: process.env.KV_HOMEPAGE_REST_API_TOKEN,
     APPLE_MUSIC_ENDPOINT_KEY: process.env.APPLE_MUSIC_ENDPOINT_KEY,
+    GENIUS_ACCESS_TOKEN: process.env.GENIUS_ACCESS_TOKEN,
   },
   // For Next.js >= 13.4.4, you only need to destructure client variables:
   // experimental__runtimeEnv: {

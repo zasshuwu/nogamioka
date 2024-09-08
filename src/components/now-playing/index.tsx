@@ -4,11 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import Container from "../container";
 import ContentCard from "../content-card";
 import SpotifyStatusCard from "../spotify/status-card";
-import { getSpotifyStatus } from "@/app/(home)/actions";
+import { getSpotifyStatus, searchLyricsOnGenius } from "@/app/(home)/actions";
 import { AppleMusicNowPlaying, NowPlaying } from "@/lib/types";
 import GlowText from "../glow-text";
 import { LucideMusic2 } from "lucide-react";
 import AppleMusicStatusCard from "../apple-music/status-card";
+import { z } from "zod";
 
 export default function Spotify() {
   const [nowPlayingData, setNowPlayingData] = useState<NowPlaying>({
@@ -37,7 +38,20 @@ export default function Spotify() {
       });
       const data = await res.json();
       if (data) {
-        setAppleNowPlayingData(data);
+        console.log(data);
+        const lyricsUri =
+          (await searchLyricsOnGenius(data.title)) ??
+          "https://music.apple.com/profile/aaanh";
+        try {
+          const albumCoverUrl = z.string().url().parse(data.albumCoverUrl);
+          setAppleNowPlayingData({ ...data, albumCoverUrl, lyricsUri });
+        } catch (e) {
+          console.log("Unable to find album cover URL");
+          setAppleNowPlayingData({
+            ...data,
+            albumCoverUrl: "/logos/aaanh.png",
+          });
+        }
       }
     } catch (e) {
       console.log(e);
