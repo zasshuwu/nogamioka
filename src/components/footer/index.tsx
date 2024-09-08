@@ -23,7 +23,7 @@ export default function Footer() {
           <p>
             Homepage &mdash;{" "}
             <Link href={config.owner.repository} className="link">
-              Version 6.0.0-alpha
+              Version 6.0.1
             </Link>
           </p>
         </div>
