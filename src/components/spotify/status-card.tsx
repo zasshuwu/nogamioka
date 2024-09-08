@@ -8,6 +8,7 @@ export default function SpotifyStatusCard({
   currently_playing_type,
   item,
   is_playing,
+  lyricsUri,
 }: NowPlaying) {
   // Calculate the progress percentage
   const progressPercentage =
@@ -26,8 +27,8 @@ export default function SpotifyStatusCard({
       target="_blank"
       rel="noopener noreferrer"
       href={
-        is_playing
-          ? item?.external_urls?.spotify
+        is_playing && lyricsUri
+          ? lyricsUri
           : "https://open.spotify.com/user/fugunagi"
       }
       className="btn-ghost btn relative flex h-fit w-80 items-center space-x-4 rounded-md border border-zinc-500 p-2 transition-all hover:border-primary"

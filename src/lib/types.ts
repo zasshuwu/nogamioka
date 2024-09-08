@@ -42,6 +42,7 @@ export const NowPlayingSchema = z.object({
     .optional(),
   currently_playing_type: z.string().optional(),
   is_playing: z.boolean().optional().default(false),
+  lyricsUri: z.string().url().optional(),
 });
 
 export type NowPlaying = z.infer<typeof NowPlayingSchema>;

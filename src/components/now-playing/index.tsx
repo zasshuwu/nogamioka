@@ -64,7 +64,10 @@ export default function Spotify() {
       if (data) {
         if (data.item?.uri !== nowPlayingData.item?.uri) {
           // Compare using URI
-          setNowPlayingData(data);
+          const lyricsUri = await searchLyricsOnGenius(
+            `${data.item?.name} ${data.item?.artists?.[0].name}`
+          );
+          setNowPlayingData({ ...data, lyricsUri });
           setLocalProgress(data.progress_ms);
           setStartTime(Date.now());
         }
