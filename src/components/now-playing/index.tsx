@@ -38,7 +38,6 @@ export default function Spotify() {
       });
       const data = await res.json();
       if (data) {
-        console.log(data);
         const lyricsUri =
           (await searchLyricsOnGenius(data.title)) ??
           "https://music.apple.com/profile/aaanh";
@@ -50,6 +49,7 @@ export default function Spotify() {
           setAppleNowPlayingData({
             ...data,
             albumCoverUrl: "/logos/aaanh.png",
+            lyricsUri,
           });
         }
       }
