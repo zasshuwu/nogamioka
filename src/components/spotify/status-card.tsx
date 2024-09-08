@@ -29,6 +29,8 @@ export default function SpotifyStatusCard({
       href={
         is_playing && lyricsUri
           ? lyricsUri
+          : is_playing
+          ? item?.external_urls?.spotify
           : "https://open.spotify.com/user/fugunagi"
       }
       className="btn-ghost btn relative flex h-fit w-80 items-center space-x-4 rounded-md border border-zinc-500 p-2 transition-all hover:border-primary"
