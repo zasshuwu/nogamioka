@@ -73,9 +73,7 @@ export async function searchLyricsOnGenius(query: string) {
   unstable_noStore();
   const client = new GeniusClient();
 
-  const res = await client.searchSong(query);
-
-  const lyricsUri = res.response.hits[0].result.relationships_index_url;
+  const lyricsUri = await client.searchSong(query);
 
   if (lyricsUri) {
     return lyricsUri;

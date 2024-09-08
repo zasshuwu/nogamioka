@@ -1,4 +1,5 @@
 import { env } from "@/env/server";
+import { GeniusSearchResponseSchema } from "@/lib/types";
 
 export class GeniusClient {
   #accessToken: string;
@@ -21,7 +22,14 @@ export class GeniusClient {
       },
     });
     const data = await res.json();
+    try {
+      const lyricsUri =
+        GeniusSearchResponseSchema.parse(data).response.hits[0].result.url;
 
-    return data;
+      return lyricsUri;
+    } catch (e) {
+      console.log("Unable to search for lyrics");
+      return undefined;
+    }
   }
 }

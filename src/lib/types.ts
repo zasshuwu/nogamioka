@@ -56,3 +56,13 @@ export const AppleMusicNowPlayingSchema = z.object({
 });
 
 export type AppleMusicNowPlaying = z.infer<typeof AppleMusicNowPlayingSchema>;
+
+export const GeniusSearchResponseSchema = z.object({
+  response: z.object({
+    hits: z.array(
+      z.object({
+        result: z.object({ url: z.string().url() }),
+      })
+    ),
+  }),
+});

@@ -39,7 +39,7 @@ export default function Spotify() {
       const data = await res.json();
       if (data) {
         const lyricsUri =
-          (await searchLyricsOnGenius(data.title)) ??
+          (await searchLyricsOnGenius(`${data.title} ${data.artist}`)) ??
           "https://music.apple.com/profile/aaanh";
         try {
           const albumCoverUrl = z.string().url().parse(data.albumCoverUrl);
