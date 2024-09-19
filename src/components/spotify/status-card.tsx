@@ -38,6 +38,7 @@ export default function SpotifyStatusCard({
       <div className="w-16">
         {is_playing && item?.album?.images?.[0].url ? (
           <Image
+            unoptimized
             height={72}
             width={72}
             className={"w-16 rounded-md"}
