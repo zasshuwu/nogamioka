@@ -21,7 +21,7 @@ export default function Navigator() {
             className="group"
             href={
               target === "Resume"
-                ? "/anh-resume.pdf"
+                ? "/Anh_Hoang_Nguyen_Resume.pdf"
                 : target === "Contact"
                 ? `/${target.toLowerCase()}`
                 : "#" + target.toLowerCase()

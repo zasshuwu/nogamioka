@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
   if (req.method === "GET" && req.nextUrl.pathname === "/resume") {
-    return NextResponse.redirect(new URL("/anh-resume.pdf", req.url));
+    return NextResponse.redirect(new URL("/Anh_Hoang_Nguyen_Resume.pdf", req.url));
   }
 }
 
