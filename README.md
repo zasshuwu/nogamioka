@@ -9,12 +9,6 @@ Project is completed, in production, and continuously integrated.
 - [TailwindCSS](https://tailwindcss.com)
 - [Shadcn](https://ui.shadcn.com/)
 
-## Experimental Features
-
-- Single Sign On (SSO) demos:
-  - Microsoft <https://aaanh.com/sso/msft> via App Registration on Entra
-  - Google <https://aaanh.com/sso/google> via Google Cloud API & Services
-
 ## CI and hosting
 
 - [Vercel](https://vercel.com)
@@ -24,29 +18,24 @@ Project is completed, in production, and continuously integrated.
 - Cloudflare DNS
 - Cloudflare SSL
 
-## Security
-
-- Bot fight
-- IP blacklisting
-- DDoS protection
-
-## How to run locally
-
-- Software pre-requisites: nodejs, npm (comes with nodejs when installed on Windows), git
-- Tool: I recommend using Visual Studio Code, or any vim distributions :D
-
 ### Commands to get up and running
+
+- All
+
+```
+npm i -g yarn
+```
 
 - Windows
 
-```
-git clone https://github.com/aaanh/homepage; cd homepage; npm i; npm run dev
+```powershell
+git clone https://github.com/aaanh/homepage; cd homepage; yarn; yarn dev
 ```
 
 - Linux, macOS
 
-```
-git clone https://github.com/aaanh/homepage && cd homepage && npm i && npm run dev
+```sh
+git clone https://github.com/aaanh/homepage && cd homepage && yarn && yarn dev
 ```
 
 ## Deployment
@@ -62,19 +51,21 @@ Note: I currently am not maintaining a Dockerfile for this project version, but 
 > Assuming you are deploying on a Linux-based server
 
 - Install pre-requisites, clone, install dependencies
-- Build: `npm run build`
-- Serve: `npm run start`
+- Build: `yarn build`
+- Serve: `yarn start`
 - Install `nginx` for reverse proxy, run with `systemctl enable --now nginx` on systemd distros.
 - Install `ufw` for firewall management, run with `sudo ufw enable`, configure to allow port 80 and 443 `sudo ufw allow http && sudo ufw allow https`.
 - Configure `nginx` to route your ports 80 and 443 to internal port `3000`, which is the default port that `Nextjs` serves.
 
 ## Major Version Deployments
 
-- Production: https://aaanh.com (v4)
+- Production: https://aaanh.com (v6)
+- v5: https://v5.aaanh.com
+- v4: https://v4.aaanh.com
 - v3: https://v3.aaanh.com
 - v2: https://v2.aaanh.com
 
-## How to connect Spotify API (Only applied to v2 and v3)
+## How to connect Spotify API (Only applied to v2, v3, v6)
 
 - You'll need to createa Spotify Developer Application <https://developer.spotify.com/dashboard/>
 - You will need to get the various keys/SECRETS (pictured below). Recommended tutorial to do so: <https://dev.to/theodorusclarence/how-to-show-now-playing-in-spotify-with-next-js-15h5>
