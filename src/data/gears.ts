@@ -30,13 +30,22 @@ export function getGears() {
       storage: "N/A",
     },
     {
+      brand: "Server",
+      model: "Tower",
+      type: "Desktop",
+      cpu: "Intel Pentium G4400T",
+      gpu: "N/A",
+      ram: "4GB @ ???MHz",
+      storage: "256GB SSD",
+    },
+    {
       brand: "Apple",
       model: "MacBook 16 in.",
       type: "Laptop",
       cpu: "10-core Apple M1 Pro",
       gpu: "16-core GPU",
       ram: "16 GB LPDDR5",
-      storage: "512 GB",
+      storage: "512GB",
     },
     {
       brand: "Framework",
@@ -72,7 +81,7 @@ export function getGears() {
       cpu: "Apple M1",
       gpu: "Integrated",
       ram: "8GB",
-      storage: "512GB SSD",
+      storage: "512GB",
     },
     {
       brand: "Dell",
@@ -90,7 +99,7 @@ export function getGears() {
       cpu: "Apple M1",
       gpu: "Integrated",
       ram: "N/A",
-      storage: "128GB SSD",
+      storage: "128GB",
     },
   ] as GearComputing[]);
 
