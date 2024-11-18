@@ -1,8 +1,38 @@
 import { z } from "zod";
-import { Project, ProjectSchema } from "./commons";
+import { ProjectSchema } from "./commons";
 
 export default function getProjects() {
   const projects = [
+    {
+      title: "vsce-artoria-theme",
+      description:
+        "VSCode themes that follow the color palettes of Fate saberfaces and others.",
+      link_ref:
+        "https://marketplace.visualstudio.com/items?itemName=aaanh.artoria-theme",
+      screenshot: "",
+      stack: "Visual Studio Code extension",
+    },
+    {
+      title: "Tailflare",
+      description: "Syncing hostnames between Tailscale and Cloudflare",
+      link_ref: "https://pkg.go.dev/github.com/aaanh/tailflare",
+      screenshot: "",
+      stack: "Golang",
+    },
+    {
+      title: "Simple HTTP server in Rust",
+      description: "",
+      link_ref: "https://github.com/aaanh/http-rs",
+      screenshot: "",
+      stack: "Rust, TCP",
+    },
+    {
+      title: "Wake on LAN (WoL) in Rust",
+      description: "",
+      link_ref: "https://github.com/aaanh/wol-rs",
+      screenshot: "",
+      stack: "Rust, TCP",
+    },
     {
       title: "Reroll.ing",
       description: "Full-stack gacha (FGO) simulator",
@@ -67,6 +97,13 @@ export default function getProjects() {
       screenshot: "/projects/coen244-demo.png",
       stack: "C++, python, pandas",
       link_ref: "https://github.com/aaanh/meaningful-graph-traversal",
+    },
+    {
+      title: "Inertial Sensing Lab Teaching Site",
+      description: "FRQNT-funded project",
+      screenshot: "",
+      stack: "Nextjs, Cloudflare Workers, Sanity CMS",
+      link_ref: "https://islab.ca",
     },
     {
       title: "MRCA Simulation",
