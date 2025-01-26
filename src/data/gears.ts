@@ -66,15 +66,6 @@ export function getGears() {
       storage: "1TB NVME SSD",
     },
     {
-      brand: "Dell",
-      model: "Precision 5530",
-      type: "Laptop",
-      cpu: "Intel i7-8850H",
-      gpu: "Nvidia Quadro M2000M",
-      ram: "32GB",
-      storage: "1TB NVME SSD",
-    },
-    {
       brand: "Apple",
       model: "MacBook Air 13 in.",
       type: "Laptop",
@@ -82,15 +73,6 @@ export function getGears() {
       gpu: "Integrated",
       ram: "8GB",
       storage: "512GB",
-    },
-    {
-      brand: "Dell",
-      model: "7390 2-in-1 13 in.",
-      type: "Laptop",
-      cpu: "Intel i7-8650U",
-      gpu: "Integrated",
-      ram: "16GB",
-      storage: "256GB NVME SSD",
     },
     {
       brand: "Apple",
@@ -173,7 +155,7 @@ export function getGears() {
       type: "Lens",
       focal: "70-300mm",
       aperture: "f4.5-5.6",
-      featureCodes: "",
+      featureCodes: "N/A",
     },
   ] as GearLens[]);
 
